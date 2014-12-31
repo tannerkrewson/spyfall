@@ -1,0 +1,286 @@
+body {
+}
+
+h4 {
+    text-align: center;
+}
+
+h5 {
+    position: relative;
+    top: 1px;
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 3px 0;
+}
+
+.controls {
+    text-align: center;
+}
+
+.main-content {
+    margin: 25% auto 0 auto;
+    max-width: 500px;
+}
+
+.footer {
+    color: #aaa;
+    font-size: 10px;
+    text-align: center;
+}
+
+a {
+    color: #999;
+}
+
+.language-list {
+    text-align: center;
+    margin: -20px 0 5px 0;
+}
+
+.language-list li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.access-code {
+    text-align: center;
+    margin-top: -15px;
+    
+    color: #666;
+}
+
+.access-code span {
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    font-size: 1.2em;
+    color: black;
+}
+
+.access-buttons {
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+.access-buttons .access-button-separator {
+    display: inline-block;
+    margin: 5px;
+    height: 3px;
+    width: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    top: 2px;
+    background-color: #ccc;
+}
+
+.access-buttons .access-button {
+    text-decoration: none;
+    position: relative;
+    top: 2px;
+    color: #555;
+    padding: 5px;
+}
+
+.access-buttons .btn-send-access-code-email {
+    top: 1px;
+}
+
+.access-buttons .btn-toggle-link {
+    font-size: 12px;
+    top: 1px;
+}
+
+.qrcode {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.access-link {
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: -5px;
+    font-size: 13px;
+}
+
+.access-link a {
+    color: black;
+}
+
+.lobby-player-list {
+    margin-top: -15px;
+    margin-bottom: -10px;
+    counter-reset:li; /* Initiate a counter */
+    margin-left:0; /* Remove the default left margin */
+    padding-left:0; /* Remove the default left padding */
+}
+
+.lobby-player-list > li {
+    position:relative; /* Create a positioning context */
+    margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+    padding:4px 8px; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+    background:transparent;
+    background-color: #f9f9f9;
+}
+
+.lobby-player-list > li:before {
+    content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    /* Position and style the number */
+    position:absolute;
+    top:0;
+    left:-2em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width:2em;
+    margin-right:8px;
+    padding:4px;
+    background:transparent;
+    font-weight:bold;
+    font-family:"Helvetica Neue", Arial, sans-serif;
+    text-align:center;
+    background-color: #f9f9f9;
+}
+
+.player-status {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.player-status-not-spy {
+    margin-bottom: 0;
+}
+
+.status-container {
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    position: relative;
+    min-height: 14px;
+    margin-bottom: 3rem;
+}
+
+.status-container-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-toggle-status {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    padding: 2px 10px;
+    line-height: 1em;
+    height: 23px;
+    border: none;
+    font-size: 10px;
+    text-transform: none;
+    color: #999;
+}
+
+.current-location {
+    text-align: center;
+}
+
+.current-location-header {
+    display: inline;
+}
+
+.current-location-name {
+    display: inline;
+}
+
+.current-role {
+    text-align: center;
+}
+
+.current-role-header {
+    display: inline;
+}
+
+.current-role-name {
+    display: inline;
+}
+
+.location-list {
+    overflow: hidden;
+}
+
+.location-list li {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width: 50%;
+    float: left;
+    list-style-type: none;
+    padding: 0 4px 0 0;
+    margin: 0 0 4px 0;
+}
+
+.location-list li .location-name {
+    background-color: #f9f9f9;
+    padding: 3px 10px;
+}
+
+.ingame-player-list {
+    overflow: hidden;
+}
+
+.ingame-player-list li {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width: 50%;
+    float: left;
+    list-style-type: none;
+    padding: 0 4px 0 0;
+    margin: 0 0 4px 0;
+}
+
+.ingame-player-list li .player-name {
+    background-color: #f9f9f9;
+    padding: 3px 10px;
+}
+
+.first-player-indicator {
+    display: inline;
+    color: #ff0000;
+    font-size: 12px;
+    position: relative;
+    top: -6px;
+}
+
+.first-player-indicator span {
+    position: relative;
+    top: -2px;
+    font-size: 8px;
+}
+
+.player-reference {
+    margin-bottom: 20px;
+}
+
+.location-reference, .player-reference {
+    overflow: hidden;
+}
+
+@media (max-width: 340px) {
+  .location-list li {
+    font-size: 12px;
+  }
+
+  .ingame-player-list li {
+    width: 100%;
+  }
+
+  .btn, button, input[type="submit"], input[type="text"] {
+    width: 100%;
+  }
+
+  input[type="text"] {
+    box-sizing: border-box;
+    height: 48px;
+  }
+}
