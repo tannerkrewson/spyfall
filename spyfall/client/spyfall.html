@@ -16,6 +16,10 @@
   <div class="container">
     <div class="main-content">
       {{> Template.dynamic template=whichView}}
+
+      <hr>
+
+      {{> footer }}
     </div>
   </div>
 </template>
@@ -26,29 +30,9 @@
 
     <hr>
 
-    <div class="controls">
+    <div class="button-container">
       <button id="btn-new-game">{{_ "ui.new game" }}</button>
       <button id="btn-join-game">{{_ "ui.join game" }}</button>
-    </div>
-
-    <hr>
-
-    {{#if languages }}
-      <div class="languages">
-        <ul class="language-list">
-          {{#each languages }}
-            <li>
-              <a class="btn-set-language" href="#" data-language="{{code}}">{{languageDetails.name}}</a>
-            </li>
-          {{/each}}
-        </ul>
-      </div>
-    {{/if}}
-
-    <div class="footer">
-      {{{_ "ui.footer" }}}
-      <br>
-      <a href="https://github.com/evanbrumley/spyfall" target="_blank">https://github.com/evanbrumley/spyfall</a>
     </div>
   </div>
 </template>
@@ -85,13 +69,18 @@
 
   <ol class="lobby-player-list">
     {{#each players }}
-      <li>{{ name }}</li>
+      <li>
+        {{ name }}
+        <a href="#" class="btn-remove-player" data-player-id="{{ _id }}">
+          <i class="fa fa-close"></i>
+        </a>
+      </li>
     {{/each}}
   </ol>
 
   <hr>
 
-  <div class="controls">
+  <div class="button-container">
     <button class="btn-start">{{_ "ui.start game" }}</button>
     <button class="btn-leave">{{_ "ui.leave game" }}</button>
   </div>
@@ -157,7 +146,7 @@
 
   <hr>
 
-  <div class="controls">
+  <div class="button-container">
     <button class="btn-end">{{_ "ui.end game" }}</button>
     <button class="btn-leave">{{_ "ui.leave game" }}</button>
   </div>
@@ -169,13 +158,13 @@
   <hr>
 
   <form id="create-game">  
-    <div class="controls">
+    <div class="">
       <input type="text" id="player-name" name="playerName" placeholder='{{_ "ui.enter your name" }}'>
 
-      <hr>
-
-      <input type="submit" value='{{_ "ui.create game" }}'>
-      <button class="btn-back">{{_ "ui.back" }}</button>
+      <div class="button-container">
+        <input type="submit" value='{{_ "ui.create game" }}'>
+        <button class="btn-back">{{_ "ui.back" }}</button>
+      </div>
     </div>
   </form>
 </template>
@@ -186,14 +175,34 @@
   <hr>
 
   <form id="join-game">  
-    <div class="controls">
+    <div>
       <input autocorrect="off" autocapitalize="off" type="text" id="access-code" name="accessCode" placeholder='{{_ "ui.enter an access code" }}'>
       <input type="text" id="player-name" name="playerName" placeholder='{{_ "ui.enter your name" }}'>
 
-      <hr>
-
-      <input type="submit" value='{{_ "ui.join" }}'>
-      <button class="btn-back">{{_ "ui.back" }}</button>
+      <div class="button-container">
+        <input type="submit" value='{{_ "ui.join" }}'>
+        <button class="btn-back">{{_ "ui.back" }}</button>
+      </div>
     </div>
   </form>
+</template>
+
+<template name="footer">
+  {{#if languages }}
+    <div class="languages">
+      <ul class="language-list">
+        {{#each languages }}
+          <li>
+            <a class="btn-set-language" href="#" data-language="{{code}}">{{languageDetails.name}}</a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/if}}
+
+  <div class="footer">
+    {{{_ "ui.footer" }}}
+    <br>
+    <a href="https://github.com/evanbrumley/spyfall" target="_blank">https://github.com/evanbrumley/spyfall</a>
+  </div>
 </template>

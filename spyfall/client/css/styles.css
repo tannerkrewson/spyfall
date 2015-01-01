@@ -1,4 +1,5 @@
 body {
+    text-align: center;
 }
 
 h4 {
@@ -6,6 +7,7 @@ h4 {
 }
 
 h5 {
+    text-align: left;
     position: relative;
     top: 1px;
     font-size: 18px;
@@ -13,8 +15,8 @@ h5 {
     padding: 3px 0;
 }
 
-.controls {
-    text-align: center;
+.button-container {
+    margin-top: 10px;
 }
 
 .main-content {
@@ -26,6 +28,7 @@ h5 {
     color: #aaa;
     font-size: 10px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 a {
@@ -117,6 +120,7 @@ a {
 }
 
 .lobby-player-list > li {
+    text-align: left;
     position:relative; /* Create a positioning context */
     margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
     padding:4px 8px; /* Add some spacing around the content */
@@ -143,6 +147,10 @@ a {
     font-family:"Helvetica Neue", Arial, sans-serif;
     text-align:center;
     background-color: #f9f9f9;
+}
+
+.btn-remove-player {
+    float: right;
 }
 
 .player-status {
@@ -209,6 +217,7 @@ a {
 }
 
 .location-list li {
+    text-align: left;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
     box-sizing:border-box;
@@ -229,6 +238,7 @@ a {
 }
 
 .ingame-player-list li {
+    text-align: left;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
     box-sizing:border-box;
@@ -265,6 +275,13 @@ a {
 .location-reference, .player-reference {
     overflow: hidden;
 }
+
+input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 280px;
+    height: 48px;
+  }
 
 @media (max-width: 340px) {
   .location-list li {

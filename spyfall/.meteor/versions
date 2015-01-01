@@ -60,7 +60,6 @@ tap:http-methods@0.0.23
 tap:i18n@1.2.1
 templating@1.0.10
 tracker@1.0.4
-u2622:persistent-session@0.2.1
 ui@1.0.5
 underscore@1.0.2
 url@1.0.3

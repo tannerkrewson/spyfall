@@ -1,3 +1,13 @@
+function initUserLanguage() {
+  var language = amplify.store("language");
+
+  if (language){
+    Session.set("language", language);
+  }
+
+  setUserLanguage(getUserLanguage());
+}
+
 function getUserLanguage() {
   var language = Session.get("language");
 
@@ -9,8 +19,20 @@ function getUserLanguage() {
 };
 
 function setUserLanguage(language) {
-  Session.setPersistent("language", language);
+  Session.set("language", language);
+  amplify.store("language", language);
   TAPi18n.setLanguage(language);
+}
+
+function getLanguageList() {
+  var languages = TAPi18n.getLanguages();
+  var languageList = _.map(languages, function(value, key) { return {code: key, languageDetails: value}; });
+  
+  if (languageList.length <= 1){
+    return null;
+  }
+  
+  return languageList;
 }
 
 function getCurrentGame(){
@@ -127,14 +149,16 @@ function resetUserState(){
 
 function trackGameState () {
   var gameID = Session.get("gameID");
+  var playerID = Session.get("playerID");
 
-  if (!gameID){
+  if (!gameID || !playerID){
     return;
   }
 
   var game = Games.findOne(gameID);
+  var player = Players.findOne(playerID);
 
-  if (!game){
+  if (!game || !player){
     Session.set("gameID", null);
     Session.set("playerID", null);
     Session.set("currentView", "startMenu");
@@ -158,7 +182,7 @@ function leaveGame () {
   Session.set("playerID", null);
 }
 
-setUserLanguage(getUserLanguage());
+initUserLanguage();
 
 Tracker.autorun(trackGameState);
 
@@ -168,21 +192,16 @@ Template.main.helpers({
   }
 });
 
-Template.startMenu.helpers({
-  currentLanguage: function() {
-    return TAPi18n.getLanguage();
-  },
-  languages: function() {
-    var languages = TAPi18n.getLanguages();
-    var languageList = _.map(languages, function(value, key) { return {code: key, languageDetails: value}; });
-    
-    if (languageList.length <= 1){
-      return null;
-    }
-    
-    return languageList;
+Template.footer.helpers({
+  languages: getLanguageList
+})
+
+Template.footer.events({
+  'click .btn-set-language': function (event) {
+    var language = $(event.target).data('language');
+    setUserLanguage(language);
   }
-});
+})
 
 Template.startMenu.events({
   'click #btn-new-game': function () {
@@ -190,10 +209,6 @@ Template.startMenu.events({
   },
   'click #btn-join-game': function () {
     Session.set("currentView", "joinGame");
-  },
-  'click .btn-set-language': function (event) {
-    var language = $(event.target).data('language');
-    setUserLanguage(language);
   }
 });
 
@@ -286,6 +301,10 @@ Template.lobby.helpers({
   players: function () {
     var game = getCurrentGame();
 
+    if (!game) {
+      return null;
+    }
+
     var players = Players.find({
       'gameID': game._id
     });
@@ -321,6 +340,10 @@ Template.lobby.events({
   },
   'click .btn-toggle-qrcode': function () {
     $(".qrcode-container").toggle();
+  },
+  'click .btn-remove-player': function (event) {
+    var playerID = $(event.currentTarget).data('player-id');
+    Players.remove(playerID);
   }
 });
 
