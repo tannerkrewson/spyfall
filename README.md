@@ -18,7 +18,7 @@ Transifex is an easy to use translation service. It has a nice interface and is 
 
 [https://www.transifex.com/projects/p/spyfall/](https://www.transifex.com/projects/p/spyfall/)
 
-Then click big the "Help Translate Spyfall" button. After creating a user account you should be able to start working on a translation right away. Once you're done, I'll be sent an email and will add your translation to the live site as soon as possible.
+Then click the big "Help Translate Spyfall" button. After creating a user account you should be able to start working on a translation right away. Once you're done, I'll be sent an email and will add your translation to the live site as soon as possible.
 
 ### Pull request
 
@@ -43,3 +43,7 @@ Enter the spyfall directory:
 Run the meteor server:
 
 	meteor --settings settings/example.json
+
+## Links
+
+[BoardGameGeek Discussion Thread](http://www.boardgamegeek.com/thread/1279239/app/page/1)
