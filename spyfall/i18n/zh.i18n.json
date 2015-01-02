@@ -21,6 +21,7 @@
         "create game": "創建",
         "back": "回去",
         "enter an access code": "輸入通行號碼",
+        "invalid access code": "無效的通行號碼",
         "join": "加入",
         "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>《Spyfall間諜危機》</a> 由Alexandr Ushan設計， <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World公司出版</a>。"
     },
