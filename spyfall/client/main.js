@@ -208,6 +208,7 @@ Template.footer.events({
   'click .btn-set-language': function (event) {
     var language = $(event.target).data('language');
     setUserLanguage(language);
+    GAnalytics.event("language-actions", "set-language-" + language);
   }
 })
 
