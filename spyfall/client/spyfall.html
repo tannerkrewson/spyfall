@@ -13,7 +13,7 @@
 <body></body>
 
 <template name="main">
-  <div class="container">
+  <div class="container lang-{{ language }}">
     <div class="main-content">
       {{> Template.dynamic template=whichView}}
 
@@ -178,6 +178,8 @@
     <div>
       <input autocorrect="off" autocapitalize="off" type="text" id="access-code" name="accessCode" placeholder='{{_ "ui.enter an access code" }}'>
       <input type="text" id="player-name" name="playerName" placeholder='{{_ "ui.enter your name" }}'>
+
+      {{> flashMessages}}
 
       <div class="button-container">
         <input type="submit" value='{{_ "ui.join" }}'>

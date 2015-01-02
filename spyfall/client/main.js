@@ -186,9 +186,17 @@ initUserLanguage();
 
 Tracker.autorun(trackGameState);
 
+FlashMessages.configure({
+  autoHide: true,
+  autoScroll: false
+});
+
 Template.main.helpers({
   whichView: function() {
     return Session.get('currentView')
+  },
+  language: function() {
+    return getUserLanguage();
   }
 });
 
@@ -252,6 +260,9 @@ Template.joinGame.events({
 
     var accessCode = event.target.accessCode.value;
     var playerName = event.target.playerName.value;
+
+    accessCode = accessCode.trim();
+    accessCode = accessCode.toLowerCase();
     
     var game = Games.findOne({
       accessCode: accessCode
@@ -263,6 +274,8 @@ Template.joinGame.events({
       Session.set("gameID", game._id);
       Session.set("playerID", player._id);
       Session.set("currentView", "lobby");
+    } else {
+      FlashMessages.sendError(TAPi18n.__("ui.invalid access code"));
     }
 
     return false;
