@@ -28,7 +28,7 @@ If you're comfortable with Github and JSON files, feel free to simply create a n
 
 Please make sure that the translations you provide are as close as possible to the original meaning - try not to alter roles or locations, as I'd like the game to still be playable when different players in the same game are using different languages.
 
-## Running your own instance
+## Running your own instance with custom locations
 
 [Install meteor](https://www.meteor.com/install)
 
@@ -40,9 +40,22 @@ Enter the spyfall directory:
 
 	cd spyfall/spyfall
 
+Edit the locations file as required:
+
+	nano lib/locations.js
+
 Run the meteor server:
 
 	meteor --settings settings/example.json
+
+Make a production settings file:
+
+	cp settings/example.json settings/production.json
+	nano settings/production.json  # Edit as required
+
+Deploy to meteor:
+
+	meteor deploy myurl.meteor.com --settings settings/production.json
 
 ## Links
 
