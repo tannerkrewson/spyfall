@@ -44,7 +44,7 @@ Edit the locations file as required:
 
 	nano lib/locations.js
 
-Run the meteor server:
+Run the meteor server to test locally:
 
 	meteor --settings settings/example.json
 
