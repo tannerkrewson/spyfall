@@ -79,7 +79,9 @@ function generateNewGame(){
     state: "waitingForPlayers",
     location: null,
     lengthInMinutes: 8,
-    endTime: null
+    endTime: null,
+    paused: false,
+    pausedTime: null
   };
 
   var gameID = Games.insert(game);
@@ -183,6 +185,10 @@ function leaveGame () {
 }
 
 initUserLanguage();
+
+Meteor.setInterval(function () {
+  Session.set('time', new Date());
+}, 1000);
 
 Tracker.autorun(trackGameState);
 
@@ -350,7 +356,7 @@ Template.lobby.events({
 
     assignRoles(players, location);
     
-    Games.update(game._id, {$set: {state: 'inProgress', location: location, endTime: gameEndTime}});
+    Games.update(game._id, {$set: {state: 'inProgress', location: location, endTime: gameEndTime, paused: false, pausedTime: null}});
   },
   'click .btn-toggle-qrcode': function () {
     $(".qrcode-container").toggle();
@@ -385,6 +391,19 @@ Template.gameView.helpers({
   },
   locations: function () {
     return locations;
+  },
+  timeRemaining: function () {
+    var game = getCurrentGame();
+    var localEndTime = game.endTime - TimeSync.serverOffset();
+
+    if (game.paused){
+      var localPausedTime = game.pausedTime - TimeSync.serverOffset();
+      var timeRemaining = localEndTime - localPausedTime;
+    } else {
+      var timeRemaining = localEndTime - Session.get('time');
+    }
+
+    return moment(timeRemaining).format('mm[<span>:</span>]ss');
   }
 });
 
@@ -398,13 +417,18 @@ Template.gameView.events({
   },
   'click .btn-toggle-status': function () {
     $(".status-container-content").toggle();
+  },
+  'click .game-countdown': function () {
+    var game = getCurrentGame();
+    var currentServerTime = TimeSync.serverTime(moment());
+
+    if(game.paused){
+      GAnalytics.event("game-actions", "unpause");
+      var newEndTime = game.endTime - game.pausedTime + currentServerTime;
+      Games.update(game._id, {$set: {paused: false, pausedTime: null, endTime: newEndTime}});
+    } else {
+      GAnalytics.event("game-actions", "pause");
+      Games.update(game._id, {$set: {paused: true, pausedTime: currentServerTime}});
+    }
   }
 });
-
-Template.gameView.rendered = function(){
-  var game = getCurrentGame();
-
-  $('.game-countdown').countdown(game.endTime - TimeSync.serverOffset(), function(event) {
-    $(this).html(event.strftime('%M:%S'));
-  });
-};

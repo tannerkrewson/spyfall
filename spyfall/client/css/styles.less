@@ -167,6 +167,34 @@ a {
     float: right;
 }
 
+.game-countdown {
+    color: #333;
+    text-decoration: none;
+
+    &:active, &:focus, &:hover {
+        color: #333;
+    }
+
+    &.paused {
+        span {
+            animation: blink 2s steps(2, start) infinite;
+            -webkit-animation: blink 2s steps(2, start) infinite;
+
+            @keyframes blink {
+              to {
+                visibility: hidden;
+              }
+            }
+
+            @-webkit-keyframes blink {
+              to {
+                visibility: hidden;
+              }
+            }
+        }
+    }
+}
+
 .player-status {
     text-align: center;
     font-size: 1.5em;

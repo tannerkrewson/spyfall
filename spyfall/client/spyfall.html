@@ -87,8 +87,8 @@
 </template>
 
 <template name="gameView">
-  <h4 class="game-countdown"></h4>
- 
+  <h4><a href="#" class="game-countdown {{#if game.paused }}paused{{/if}}">{{{ timeRemaining }}}</a></h4>
+
   <div class="status-container">
     <button class="btn-toggle-status">{{_ "ui.show hide" }}</button>
 
