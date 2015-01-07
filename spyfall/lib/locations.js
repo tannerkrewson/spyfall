@@ -206,13 +206,13 @@ locations = [
   {
     name: 'locations.polar station',
     roles: [
-      'locations.roles.polar expedition.medic',
-      'locations.roles.polar expedition.expedition leader',
-      'locations.roles.polar expedition.biologist',
-      'locations.roles.polar expedition.radioman',
-      'locations.roles.polar expedition.hydrologist',
-      'locations.roles.polar expedition.meteorologist',,
-      'locations.roles.polar expedition.geologist'
+      'locations.roles.polar station.medic',
+      'locations.roles.polar station.expedition leader',
+      'locations.roles.polar station.biologist',
+      'locations.roles.polar station.radioman',
+      'locations.roles.polar station.hydrologist',
+      'locations.roles.polar station.meteorologist',,
+      'locations.roles.polar station.geologist'
     ]
   },
   {
