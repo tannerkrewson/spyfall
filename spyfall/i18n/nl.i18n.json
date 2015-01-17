@@ -43,7 +43,7 @@
         "ocean liner": "Cruiseschip",
         "passenger train": "Passagierstrein",
         "pirate ship": "Piratenschip",
-        "polar station": "Onderzoeksstation op de zuidpool",
+        "polar station": "Zuidpoolstation",
         "police station": "Politiekantoor",
         "restaurant": "Restaurant",
         "school": "School",
@@ -53,7 +53,7 @@
         "supermarket": "Supermarkt",
         "theater": "Theater",
         "university": "Universiteit",
-        "world war ii squad": "Legerpeleton tijdens de Tweede Wereldoorlog",
+        "world war ii squad": "Legereenheid tijdens WO2",
         "roles": {
             "airplane": {
                 "first class passenger": "Passagier in eerste klasse",

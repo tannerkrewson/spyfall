@@ -34,7 +34,7 @@
         "corporate party": "Εταιρικό πάρτυ",
         "crusader army": "Στρατός Σταυροφόρων",
         "casino": "Καζίνο",
-        "day spa": "Σπα",
+        "day spa": "Κέντρο Αισθητικής",
         "embassy": "Πρεσβεία",
         "hospital": "Νοσοκομείο",
         "hotel": "Ξενοδοχείο",
@@ -44,7 +44,7 @@
         "passenger train": "Επιβατικό Τρένο",
         "pirate ship": "Πειρατικό Πλοίο",
         "polar station": "Πολικός Σταθμός",
-        "police station": "Αστυνομικός Σταθμός",
+        "police station": "Αστυνομικό Τμήμα",
         "restaurant": "Εστιατόριο",
         "school": "Σχολείο",
         "service station": "Συνεργείο  Αυτοκινήτων",
@@ -57,11 +57,11 @@
         "roles": {
             "airplane": {
                 "first class passenger": "Επιβάτης Πρώτης Θέσης ",
-                "air marshall": "Φρουρός πτήσης ",
+                "air marshall": "Φρουρός Πτήσης ",
                 "mechanic": "Μηχανικός",
                 "air hostess": "Αεροσυνοδός",
-                "copilot": "Δεύτερος Πιλότος",
-                "captain": "Καπετάνιος",
+                "copilot": "Συγκυβερνήτης",
+                "captain": "Πιλότος",
                 "economy class passenger": "Επιβάτης Οικονομικής Θέσης"
             },
             "bank": {
@@ -79,7 +79,7 @@
                 "lifeguard": "Ναυαγοσώστης",
                 "thief": "Κλέφτης",
                 "beach photographer": "Φωτογράφος στην Παραλία",
-                "ice cream truck driver": "Οδηγός Βαν Παγωτού",
+                "ice cream truck driver": "Πλανόδιος Πωλητής Παγωτού",
                 "beach goer": "Λουόμενος"
             },
             "cathedral": {
@@ -103,7 +103,7 @@
             "corporate party": {
                 "entertainer": "Διασκεδαστής",
                 "manager": "Διευθυντής",
-                "unwanted guest": "Ανεπιθύμητος Ξένος",
+                "unwanted guest": "Ανεπιθύμητος Επισκέπτης",
                 "owner": "Ιδιοκτήτης",
                 "secretary": "Γραμματέας",
                 "delivery boy": "Διανομέας Φαγητού",
@@ -124,7 +124,7 @@
                 "bouncer": "Μπράβος",
                 "manager": "Διευθυντής",
                 "hustler": "Απατεώνας",
-                "dealer": "Έμπορος",
+                "dealer": "Κρουπιέρης",
                 "gambler": "Τζογαδόρος"
             },
             "day spa": {
@@ -149,7 +149,7 @@
                 "nurse": "Νοσοκόμα",
                 "doctor": "Γιατρός",
                 "anesthesiologist": "Αναισθησιολόγος",
-                "intern": "Εκπαιδευόμενος Γιατρός",
+                "intern": "Ειδικευόμενος Γιατρός",
                 "therapist": "Ψυχολόγος",
                 "surgeon": "Χειρούργος",
                 "patient": "Ασθενής"
@@ -166,7 +166,7 @@
             "military base": {
                 "deserter": "Λιποτάκτης",
                 "colonel": "Συνταγματάρχης",
-                "medic": "Γιατρός",
+                "medic": "Διασώστης Μάχης",
                 "sniper": "Ελεύθερος Σκοπευτής",
                 "officer": "Αξιωματικός",
                 "tank engineer": "Μηχανικός Τεθωρακισμένων Αρμάτων",
@@ -177,7 +177,7 @@
                 "sound engineer": "Ηχολήπτης",
                 "camera man": "Εικονολήπτης",
                 "director": "Σκηνοθέτης",
-                "costume artist": "Δημιουργός Κοστουμιών",
+                "costume artist": "Ενδυματολόγος",
                 "producer": "Παραγωγός",
                 "actor": "Ηθοποιός"
             },
@@ -229,8 +229,8 @@
             "restaurant": {
                 "musician": "Μουσικός",
                 "bouncer": "Μπράβος",
-                "hostess": "Σερβιτόρος",
-                "head chef": "Αρχιμάγειρας",
+                "hostess": "Υπάλληλος Υποδοχής",
+                "head chef": "Σεφ",
                 "food critic": "Κριτικός Φαγητού",
                 "waiter": "Σερβιτόρος",
                 "customer": "Πελάτης"
@@ -286,7 +286,7 @@
                 "cashier": "Ταμίας",
                 "director": "Σκηνοθέτης",
                 "actor": "Ηθοποιός",
-                "crew man": "Μέλος Πληρώματος",
+                "crew man": "Φροντιστής σκηνής",
                 "audience member": "Μέλος Ακροατηρίου"
             },
             "university": {
@@ -296,13 +296,13 @@
                 "psychologist": "Ψυχολόγος",
                 "maintenance man": "Συντηρητής",
                 "janitor": "Επιστάτης",
-                "student": "Μαθητής"
+                "student": "Φοιτητής"
             },
             "world war ii squad": {
                 "resistance fighter": "Αντιστασιακός Αγωνιστής",
                 "radioman": "Ασυρματιστής",
                 "scout": "Ανιχνευτής",
-                "medic": "Γιατρός",
+                "medic": "Διασώστης Μάχης",
                 "cook": "Μάγειρας",
                 "imprisoned nazi": "Φυλακισμένος Ναζί",
                 "soldier": "Στρατιώτης"
