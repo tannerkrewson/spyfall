@@ -19,9 +19,10 @@ function getUserLanguage() {
 };
 
 function setUserLanguage(language) {
-  Session.set("language", language);
-  amplify.store("language", language);
-  TAPi18n.setLanguage(language);
+  TAPi18n.setLanguage(language).done(function () {
+    Session.set("language", language);
+    amplify.store("language", language);
+  });
 }
 
 function getLanguageList() {
@@ -384,6 +385,24 @@ Template.lobby.rendered = function (event) {
   qrcodesvg.draw();
 };
 
+function getTimeRemaining(){
+  var game = getCurrentGame();
+  var localEndTime = game.endTime - TimeSync.serverOffset();
+
+  if (game.paused){
+    var localPausedTime = game.pausedTime - TimeSync.serverOffset();
+    var timeRemaining = localEndTime - localPausedTime;
+  } else {
+    var timeRemaining = localEndTime - Session.get('time');
+  }
+
+  if (timeRemaining < 0) {
+    timeRemaining = 0;
+  }
+
+  return timeRemaining;
+}
+
 Template.gameView.helpers({
   game: getCurrentGame,
   player: getCurrentPlayer,
@@ -403,16 +422,13 @@ Template.gameView.helpers({
   locations: function () {
     return locations;
   },
-  timeRemaining: function () {
-    var game = getCurrentGame();
-    var localEndTime = game.endTime - TimeSync.serverOffset();
+  gameFinished: function () {
+    var timeRemaining = getTimeRemaining();
 
-    if (game.paused){
-      var localPausedTime = game.pausedTime - TimeSync.serverOffset();
-      var timeRemaining = localEndTime - localPausedTime;
-    } else {
-      var timeRemaining = localEndTime - Session.get('time');
-    }
+    return timeRemaining === 0;
+  },
+  timeRemaining: function () {
+    var timeRemaining = getTimeRemaining();
 
     return moment(timeRemaining).format('mm[<span>:</span>]ss');
   }

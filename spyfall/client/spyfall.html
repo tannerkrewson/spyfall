@@ -4,6 +4,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/skeleton.css" type="text/css">
@@ -94,7 +95,7 @@
 </template>
 
 <template name="gameView">
-  <h4><a href="#" class="game-countdown {{#if game.paused }}paused{{/if}}">{{{ timeRemaining }}}</a></h4>
+  <h4><a href="#" class="game-countdown {{#if gameFinished }}finished{{/if}} {{#if game.paused }}paused{{/if}}">{{{ timeRemaining }}}</a></h4>
 
   <div class="status-container">
     <button class="btn-toggle-status">{{_ "ui.show hide" }}</button>
