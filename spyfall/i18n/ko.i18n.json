@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "스파이폴에 오신 것을 환영합니다",
+        "new game": "새 게임",
+        "join game": "게임 참가",
+        "waiting for players": "참가자들을 기다리는 중…",
+        "access code": "접속 코드",
+        "join my spyfall game": "제 스파이폴 게임에 참가하세요!",
+        "start game": "게임 시작하기",
+        "leave game": "게임 그만두기",
+        "show hide": "보여주기/숨기기",
+        "you are the spy": "당신은 스파이입니다!",
+        "you are not the spy": "당신은 스파이가 <strong>아닙니다!</strong>",
+        "the location": "위치",
+        "your role": "당신의 역할",
+        "players": "참가자들",
+        "first": "1<span>st</span>",
+        "location reference": "위치 선호",
+        "end game": "게임 끝내기",
+        "enter your name": "이름을 입력하세요",
+        "create game": "만들기",
+        "back": "뒤로",
+        "enter an access code": "접속 코드 입력",
+        "invalid access code": "죄송합니다, 입력한 접속 코드와 맞는 게임이 없습니다.",
+        "join": "참가",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a> designed by Alexandr Ushan, published by <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>"
+    },
+    "locations": {
+        "airplane": "비행기",
+        "bank": "은행",
+        "beach": "바닷가",
+        "cathedral": "대성당",
+        "circus tent": "서커스 천막",
+        "corporate party": "회사 파티",
+        "crusader army": "십자군 부대",
+        "casino": "카지노",
+        "day spa": "데이 스파 (Day Spa)",
+        "embassy": "대사관",
+        "hospital": "병원",
+        "hotel": "호텔",
+        "military base": "군사기지",
+        "movie studio": "영화 스튜디오",
+        "ocean liner": "원양 정기선",
+        "passenger train": "여객 열차",
+        "pirate ship": "해적선",
+        "polar station": "극지방의 기지",
+        "police station": "경찰서",
+        "restaurant": "레스토랑",
+        "school": "학교",
+        "service station": "주유소 (Service Station)",
+        "space station": "우주 정거장",
+        "submarine": "잠수함",
+        "supermarket": "슈퍼마켓",
+        "theater": "극장",
+        "university": "대학교",
+        "world war ii squad": "제2차 세계 대전 부대",
+        "roles": {
+            "airplane": {
+                "first class passenger": "1등칸의 승객",
+                "air marshall": "여객기 보안 요원",
+                "mechanic": "정비공",
+                "air hostess": "여성 승무원",
+                "copilot": "부조종사",
+                "captain": "선장; 기장",
+                "economy class passenger": "이등석 승객"
+            },
+            "bank": {
+                "armored car driver": "장갑차 운전사",
+                "manager": "매니저",
+                "consultant": "상담가, 자문 위원, 컨설턴트",
+                "robber": "강도",
+                "security guard": "경비원",
+                "teller": "(은행의) 금전 출납계[창구] 직원",
+                "customer": "손님"
+            },
+            "beach": {
+                "beach waitress": "바닷가 웨이트리스",
+                "kite surfer": "카이트 서핑(kite surfing)을 하는 사람",
+                "lifeguard": "인명 구조원",
+                "thief": "도둑",
+                "beach photographer": "바닷가 사진사",
+                "ice cream truck driver": "아이스크림 트럭 운전사",
+                "beach goer": "해수욕하는 사람"
+            },
+            "cathedral": {
+                "priest": "성직자",
+                "beggar": "거지",
+                "sinner": "죄인",
+                "tourist": "관광객",
+                "sponsor": "스폰서",
+                "chorister": "성가대원",
+                "parishioner": "교구 주민"
+            },
+            "circus tent": {
+                "acrobat": "곡예사",
+                "animal trainer": "조련사",
+                "magician": "마술사",
+                "fire eater": "불을 먹는 묘기를 부리는 사람",
+                "clown": "광대",
+                "juggler": "저글링하는 사람",
+                "visitor": "방문객"
+            },
+            "corporate party": {
+                "entertainer": "연예인, 엔터테이너",
+                "manager": "매니저",
+                "unwanted guest": "불청객",
+                "owner": "주인",
+                "secretary": "비서",
+                "delivery boy": "(상점의) 배달 사환",
+                "accountant": "회계사"
+            },
+            "crusader army": {
+                "monk": "수도승",
+                "imprisoned saracen": "수감된 이슬람교도",
+                "servant": "하인",
+                "bishop": "주교",
+                "squire": "기사의 종자",
+                "archer": "활 쏘는 사람",
+                "knight": "중세의 기사"
+            },
+            "casino": {
+                "bartender": "바텐더",
+                "head security guard": "경비원 책임자",
+                "bouncer": "기도 (술집 등에서 입구를 지키는 사람)",
+                "manager": "매니저",
+                "hustler": "사기꾼",
+                "dealer": "딜러, 중개인",
+                "gambler": "노름꾼"
+            },
+            "day spa": {
+                "stylist": "스타일리스트",
+                "masseuse": "여성 마사지사",
+                "manicurist": "손톱 관리사",
+                "makeup artist": "화장 전문가",
+                "dermatologist": "피부과 전문의",
+                "beautician": "피부 미용사",
+                "customer": "손님"
+            },
+            "embassy": {
+                "security guard": "경비원",
+                "secretary": "비서",
+                "ambassador": "대사, 사절",
+                "tourist": "관광객",
+                "refugee": "난민, 망명자",
+                "diplomat": "외교관",
+                "government official": "국가 공무원"
+            },
+            "hospital": {
+                "nurse": "간호사",
+                "doctor": "의사",
+                "anesthesiologist": "마취과 의사",
+                "intern": "인턴",
+                "therapist": "치료 전문가",
+                "surgeon": "외과 전문의",
+                "patient": "환자"
+            },
+            "hotel": {
+                "doorman": "수위, 문지기",
+                "security guard": "경비원",
+                "manager": "매니저",
+                "housekeeper": "가정부",
+                "bartender": "바텐더",
+                "bellman": "(호텔,클럽의) 보이, 사환",
+                "customer": "손님"
+            },
+            "military base": {
+                "deserter": "탈영병",
+                "colonel": "대령",
+                "medic": "위생병",
+                "sniper": "저격수",
+                "officer": "장교; 정부 기관이나 큰 조직체의 주요 직책에 있는 사람",
+                "tank engineer": "탱크 기관사",
+                "soldier": "군인"
+            },
+            "movie studio": {
+                "stunt man": "(위험한 장면의) 대역",
+                "sound engineer": "음향 기사",
+                "camera man": "촬영기사",
+                "director": "임원[이사]; 관리자; 영화, 연극의 감독",
+                "costume artist": "의상 예술가",
+                "producer": "제작자",
+                "actor": "배우"
+            },
+            "ocean liner": {
+                "cook": "요리사",
+                "captain": "선장; 기장",
+                "bartender": "바텐더",
+                "musician": "음악가",
+                "waiter": "웨이터",
+                "mechanic": "정비공",
+                "rich passenger": "부유한 승객"
+            },
+            "passenger train": {
+                "mechanic": "정비공",
+                "border patrol": "국경 순찰원",
+                "train attendant": "기차 안내원",
+                "restaurant chef": "레스토랑 요리사",
+                "train driver": "기차 기관사",
+                "stoker": "(특히 선박, 증기 기차의) 화부(火夫)",
+                "passenger": "승객"
+            },
+            "pirate ship": {
+                "cook": "요리사",
+                "slave": "노예",
+                "cannoneer": "포수, 포병",
+                "tied up prisoner": "묶인 죄수",
+                "cabin boy": "배에서 일하는 사환",
+                "brave captain": "용감한 선장",
+                "sailor": "뱃사람"
+            },
+            "polar station": {
+                "medic": "위생병",
+                "expedition leader": "탐험대장",
+                "biologist": "생물학자",
+                "radioman": "라디오 방송국 직원",
+                "hydrologist": "수로, 수문학(水文學)을 연구하는 학자",
+                "meteorologist": "기상학자",
+                "geologist": "지질학자"
+            },
+            "police station": {
+                "detective": "탐정",
+                "lawyer": "변호사",
+                "journalist": "기자",
+                "criminalist": "범죄학자",
+                "archivist": "기록 보관 담당자",
+                "criminal": "범죄자",
+                "patrol officer": "순찰 경관"
+            },
+            "restaurant": {
+                "musician": "음악가",
+                "bouncer": "기도 (술집 등에서 입구를 지키는 사람)",
+                "hostess": "여주인; 호스티스; (TV, 라디오 프로의) 여성 진행자",
+                "head chef": "주방장",
+                "food critic": "음식 비평가",
+                "waiter": "웨이터",
+                "customer": "손님"
+            },
+            "school": {
+                "gym teacher": "체육 교사",
+                "principal": "교장",
+                "security guard": "경비원",
+                "janitor": "문지기, 수위",
+                "cafeteria lady": "구내식당 아주머니",
+                "maintenance man": "보수원, 정비원",
+                "student": "학생"
+            },
+            "service station": {
+                "manager": "매니저",
+                "tire specialist": "타이어 전문가",
+                "biker": "오토바이를 타는 사람",
+                "car owner": "차 주인",
+                "car wash operator": "세차장 기사",
+                "electrician": "전기 기사",
+                "auto mechanic": "자동차 기술공"
+            },
+            "space station": {
+                "engineer": "기사; 기술자; 기관사",
+                "alien": "외계인",
+                "pilot": "조종사",
+                "commander": "지휘관, 사령관",
+                "scientist": "과학자",
+                "doctor": "의사",
+                "space tourist": "우주 여행객"
+            },
+            "submarine": {
+                "cook": "요리사",
+                "commander": "지휘관, 사령관",
+                "sonar technician": "수중 음파 탐지 기술자",
+                "electronics technician": "전자 공학 기술자",
+                "radioman": "라디오 방송국 직원",
+                "navigator": "조종사, 항해사",
+                "sailor": "뱃사람"
+            },
+            "supermarket": {
+                "cashier": "출납원",
+                "butcher": "정육점 주인",
+                "janitor": "문지기, 수위",
+                "security guard": "경비원",
+                "food sample demonstrator": "음식 샘플 시범 설명하는 사람",
+                "shelf stocker": "상점의 물건 진열하는 사람",
+                "customer": "손님"
+            },
+            "theater": {
+                "coat check lady": "코트 맡기는 곳의 여성 직원",
+                "prompter": "(배우가 대사를 잊었을 때) 대사를 상기시켜 주는 사람",
+                "cashier": "출납원",
+                "director": "임원[이사]; 관리자; 영화, 연극의 감독",
+                "actor": "배우",
+                "crew man": "남자 승무원",
+                "audience member": "청중"
+            },
+            "university": {
+                "graduate student": "대학원생",
+                "professor": "교수",
+                "dean": "대성당 주임 사제, (대학의) 학과장",
+                "psychologist": "심리학자",
+                "maintenance man": "보수원, 정비원",
+                "janitor": "문지기, 수위",
+                "student": "학생"
+            },
+            "world war ii squad": {
+                "resistance fighter": "저항 운동을 하는 사람",
+                "radioman": "라디오 방송국 직원",
+                "scout": "정찰병, 척후병",
+                "medic": "위생병",
+                "cook": "요리사",
+                "imprisoned nazi": "수감된 나치 당원",
+                "soldier": "군인"
+            }
+        }
+    }
+}
