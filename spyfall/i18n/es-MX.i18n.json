@@ -5,7 +5,7 @@
         "join game": "Únete a un Juego",
         "waiting for players": "Esperando Jugadores...",
         "access code": "Código de Acceso",
-        "join my spyfall game": "Únete a mi partida de Spyfall!",
+        "join my spyfall game": "Únete a mi Juego de Spyfall!",
         "start game": "Empezar Juego",
         "leave game": "Salir del Juego",
         "show hide": "mostrar/ocultar",
@@ -14,10 +14,10 @@
         "the location": "La ubicación",
         "your role": "Su papel",
         "players": "Jugadores",
-        "first": "1<span>o</span>",
-        "location reference": "Lista de ubicaciones",
+        "first": "1<span>st</span>",
+        "location reference": "Lugar de Referencia",
         "end game": "Terminar Juego",
-        "enter your name": "Introduzca su nombre",
+        "enter your name": "Ingrese su nombre",
         "create game": "Crear",
         "back": "Atrás",
         "enter an access code": "Introduzca un código de acceso",
@@ -31,23 +31,23 @@
         "beach": "Playa",
         "cathedral": "Catedral",
         "circus tent": "Carpa de Circo",
-        "corporate party": "Fiesta de Empresa",
-        "crusader army": "Las cruzadas",
+        "corporate party": "Fiesta de la Empresa",
+        "crusader army": "Ejército Medieval",
         "casino": "Casino",
         "day spa": "Spa / Balneario Matutino",
         "embassy": "Embajada",
         "hospital": "Hospital",
         "hotel": "Hotel",
         "military base": "Base Militar",
-        "movie studio": "Estudio de cine",
+        "movie studio": "Estudio de película",
         "ocean liner": "Crucero Marítimo",
         "passenger train": "Tren de Pasajeros",
         "pirate ship": "Barco pirata",
         "polar station": "Estación Polar",
-        "police station": "Comisaría de Policía",
+        "police station": "Estación de Policía",
         "restaurant": "Restaurante",
-        "school": "Colegio",
-        "service station": "Garage",
+        "school": "Escuela",
+        "service station": "Estación de Servicio Automotriz",
         "space station": "Estación Espacial",
         "submarine": "Submarino",
         "supermarket": "Supermercado",
@@ -62,7 +62,7 @@
                 "air hostess": "Azafata",
                 "copilot": "Copiloto",
                 "captain": "Capitán",
-                "economy class passenger": "Pasajero de Clase Turista"
+                "economy class passenger": "Pasajero de Clase Económica"
             },
             "bank": {
                 "armored car driver": "Conductor de Vehiculo Blindado",
@@ -75,12 +75,12 @@
             },
             "beach": {
                 "beach waitress": "Camarera en la Playa",
-                "kite surfer": "Kite Surfer",
+                "kite surfer": "Surfista con Cometa / Kite Surfer",
                 "lifeguard": "Salvavidas",
                 "thief": "Ladrón",
                 "beach photographer": "Fotógrafo en la Playa",
                 "ice cream truck driver": "Conductor de Camión de Helados",
-                "beach goer": "Veraneante"
+                "beach goer": "Vacacionista"
             },
             "cathedral": {
                 "priest": "Sacerdote",
@@ -107,7 +107,7 @@
                 "owner": "Dueño",
                 "secretary": "Secretaria",
                 "delivery boy": "Mensajero",
-                "accountant": "Contable"
+                "accountant": "Contador"
             },
             "crusader army": {
                 "monk": "Monje",
@@ -124,16 +124,16 @@
                 "bouncer": "Guardia de Seguridad",
                 "manager": "Gerente",
                 "hustler": "Estafador",
-                "dealer": "Croupier",
-                "gambler": "Jugador"
+                "dealer": "Repartidor",
+                "gambler": "Apostador"
             },
             "day spa": {
                 "stylist": "Estilista",
                 "masseuse": "Masajista",
                 "manicurist": "Manicurista",
-                "makeup artist": "Maquillador",
-                "dermatologist": "Dermatólogo",
-                "beautician": "Esteticien",
+                "makeup artist": "Especialista en Maquillaje",
+                "dermatologist": "Dermatóloga",
+                "beautician": "Cultora de belleza",
                 "customer": "Cliente"
             },
             "embassy": {
@@ -143,7 +143,7 @@
                 "tourist": "Turista",
                 "refugee": "Refugiado",
                 "diplomat": "Diplomático",
-                "government official": "Funcionario"
+                "government official": "Oficial del Gobierno"
             },
             "hospital": {
                 "nurse": "Enfermera",
@@ -158,7 +158,7 @@
                 "doorman": "Portero",
                 "security guard": "Guardia de Seguridad",
                 "manager": "Gerente",
-                "housekeeper": "Camarera",
+                "housekeeper": "Mucama",
                 "bartender": "Barman ",
                 "bellman": "Botones",
                 "customer": "Cliente"
@@ -175,9 +175,9 @@
             "movie studio": {
                 "stunt man": "Doble de riesgo",
                 "sound engineer": "Ingeniero de Sonido",
-                "camera man": "Cámara",
+                "camera man": "Camarógrafo",
                 "director": "Director",
-                "costume artist": "Diseñador de vestuario",
+                "costume artist": "Cosmetóloga",
                 "producer": "Productor",
                 "actor": "Actor"
             },
@@ -186,7 +186,7 @@
                 "captain": "Capitán ",
                 "bartender": "Barman",
                 "musician": "Músico",
-                "waiter": "Camarero",
+                "waiter": "Mesero",
                 "mechanic": "Mecánico",
                 "rich passenger": "Pasajero Adinerado"
             },
@@ -204,7 +204,7 @@
                 "slave": "Esclavo",
                 "cannoneer": "Cañonero",
                 "tied up prisoner": "Prisionero Atado",
-                "cabin boy": "Mozo de Cubierta",
+                "cabin boy": "Grumete / Mozo de Cubierta",
                 "brave captain": "Valiente Capitan",
                 "sailor": "Marinero"
             },
@@ -224,19 +224,19 @@
                 "criminalist": "Criminalista ",
                 "archivist": "Archivista",
                 "criminal": "Criminal",
-                "patrol officer": "Policía"
+                "patrol officer": "Patrullero "
             },
             "restaurant": {
                 "musician": "Músico",
                 "bouncer": "Guardia de Seguridad",
-                "hostess": "Maître",
+                "hostess": "Afitriona / Hostess",
                 "head chef": "Chef Principal",
-                "food critic": "Crítico Gastronómico",
-                "waiter": "Camarero",
+                "food critic": "Crítico de Comida",
+                "waiter": "Mesero",
                 "customer": "Cliente"
             },
             "school": {
-                "gym teacher": "Profesor de Gimnasia",
+                "gym teacher": "Instructor de Gimnasia",
                 "principal": "Director",
                 "security guard": "Guardia de Seguridad",
                 "janitor": "Conserje",
@@ -248,10 +248,10 @@
                 "manager": "Gerente",
                 "tire specialist": "Especialista en Neumáticos",
                 "biker": "Ciclista",
-                "car owner": "Dueño del coche",
-                "car wash operator": "Operador de Lavado de Coches",
+                "car owner": "Automovilista",
+                "car wash operator": "Operador de Lavado de Autos",
                 "electrician": "Electricista",
-                "auto mechanic": "Mecánico de Coches"
+                "auto mechanic": "Mecánico Automotriz"
             },
             "space station": {
                 "engineer": "Ingeniero",
@@ -276,8 +276,8 @@
                 "butcher": "Carnicero",
                 "janitor": "Conserje",
                 "security guard": "Guardia de Seguridad",
-                "food sample demonstrator": "Demostrador de Comida",
-                "shelf stocker": "Reponedor",
+                "food sample demonstrator": "Demostradora de Comida",
+                "shelf stocker": "Acomodador de Mercancia",
                 "customer": "Cliente"
             },
             "theater": {
