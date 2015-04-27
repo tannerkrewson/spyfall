@@ -1,3 +1,7 @@
+Handlebars.registerHelper('toCapitalCase', function(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+});
+
 function initUserLanguage() {
   var language = amplify.store("language");
 
