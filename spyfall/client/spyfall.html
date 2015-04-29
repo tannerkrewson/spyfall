@@ -200,6 +200,11 @@
 <template name="footer">
   {{#if languages }}
     <div class="languages">
+      <select class="language-select">
+        {{#each languages }}
+            <option value="{{code}}" {{selected}}>{{toCapitalCase languageDetails.name}}</option>
+        {{/each}}
+      </select>
       <ul class="language-list">
         {{#each languages }}
           <li>

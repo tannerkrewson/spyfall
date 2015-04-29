@@ -31,7 +31,19 @@ function setUserLanguage(language) {
 
 function getLanguageList() {
   var languages = TAPi18n.getLanguages();
-  var languageList = _.map(languages, function(value, key) { return {code: key, languageDetails: value}; });
+  var languageList = _.map(languages, function(value, key) {
+    var selected = "";
+    
+    if (key == getUserLanguage()){
+      selected = "selected";
+    }
+
+    return {
+      code: key,
+      selected: selected,
+      languageDetails: value
+    };
+  });
   
   if (languageList.length <= 1){
     return null;
@@ -218,6 +230,11 @@ Template.footer.helpers({
 Template.footer.events({
   'click .btn-set-language': function (event) {
     var language = $(event.target).data('language');
+    setUserLanguage(language);
+    GAnalytics.event("language-actions", "set-language-" + language);
+  },
+  'change .language-select': function (event) {
+    var language = event.target.value;
     setUserLanguage(language);
     GAnalytics.event("language-actions", "set-language-" + language);
   }

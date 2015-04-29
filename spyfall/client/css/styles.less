@@ -50,6 +50,7 @@ a {
 }
 
 .language-list {
+    display: none;
     text-align: center;
     margin: -20px 0 15px 0;
 }
@@ -59,6 +60,16 @@ a {
     display: inline-block;
     padding-right: 5px;
     margin-bottom: 0;
+}
+
+@media (min-width: 550px) {
+    .language-list {
+        display: block;
+    }
+
+    .language-select {
+        display: none;
+    }
 }
 
 .access-code {
