@@ -14,7 +14,7 @@
 <body></body>
 
 <template name="main">
-  <div class="container lang-{{ language }}">
+  <div dir="{{ textDirection }}" class="container dir-{{textDirection}} lang-{{ language }}">
     <div class="main-content">
       {{> Template.dynamic template=whichView}}
 
@@ -199,7 +199,7 @@
 
 <template name="footer">
   {{#if languages }}
-    <div class="languages">
+    <div dir="ltr" class="languages">
       <select class="language-select">
         {{#each languages }}
             <option value="{{code}}" {{selected}}>{{toCapitalCase languageDetails.name}}</option>

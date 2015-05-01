@@ -29,6 +29,17 @@ function setUserLanguage(language) {
   });
 }
 
+function getLanguageDirection() {
+  var language = getUserLanguage()
+  var rtlLanguages = ['he'];
+
+  if ($.inArray(language, rtlLanguages) !== -1) {
+    return 'rtl';
+  } else {
+    return 'ltr';
+  }
+}
+
 function getLanguageList() {
   var languages = TAPi18n.getLanguages();
   var languageList = _.map(languages, function(value, key) {
@@ -220,6 +231,9 @@ Template.main.helpers({
   },
   language: function() {
     return getUserLanguage();
+  },
+  textDirection: function() {
+    return getLanguageDirection();
   }
 });
 
