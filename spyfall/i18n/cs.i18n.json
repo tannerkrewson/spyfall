@@ -1,6 +1,6 @@
 {
     "ui": {
-        "welcome to spyfall": "Vítejete ve Spyfall",
+        "welcome to spyfall": "Vítejte ve Spyfall",
         "new game": "Nová hra",
         "join game": "Připojit se ke hře",
         "waiting for players": "Čekání na hráče...",
@@ -139,7 +139,7 @@
             "embassy": {
                 "security guard": "Ochranka",
                 "secretary": "Sekretářka",
-                "ambassador": "Ambasádor",
+                "ambassador": "Velvyslanec",
                 "tourist": "Turista",
                 "refugee": "Uprchlík",
                 "diplomat": "Diplomat",
@@ -240,7 +240,7 @@
                 "principal": "Ředitel",
                 "security guard": "Ochranka",
                 "janitor": "Uklizeč",
-                "cafeteria lady": "Kavárnice",
+                "cafeteria lady": "Kuchařka v jídelně",
                 "maintenance man": "Údržbář",
                 "student": "Student"
             },
