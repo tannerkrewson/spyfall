@@ -319,6 +319,7 @@ Template.joinGame.events({
       Session.set("currentView", "lobby");
     } else {
       FlashMessages.sendError(TAPi18n.__("ui.invalid access code"));
+      GAnalytics.event("game-actions", "invalidcode");
     }
 
     return false;
