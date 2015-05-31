@@ -282,6 +282,9 @@ Template.createGame.events({
     var game = generateNewGame();
     var player = generateNewPlayer(game, playerName);
 
+    Meteor.subscribe('games', game.accessCode);
+    Meteor.subscribe('players', game._id);
+
     Session.set("gameID", game._id);
     Session.set("playerID", player._id);
     Session.set("currentView", "lobby");
@@ -306,21 +309,24 @@ Template.joinGame.events({
 
     accessCode = accessCode.trim();
     accessCode = accessCode.toLowerCase();
-    
-    var game = Games.findOne({
-      accessCode: accessCode
+
+    Meteor.subscribe('games', accessCode, function onReady(){
+      var game = Games.findOne({
+        accessCode: accessCode
+      });
+
+      if (game) {
+        Meteor.subscribe('players', game._id);
+        player = generateNewPlayer(game, playerName);
+
+        Session.set("gameID", game._id);
+        Session.set("playerID", player._id);
+        Session.set("currentView", "lobby");
+      } else {
+        FlashMessages.sendError(TAPi18n.__("ui.invalid access code"));
+        GAnalytics.event("game-actions", "invalidcode");
+      }
     });
-
-    if (game) {
-      player = generateNewPlayer(game, playerName);
-
-      Session.set("gameID", game._id);
-      Session.set("playerID", player._id);
-      Session.set("currentView", "lobby");
-    } else {
-      FlashMessages.sendError(TAPi18n.__("ui.invalid access code"));
-      GAnalytics.event("game-actions", "invalidcode");
-    }
 
     return false;
   },
@@ -363,7 +369,7 @@ Template.lobby.helpers({
       return null;
     }
 
-    var players = Players.find({'gameID': game._id}).fetch();
+    var players = Players.find({'gameID': game._id}, {'sort': {'createdAt': 1}}).fetch();
 
     players.forEach(function(player){
       if (player._id === currentPlayer._id){

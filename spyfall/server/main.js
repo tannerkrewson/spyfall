@@ -19,3 +19,11 @@ Meteor.startup(function () {
 var MyCron = new Cron(60000);
 
 MyCron.addJob(5, cleanUpGamesAndPlayers);
+
+Meteor.publish('games', function(accessCode) {
+  return Games.find({"accessCode": accessCode});
+});
+
+Meteor.publish('players', function(gameID) {
+  return Players.find({"gameID": gameID});
+});
