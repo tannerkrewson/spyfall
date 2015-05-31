@@ -283,11 +283,13 @@ Template.createGame.events({
     var player = generateNewPlayer(game, playerName);
 
     Meteor.subscribe('games', game.accessCode);
-    Meteor.subscribe('players', game._id);
+    
+    Meteor.subscribe('players', game._id, function onReady(){
+      Session.set("gameID", game._id);
+      Session.set("playerID", player._id);
+      Session.set("currentView", "lobby");
+    });
 
-    Session.set("gameID", game._id);
-    Session.set("playerID", player._id);
-    Session.set("currentView", "lobby");
     return false;
   },
   'click .btn-back': function () {
