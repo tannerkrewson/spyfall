@@ -227,7 +227,7 @@ FlashMessages.configure({
 
 Template.main.helpers({
   whichView: function() {
-    return Session.get('currentView')
+    return Session.get('currentView');
   },
   language: function() {
     return getUserLanguage();
@@ -283,8 +283,12 @@ Template.createGame.events({
     var player = generateNewPlayer(game, playerName);
 
     Meteor.subscribe('games', game.accessCode);
+
+    Session.set("loading", true);
     
     Meteor.subscribe('players', game._id, function onReady(){
+      Session.set("loading", false);
+
       Session.set("gameID", game._id);
       Session.set("playerID", player._id);
       Session.set("currentView", "lobby");
@@ -295,6 +299,12 @@ Template.createGame.events({
   'click .btn-back': function () {
     Session.set("currentView", "startMenu");
     return false;
+  }
+});
+
+Template.createGame.helpers({
+  isLoading: function() {
+    return Session.get('loading');
   }
 });
 
@@ -312,7 +322,11 @@ Template.joinGame.events({
     accessCode = accessCode.trim();
     accessCode = accessCode.toLowerCase();
 
+    Session.set("loading", true);
+
     Meteor.subscribe('games', accessCode, function onReady(){
+      Session.set("loading", false);
+
       var game = Games.findOne({
         accessCode: accessCode
       });
@@ -337,6 +351,13 @@ Template.joinGame.events({
     return false;
   }
 });
+
+Template.joinGame.helpers({
+  isLoading: function() {
+    return Session.get('loading');
+  }
+});
+
 
 Template.joinGame.rendered = function (event) {
   resetUserState();

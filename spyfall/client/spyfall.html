@@ -161,7 +161,13 @@
 </template>
 
 <template name="createGame">
-  <h4>{{_ "ui.welcome to spyfall" }}</h4>
+  <h4>
+    {{#if isLoading }}
+      <span class="spinner"></span>
+    {{else}}
+      {{_ "ui.welcome to spyfall" }}
+    {{/if}}
+  </h4>
 
   <hr>
 
@@ -178,7 +184,13 @@
 </template>
 
 <template name="joinGame">
-  <h4>{{_ "ui.welcome to spyfall" }}</h4>
+  <h4>
+    {{#if isLoading }}
+      <span class="spinner"></span>
+    {{else}}
+      {{_ "ui.welcome to spyfall" }}
+    {{/if}}
+  </h4>
 
   <hr>
 
