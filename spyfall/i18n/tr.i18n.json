@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "Spyfall'a Hoşgeldiniz",
+        "new game": "Yeni oyun",
+        "join game": "Oyuna katıl",
+        "waiting for players": "Oyuncular Bekleniyor...",
+        "access code": "Erişim kodu",
+        "join my spyfall game": "Spyfall Oyunuma Katıl!",
+        "start game": "Oyunu başlat",
+        "leave game": "Oyundan ayrıl",
+        "show hide": "Göster/gizle",
+        "you are the spy": "Casus sensin!",
+        "you are not the spy": "Casus <strong>değilsin</strong>!",
+        "the location": "Yer",
+        "your role": "Rolün",
+        "players": "Oyuncular",
+        "first": "1'inci",
+        "location reference": "Yer referansı",
+        "end game": "Oyunu bitir",
+        "enter your name": "İsmini gir",
+        "create game": "Oyun yarat",
+        "back": "Geri",
+        "enter an access code": "Erişim kodunu gir",
+        "invalid access code": "Geçersiz erişim kodu",
+        "join": "Katıl",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a>, Alexandr Ushan tarafından tasarlanmış ve <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a> tarafından yayınlanmıştır."
+    },
+    "locations": {
+        "airplane": "Uçak",
+        "bank": "Banka",
+        "beach": "Plaj",
+        "cathedral": "Katedral",
+        "circus tent": "Sirk çadırı",
+        "corporate party": "İş partisi",
+        "crusader army": "Haçlı ordusu",
+        "casino": "Kumarhane",
+        "day spa": "Spa merkezi",
+        "embassy": "Elçilik",
+        "hospital": "Hastane",
+        "hotel": "Otel",
+        "military base": "Askeri üs",
+        "movie studio": "Film stüdyosu",
+        "ocean liner": "Transatlantik",
+        "passenger train": "Yolcu treni",
+        "pirate ship": "Korsan gemisi",
+        "polar station": "Kutup merkezi",
+        "police station": "Polis merkezi",
+        "restaurant": "Lokanta",
+        "school": "Okul",
+        "service station": "Benzin istasyonu",
+        "space station": "Uzay istasyonu",
+        "submarine": "Denizaltı",
+        "supermarket": "Süpermarket",
+        "theater": "Tiyatro",
+        "university": "Üniversite",
+        "world war ii squad": "2. dünya savaşı bölüğü",
+        "roles": {
+            "airplane": {
+                "first class passenger": "1. sınıf yolcusu",
+                "air marshall": "Hava mareşali",
+                "mechanic": "Tamirci",
+                "air hostess": "Hostes",
+                "copilot": "Yardımcı pilot",
+                "captain": "Kaptan Pilot",
+                "economy class passenger": "Ekonomi sınıfı yolcusu"
+            },
+            "bank": {
+                "armored car driver": "Zırhlı araç şoförü",
+                "manager": "Müdür",
+                "consultant": "Danışman",
+                "robber": "Soyguncu",
+                "security guard": "Güvenlik görevlisi",
+                "teller": "Memur",
+                "customer": "Müşteri"
+            },
+            "beach": {
+                "beach waitress": "Plaj garsonu",
+                "kite surfer": "Kite sörfçüsü",
+                "lifeguard": "Cankurtaran",
+                "thief": "Hırsız",
+                "beach photographer": "Plaj fotoğrafçısı",
+                "ice cream truck driver": "Dondurma kamyonu sürücüsü",
+                "beach goer": "Plaja giden"
+            },
+            "cathedral": {
+                "priest": "Rahip",
+                "beggar": "Dilenci",
+                "sinner": "Günahçı",
+                "tourist": "Turist",
+                "sponsor": "Sponsor",
+                "chorister": "Korocu",
+                "parishioner": "Kilise cemiyeti üyesi"
+            },
+            "circus tent": {
+                "acrobat": "Akrobat",
+                "animal trainer": ":Hayvan terbiyecisi",
+                "magician": "Sihirbaz",
+                "fire eater": "Ateş yiyici",
+                "clown": "Palyaço",
+                "juggler": "Hokkabaz",
+                "visitor": "Ziyaretçi"
+            },
+            "corporate party": {
+                "entertainer": "Şovmen",
+                "manager": "Müdür",
+                "unwanted guest": "İstenmeyen misafir",
+                "owner": "Sahip",
+                "secretary": "Sekreter",
+                "delivery boy": "Kurye",
+                "accountant": "Muhasebeci"
+            },
+            "crusader army": {
+                "monk": "Keşiş",
+                "imprisoned saracen": "Tutsak saracen",
+                "servant": "Hizmetkar",
+                "bishop": "Piskopos",
+                "squire": "Kavalye",
+                "archer": "Okçu",
+                "knight": "Şövalye"
+            },
+            "casino": {
+                "bartender": "Barmen",
+                "head security guard": "Baş güvenlik görevlisi",
+                "bouncer": "Fedai",
+                "manager": "Müdür",
+                "hustler": "Dolandırıcı",
+                "dealer": "Dağıtıcı",
+                "gambler": "Kumarbaz"
+            },
+            "day spa": {
+                "stylist": "Stilist",
+                "masseuse": "Masör",
+                "manicurist": "Manikürcü",
+                "makeup artist": "Makyaj sanatçısı",
+                "dermatologist": "Dermatolog",
+                "beautician": "Güzellik uzmanı",
+                "customer": "Müşteri"
+            },
+            "embassy": {
+                "security guard": "Güvenlik görevlisi",
+                "secretary": "Sekreter",
+                "ambassador": "Elçi",
+                "tourist": "Turist",
+                "refugee": "Mülteci",
+                "diplomat": "Diplomat",
+                "government official": "Memur"
+            },
+            "hospital": {
+                "nurse": "Hemşire",
+                "doctor": "Doktor",
+                "anesthesiologist": "Anestezici",
+                "intern": "Stajyer",
+                "therapist": "Terapist",
+                "surgeon": "Cerrah",
+                "patient": "Hasta"
+            },
+            "hotel": {
+                "doorman": "Kapıcı",
+                "security guard": "Güvenlik görevlisi",
+                "manager": "Müdür",
+                "housekeeper": "Temizlikçi",
+                "bartender": "Barmen",
+                "bellman": "Valiz taşıyıcısı",
+                "customer": "Müşteri"
+            },
+            "military base": {
+                "deserter": "Kaçak",
+                "colonel": "Albay",
+                "medic": "Doktor",
+                "sniper": "Keskin nişancı",
+                "officer": "Subay",
+                "tank engineer": "Tank mühendisi",
+                "soldier": "Asker"
+            },
+            "movie studio": {
+                "stunt man": "Dublör",
+                "sound engineer": "Ses mühandisi",
+                "camera man": "Kameraman",
+                "director": "Direkör",
+                "costume artist": "Kostüm sanatçısı",
+                "producer": "Yapımcı",
+                "actor": "Aktör"
+            },
+            "ocean liner": {
+                "cook": "Şef",
+                "captain": "Kaptan",
+                "bartender": "Barmen",
+                "musician": "Müzisyen",
+                "waiter": "Garson",
+                "mechanic": "Tamirci",
+                "rich passenger": "Zengin yolcu"
+            },
+            "passenger train": {
+                "mechanic": "Tamirci",
+                "border patrol": "Sınır bekçisi",
+                "train attendant": "Tren görevlisi",
+                "restaurant chef": "Restoran şef",
+                "train driver": "Tren şoförü",
+                "stoker": "Kömürcü",
+                "passenger": "Yolcu"
+            },
+            "pirate ship": {
+                "cook": "Şef",
+                "slave": "Köle",
+                "cannoneer": "Topçu",
+                "tied up prisoner": "Tutsak",
+                "cabin boy": "Miço",
+                "brave captain": "Kaptan",
+                "sailor": "Denizci"
+            },
+            "polar station": {
+                "medic": "Doktor",
+                "expedition leader": "Keşif lideri",
+                "biologist": "Biyolog",
+                "radioman": "Radyo operatörü",
+                "hydrologist": "Su bilimci",
+                "meteorologist": "Meteorolog",
+                "geologist": "Jeolog"
+            },
+            "police station": {
+                "detective": "Dedektif",
+                "lawyer": "Avukat",
+                "journalist": "Gazeteci",
+                "criminalist": "Kriminalist",
+                "archivist": "Arşivci",
+                "criminal": "Şuçlı",
+                "patrol officer": "Devriye polisi"
+            },
+            "restaurant": {
+                "musician": "Müzisyen",
+                "bouncer": "Fedai",
+                "hostess": "Kadın garson",
+                "head chef": "Aşçı başı",
+                "food critic": "Yemek eleştirmeni",
+                "waiter": "Garson",
+                "customer": "Müşteri"
+            },
+            "school": {
+                "gym teacher": "Beden öğretmeni",
+                "principal": "Müdür",
+                "security guard": "Güvenlik görevlisi",
+                "janitor": "Temizlikçi",
+                "cafeteria lady": "Kafeterya görevlisi",
+                "maintenance man": "Tamirci",
+                "student": "Öğrenci"
+            },
+            "service station": {
+                "manager": "Müdür",
+                "tire specialist": "Tekerlek Uzmanı",
+                "biker": "Motorcu",
+                "car owner": "Araba sahibi",
+                "car wash operator": "Araba yıkamacısı",
+                "electrician": "Elektrikçi",
+                "auto mechanic": "Araba tamircisi"
+            },
+            "space station": {
+                "engineer": "Mühendis",
+                "alien": "Uzaylı",
+                "pilot": "Pilot",
+                "commander": "Kumandan",
+                "scientist": "Bilim adamı",
+                "doctor": "Doktor",
+                "space tourist": "Uzay turisti"
+            },
+            "submarine": {
+                "cook": "Şef",
+                "commander": "Kumandan",
+                "sonar technician": "Sonar teknisyeni",
+                "electronics technician": "Elektrik teknisyeni",
+                "radioman": "Radyo operatörü",
+                "navigator": "Rotacı",
+                "sailor": "Denizci"
+            },
+            "supermarket": {
+                "cashier": "Kasiyer",
+                "butcher": "Kasap",
+                "janitor": "Temizlikçi",
+                "security guard": "Güvenlik görevlisi",
+                "food sample demonstrator": "Stand sorumlusu",
+                "shelf stocker": "Raf düzenleyicisi",
+                "customer": "Müşteri"
+            },
+            "theater": {
+                "coat check lady": "Vestiyer",
+                "prompter": "Suflör",
+                "cashier": "Kasiyer",
+                "director": "Direkör",
+                "actor": "Aktör",
+                "crew man": "Sahne görevlisi",
+                "audience member": "Seyirci"
+            },
+            "university": {
+                "graduate student": "Üniversite mezunu",
+                "professor": "Profesör",
+                "dean": "Dekan",
+                "psychologist": "Psikolojist",
+                "maintenance man": "Tamirci",
+                "janitor": "Temizlikçi",
+                "student": "Öğrenci"
+            },
+            "world war ii squad": {
+                "resistance fighter": "Direnişçi",
+                "radioman": "Radyo operatörü",
+                "scout": "İzci",
+                "medic": "Doktor",
+                "cook": "Şef",
+                "imprisoned nazi": "Tutsak Nazi",
+                "soldier": "Asker"
+            }
+        }
+    }
+}
