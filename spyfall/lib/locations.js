@@ -211,7 +211,7 @@ locations = [
       'locations.roles.polar station.biologist',
       'locations.roles.polar station.radioman',
       'locations.roles.polar station.hydrologist',
-      'locations.roles.polar station.meteorologist',,
+      'locations.roles.polar station.meteorologist',
       'locations.roles.polar station.geologist'
     ]
   },
