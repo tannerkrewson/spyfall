@@ -1,3 +1,4 @@
 .DS_Store
 spyfall/settings/production.json
+spyfall/settings/production2.json
 spyfall/settings/dev.json

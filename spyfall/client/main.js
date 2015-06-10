@@ -263,6 +263,12 @@ Template.startMenu.events({
   }
 });
 
+Template.startMenu.helpers({
+  alternativeURL: function() {
+    return Meteor.settings.public.alternative;
+  }
+});
+
 Template.startMenu.rendered = function () {
   GAnalytics.pageview("/");
 
