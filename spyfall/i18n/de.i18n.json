@@ -22,7 +22,7 @@
         "back": "Zurück",
         "enter an access code": "Gib einen Zugangscode ein",
         "invalid access code": "Ungültiger Zugangscode",
-        "join": "Beitreten",
+        "join": "Spiel beitreten",
         "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a>, entworfen von Alexandr Ushan, herausgegeben von <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>"
     },
     "locations": {
@@ -32,7 +32,7 @@
         "cathedral": "Kathedrale",
         "circus tent": "Zirkuszelt",
         "corporate party": "Firmenfeier",
-        "crusader army": "Mittelalterliches Heerlager",
+        "crusader army": "Heerlager in den Kreuzzügen",
         "casino": "Kasino",
         "day spa": "Wellness-Oase",
         "embassy": "Botschaft",
@@ -41,7 +41,7 @@
         "military base": "Militärbasis",
         "movie studio": "Filmstudio",
         "ocean liner": "Ozeandampfer",
-        "passenger train": "Eisenbahn",
+        "passenger train": "Passagierzug",
         "pirate ship": "Piratenschiff",
         "polar station": "Polarstation",
         "police station": "Polizeirevier",
