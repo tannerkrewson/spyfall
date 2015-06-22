@@ -58,7 +58,7 @@
             "airplane": {
                 "first class passenger": "Passager på 1. Klasse",
                 "air marshall": "Lufthavns Marskal",
-                "mechanic": "Mekaniker ",
+                "mechanic": "Flymekaniker ",
                 "air hostess": "Stewardesse",
                 "copilot": "Andenpilot",
                 "captain": "Kaptajn ",
@@ -66,11 +66,11 @@
             },
             "bank": {
                 "armored car driver": "Pansret Mandskabsvognsfører",
-                "manager": "Leder",
+                "manager": "Bankdirektør",
                 "consultant": "Konsulent ",
                 "robber": "Røver",
                 "security guard": "Sikkerhedsvagt",
-                "teller": "Fortæller",
+                "teller": "Bankassistent",
                 "customer": "Kunde "
             },
             "beach": {
@@ -104,14 +104,14 @@
                 "entertainer": "Entertainer ",
                 "manager": "Leder",
                 "unwanted guest": "Uønsket Gæst",
-                "owner": "Ejer ",
+                "owner": "Vært",
                 "secretary": "Sekretær ",
-                "delivery boy": "Buddreng",
+                "delivery boy": "Bud/Bydreng",
                 "accountant": "Revisor"
             },
             "crusader army": {
                 "monk": "Munk",
-                "imprisoned saracen": "Fængsled Saracener",
+                "imprisoned saracen": "Indespærret nazist ",
                 "servant": "Tjener ",
                 "bishop": "Biskop",
                 "squire": "Væbner",
@@ -122,7 +122,7 @@
                 "bartender": "Bartender ",
                 "head security guard": "Øverste Sikkerhedsvagt",
                 "bouncer": "Dørmand",
-                "manager": "Leder",
+                "manager": "Kasino Ejer",
                 "hustler": "Hustler",
                 "dealer": "Dealer",
                 "gambler": "Gambler "
@@ -141,7 +141,7 @@
                 "secretary": "Sekretær ",
                 "ambassador": "Ambassadør ",
                 "tourist": "Turist ",
-                "refugee": "Flygtning ",
+                "refugee": "Flygtning",
                 "diplomat": "Diplomat ",
                 "government official": "Embedsmand"
             },
@@ -149,7 +149,7 @@
                 "nurse": "Sygeplejerske",
                 "doctor": "Læge ",
                 "anesthesiologist": "Narkoselæge",
-                "intern": "Praktikant ",
+                "intern": "Elev",
                 "therapist": "Terapeut ",
                 "surgeon": "Kirurg",
                 "patient": "Patient "
@@ -157,10 +157,10 @@
             "hotel": {
                 "doorman": "Dørmand ",
                 "security guard": "Sikkerhedsvagt",
-                "manager": "Manager",
+                "manager": "Hotel Manager",
                 "housekeeper": "Husholderske ",
                 "bartender": "Bartender ",
-                "bellman": "Bellman",
+                "bellman": "Udråber",
                 "customer": "Kunde "
             },
             "military base": {
@@ -176,7 +176,7 @@
                 "stunt man": "Stuntmand ",
                 "sound engineer": "Lydtekniker",
                 "camera man": "Kameramand ",
-                "director": "Direktør ",
+                "director": "Instruktør",
                 "costume artist": "Kostume ekspert",
                 "producer": "Producer ",
                 "actor": "Skuespiller "
@@ -218,7 +218,7 @@
                 "geologist": "Geolog "
             },
             "police station": {
-                "detective": "Detektiv",
+                "detective": "Kriminalbetjent",
                 "lawyer": "Advokat ",
                 "journalist": "Journalist ",
                 "criminalist": "Kriminalist",
@@ -242,7 +242,7 @@
                 "janitor": "Pedel",
                 "cafeteria lady": "Kantinedame",
                 "maintenance man": "Vedligeholdelsesmand",
-                "student": "Student "
+                "student": "Elev"
             },
             "service station": {
                 "manager": "Manager",
@@ -251,13 +251,13 @@
                 "car owner": "Bil ejer ",
                 "car wash operator": "Bilvask operatør",
                 "electrician": "Elektriker",
-                "auto mechanic": "Automekaniker"
+                "auto mechanic": "Bilmekaniker"
             },
             "space station": {
                 "engineer": "Ingeniør ",
                 "alien": "Rumvæsen",
                 "pilot": "Pilot ",
-                "commander": "Kommandant ",
+                "commander": "Kommandør",
                 "scientist": "Videnskabsmand",
                 "doctor": "Læge ",
                 "space tourist": "Rumturist "
@@ -269,10 +269,10 @@
                 "electronics technician": "Elektronik tekniker",
                 "radioman": "Radiomand",
                 "navigator": "Navigatør ",
-                "sailor": "Sømand"
+                "sailor": "Matros"
             },
             "supermarket": {
-                "cashier": "Kasserer",
+                "cashier": "Kasseassistent",
                 "butcher": "Slagter ",
                 "janitor": "Pedel",
                 "security guard": "Sikkerhedsvagt",
@@ -284,7 +284,7 @@
                 "coat check lady": "Garderobe dame",
                 "prompter": "Sufflør",
                 "cashier": "Kasserer",
-                "director": "Direktør ",
+                "director": "Direktør",
                 "actor": "Skuespiller ",
                 "crew man": "Besætningsmedlem",
                 "audience member": "Publikum Medlem"
@@ -292,7 +292,7 @@
             "university": {
                 "graduate student": "Afgangselev",
                 "professor": "Professor",
-                "dean": "Domprovst",
+                "dean": "Fagrådsformand",
                 "psychologist": "Psykolog ",
                 "maintenance man": "Vedligeholdelsesmand",
                 "janitor": "Pedel ",
@@ -301,7 +301,7 @@
             "world war ii squad": {
                 "resistance fighter": "Modstandsmand",
                 "radioman": "Radiomand",
-                "scout": "Spejder",
+                "scout": "Rekognoscering",
                 "medic": "Feltlæge ",
                 "cook": "Kok ",
                 "imprisoned nazi": "Indespærret nazist ",
