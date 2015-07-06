@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "Üdvözöllek a Spyfallban",
+        "new game": "Új játék",
+        "join game": "Csatlakozás",
+        "waiting for players": "Várakozás a játékosokra...",
+        "access code": "Hozzáférési kód",
+        "join my spyfall game": "Csatlakozz a Spyfall játékomhoz!",
+        "start game": "Játék Indítása",
+        "leave game": "Játék Elhagyása",
+        "show hide": "mutat/elrejt",
+        "you are the spy": "Te vagy a kém!",
+        "you are not the spy": "<strong>Nem</strong> te vagy a kém!",
+        "the location": "A helyszín",
+        "your role": "A te szereped",
+        "players": "Játékosok",
+        "first": "<span>1.</span>",
+        "location reference": "Lehetséges Helyszínek",
+        "end game": "Játék Befejezése",
+        "enter your name": "Add meg a neved",
+        "create game": "Létrehoz",
+        "back": "Vissza",
+        "enter an access code": "Add meg a hozzáférési kódot",
+        "invalid access code": "Sajnáljuk, a megadott hozzáférési kóddal nem található játék!",
+        "join": "Csatlakozás",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfallt</a> tervezte: Alexandr Ushan. Közzétette: <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>"
+    },
+    "locations": {
+        "airplane": "Repülőgép",
+        "bank": "Bank",
+        "beach": "Strand",
+        "cathedral": "Katedrális",
+        "circus tent": "Cirkuszi Sátor",
+        "corporate party": "Vállalati Buli",
+        "crusader army": "Keresztes Hadsereg",
+        "casino": "Kaszinó",
+        "day spa": "Szépségszalon",
+        "embassy": "Nagykövetség",
+        "hospital": "Kórház",
+        "hotel": "Hotel",
+        "military base": "Katonai Bázis",
+        "movie studio": "Filmstúdió",
+        "ocean liner": "Tengerjáró",
+        "passenger train": "Személyvonat",
+        "pirate ship": "Kalózhajó",
+        "polar station": "Sarkköri Állomás",
+        "police station": "Rendőrörs",
+        "restaurant": "Étterem",
+        "school": "Iskola",
+        "service station": "Benzinkút",
+        "space station": "Űrállomás",
+        "submarine": "Tengeralattjáró",
+        "supermarket": "Bevásárlóközpont",
+        "theater": "Színház",
+        "university": "Egyetem",
+        "world war ii squad": "Második Világháborús Osztag",
+        "roles": {
+            "airplane": {
+                "first class passenger": "Első Osztályon Utazó Utas",
+                "air marshall": "Légi Marsall",
+                "mechanic": "Gépész",
+                "air hostess": "Légi Utas Kísérő",
+                "copilot": "Másodpilóta",
+                "captain": "Kapitány",
+                "economy class passenger": "Turista Osztályon Utazó Utas"
+            },
+            "bank": {
+                "armored car driver": "Páncélozott Jármű Sofőrje",
+                "manager": "Igazgató",
+                "consultant": "Konzulens",
+                "robber": "Bankrabló",
+                "security guard": "Biztonsági Őr",
+                "teller": "Bankpénztáros",
+                "customer": "Ügyfél"
+            },
+            "beach": {
+                "beach waitress": "Pincérnő",
+                "kite surfer": "Sárkányszörfös",
+                "lifeguard": "Életmentő",
+                "thief": "Zsebtolvaj",
+                "beach photographer": "Fényképész",
+                "ice cream truck driver": "Fagylaltos Bácsi",
+                "beach goer": "Strandoló"
+            },
+            "cathedral": {
+                "priest": "Pap",
+                "beggar": "Koldus",
+                "sinner": "Vétkező",
+                "tourist": "Turista",
+                "sponsor": "Kezes",
+                "chorister": "Kórista",
+                "parishioner": "Egyházközség Tagja"
+            },
+            "circus tent": {
+                "acrobat": "Artista",
+                "animal trainer": "Állatidomár",
+                "magician": "Bűvész",
+                "fire eater": "Tűznyelő",
+                "clown": "Bohóc",
+                "juggler": "Zsonglőr",
+                "visitor": "Látogató"
+            },
+            "corporate party": {
+                "entertainer": "Házigazda",
+                "manager": "Igazgató",
+                "unwanted guest": "Hívatlan Vendég",
+                "owner": "Tulajdonos",
+                "secretary": "Titkár",
+                "delivery boy": "Kifutó Fiú",
+                "accountant": "Könyvelő"
+            },
+            "crusader army": {
+                "monk": "Szerzetes",
+                "imprisoned saracen": "Bebörtönzött Szaracén",
+                "servant": "Szolga",
+                "bishop": "Püspök",
+                "squire": "Földesúr",
+                "archer": "Íjász",
+                "knight": "Lovag"
+            },
+            "casino": {
+                "bartender": "Csapos",
+                "head security guard": "Biztonsági Főnök",
+                "bouncer": "Kidobófiú",
+                "manager": "Igazgató",
+                "hustler": "Szélhámos",
+                "dealer": "Osztó",
+                "gambler": "Szerencsjátékos"
+            },
+            "day spa": {
+                "stylist": "Fodrász",
+                "masseuse": "Masszőr",
+                "manicurist": "Manikűrös",
+                "makeup artist": "Sminkes",
+                "dermatologist": "Bőrgyógyász",
+                "beautician": "Kozmetikus",
+                "customer": "Vendég"
+            },
+            "embassy": {
+                "security guard": "Biztonsági Őr",
+                "secretary": "Titkár",
+                "ambassador": "Nagykövet",
+                "tourist": "Turista",
+                "refugee": "Refugee",
+                "diplomat": "Menekült",
+                "government official": "Kormányhivatalnok"
+            },
+            "hospital": {
+                "nurse": "Nővér",
+                "doctor": "Orvos",
+                "anesthesiologist": "Aneszteziológus",
+                "intern": "Segédorvos",
+                "therapist": "Terapeuta",
+                "surgeon": "Sebész",
+                "patient": "Páciens"
+            },
+            "hotel": {
+                "doorman": "Portás",
+                "security guard": "Biztonsági Őr",
+                "manager": "Igazgató",
+                "housekeeper": "Takarító",
+                "bartender": "Csapos",
+                "bellman": "Éjjeliőr",
+                "customer": "Vendég"
+            },
+            "military base": {
+                "deserter": "Szökevény",
+                "colonel": "Ezredes",
+                "medic": "Szanitéc",
+                "sniper": "Mesterlövész",
+                "officer": "Tiszt",
+                "tank engineer": "Tank Gépész",
+                "soldier": "Katona"
+            },
+            "movie studio": {
+                "stunt man": "Kaszkadőr",
+                "sound engineer": "Hangmérnök",
+                "camera man": "Operatőr",
+                "director": "Rendező",
+                "costume artist": "Jelmeztervező",
+                "producer": "Producer",
+                "actor": "Színész"
+            },
+            "ocean liner": {
+                "cook": "Séf",
+                "captain": "Kapitány",
+                "bartender": "Csapos",
+                "musician": "Zenész",
+                "waiter": "Pincér",
+                "mechanic": "Gépész",
+                "rich passenger": "Gazdag Utas"
+            },
+            "passenger train": {
+                "mechanic": "Gépész",
+                "border patrol": "Határőr",
+                "train attendant": "Vonatkísérő",
+                "restaurant chef": "Séf",
+                "train driver": "Mozdonyvezető",
+                "stoker": "Kazángépész",
+                "passenger": "Utas"
+            },
+            "pirate ship": {
+                "cook": "Séf",
+                "slave": "Rabszolga",
+                "cannoneer": "Ágyúkezelő",
+                "tied up prisoner": "Kikötözött Fogoly",
+                "cabin boy": "Inasfiú",
+                "brave captain": "Merész Kapitány",
+                "sailor": "Matróz"
+            },
+            "polar station": {
+                "medic": "Orvos",
+                "expedition leader": "Expedíció Vezető",
+                "biologist": "Biológus",
+                "radioman": "Rádiókezelő",
+                "hydrologist": "Hidrológus",
+                "meteorologist": "Meteorológus",
+                "geologist": "Geológus"
+            },
+            "police station": {
+                "detective": "Detektív",
+                "lawyer": "Ügyvéd",
+                "journalist": "Újságíró",
+                "criminalist": "Büntetőjogász",
+                "archivist": "Levéltáros",
+                "criminal": "Bűnöző",
+                "patrol officer": "Járőr"
+            },
+            "restaurant": {
+                "musician": "Zenész",
+                "bouncer": "Kidobófiú",
+                "hostess": "Hostess",
+                "head chef": "Főszakács",
+                "food critic": "Ételkritikus",
+                "waiter": "Pincér",
+                "customer": "Vendég"
+            },
+            "school": {
+                "gym teacher": "Tesitanár",
+                "principal": "Igazgató",
+                "security guard": "Biztonsági Őr",
+                "janitor": "Gondnok",
+                "cafeteria lady": "Menzás Néni",
+                "maintenance man": "Karbantartó",
+                "student": "Diák"
+            },
+            "service station": {
+                "manager": "Igazgató",
+                "tire specialist": "Gumi Specialista",
+                "biker": "Motoros",
+                "car owner": "Autó Tulajdonos",
+                "car wash operator": "Autótisztító Üzemeltető",
+                "electrician": "Villanyszerelő",
+                "auto mechanic": "Autószerelő"
+            },
+            "space station": {
+                "engineer": "Mérnök",
+                "alien": "Űrlény",
+                "pilot": "Pilóta",
+                "commander": "Parancsnok",
+                "scientist": "Tudós",
+                "doctor": "Orvos",
+                "space tourist": "Űrturista"
+            },
+            "submarine": {
+                "cook": "Séf",
+                "commander": "Parancsnok",
+                "sonar technician": "Hanglokátor Technikus",
+                "electronics technician": "Műszerész",
+                "radioman": "Rádiókezelő",
+                "navigator": "Navigátor",
+                "sailor": "Tengerész"
+            },
+            "supermarket": {
+                "cashier": "Pénztáros",
+                "butcher": "Hentes",
+                "janitor": "Takarító",
+                "security guard": "Biztonsági Őr",
+                "food sample demonstrator": "Élelmiszerminta Demonstrátor",
+                "shelf stocker": "Árufeltöltő",
+                "customer": "Vásárló"
+            },
+            "theater": {
+                "coat check lady": "Ruhatáros Hölgy",
+                "prompter": "Súgó",
+                "cashier": "Pénztáros",
+                "director": "Rendező",
+                "actor": "Színész",
+                "crew man": "Kellékes",
+                "audience member": "Közönség Tagja"
+            },
+            "university": {
+                "graduate student": "Végzős Hallgató",
+                "professor": "Professzor",
+                "dean": "Dékán",
+                "psychologist": "Pszichológus",
+                "maintenance man": "Karbantartó",
+                "janitor": "Gondnok",
+                "student": "Hallgató"
+            },
+            "world war ii squad": {
+                "resistance fighter": "Ellenállás Tagja",
+                "radioman": "Rádiókezelő",
+                "scout": "Felderítő",
+                "medic": "Szanitéc",
+                "cook": "Séf",
+                "imprisoned nazi": "Foglyul Ejtett Náci",
+                "soldier": "Katona"
+            }
+        }
+    }
+}
