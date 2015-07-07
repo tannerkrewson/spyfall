@@ -49,6 +49,12 @@ function getLanguageList() {
       selected = "selected";
     }
 
+    // Gujarati isn't handled automatically by tap-i18n,
+    // so we need to set the language name manually
+    if (value.name == "gu"){
+        value.name = "ગુજરાતી";
+    }
+
     return {
       code: key,
       selected: selected,
