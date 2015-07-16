@@ -218,12 +218,34 @@ function leaveGame () {
   Session.set("playerID", null);
 }
 
+function hasHistoryApi () {
+  return !!(window.history && window.history.pushState);
+}
+
 initUserLanguage();
 
 Meteor.setInterval(function () {
   Session.set('time', new Date());
 }, 1000);
 
+if (hasHistoryApi()){
+  function trackUrlState () {
+    var accessCode = null;
+    var game = getCurrentGame();
+    if (game){
+      accessCode = game.accessCode;
+    } else {
+      accessCode = Session.get('urlAccessCode');
+    }
+    
+    var currentURL = '/';
+    if (accessCode){
+      currentURL += accessCode+'/';
+    }
+    window.history.pushState(null, null, currentURL);
+  }
+  Tracker.autorun(trackUrlState);
+}
 Tracker.autorun(trackGameState);
 
 FlashMessages.configure({
@@ -347,6 +369,7 @@ Template.joinGame.events({
         Meteor.subscribe('players', game._id);
         player = generateNewPlayer(game, playerName);
 
+        Session.set('urlAccessCode', null);
         Session.set("gameID", game._id);
         Session.set("playerID", player._id);
         Session.set("currentView", "lobby");
@@ -359,6 +382,7 @@ Template.joinGame.events({
     return false;
   },
   'click .btn-back': function () {
+    Session.set('urlAccessCode', null);
     Session.set("currentView", "startMenu");
     return false;
   }
@@ -380,7 +404,6 @@ Template.joinGame.rendered = function (event) {
     $("#access-code").val(urlAccessCode);
     $("#access-code").hide();
     $("#player-name").focus();
-    Session.set('urlAccessCode', null);
   } else {
     $("#access-code").focus();
   }
