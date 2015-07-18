@@ -49,7 +49,7 @@
         "school": "School",
         "service station": "Garage",
         "space station": "Ruimtestation",
-        "submarine": "Onderzeeër",
+        "submarine": "Duikboot",
         "supermarket": "Supermarkt",
         "theater": "Theater",
         "university": "Universiteit",
@@ -57,7 +57,7 @@
         "roles": {
             "airplane": {
                 "first class passenger": "Passagier in eerste klasse",
-                "air marshall": "Air marshal",
+                "air marshall": "Vluchtbegeleider",
                 "mechanic": "Mecanicien",
                 "air hostess": "Stewardess",
                 "copilot": "Co-piloot",
@@ -65,7 +65,7 @@
                 "economy class passenger": "Passagier in tweede klasse"
             },
             "bank": {
-                "armored car driver": "Tankbestuurder",
+                "armored car driver": "Gepantserde auto bestuurder",
                 "manager": "Manager",
                 "consultant": "Adviseur",
                 "robber": "Overvaller",
@@ -74,7 +74,7 @@
                 "customer": "Klant"
             },
             "beach": {
-                "beach waitress": "Strandserveuse",
+                "beach waitress": "Strand serveerster",
                 "kite surfer": "Kitesurfer",
                 "lifeguard": "Redder",
                 "thief": "Dief",
@@ -222,7 +222,7 @@
                 "lawyer": "Advocaat",
                 "journalist": "Journalist",
                 "criminalist": "Criminiloog",
-                "archivist": "Archivaris",
+                "archivist": "Archivist",
                 "criminal": "Misdadiger",
                 "patrol officer": "Politieagent"
             },
@@ -249,7 +249,7 @@
                 "tire specialist": "Bandenspecialist",
                 "biker": "Motorrijder",
                 "car owner": "Auto-eigenaar",
-                "car wash operator": "Carwash operator",
+                "car wash operator": "Carwash bediende",
                 "electrician": "Elektricien",
                 "auto mechanic": "Automonteur"
             },
