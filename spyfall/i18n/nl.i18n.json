@@ -22,7 +22,7 @@
         "back": "Terug",
         "enter an access code": "Toegangscode",
         "invalid access code": "Jammer, er werd geen spel gevonden met deze toegangscode!",
-        "join": "Vervoeg dit spel",
+        "join": "Meedoen",
         "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a> ontworpen door Alexandr Ushan, uitgegeven door <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>"
     },
     "locations": {
@@ -61,7 +61,7 @@
                 "mechanic": "Mecanicien",
                 "air hostess": "Stewardess",
                 "copilot": "Co-piloot",
-                "captain": "Kapitein",
+                "captain": "Captain",
                 "economy class passenger": "Passagier in tweede klasse"
             },
             "bank": {
@@ -70,20 +70,20 @@
                 "consultant": "Adviseur",
                 "robber": "Overvaller",
                 "security guard": "Bewaker",
-                "teller": "Bediende",
+                "teller": "Kassier",
                 "customer": "Klant"
             },
             "beach": {
                 "beach waitress": "Strand serveerster",
                 "kite surfer": "Kitesurfer",
-                "lifeguard": "Redder",
+                "lifeguard": "Strandwacht",
                 "thief": "Dief",
                 "beach photographer": "Strandfotograaf",
                 "ice cream truck driver": "Bestuurder van de ijsco-kar",
                 "beach goer": "Strandganger"
             },
             "cathedral": {
-                "priest": "Pastoor",
+                "priest": "Priester",
                 "beggar": "Bedelaar",
                 "sinner": "Zondaar",
                 "tourist": "Toerist",
@@ -95,7 +95,7 @@
                 "acrobat": "Acrobaat",
                 "animal trainer": "Dierentemmer",
                 "magician": "Goochelaar",
-                "fire eater": "Vuureter",
+                "fire eater": "Vuurvreter",
                 "clown": "Clown",
                 "juggler": "Jongleur",
                 "visitor": "Bezoeker"
@@ -121,7 +121,7 @@
             "casino": {
                 "bartender": "Barman",
                 "head security guard": "Hoofdbewaker",
-                "bouncer": "Buitenwipper",
+                "bouncer": "Uitsmijter",
                 "manager": "Manager",
                 "hustler": "Beroepsgokker",
                 "dealer": "Dealer",
@@ -131,7 +131,7 @@
                 "stylist": "Stylist",
                 "masseuse": "Masseuse",
                 "manicurist": "Manicuriste",
-                "makeup artist": "Maquilleuse",
+                "makeup artist": "Visagiste",
                 "dermatologist": "Dermatoloog",
                 "beautician": "Schoonheidsspecialist",
                 "customer": "Klant"
@@ -192,9 +192,9 @@
             },
             "passenger train": {
                 "mechanic": "Mechanicien",
-                "border patrol": "Grenscontroleur",
-                "train attendant": "Treinbegeleider",
-                "restaurant chef": "Chef-kok",
+                "border patrol": "Grenswacht",
+                "train attendant": "Steward",
+                "restaurant chef": "Chef-kok restaurant",
                 "train driver": "Treinbestuurder",
                 "stoker": "Stoker",
                 "passenger": "Passagier"
@@ -221,14 +221,14 @@
                 "detective": "Rechercheur",
                 "lawyer": "Advocaat",
                 "journalist": "Journalist",
-                "criminalist": "Criminiloog",
+                "criminalist": "Criminoloog",
                 "archivist": "Archivist",
                 "criminal": "Misdadiger",
                 "patrol officer": "Politieagent"
             },
             "restaurant": {
                 "musician": "Muzikant",
-                "bouncer": "Buitenwipper",
+                "bouncer": "Uitsmijter",
                 "hostess": "Gastvrouw",
                 "head chef": "Chef-kok",
                 "food critic": "Culinair recensent",
@@ -240,9 +240,9 @@
                 "principal": "Schoolhoofd",
                 "security guard": "Bewaker",
                 "janitor": "Conciërge",
-                "cafeteria lady": "Lunchdame",
+                "cafeteria lady": "Kantinedame",
                 "maintenance man": "Klusjesman",
-                "student": "Student"
+                "student": "Leerling"
             },
             "service station": {
                 "manager": "Manager",
@@ -272,18 +272,18 @@
                 "sailor": "Matroos"
             },
             "supermarket": {
-                "cashier": "Kassierster",
+                "cashier": "Kassière",
                 "butcher": "Slager",
                 "janitor": "Conciërge",
                 "security guard": "Bewaker",
                 "food sample demonstrator": "Proevertjes assistent",
-                "shelf stocker": "Rekkenvuller",
+                "shelf stocker": "Vakkenvuller",
                 "customer": "Klant"
             },
             "theater": {
                 "coat check lady": "Vestiairedame",
                 "prompter": "Souffleur",
-                "cashier": "Kassierster",
+                "cashier": "Kassière",
                 "director": "Regisseur",
                 "actor": "Acteur",
                 "crew man": "Toneelknecht",
