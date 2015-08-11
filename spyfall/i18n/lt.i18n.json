@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "Sveiki atvykę į Spyfall",
+        "new game": "Naujas žaidimas",
+        "join game": "Prisijungti į žaidimą",
+        "waiting for players": "Laukiama žaidėjų...",
+        "access code": "Prisijungimo kodas",
+        "join my spyfall game": "Prisijunk į mano Spyfall žaidimą!",
+        "start game": "Pradėti žaidimą",
+        "leave game": "Išeiti iš žaidimo",
+        "show hide": "rodyti/slėpti",
+        "you are the spy": "Tu esi šnipas!",
+        "you are not the spy": "Tu <strong>nesi</strong> šnipas!",
+        "the location": "Vieta",
+        "your role": "Tavo vaidmuo",
+        "players": "Žaidėjai",
+        "first": "1<span>-mas</span>",
+        "location reference": "Galimos vietos",
+        "end game": "Pabaigti žaidimą",
+        "enter your name": "Įvesk savo vardą",
+        "create game": "Sukurti",
+        "back": "Grįžti",
+        "enter an access code": "įvesk prisijungimo kodą",
+        "invalid access code": "Atleiskite, nerastas nė vienas žaidimas su nurodytu prisijungimo kodu",
+        "join": "Prisijungti",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a> designed by Alexandr Ushan, published by <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>"
+    },
+    "locations": {
+        "airplane": "Lėktuvas",
+        "bank": "Bankas",
+        "beach": "Paplūdimys",
+        "cathedral": "Katedra",
+        "circus tent": "Cirko palapinė",
+        "corporate party": "Įmonės vakarėlis",
+        "crusader army": "Kryžiuočių armija",
+        "casino": "Kazino",
+        "day spa": "Dienos spa centras",
+        "embassy": "Ambasada",
+        "hospital": "Ligoninė",
+        "hotel": "Viešbutis",
+        "military base": "Kariuomenės bazė",
+        "movie studio": "Kino studija",
+        "ocean liner": "Transatlantinis laivas",
+        "passenger train": "Keleivinis traukinys",
+        "pirate ship": "Piratų laivas",
+        "polar station": "Poliarinė stotis",
+        "police station": "Policijos nuovada",
+        "restaurant": "Restoranas",
+        "school": "Mokykla",
+        "service station": "Degalinė",
+        "space station": "Kosminė stotis",
+        "submarine": "Povandeninis laivas",
+        "supermarket": "Prekybos centras",
+        "theater": "Teatras",
+        "university": "Universitetas",
+        "world war ii squad": "Antrojo pasaulinio karo burys",
+        "roles": {
+            "airplane": {
+                "first class passenger": "Pirmos klasės keleivis",
+                "air marshall": "Oro maršalas",
+                "mechanic": "Mechanikas",
+                "air hostess": "Stiuardesė",
+                "copilot": "Antrasis pilotas",
+                "captain": "Kapitonas",
+                "economy class passenger": "Ekoniminės klasės keleivis"
+            },
+            "bank": {
+                "armored car driver": "Šarvuočio vairuotojas",
+                "manager": "Vadybininkas",
+                "consultant": "Konsultantas",
+                "robber": "Plėšikas",
+                "security guard": "Apsaugininkas",
+                "teller": "Kasininkas",
+                "customer": "Klientas"
+            },
+            "beach": {
+                "beach waitress": "Paplūdimio padavėja/pardavėja",
+                "kite surfer": "Jėgos aitvarų sportininkas",
+                "lifeguard": "Gelbėtojas",
+                "thief": "Vagis",
+                "beach photographer": "Paplūdimio fotografas",
+                "ice cream truck driver": "Ledu furgoniuko vairuotojas",
+                "beach goer": "Dažnas paplūdimio lankytojas"
+            },
+            "cathedral": {
+                "priest": "Kunigas",
+                "beggar": "Elgeta",
+                "sinner": "Nusidėjėlis",
+                "tourist": "Turistas",
+                "sponsor": "Rėmėjas",
+                "chorister": "Chorvedys",
+                "parishioner": "Parapijietis"
+            },
+            "circus tent": {
+                "acrobat": "Akrobatas",
+                "animal trainer": "Gyvūnų dresuotojas",
+                "magician": "Magas",
+                "fire eater": "Ugnies rijikas",
+                "clown": "Klounas",
+                "juggler": "Žonglierius",
+                "visitor": "Lankytojas"
+            },
+            "corporate party": {
+                "entertainer": "Linksmintojas",
+                "manager": "Vadybininkas",
+                "unwanted guest": "Nekviestas svečias",
+                "owner": "Savininkas",
+                "secretary": "Sekretorė",
+                "delivery boy": "Kurjeris",
+                "accountant": "Buhalteris"
+            },
+            "crusader army": {
+                "monk": "Vienuolis",
+                "imprisoned saracen": "Įkalintas musulmonas",
+                "servant": "Tarnas",
+                "bishop": "Vyskupas",
+                "squire": "Ginklanešys",
+                "archer": "Lankininkas",
+                "knight": "Riteris"
+            },
+            "casino": {
+                "bartender": "Barmenas",
+                "head security guard": "Apsaugos vadas",
+                "bouncer": "Kietas apsauginis",
+                "manager": "Vadybininkas",
+                "hustler": "Sukčius",
+                "dealer": "Dalintojas",
+                "gambler": "Lošėjas"
+            },
+            "day spa": {
+                "stylist": "Stilistas",
+                "masseuse": "Masažistė",
+                "manicurist": "Manikiūristas",
+                "makeup artist": "Makiažistas",
+                "dermatologist": "Dermatologas",
+                "beautician": "Kosmetologas",
+                "customer": "Klientas"
+            },
+            "embassy": {
+                "security guard": "Apsaugininkas",
+                "secretary": "Sekretorė",
+                "ambassador": "Ambasadorius",
+                "tourist": "Turistas",
+                "refugee": "Pabėgėlis",
+                "diplomat": "Diplomatas",
+                "government official": "Vyriausybės darbuotojas"
+            },
+            "hospital": {
+                "nurse": "Slaugytoja",
+                "doctor": "Daktaras",
+                "anesthesiologist": "Anesteziologas",
+                "intern": "Praktikantas",
+                "therapist": "Terapistas",
+                "surgeon": "Chirurgas",
+                "patient": "Pacientas"
+            },
+            "hotel": {
+                "doorman": "Durininkas",
+                "security guard": "Apsaugininkas",
+                "manager": "Vadybininkas",
+                "housekeeper": "Kambarinė",
+                "bartender": "Barmenas",
+                "bellman": "Portjė",
+                "customer": "Klienas"
+            },
+            "military base": {
+                "deserter": "Dezertyras",
+                "colonel": "Pulkininkas",
+                "medic": "Medikas",
+                "sniper": "Snaiperis",
+                "officer": "Karininkas",
+                "tank engineer": "Tankų inžinierius",
+                "soldier": "Karys"
+            },
+            "movie studio": {
+                "stunt man": "Kaskadininkas",
+                "sound engineer": "Garso inžinierius",
+                "camera man": "Operatorius",
+                "director": "Režisierius",
+                "costume artist": "Kostiumininkas",
+                "producer": "Prodiuseris",
+                "actor": "Aktorius"
+            },
+            "ocean liner": {
+                "cook": "Virėjas",
+                "captain": "Kapitonas",
+                "bartender": "Barmenas",
+                "musician": "Muzikantas",
+                "waiter": "Padavėjas",
+                "mechanic": "Mechanikas",
+                "rich passenger": "Turtingas keleivis"
+            },
+            "passenger train": {
+                "mechanic": "Mechanikas",
+                "border patrol": "Pasienietis",
+                "train attendant": "Traukinio palydovas",
+                "restaurant chef": "Restorano šefas",
+                "train driver": "Traukinio mašinistas",
+                "stoker": "Krosniakūrys",
+                "passenger": "Keleivis"
+            },
+            "pirate ship": {
+                "cook": "Virėjas",
+                "slave": "Vergas",
+                "cannoneer": "Patrankininkas",
+                "tied up prisoner": "Surištas kalinys",
+                "cabin boy": "Junga",
+                "brave captain": "Drąsus kapitonas",
+                "sailor": "Jūreivis"
+            },
+            "polar station": {
+                "medic": "Medikas",
+                "expedition leader": "Ekspedicijos lyderis",
+                "biologist": "Biologas",
+                "radioman": "Radistas",
+                "hydrologist": "Hidrologas",
+                "meteorologist": "Meteorologas",
+                "geologist": "Geologas"
+            },
+            "police station": {
+                "detective": "Detektyvas",
+                "lawyer": "Advokatas",
+                "journalist": "Žurnalistas",
+                "criminalist": "Kriminalistas",
+                "archivist": "Archyvo darbuotojas",
+                "criminal": "Nusikaltėlis",
+                "patrol officer": "Patrulis"
+            },
+            "restaurant": {
+                "musician": "Muzikantas",
+                "bouncer": "Kietas apsauginis",
+                "hostess": "Palydovė",
+                "head chef": "Vyriausiasis šefas",
+                "food critic": "Maisto kritikas",
+                "waiter": "Padavėjas",
+                "customer": "Klientas"
+            },
+            "school": {
+                "gym teacher": "Sporto salės mokytojas",
+                "principal": "Direktorius",
+                "security guard": "Apsaugininkas",
+                "janitor": "Valytojas",
+                "cafeteria lady": "Kavinės darbuotoja",
+                "maintenance man": "Ūkio darbuotojas",
+                "student": "Studentas"
+            },
+            "service station": {
+                "manager": "Vadybininkas",
+                "tire specialist": "Padangų specialistas",
+                "biker": "Baikeris",
+                "car owner": "Automobilio savininkas",
+                "car wash operator": "Mašinų plovyklos operatorius",
+                "electrician": "Elektrikas",
+                "auto mechanic": "Automechanikas"
+            },
+            "space station": {
+                "engineer": "Inžinierius",
+                "alien": "Ateivis",
+                "pilot": "Pilotas",
+                "commander": "Vadas",
+                "scientist": "Mokslininkas",
+                "doctor": "Daktaras",
+                "space tourist": "Kosmoso turistas"
+            },
+            "submarine": {
+                "cook": "Virėjas",
+                "commander": "Vadas",
+                "sonar technician": "Sonaro technikas",
+                "electronics technician": "Elektros technikas",
+                "radioman": "Radistas",
+                "navigator": "Navigatorius",
+                "sailor": "Jūreivis"
+            },
+            "supermarket": {
+                "cashier": "Kasininkas",
+                "butcher": "Mėsininkas",
+                "janitor": "Valytojas",
+                "security guard": "Apsaugininkas",
+                "food sample demonstrator": "Maisto pavyzdžių pristatinėtojas",
+                "shelf stocker": "Salės darbuotojas",
+                "customer": "Pirkėjas"
+            },
+            "theater": {
+                "coat check lady": "Rūbininkė",
+                "prompter": "Sufleris",
+                "cashier": "Kasininkas",
+                "director": "Režisierius",
+                "actor": "Aktorius",
+                "crew man": "Personalo žmogus",
+                "audience member": "Auditorijos narys"
+            },
+            "university": {
+                "graduate student": "Absolventas",
+                "professor": "Profesorius",
+                "dean": "Dekanas",
+                "psychologist": "Psichologas",
+                "maintenance man": "Ūkio darbuotojas",
+                "janitor": "Valytojas",
+                "student": "Studentas"
+            },
+            "world war ii squad": {
+                "resistance fighter": "Sukilėlis",
+                "radioman": "Radistas",
+                "scout": "Žvalgas",
+                "medic": "Medikas",
+                "cook": "Virėjas",
+                "imprisoned nazi": "Įkalintas nacis",
+                "soldier": "Karys"
+            }
+        }
+    }
+}
