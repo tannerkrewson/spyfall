@@ -353,6 +353,10 @@ Template.joinGame.events({
     var accessCode = event.target.accessCode.value;
     var playerName = event.target.playerName.value;
 
+    if (!playerName) {
+      return false;
+    }
+
     accessCode = accessCode.trim();
     accessCode = accessCode.toLowerCase();
 
