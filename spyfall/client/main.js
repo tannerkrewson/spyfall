@@ -31,7 +31,7 @@ function setUserLanguage(language) {
 
 function getLanguageDirection() {
   var language = getUserLanguage()
-  var rtlLanguages = ['he'];
+  var rtlLanguages = ['he', 'ar'];
 
   if ($.inArray(language, rtlLanguages) !== -1) {
     return 'rtl';
