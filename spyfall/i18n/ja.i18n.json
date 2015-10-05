@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "Spyfall へようこそ",
+        "new game": "ゲーム作成",
+        "join game": "ゲームに参加",
+        "waiting for players": "プレーヤー待機中",
+        "access code": "ゲームコード",
+        "join my spyfall game": "一緒にSpyfallをやりましょう！",
+        "start game": "ゲーム開始",
+        "leave game": "ゲームから抜ける",
+        "show hide": "開く・閉じる",
+        "you are the spy": "あなたはスパイです！",
+        "you are not the spy": "あなたはスパイではありません！",
+        "the location": "現在地",
+        "your role": "役割",
+        "players": "プレーヤー",
+        "first": "1<span>番</span>",
+        "location reference": "場所参照",
+        "end game": "ゲームを終了",
+        "enter your name": "ネームを入力してください",
+        "create game": "作成",
+        "back": "戻る",
+        "enter an access code": "ゲームコード",
+        "invalid access code": "入力したコードは登録されていません。改めて入力してください。",
+        "join": "入場",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall（スパイフォール）</a>は、Alexandr Ushanにデザインされ、<a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>に出版されております。"
+    },
+    "locations": {
+        "airplane": "飛行機",
+        "bank": "銀行",
+        "beach": "海辺",
+        "cathedral": "大聖堂",
+        "circus tent": "サーカス",
+        "corporate party": "企業の打ち上げ",
+        "crusader army": "十字軍",
+        "casino": "カジノ",
+        "day spa": "温泉",
+        "embassy": "大使館",
+        "hospital": "病院",
+        "hotel": "ホテル",
+        "military base": "軍基地",
+        "movie studio": "映画撮影所",
+        "ocean liner": "巡航客船",
+        "passenger train": "旅客列車",
+        "pirate ship": "海賊船",
+        "polar station": "南極基地",
+        "police station": "交番",
+        "restaurant": "レストラン",
+        "school": "学校",
+        "service station": "ガソリンスタンド",
+        "space station": "宇宙基地",
+        "submarine": "潜水艦",
+        "supermarket": "スーパー",
+        "theater": "劇場",
+        "university": "大学",
+        "world war ii squad": "第二次世界大戦兵軍隊",
+        "roles": {
+            "airplane": {
+                "first class passenger": "ファーストクラス乗客",
+                "air marshall": "空軍中将",
+                "mechanic": "整備士",
+                "air hostess": "エアホステス",
+                "copilot": "副操縦士",
+                "captain": "キャプテン",
+                "economy class passenger": "エコノミー乗客"
+            },
+            "bank": {
+                "armored car driver": "装甲車操縦者",
+                "manager": "マネージャー",
+                "consultant": "コンサルタント",
+                "robber": "泥簿",
+                "security guard": "警備員",
+                "teller": "講座係り",
+                "customer": "客"
+            },
+            "beach": {
+                "beach waitress": "ビキニウェイトレス",
+                "kite surfer": "サーファー",
+                "lifeguard": "ライフセービング",
+                "thief": "泥簿",
+                "beach photographer": "写真家",
+                "ice cream truck driver": "アイスクリームトラックドライバー",
+                "beach goer": "海辺に行く人"
+            },
+            "cathedral": {
+                "priest": "神父",
+                "beggar": "乞食",
+                "sinner": "罪人",
+                "tourist": "観光客",
+                "sponsor": "後援者",
+                "chorister": "聖歌隊員",
+                "parishioner": "檀徒"
+            },
+            "circus tent": {
+                "acrobat": "曲芸氏",
+                "animal trainer": "猛獣使い",
+                "magician": "魔法使い",
+                "fire eater": "火を食べるふりをする曲芸師",
+                "clown": "ピエロ",
+                "juggler": "手品師",
+                "visitor": "来客者"
+            },
+            "corporate party": {
+                "entertainer": "芸能人",
+                "manager": "マネージャー",
+                "unwanted guest": "もてない客",
+                "owner": "オーナー",
+                "secretary": "秘書",
+                "delivery boy": "配達少年",
+                "accountant": "会計士"
+            },
+            "crusader army": {
+                "monk": "坊さん",
+                "imprisoned saracen": "囚われたサラセン人",
+                "servant": "奴隷",
+                "bishop": "司教",
+                "squire": "エスクワイア",
+                "archer": "アーチャー",
+                "knight": "騎士"
+            },
+            "casino": {
+                "bartender": "バーテンダー",
+                "head security guard": "警備長",
+                "bouncer": "用心棒",
+                "manager": "マネージャー",
+                "hustler": "ハスラー",
+                "dealer": "ディーラー",
+                "gambler": "賭博師"
+            },
+            "day spa": {
+                "stylist": "スタイリスト",
+                "masseuse": "マッサージ師",
+                "manicurist": "マニキュア師",
+                "makeup artist": "ヘアメークアーティスト",
+                "dermatologist": "皮膚病学者",
+                "beautician": "美容師",
+                "customer": "客"
+            },
+            "embassy": {
+                "security guard": "警備員",
+                "secretary": "秘書",
+                "ambassador": "アンバサダー",
+                "tourist": "観光客",
+                "refugee": "難民",
+                "diplomat": "外交家",
+                "government official": "政府職員"
+            },
+            "hospital": {
+                "nurse": "看護師",
+                "doctor": "医者",
+                "anesthesiologist": "麻酔科医",
+                "intern": "インターン",
+                "therapist": "療法士",
+                "surgeon": "外科医",
+                "patient": "患者"
+            },
+            "hotel": {
+                "doorman": "門番",
+                "security guard": "警備員",
+                "manager": "マネージャー",
+                "housekeeper": "家政婦",
+                "bartender": "バーテンダー",
+                "bellman": "ベルマン",
+                "customer": "客"
+            },
+            "military base": {
+                "deserter": "逃亡者",
+                "colonel": "大佐",
+                "medic": "看護卒",
+                "sniper": "スナイパー",
+                "officer": "士官",
+                "tank engineer": "戦車のエンジニア",
+                "soldier": "兵士"
+            },
+            "movie studio": {
+                "stunt man": "スーツアクター",
+                "sound engineer": "音響技師",
+                "camera man": "カメラマン",
+                "director": "監督",
+                "costume artist": "衣裳デザイナー",
+                "producer": "プロデューサー",
+                "actor": "役者"
+            },
+            "ocean liner": {
+                "cook": "料理人",
+                "captain": "キャプテン",
+                "bartender": "バーテンダー",
+                "musician": "音楽家",
+                "waiter": "ウェイター",
+                "mechanic": "整備士",
+                "rich passenger": "お金持ちの乗客"
+            },
+            "passenger train": {
+                "mechanic": "整備士",
+                "border patrol": "国境警備隊",
+                "train attendant": "乗務員",
+                "restaurant chef": "レストラン料理人",
+                "train driver": "運転士",
+                "stoker": "火夫",
+                "passenger": "乗客"
+            },
+            "pirate ship": {
+                "cook": "料理人",
+                "slave": "奴隷",
+                "cannoneer": "砲手",
+                "tied up prisoner": "縛られた犯罪者",
+                "cabin boy": "船室給仕",
+                "brave captain": "キャプテン",
+                "sailor": "船員"
+            },
+            "polar station": {
+                "medic": "看護卒",
+                "expedition leader": "遠征のリーダー",
+                "biologist": "生物化学者",
+                "radioman": "無電技師",
+                "hydrologist": "水文学者",
+                "meteorologist": "気象学者",
+                "geologist": "地質学者"
+            },
+            "police station": {
+                "detective": "探偵",
+                "lawyer": "弁護士",
+                "journalist": "ジャーナリスト",
+                "criminalist": "刑法学者",
+                "archivist": "記録係",
+                "criminal": "犯罪者",
+                "patrol officer": "お巡りさん"
+            },
+            "restaurant": {
+                "musician": "音楽家",
+                "bouncer": "用心棒",
+                "hostess": "ホステス",
+                "head chef": "料理長",
+                "food critic": "料理評論家",
+                "waiter": "ウェイター",
+                "customer": "客"
+            },
+            "school": {
+                "gym teacher": "体育先生",
+                "principal": "校長",
+                "security guard": "警備員",
+                "janitor": "掃除人",
+                "cafeteria lady": "食堂の店員",
+                "maintenance man": "グラウンドキーパー",
+                "student": "学生"
+            },
+            "service station": {
+                "manager": "マネージャー",
+                "tire specialist": "タイヤスペシャリスト",
+                "biker": "バイカー",
+                "car owner": "車の持ち主",
+                "car wash operator": "係員",
+                "electrician": "電気技術者",
+                "auto mechanic": "整備士"
+            },
+            "space station": {
+                "engineer": "エンジニア",
+                "alien": "宇宙人",
+                "pilot": "操縦士",
+                "commander": "コマンダ",
+                "scientist": "科学者",
+                "doctor": "医者",
+                "space tourist": "宇宙観光客"
+            },
+            "submarine": {
+                "cook": "料理人",
+                "commander": "コマンダ",
+                "sonar technician": "ソナー技術者",
+                "electronics technician": "エレクトロニクスの技術者",
+                "radioman": "無電技師",
+                "navigator": "航海者",
+                "sailor": "船員"
+            },
+            "supermarket": {
+                "cashier": "店員",
+                "butcher": "肉屋",
+                "janitor": "掃除人",
+                "security guard": "警備員",
+                "food sample demonstrator": "実演販売人",
+                "shelf stocker": "店員",
+                "customer": "客"
+            },
+            "theater": {
+                "coat check lady": "クロークルームの受付係",
+                "prompter": "プロンプタ",
+                "cashier": "店員",
+                "director": "監督",
+                "actor": "役者",
+                "crew man": "クルー",
+                "audience member": "観客者"
+            },
+            "university": {
+                "graduate student": "大学院生",
+                "professor": "博士",
+                "dean": "学部長",
+                "psychologist": "心理学者",
+                "maintenance man": "グラウンドキーパー",
+                "janitor": "掃除人",
+                "student": "学生"
+            },
+            "world war ii squad": {
+                "resistance fighter": "レジスタンス兵",
+                "radioman": "無電技師",
+                "scout": "スカウト",
+                "medic": "看護卒",
+                "cook": "料理人",
+                "imprisoned nazi": "囚われたナチ",
+                "soldier": "兵士"
+            }
+        }
+    }
+}
