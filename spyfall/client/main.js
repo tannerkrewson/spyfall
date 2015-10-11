@@ -319,6 +319,7 @@ Template.createGame.events({
     Meteor.subscribe('games', game.accessCode);
 
     Session.set("loading", true);
+    $("#create").hide();
     
     Meteor.subscribe('players', game._id, function onReady(){
       Session.set("loading", false);
@@ -361,6 +362,7 @@ Template.joinGame.events({
     accessCode = accessCode.toLowerCase();
 
     Session.set("loading", true);
+    $("join").hide();
 
     Meteor.subscribe('games', accessCode, function onReady(){
       Session.set("loading", false);
