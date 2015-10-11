@@ -83,3 +83,9 @@ Games.find({"state": 'settingUp'}).observeChanges({
     Games.update(id, {$set: {state: 'inProgress', location: location, endTime: gameEndTime, paused: false, pausedTime: null}});
   }
 });
+
+Players.find({"isSpy": true}).observe({
+  removed: function (spy) {
+    Games.update(spy.gameID, {$set: {state: 'waitingForPlayers'}});
+  }
+})
