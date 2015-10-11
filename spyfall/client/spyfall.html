@@ -43,7 +43,13 @@
 </template>
 
 <template name="lobby">
-  <h4>{{_ "ui.waiting for players" }}</h4>
+  <h4>
+    {{#if isLoading }}
+      <span class="spinner"></span>
+    {{else}}
+      {{_ "ui.waiting for players" }}
+    {{/if}}
+  </h4>
 
   <div class="access-code">
     {{_ "ui.access code" }}:
