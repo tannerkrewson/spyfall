@@ -343,6 +343,11 @@ Template.joinGame.events({
         Meteor.subscribe('players', game._id);
         player = generateNewPlayer(game, playerName);
 
+        if (game.state === "inProgress") {
+          var default_role = game.location.roles[game.location.roles.length - 1];
+          Players.update(player._id, {$set: {role: default_role}});
+        }
+
         Session.set('urlAccessCode', null);
         Session.set("gameID", game._id);
         Session.set("playerID", player._id);
