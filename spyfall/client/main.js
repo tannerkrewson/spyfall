@@ -277,7 +277,7 @@ Template.createGame.events({
 
     var playerName = event.target.playerName.value;
 
-    if (!playerName) {
+    if (!playerName || Session.get('loading')) {
       return false;
     }
 
@@ -287,7 +287,6 @@ Template.createGame.events({
     Meteor.subscribe('games', game.accessCode);
 
     Session.set("loading", true);
-    $("#create").hide();
     
     Meteor.subscribe('players', game._id, function onReady(){
       Session.set("loading", false);
@@ -322,7 +321,7 @@ Template.joinGame.events({
     var accessCode = event.target.accessCode.value;
     var playerName = event.target.playerName.value;
 
-    if (!playerName) {
+    if (!playerName || Session.get('loading')) {
       return false;
     }
 
@@ -330,7 +329,6 @@ Template.joinGame.events({
     accessCode = accessCode.toLowerCase();
 
     Session.set("loading", true);
-    $("#join").hide();
 
     Meteor.subscribe('games', accessCode, function onReady(){
       Session.set("loading", false);
