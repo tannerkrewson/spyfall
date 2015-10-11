@@ -138,40 +138,6 @@ function generateNewPlayer(game, name){
   return Players.findOne(playerID);
 }
 
-function getRandomLocation(){
-  var locationIndex = Math.floor(Math.random() * locations.length);
-  return locations[locationIndex];
-}
-
-function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
-    return array;
-}
-
-function assignRoles(players, location){
-  var default_role = location.roles[location.roles.length - 1];
-  var roles = location.roles.slice();
-  var shuffled_roles = shuffleArray(roles);
-  var role = null;
-
-  players.forEach(function(player){
-    if (!player.isSpy){
-      role = shuffled_roles.pop();
-
-      if (role === undefined){
-        role = default_role;
-      }
-
-      Players.update(player._id, {$set: {role: role}});
-    }
-  });
-}
-
 function resetUserState(){
   var player = getCurrentPlayer();
 
@@ -364,7 +330,7 @@ Template.joinGame.events({
     accessCode = accessCode.toLowerCase();
 
     Session.set("loading", true);
-    $("join").hide();
+    $("#join").hide();
 
     Meteor.subscribe('games', accessCode, function onReady(){
       Session.set("loading", false);
@@ -444,6 +410,10 @@ Template.lobby.helpers({
     });
 
     return players;
+  },
+  isLoading: function() {
+    var game = getCurrentGame();
+    return game.state === 'settingUp';
   }
 });
 
@@ -453,24 +423,7 @@ Template.lobby.events({
     GAnalytics.event("game-actions", "gamestart");
 
     var game = getCurrentGame();
-    var location = getRandomLocation();
-    var players = Players.find({gameID: game._id});
-    var localEndTime = moment().add(game.lengthInMinutes, 'minutes');
-    var gameEndTime = TimeSync.serverTime(localEndTime);
-
-    var spyIndex = Math.floor(Math.random() * players.count());
-    var firstPlayerIndex = Math.floor(Math.random() * players.count());
-
-    players.forEach(function(player, index){
-      Players.update(player._id, {$set: {
-        isSpy: index === spyIndex,
-        isFirstPlayer: index === firstPlayerIndex
-      }});
-    });
-
-    assignRoles(players, location);
-    
-    Games.update(game._id, {$set: {state: 'inProgress', location: location, endTime: gameEndTime, paused: false, pausedTime: null}});
+    Games.update(game._id, {$set: {state: 'settingUp'}});
   },
   'click .btn-toggle-qrcode': function () {
     $(".qrcode-container").toggle();
