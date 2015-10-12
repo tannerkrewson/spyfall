@@ -215,6 +215,7 @@ if (hasHistoryApi()){
 Tracker.autorun(trackGameState);
 
 window.onbeforeunload = resetUserState;
+window.onpagehide = resetUserState;
 
 FlashMessages.configure({
   autoHide: true,
