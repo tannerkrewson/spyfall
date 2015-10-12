@@ -105,7 +105,7 @@
 </template>
 
 <template name="gameView">
-  <h4><a href="#" class="game-countdown {{#if gameFinished }}finished{{/if}} {{#if game.paused }}paused{{/if}}">{{{ timeRemaining }}}</a></h4>
+  <h4><a class="game-countdown {{#if gameFinished }}finished{{/if}} {{#if game.paused }}paused{{/if}}">{{{ timeRemaining }}}</a></h4>
 
   <div class="status-container">
     <button class="btn-toggle-status">{{_ "ui.show hide" }}</button>
@@ -186,7 +186,7 @@
       <input type="text" id="player-name" name="playerName" placeholder='{{_ "ui.enter your name" }}'>
 
       <div class="button-container">
-        <input type="submit" id="create" value='{{_ "ui.create game" }}'>
+        <input type="submit" value='{{_ "ui.create game" }}'>
         <button class="btn-back">{{_ "ui.back" }}</button>
       </div>
     </div>
@@ -212,7 +212,7 @@
       {{> flashMessages}}
 
       <div class="button-container">
-        <input type="submit" id="join" value='{{_ "ui.join" }}'>
+        <input type="submit" value='{{_ "ui.join" }}'>
         <button class="btn-back">{{_ "ui.back" }}</button>
       </div>
     </div>

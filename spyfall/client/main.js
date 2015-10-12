@@ -522,5 +522,17 @@ Template.gameView.events({
       GAnalytics.event("game-actions", "pause");
       Games.update(game._id, {$set: {paused: true, pausedTime: currentServerTime}});
     }
+  },
+  'click .player-name': function (event) {
+    event.target.className = 'player-name-striked';
+  },
+  'click .player-name-striked': function(event) {
+    event.target.className = 'player-name';
+  },
+  'click .location-name': function (event) {
+    event.target.className = 'location-name-striked';
+  },
+  'click .location-name-striked': function(event) {
+    event.target.className = 'location-name';
   }
 });
