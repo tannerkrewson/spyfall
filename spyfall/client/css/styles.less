@@ -247,6 +247,8 @@ a {
           }
         }
     }
+
+    cursor: pointer;
 }
 
 .player-status {
@@ -327,10 +329,17 @@ a {
     list-style-type: none;
     background-color: #f9f9f9;
     margin: 0 0 4px 0;
+    cursor: pointer;
 }
 
 .location-list li .location-name {
     padding: 3px 10px;
+}
+
+.location-list li .location-name-striked {
+    padding: 3px 10px;
+    color: #bbb;
+    text-decoration: line-through;
 }
 
 .ingame-player-list {
@@ -347,11 +356,19 @@ a {
     list-style-type: none;
     padding: 0 4px 0 0;
     margin: 0 0 4px 0;
+    cursor: pointer;
 }
 
 .ingame-player-list li .player-name {
     background-color: #f9f9f9;
     padding: 3px 10px;
+}
+
+.ingame-player-list li .player-name-striked {
+    background-color: #f9f9f9;
+    padding: 3px 10px;
+    color: #bbb;
+    text-decoration: line-through;
 }
 
 .first-player-indicator {
