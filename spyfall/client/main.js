@@ -261,6 +261,9 @@ Template.startMenu.events({
 });
 
 Template.startMenu.helpers({
+  announcement: function() {
+    return Meteor.settings.public.announcement;
+  },
   alternativeURL: function() {
     return Meteor.settings.public.alternative;
   }

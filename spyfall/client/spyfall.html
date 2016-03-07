@@ -36,8 +36,12 @@
       <button id="btn-join-game">{{_ "ui.join game" }}</button>
     </div>
 
+    {{# if announcement }}
+      <p class="announcement">{{{ announcement }}}</p>
+    {{/if}}
+
     {{# if alternativeURL }}
-      <p class="high-load-message">The site is currently experiencing very heavy load. If things seem slow or broken, try this alternative URL: <a href="{{ alternativeURL }}">{{ alternativeURL }}</a></p>
+      <p class="high-load-message">Do things seem slow or broken? We're probably under heavy load!<br>Try this alternative URL: <a href="{{ alternativeURL }}">{{ alternativeURL }}</a></p>
     {{/if}}
   </div>
 </template>
