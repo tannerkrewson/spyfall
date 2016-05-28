@@ -2,7 +2,7 @@
 
 Spyfall on your mobile device!
 
-This is the code that currently runs [http://spyfall.meteor.com](http://spyfall.meteor.com). It's a simple site I've built as a learning project, so definitely don't use it as an example of Meteor best practices. Pull requests welcome!
+This is the code that currently runs [http://spyfall.crabhat.com](http://spyfall.crabhat.com). It's a simple site I've built as a learning project, so definitely don't use it as an example of Meteor best practices. Pull requests welcome!
 
 ## Disclaimer
 
@@ -48,14 +48,7 @@ Run the meteor server to test locally:
 
 	meteor --settings settings/example.json
 
-Make a production settings file:
-
-	cp settings/example.json settings/production.json
-	nano settings/production.json  # Edit as required
-
-Deploy to meteor:
-
-	meteor deploy myurl.meteor.com --settings settings/production.json
+Sadly, production deployment has gotten a little trickier since meteor.com stopped providing easy free hosting. I recommend a combination of digitalocean.com and mupx for a relatively easy and robust solution.
 
 ## Links
 
