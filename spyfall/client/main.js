@@ -44,7 +44,7 @@ function getLanguageList() {
   var languages = TAPi18n.getLanguages();
   var languageList = _.map(languages, function(value, key) {
     var selected = "";
-    
+
     if (key == getUserLanguage()){
       selected = "selected";
     }
@@ -61,11 +61,11 @@ function getLanguageList() {
       languageDetails: value
     };
   });
-  
+
   if (languageList.length <= 1){
     return null;
   }
-  
+
   return languageList;
 }
 
@@ -174,7 +174,7 @@ function trackGameState () {
   }
 }
 
-function leaveGame () {  
+function leaveGame () {
   GAnalytics.event("game-actions", "gameleave");
   var player = getCurrentPlayer();
 
@@ -203,7 +203,7 @@ if (hasHistoryApi()){
     } else {
       accessCode = Session.get('urlAccessCode');
     }
-    
+
     var currentURL = '/';
     if (accessCode){
       currentURL += accessCode+'/';
@@ -291,7 +291,7 @@ Template.createGame.events({
     Meteor.subscribe('games', game.accessCode);
 
     Session.set("loading", true);
-    
+
     Meteor.subscribe('players', game._id, function onReady(){
       Session.set("loading", false);
 
@@ -476,7 +476,7 @@ Template.gameView.helpers({
   player: getCurrentPlayer,
   players: function () {
     var game = getCurrentGame();
-    
+
     if (!game){
       return null;
     }
@@ -527,10 +527,10 @@ Template.gameView.events({
     }
   },
   'click .player-name': function (event) {
-    event.target.className = 'player-name-striked';
+    event.currentTarget.className = 'player-name-striked';
   },
   'click .player-name-striked': function(event) {
-    event.target.className = 'player-name';
+    event.currentTarget.className = 'player-name';
   },
   'click .location-name': function (event) {
     event.target.className = 'location-name-striked';
