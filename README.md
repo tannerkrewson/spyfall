@@ -50,6 +50,10 @@ Run the meteor server to test locally:
 
 Sadly, production deployment has gotten a little trickier since meteor.com stopped providing easy free hosting. I recommend a combination of digitalocean.com and mupx for a relatively easy and robust solution.
 
+## Docker
+
+To run this instance in a docker container, check out [noamokman/docker-spyfall](https://github.com/noamokman/docker-spyfall)
+
 ## Links
 
 [BoardGameGeek Discussion Thread](http://www.boardgamegeek.com/thread/1279239/app/page/1)
