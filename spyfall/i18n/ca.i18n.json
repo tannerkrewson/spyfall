@@ -3,14 +3,14 @@
         "welcome to spyfall": "Benvingut a Spyfall",
         "new game": "Joc nou",
         "join game": "Úneix-te a un joc",
-        "waiting for players": "Esperant Jugadors...",
+        "waiting for players": "En espera de jugadors...",
         "access code": "Codi d'accés",
         "join my spyfall game": "Úneix-te al meu joc d'Spyfall!",
         "start game": "Inicia joc",
         "leave game": "Ix del joc",
         "show hide": "mostrar/amagar",
-        "you are the spy": "Eres l'espía!",
-        "you are not the spy": "<strong> No </strong> eres l'spía!",
+        "you are the spy": "Eres l'espia!",
+        "you are not the spy": "<strong> No </strong> eres l'espia!",
         "the location": "La ubicació",
         "your role": "El vostre paper",
         "players": "Jugadors",
@@ -21,7 +21,7 @@
         "create game": "Crea",
         "back": "Arrere",
         "enter an access code": "Introduïu un codi d'accés",
-        "invalid access code": "Ho sentim, no hi ha jocs amb el codi d'accés que heu proporcionat!",
+        "invalid access code": "Ho sentim, no hi ha cap joc amb el codi d'accés que heu proporcionat!",
         "join": "Uniu-vos",
         "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a> disenyat per Alexandr Ushan, publicat per <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>"
     },
@@ -30,15 +30,15 @@
         "bank": "Banc",
         "beach": "Platja",
         "cathedral": "Catedral",
-        "circus tent": "Carpa de Circ",
+        "circus tent": "Carpa de circ",
         "corporate party": "Festa d'empresa",
         "crusader army": "Exèrcit medieval",
         "casino": "Casino",
-        "day spa": "Centre d'Spa",
+        "day spa": "Centre d'spa",
         "embassy": "Ambaixada",
         "hospital": "Hospital",
         "hotel": "Hotel",
-        "military base": "Base Militar",
+        "military base": "Base militar",
         "movie studio": "Estudi de cinema",
         "ocean liner": "Creuer marítim",
         "passenger train": "Tren de passatgers",
@@ -56,30 +56,30 @@
         "world war ii squad": "Esquadró de la Segona Guerra Mundial",
         "roles": {
             "airplane": {
-                "first class passenger": "Passatger de Primera Classe",
-                "air marshall": "Encarregat de la Seguretat Aerea",
+                "first class passenger": "Passatger de primera classe",
+                "air marshall": "Encarregat de la seguretat aerea",
                 "mechanic": "Mecánic",
-                "air hostess": "Assitent de vol",
+                "air hostess": "Assistent de vol",
                 "copilot": "Copilot",
                 "captain": "Capità",
-                "economy class passenger": "Passatger de Clase Econòmica"
+                "economy class passenger": "Passatger de clase turista"
             },
             "bank": {
-                "armored car driver": "Conductor de Vehicle Blindat",
+                "armored car driver": "Conductor de vehicle blindat",
                 "manager": "Director",
                 "consultant": "Apoderat",
                 "robber": "Atracador",
-                "security guard": "Guarda de Seguretat",
+                "security guard": "Guarda de seguretat",
                 "teller": "Caixer",
                 "customer": "Client"
             },
             "beach": {
-                "beach waitress": "Cambrera de Platja",
+                "beach waitress": "Cambrera de platja",
                 "kite surfer": "Kite Surfer",
                 "lifeguard": "Socorrista",
                 "thief": "Lladre",
                 "beach photographer": "Fotògraf",
-                "ice cream truck driver": "Conductor de Camión de Gelats",
+                "ice cream truck driver": "Conductor de camió de gelats",
                 "beach goer": "Turista"
             },
             "cathedral": {
@@ -88,22 +88,22 @@
                 "sinner": "Pecador",
                 "tourist": "Turista",
                 "sponsor": "Escolà",
-                "chorister": "Cantant del Cor",
+                "chorister": "Cantant del cor",
                 "parishioner": "Feligrés"
             },
             "circus tent": {
-                "acrobat": "Acróbata",
-                "animal trainer": "Entrenador de Animales",
-                "magician": "Mago",
-                "fire eater": "Tragafuegos",
-                "clown": "Payaso",
+                "acrobat": "Acròbata",
+                "animal trainer": "Domador d'animals",
+                "magician": "Màgic",
+                "fire eater": "Tragafocs",
+                "clown": "Pallasso",
                 "juggler": "Malabarista",
                 "visitor": "Espectador"
             },
             "corporate party": {
                 "entertainer": "Animador",
                 "manager": "Gerent",
-                "unwanted guest": "Convidat no Desitjat",
+                "unwanted guest": "Convidat no desitjat",
                 "owner": "Amo",
                 "secretary": "Secretaria",
                 "delivery boy": "Missatger",
@@ -120,11 +120,11 @@
             },
             "casino": {
                 "bartender": "Barman",
-                "head security guard": "Cap de Seguretat",
-                "bouncer": "Guarda de Seguretat",
+                "head security guard": "Cap de seguretat",
+                "bouncer": "Guarda de seguretat",
                 "manager": "Gerent",
                 "hustler": "Estafador",
-                "dealer": "Repartidor",
+                "dealer": "Crupier",
                 "gambler": "Apostador"
             },
             "day spa": {
@@ -133,17 +133,17 @@
                 "manicurist": "Manicurista",
                 "makeup artist": "Maquilladora",
                 "dermatologist": "Dermatòloga",
-                "beautician": "Cosmetòloga",
+                "beautician": "Esteticista",
                 "customer": "Client"
             },
             "embassy": {
-                "security guard": "Guarda de Seguretat",
+                "security guard": "Guarda de seguretat",
                 "secretary": "Secretaria",
                 "ambassador": "Ambaixador",
                 "tourist": "Turista",
                 "refugee": "Refugiat",
                 "diplomat": "Diplomàtic",
-                "government official": "Oficial de Govenr"
+                "government official": "Funcionari"
             },
             "hospital": {
                 "nurse": "Infermera",
@@ -160,7 +160,7 @@
                 "manager": "Gerent",
                 "housekeeper": "Majordom",
                 "bartender": "Barman ",
-                "bellman": "Ajudant de càmera",
+                "bellman": "Grum (botones)",
                 "customer": "Client"
             },
             "military base": {
@@ -169,7 +169,7 @@
                 "medic": "Metge",
                 "sniper": "Franctirador",
                 "officer": "Oficial",
-                "tank engineer": "Enginyer de Tancs",
+                "tank engineer": "Enginyer de tancs",
                 "soldier": "Soldat"
             },
             "movie studio": {
@@ -210,9 +210,9 @@
             },
             "polar station": {
                 "medic": "Metge",
-                "expedition leader": "Cap d'Expedició",
+                "expedition leader": "Cap d'expedició",
                 "biologist": "Biòleg",
-                "radioman": "Operador de Ràdio",
+                "radioman": "Operador de ràdio",
                 "hydrologist": "Hidròleg",
                 "meteorologist": "Meteoròleg",
                 "geologist": "Geòleg"
@@ -224,19 +224,19 @@
                 "criminalist": "Forense",
                 "archivist": "Arxiver",
                 "criminal": "Criminal",
-                "patrol officer": "Oficial de patrulla"
+                "patrol officer": "Policia"
             },
             "restaurant": {
                 "musician": "Músic",
-                "bouncer": "Guarda de Seguretat",
+                "bouncer": "Guarda de seguretat",
                 "hostess": "Metre",
                 "head chef": "Cap de cuina",
-                "food critic": "Crític de cuina",
+                "food critic": "Crític gastronòmic",
                 "waiter": "Cambrer",
                 "customer": "Client"
             },
             "school": {
-                "gym teacher": "Professor de Gimnàstica",
+                "gym teacher": "Professor de gimnàstica",
                 "principal": "Director",
                 "security guard": "Cap d'estudi",
                 "janitor": "Conserge",
@@ -260,14 +260,14 @@
                 "commander": "Comandant",
                 "scientist": "Científic",
                 "doctor": "Metge",
-                "space tourist": "Turista Espacial"
+                "space tourist": "Turista espacial"
             },
             "submarine": {
                 "cook": "Cuiner",
                 "commander": "Capità",
-                "sonar technician": "Operador de Sonar",
-                "electronics technician": "Tècnic d'Armament",
-                "radioman": "Operador de Ràdio",
+                "sonar technician": "Operador de sonar",
+                "electronics technician": "Tècnic d'armament",
+                "radioman": "Operador de ràdio",
                 "navigator": "Pilot de navegació",
                 "sailor": "Mariner"
             },
@@ -294,13 +294,13 @@
                 "professor": "Professor",
                 "dean": "Degà",
                 "psychologist": "Psicòleg",
-                "maintenance man": "Encarregat de Manteniment",
+                "maintenance man": "Encarregat de manteniment",
                 "janitor": "Conserge",
                 "student": "Estudiant"
             },
             "world war ii squad": {
                 "resistance fighter": "Soldat de la Resistència",
-                "radioman": "Operador de Ràdio",
+                "radioman": "Operador de ràdio",
                 "scout": "Explorador",
                 "medic": "Metge",
                 "cook": "Cuiner",
