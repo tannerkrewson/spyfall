@@ -43,7 +43,7 @@
         "ocean liner": "เรือเดินสมุทร",
         "passenger train": "รถไฟโดยสาร",
         "pirate ship": "เรือโจรสลัด",
-        "polar station": "สถานีขั่วโลกเหนือ",
+        "polar station": "สถานีขั้วโลกเหนือ",
         "police station": "สถานีตำรวจ",
         "restaurant": "ภัตตาคาร",
         "school": "โรงเรียน",
@@ -188,7 +188,7 @@
                 "musician": "นักดนตรี",
                 "waiter": "บริกร",
                 "mechanic": "ช่างเครื่อง",
-                "rich passenger": "ผู้โดยสารระดับเศษรฐี"
+                "rich passenger": "ผู้โดยสารระดับเศรษฐี"
             },
             "passenger train": {
                 "mechanic": "ช่างเครื่อง",
@@ -206,12 +206,12 @@
                 "tied up prisoner": "นักโทษที่ถูกจับมัดไว้",
                 "cabin boy": "เด็กรับใช้บนเรือ",
                 "brave captain": "กัปตัน",
-                "sailor": "กลาสี"
+                "sailor": "กะลาสี"
             },
             "polar station": {
                 "medic": "แพทย์",
                 "expedition leader": "หัวหน้าคณะสำรวจ",
-                "biologist": "นักชีวะวิทยา",
+                "biologist": "นักชีววิทยา",
                 "radioman": "เจ้าหน้าที่สื่อสาร",
                 "hydrologist": "ผู้เชียวชาญด้านน้ำ",
                 "meteorologist": "ผู้เชี่ยวชาญด้านอุกกาบาต",
@@ -224,7 +224,7 @@
                 "criminalist": "นักอาชญากรรมวิทยา",
                 "archivist": "ผู้เก็บเอกสารสำคัญ",
                 "criminal": "อาชญากร",
-                "patrol officer": "เจ้าหน้าที่ลาดตระเวณ"
+                "patrol officer": "เจ้าหน้าที่ลาดตระเวน"
             },
             "restaurant": {
                 "musician": "นักดนตรี",
@@ -269,7 +269,7 @@
                 "electronics technician": "ช่างไฟฟ้า",
                 "radioman": "เจ้าหน้าที่สื่อสาร",
                 "navigator": "เจ้าหน้าที่นำทาง",
-                "sailor": "กลาสี"
+                "sailor": "กะลาสี"
             },
             "supermarket": {
                 "cashier": "พนักงานเก็บเงิน",
@@ -286,13 +286,13 @@
                 "cashier": "เจ้าหน้าที่คิดเงิน",
                 "director": "ผู้กำกับ",
                 "actor": "นักแสดง",
-                "crew man": "ลูกเรือ",
+                "crew man": "เจ้าหน้าที่ดำเนินการแสดง",
                 "audience member": "ผู้ชม"
             },
             "university": {
                 "graduate student": "นักศึกษาปริญญาโท",
                 "professor": "ศาสตราจารย์",
-                "dean": "คณะบดี",
+                "dean": "คณบดี",
                 "psychologist": "นักจิตวิทยา",
                 "maintenance man": "พนักงานซ่อมบำรุง",
                 "janitor": "ภารโรง",
@@ -301,7 +301,7 @@
             "world war ii squad": {
                 "resistance fighter": "หน่วยต่อต้าน",
                 "radioman": "เจ้าหน้าที่สื่อสาร",
-                "scout": "หน่วยลาดตระเวณ",
+                "scout": "หน่วยลาดตระเวน",
                 "medic": "แพทย์",
                 "cook": "พ่อครัว",
                 "imprisoned nazi": "ทหารนาซีที่โดนจับอยู่",
