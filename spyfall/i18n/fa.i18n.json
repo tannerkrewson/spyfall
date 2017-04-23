@@ -59,7 +59,7 @@
                 "first class passenger": "مسافر درجه یک",
                 "air marshall": "امنیت پرواز",
                 "mechanic": "مکانیک",
-                "air hostess": "مهماندار زن",
+                "air hostess": "مهماندار",
                 "copilot": "کمک خلبان",
                 "captain": "خلبان",
                 "economy class passenger": "مسافر عادی"
@@ -114,7 +114,7 @@
                 "imprisoned saracen": "زندانی مسلمان",
                 "servant": "خدمتکار",
                 "bishop": "اسقف",
-                "squire": "ارباب",
+                "squire": "دستیار شولیه",
                 "archer": "کماندار",
                 "knight": "شوالیه"
             },
@@ -128,11 +128,11 @@
                 "gambler": "قمارباز"
             },
             "day spa": {
-                "stylist": "متخصص مد",
-                "masseuse": "ماساژدهنده",
+                "stylist": "آرایشگر مو",
+                "masseuse": "ماساژور",
                 "manicurist": "مانیکورزن",
                 "makeup artist": "گریمور",
-                "dermatologist": "متخصص درمان پوست",
+                "dermatologist": "متخصص پوست",
                 "beautician": "آرایشگر",
                 "customer": "مشتری"
             },
@@ -287,10 +287,10 @@
                 "director": "کارگردان",
                 "actor": "بازیگر",
                 "crew man": "خدمه",
-                "audience member": "یکی از حضار"
+                "audience member": "تماشاچی"
             },
             "university": {
-                "graduate student": "فارغ‌التحصیل",
+                "graduate student": "دانشجو فوق‌لیسانس",
                 "professor": "استاد",
                 "dean": "رئیس",
                 "psychologist": "روان‌شناس",
@@ -299,7 +299,7 @@
                 "student": "دانشجو"
             },
             "world war ii squad": {
-                "resistance fighter": "مبارز مقاومت",
+                "resistance fighter": "پارتیزان",
                 "radioman": "بی‌سیم‌چی",
                 "scout": "گروه تجسس",
                 "medic": "پزشک",
