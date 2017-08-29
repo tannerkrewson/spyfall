@@ -36,7 +36,7 @@ Please make sure that the translations you provide are as close as possible to t
 
 Clone the repository:
 
-	git clone https://github.com/evanbrumley/spyfall.git ./spyfall
+	git clone https://github.com/mpcovcd/spyfall.git ./spyfall
 
 Enter the spyfall directory:
 
