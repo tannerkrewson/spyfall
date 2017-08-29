@@ -2,7 +2,9 @@
 
 Spyfall on your mobile device!
 
-This is the code that currently runs [http://spyfall.crabhat.com](http://spyfall.crabhat.com). It's a simple site I've built as a learning project, so definitely don't use it as an example of Meteor best practices. Pull requests welcome!
+NOTE: Due to work responsibilities and life generally getting in the way, I haven't had the time to spend maintaining the Spyfall site to the level it deserves. As such, I'm passing the baton across to a new developer who'd like to take on the mantle for a while. I wish him all the best! Regards - @evanbrumley
+
+This is the code that currently runs [http://spyfall.crabhat.com](http://spyfall.crabhat.com). It's a simple site built as a learning project, so definitely don't use it as an example of Meteor best practices. Pull requests welcome!
 
 ## Disclaimer
 
