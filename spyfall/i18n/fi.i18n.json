@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "Tervetuloa Spyfall-peliin",
+        "new game": "Uusi peli",
+        "join game": "Liity peliin",
+        "waiting for players": "Odotetaan pelaajia...",
+        "access code": "Liittymiskoodi",
+        "join my spyfall game": "Liity Spyfall -peliini!",
+        "start game": "Aloita peli",
+        "leave game": "Poistu pelistä",
+        "show hide": "näytä/piilota",
+        "you are the spy": "Sinä olet vakooja!",
+        "you are not the spy": "Sinä <strong>et</strong> ole vakooja!",
+        "the location": "Sijainti",
+        "your role": "Roolisi",
+        "players": "Pelaajat",
+        "first": "1.",
+        "location reference": "Sijaintiluettelo",
+        "end game": "Lopeta peli",
+        "enter your name": "Syötä nimesi",
+        "create game": "Luo",
+        "back": "Takaisin",
+        "enter an access code": "Syötä liittymiskoodi",
+        "invalid access code": "Pahoittelen, peliä ei löytynyt antamallasi liittymiskoodilla!",
+        "join": "Liity",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a>, suunnittelu Alexandr Ushan, julkaisija <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>"
+    },
+    "locations": {
+        "airplane": "Lentokone",
+        "bank": "Pankki",
+        "beach": "Ranta",
+        "cathedral": "Katedraali",
+        "circus tent": "Sirkusteltta",
+        "corporate party": "Firman juhlat",
+        "crusader army": "Ristiretkiarmeija",
+        "casino": "Kasino",
+        "day spa": "Hoitola",
+        "embassy": "Suurlähetystö",
+        "hospital": "Sairaala",
+        "hotel": "Hotelli",
+        "military base": "Sotilastukikohta",
+        "movie studio": "Elokuvastudio",
+        "ocean liner": "Valtamerialus",
+        "passenger train": "Matkustajajuna",
+        "pirate ship": "Merirosvoalus",
+        "polar station": "Arktinen tutkimuslaitos",
+        "police station": "Poliisilaitos",
+        "restaurant": "Ravintola",
+        "school": "Koulu",
+        "service station": "Huoltoasema",
+        "space station": "Avaruusasema",
+        "submarine": "Sukellusvene",
+        "supermarket": "Supermarketti",
+        "theater": "Teatteri",
+        "university": "Yliopisto",
+        "world war ii squad": "Ryhmä toisessa maailmansodassa",
+        "roles": {
+            "airplane": {
+                "first class passenger": "Ykkösluokan matkustaja",
+                "air marshall": "Turvamies",
+                "mechanic": "Mekaanikko",
+                "air hostess": "Lentoemäntä",
+                "copilot": "Perämies",
+                "captain": "Kapteeni",
+                "economy class passenger": "Economy-luokan matkustaja"
+            },
+            "bank": {
+                "armored car driver": "Panssaroidun kuljetusauton ajaja",
+                "manager": "Pankinjohtaja",
+                "consultant": "Konsultti",
+                "robber": "Pankkiryöstäjä",
+                "security guard": "Vartija",
+                "teller": "Pankkivirkailija",
+                "customer": "Asiakas"
+            },
+            "beach": {
+                "beach waitress": "Rantatarjoilija",
+                "kite surfer": "Leijalautailija",
+                "lifeguard": "Rantavahti",
+                "thief": "Varas",
+                "beach photographer": "Rantakuvaaja",
+                "ice cream truck driver": "Jäätelöauton ajaja",
+                "beach goer": "Rannallakävijä"
+            },
+            "cathedral": {
+                "priest": "Pappi",
+                "beggar": "Kerjäläinen",
+                "sinner": "Syntinen",
+                "tourist": "Turisti",
+                "sponsor": "Sponsori",
+                "chorister": "Kuorolaulaja",
+                "parishioner": "Seurakuntalainen"
+            },
+            "circus tent": {
+                "acrobat": "Akrobaatti",
+                "animal trainer": "Eläintenkouluttaja",
+                "magician": "Taikuri",
+                "fire eater": "Tulennielijä",
+                "clown": "Pelle",
+                "juggler": "Jonglööri",
+                "visitor": "Kävijä"
+            },
+            "corporate party": {
+                "entertainer": "Viihdyttäjä",
+                "manager": "Esimies",
+                "unwanted guest": "Ei-toivottu vieras",
+                "owner": "Osakas",
+                "secretary": "Sihteeri",
+                "delivery boy": "Juoksupoika",
+                "accountant": "Kirjanpitäjä"
+            },
+            "crusader army": {
+                "monk": "Munkki",
+                "imprisoned saracen": "Vangittu muslimi",
+                "servant": "Palvelija",
+                "bishop": "Piispa",
+                "squire": "Aseenkantaja",
+                "archer": "Jousiampuja",
+                "knight": "Ritari"
+            },
+            "casino": {
+                "bartender": "Baarimikko",
+                "head security guard": "Päävartija",
+                "bouncer": "Portsari",
+                "manager": "Kasinon johtaja",
+                "hustler": "Huijari",
+                "dealer": "Jakaja",
+                "gambler": "Uhkapeluri"
+            },
+            "day spa": {
+                "stylist": "Stylisti",
+                "masseuse": "Hierojatar",
+                "manicurist": "Manikyristi",
+                "makeup artist": "Maskeeraaja",
+                "dermatologist": "Ihotautilääkäri",
+                "beautician": "Kosmetologi",
+                "customer": "Asiakas"
+            },
+            "embassy": {
+                "security guard": "Vartija",
+                "secretary": "Sihteeri",
+                "ambassador": "Suurlähettiläs",
+                "tourist": "Turisti",
+                "refugee": "Pakolainen",
+                "diplomat": "Diplomaatti",
+                "government official": "Valtion virkamies"
+            },
+            "hospital": {
+                "nurse": "Sairaanhoitaja",
+                "doctor": "Tohtori",
+                "anesthesiologist": "Nukutuslääkäri",
+                "intern": "Työharjoittelija",
+                "therapist": "Terapeutti",
+                "surgeon": "Kirurgi",
+                "patient": "Potilas"
+            },
+            "hotel": {
+                "doorman": "Ovimies",
+                "security guard": "Vartija",
+                "manager": "Hotellin johtaja",
+                "housekeeper": "Kerrospalvelija",
+                "bartender": "Baarimikko",
+                "bellman": "Pikkolo",
+                "customer": "Asiakas"
+            },
+            "military base": {
+                "deserter": "Rintamakarkuri",
+                "colonel": "Eversti",
+                "medic": "Lääkintämies",
+                "sniper": "Tarkka-ampuja",
+                "officer": "Upseeri",
+                "tank engineer": "Panssarivaunumekaanikko",
+                "soldier": "Sotilas"
+            },
+            "movie studio": {
+                "stunt man": "Sijaisnäyttelijä",
+                "sound engineer": "Ääni-insinööri",
+                "camera man": "Kameramies",
+                "director": "Ohjaaja",
+                "costume artist": "Puvustaja",
+                "producer": "Tuottaja",
+                "actor": "Näyttelijä"
+            },
+            "ocean liner": {
+                "cook": "Kokki",
+                "captain": "Kapteeni",
+                "bartender": "Baarimikko",
+                "musician": "Muusikko",
+                "waiter": "Tarjoilija",
+                "mechanic": "Mekaanikko",
+                "rich passenger": "Rikas matkustaja"
+            },
+            "passenger train": {
+                "mechanic": "Mekaanikko",
+                "border patrol": "Rajavartija",
+                "train attendant": "Junaemäntä",
+                "restaurant chef": "Ravintolakokki",
+                "train driver": "Veturinkuljettaja",
+                "stoker": "Veturinlämmittäjä",
+                "passenger": "Matkustaja"
+            },
+            "pirate ship": {
+                "cook": "Kokki",
+                "slave": "Orja",
+                "cannoneer": "Tykkimies",
+                "tied up prisoner": "Sidottu vanki",
+                "cabin boy": "Hyttipoika",
+                "brave captain": "Urhea kapteeni",
+                "sailor": "Merimies"
+            },
+            "polar station": {
+                "medic": "Lääkäri",
+                "expedition leader": "Tutkimusmatkan johtaja",
+                "biologist": "Biologi",
+                "radioman": "Radisti",
+                "hydrologist": "Hydrologi",
+                "meteorologist": "Meteorologi",
+                "geologist": "Geologi"
+            },
+            "police station": {
+                "detective": "Etsivä",
+                "lawyer": "Lakimies",
+                "journalist": "Journalisti",
+                "criminalist": "Rikostutkija",
+                "archivist": "Arkistonhoitaja",
+                "criminal": "Rikollinen",
+                "patrol officer": "Partiopoliisi"
+            },
+            "restaurant": {
+                "musician": "Muusikko",
+                "bouncer": "Portsari",
+                "hostess": "Emäntä",
+                "head chef": "Keittiömestari",
+                "food critic": "Ruokakriitikko",
+                "waiter": "Tarjoilija",
+                "customer": "Asiakas"
+            },
+            "school": {
+                "gym teacher": "Liikunnanopettaja",
+                "principal": "Rehtori",
+                "security guard": "Vartija",
+                "janitor": "Vahtimestari",
+                "cafeteria lady": "Keittäjä",
+                "maintenance man": "Kiinteistönhoitaja",
+                "student": "Opiskelija"
+            },
+            "service station": {
+                "manager": "Huoltoaseman johtaja",
+                "tire specialist": "Rengasasentaja",
+                "biker": "Moottoripyöräilijä",
+                "car owner": "Auton omistaja",
+                "car wash operator": "Autonpesijä",
+                "electrician": "Sähkömekaanikko",
+                "auto mechanic": "Automekaanikko"
+            },
+            "space station": {
+                "engineer": "Insinööri",
+                "alien": "Avaruusolento",
+                "pilot": "Pilotti",
+                "commander": "Komentaja",
+                "scientist": "Tiedemies",
+                "doctor": "Tohtori",
+                "space tourist": "Avaruusturisti"
+            },
+            "submarine": {
+                "cook": "Kokki",
+                "commander": "Komentajakapteeni",
+                "sonar technician": "Tutkateknikko",
+                "electronics technician": "Sähköteknikko",
+                "radioman": "Radisti",
+                "navigator": "Navigoija",
+                "sailor": "Merimies"
+            },
+            "supermarket": {
+                "cashier": "Kassavirkailija",
+                "butcher": "Teurastaja",
+                "janitor": "Vahtimestari",
+                "security guard": "Vartija",
+                "food sample demonstrator": "Ruokanäytteiden esittelijä",
+                "shelf stocker": "Hyllyjen täyttäjä",
+                "customer": "Asiakas"
+            },
+            "theater": {
+                "coat check lady": "Portieeri",
+                "prompter": "Kuiskaaja",
+                "cashier": "Kassavirkailija",
+                "director": "Ohjaaja",
+                "actor": "Näyttelijä",
+                "crew man": "Kulissimies",
+                "audience member": "Yleisön jäsen"
+            },
+            "university": {
+                "graduate student": "Jatko-opiskelija",
+                "professor": "Professori",
+                "dean": "Dekaani",
+                "psychologist": "Psykologi",
+                "maintenance man": "Kiinteistönhoitaja",
+                "janitor": "Vahtimestari",
+                "student": "Opiskelija"
+            },
+            "world war ii squad": {
+                "resistance fighter": "Vastarintataistelija",
+                "radioman": "Radisti",
+                "scout": "Tiedustelija",
+                "medic": "Lääkintämies",
+                "cook": "Kenttäkokki",
+                "imprisoned nazi": "Vangittu natsi",
+                "soldier": "Sotilas"
+            }
+        }
+    }
+}

@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "Chào mừng đến với Spyfall",
+        "new game": "Bàn chơi mới",
+        "join game": "Tham gia trò chơi",
+        "waiting for players": "Đang chờ người chơi...",
+        "access code": "Mã truy cập",
+        "join my spyfall game": "Tham gia trò Spyfall của tôi đi!",
+        "start game": "Bắt đầu ",
+        "leave game": "Rời trò chơi",
+        "show hide": "Hiện/ẩn",
+        "you are the spy": "Bạn là Gián điệp!",
+        "you are not the spy": "Bạn không phải Gián điệp!",
+        "the location": "Địa điểm",
+        "your role": "Vai trò của bạn",
+        "players": "Người chơi",
+        "first": "1st",
+        "location reference": "Địa điểm liên quan",
+        "end game": "Kết thúc trò chơi",
+        "enter your name": "Nhập tên bạn",
+        "create game": "Tạo",
+        "back": "Quay lại",
+        "enter an access code": "Nhập mã truy cập",
+        "invalid access code": "Xin lỗi, không tìm thấy bàn chơi nào với mã bạn nhập!",
+        "join": "Vào",
+        "footer": "Spyfall thiết kế bởi Alexandr Ushan, ban hành bởi Hobby World"
+    },
+    "locations": {
+        "airplane": "Máy Bay",
+        "bank": "Ngân hàng",
+        "beach": "Bãi biển",
+        "cathedral": "Nhà thờ",
+        "circus tent": "Rạp xiếc",
+        "corporate party": "Tiệc đoàn thể công ty",
+        "crusader army": "Quân đội viễn chinh",
+        "casino": "Sòng bạc",
+        "day spa": "Spa",
+        "embassy": "Đại sứ quán",
+        "hospital": "Bệnh viện",
+        "hotel": "Khách sạn ",
+        "military base": "Doanh trại",
+        "movie studio": "Phim trường",
+        "ocean liner": "Tàu thủy chở khách",
+        "passenger train": "Tàu hỏa chở khách",
+        "pirate ship": "Thuyền hải tặc",
+        "polar station": "Trạm nghiên cứu Bắc Cực",
+        "police station": "Đồn cảnh sát",
+        "restaurant": "Nhà hàng ",
+        "school": "Trường học",
+        "service station": "Trung tâm sửa chữa bảo dưỡng ô tô",
+        "space station": "Trạm vũ trụ",
+        "submarine": "Tàu ngầm",
+        "supermarket": "Siêu thị",
+        "theater": "Rạp hát",
+        "university": "Trường đại học",
+        "world war ii squad": "Quân đội thế chiến 2",
+        "roles": {
+            "airplane": {
+                "first class passenger": "Hành khách hạng sang",
+                "air marshall": "Không tặc",
+                "mechanic": "Thợ cơ khí",
+                "air hostess": "Tiếp viên hàng không",
+                "copilot": "Cơ phó",
+                "captain": "Cơ trưởng",
+                "economy class passenger": "Hành khách hạng phổ thông"
+            },
+            "bank": {
+                "armored car driver": "Lái xe chở tiền",
+                "manager": "Quản lý",
+                "consultant": "Tư vấn viên",
+                "robber": "Cướp",
+                "security guard": "Bảo vệ",
+                "teller": "Giao dịch viên",
+                "customer": "Khách hàng"
+            },
+            "beach": {
+                "beach waitress": "Phục vụ bãi biển",
+                "kite surfer": "Người lướt dù lượn",
+                "lifeguard": "Vệ sĩ",
+                "thief": "Trộm",
+                "beach photographer": "Nhiếp ảnh gia bãi biển",
+                "ice cream truck driver": "Lái xe tải kem",
+                "beach goer": "Người dạo biển"
+            },
+            "cathedral": {
+                "priest": "Cha đạo",
+                "beggar": "Ăn mày",
+                "sinner": "Người xưng tội",
+                "tourist": "Du khách",
+                "sponsor": "Nhà tài trợ",
+                "chorister": "Người hát ở đội hợp xướng",
+                "parishioner": "Giáo dân"
+            },
+            "circus tent": {
+                "acrobat": "Nghệ sĩ nhào lộn",
+                "animal trainer": "Huấn luyện thú",
+                "magician": "Ảo thuật gia",
+                "fire eater": "Nghệ sĩ nuốt lửa",
+                "clown": "Chú hề",
+                "juggler": "Nghệ sĩ tung hứng",
+                "visitor": "Khách thăm quan"
+            },
+            "corporate party": {
+                "entertainer": "Nghệ sĩ biểu diễn",
+                "manager": "Quản lý",
+                "unwanted guest": "Khách hãm tài",
+                "owner": "Chủ chi",
+                "secretary": "Thư ký",
+                "delivery boy": "Nhân viên Ship hàng",
+                "accountant": "Kế toán"
+            },
+            "crusader army": {
+                "monk": "Nhà sư",
+                "imprisoned saracen": "Tù nhân du mục",
+                "servant": "Người hầu",
+                "bishop": "Giám mục",
+                "squire": "Cận vệ",
+                "archer": "Cung thủ",
+                "knight": "Hiệp sỹ"
+            },
+            "casino": {
+                "bartender": "Pha chế",
+                "head security guard": "Trưởng Bảo vệ",
+                "bouncer": "Bảo kê",
+                "manager": "Quản lý",
+                "hustler": "Xã hội đen",
+                "dealer": "Người chia bài",
+                "gambler": "Con bạc"
+            },
+            "day spa": {
+                "stylist": "Stylist",
+                "masseuse": "Thợ mát xa",
+                "manicurist": "Thợ vẽ móng tay",
+                "makeup artist": "Thợ trang điểm",
+                "dermatologist": "Bác sĩ da liễu",
+                "beautician": "Chuyên viên làm đẹp",
+                "customer": "Khách hàng"
+            },
+            "embassy": {
+                "security guard": "Bảo vệ",
+                "secretary": "Thư ký",
+                "ambassador": "Đại sứ ",
+                "tourist": "Du khách",
+                "refugee": "Người tị nạn",
+                "diplomat": "Nhà ngoại giao",
+                "government official": "Quan chức chính phủ"
+            },
+            "hospital": {
+                "nurse": "Y tá",
+                "doctor": "Bác sĩ",
+                "anesthesiologist": "Bác sĩ gây tê",
+                "intern": "Thực tập sinh",
+                "therapist": "Bác sĩ tâm lý",
+                "surgeon": "Bác sĩ phẫu thuật",
+                "patient": "Bệnh nhân"
+            },
+            "hotel": {
+                "doorman": "Gác cổng",
+                "security guard": "Bảo vệ",
+                "manager": "Quản lý",
+                "housekeeper": "Dọn phòng",
+                "bartender": "Pha chế",
+                "bellman": "Nhân viên bê đồ Bell boy",
+                "customer": "Khách hàng "
+            },
+            "military base": {
+                "deserter": "Kẻ đào ngũ",
+                "colonel": "Đại tá",
+                "medic": "Quân y",
+                "sniper": "Lính bắn tỉa",
+                "officer": "Sĩ quan",
+                "tank engineer": "Kỹ sư xe tăng",
+                "soldier": "Binh sĩ"
+            },
+            "movie studio": {
+                "stunt man": "Diễn viên đóng thế",
+                "sound engineer": "Kỹ sư âm thanh",
+                "camera man": "Quay phim",
+                "director": "Đạo diễn",
+                "costume artist": "Phục trang",
+                "producer": "Nhà sản xuất",
+                "actor": "Diễn viên"
+            },
+            "ocean liner": {
+                "cook": "Đầu bếp",
+                "captain": "Thuyền trưởng",
+                "bartender": "Pha chế",
+                "musician": "Nhạc công",
+                "waiter": "Phục vụ bàn",
+                "mechanic": "Thợ cơ khí",
+                "rich passenger": "Khách hàng giàu có"
+            },
+            "passenger train": {
+                "mechanic": "Thợ máy",
+                "border patrol": "Tuần cảnh",
+                "train attendant": "Soát vé",
+                "restaurant chef": "Đầu bếp nhà hàng",
+                "train driver": "Lái tàu",
+                "stoker": "Người đốt lò",
+                "passenger": "Hành khách"
+            },
+            "pirate ship": {
+                "cook": "Đầu bếp",
+                "slave": "Nô lệ",
+                "cannoneer": "Pháo thủ",
+                "tied up prisoner": "Con tin bị trói",
+                "cabin boy": "Phục vụ tàu",
+                "brave captain": "Thuyền trưởng dũng cảm",
+                "sailor": "Thủy thủ"
+            },
+            "polar station": {
+                "medic": "Y sĩ",
+                "expedition leader": "Trưởng đoàn thám hiểm",
+                "biologist": "Nhà sinh học",
+                "radioman": "Nhân viên điện đài",
+                "hydrologist": "Nhà thủy văn học",
+                "meteorologist": "Nhà khí tượng học",
+                "geologist": "Nhà địa lý học"
+            },
+            "police station": {
+                "detective": "Thám tử",
+                "lawyer": "Luật sư",
+                "journalist": "Phóng viên",
+                "criminalist": "Nhà tội phạm học",
+                "archivist": "Chuyên viên lưu trữ dữ liệu",
+                "criminal": "Tội phạm",
+                "patrol officer": "Cán bộ tuần tra"
+            },
+            "restaurant": {
+                "musician": "Nhạc công",
+                "bouncer": "Bảo kê",
+                "hostess": "Lễ tân",
+                "head chef": "Bếp trưởng",
+                "food critic": "Nhà phê bình ẩm thực",
+                "waiter": "Phục vụ bàn",
+                "customer": "Thực khách"
+            },
+            "school": {
+                "gym teacher": "Thầy thể dục",
+                "principal": "Hiệu trưởng",
+                "security guard": "Bảo vệ",
+                "janitor": "Lao công",
+                "cafeteria lady": "Phục vụ nhà ăn",
+                "maintenance man": "Thợ bảo trì",
+                "student": "Học sinh"
+            },
+            "service station": {
+                "manager": "Quản lý",
+                "tire specialist": "Nhân viên thay lốp",
+                "biker": "Tay đua phân khối lớn",
+                "car owner": "Chủ xe",
+                "car wash operator": "Nhân viên rửa xe",
+                "electrician": "Nhân viên bơm xăng",
+                "auto mechanic": "Thợ cơ điện"
+            },
+            "space station": {
+                "engineer": "Kĩ sư",
+                "alien": "Người ngoài hành tinh",
+                "pilot": "Phi hành gia",
+                "commander": "Chỉ huy",
+                "scientist": "Nhà khoa học",
+                "doctor": "Bác sĩ",
+                "space tourist": "Du khách du hành vũ trụ"
+            },
+            "submarine": {
+                "cook": "Đầu bếp",
+                "commander": "Chỉ huy",
+                "sonar technician": "Kỹ thuật viên",
+                "electronics technician": "Kỹ thuật viên công nghệ",
+                "radioman": "Nhân viên điện đài",
+                "navigator": "Hoa tiêu",
+                "sailor": "Thủy thủ"
+            },
+            "supermarket": {
+                "cashier": "Thu ngân",
+                "butcher": "Đồ tể bán thịt",
+                "janitor": "Lao công",
+                "security guard": "Bảo vệ",
+                "food sample demonstrator": "Nhân viên quầy hàng",
+                "shelf stocker": "Nhân viên xếp đồ lên giá",
+                "customer": "Khách hàng"
+            },
+            "theater": {
+                "coat check lady": "Vũ công thoát y",
+                "prompter": "Người nhắc vở",
+                "cashier": "Soát vé",
+                "director": "Đạo diễn ",
+                "actor": "Diễn viên",
+                "crew man": "Hậu cần",
+                "audience member": "Thính giả"
+            },
+            "university": {
+                "graduate student": "Cựu sinh viên",
+                "professor": "Giáo sư",
+                "dean": "Trưởng khoa",
+                "psychologist": "Nhà tâm lý học",
+                "maintenance man": "Nhân viên bảo trì",
+                "janitor": "Lao công",
+                "student": "Sinh viên"
+            },
+            "world war ii squad": {
+                "resistance fighter": "Quân kháng chiến",
+                "radioman": "Nhân viên điện đài",
+                "scout": "Trinh sát",
+                "medic": "Y sĩ",
+                "cook": "Đầu bếp",
+                "imprisoned nazi": "Tù nhân Phát xít",
+                "soldier": "Chiến binh"
+            }
+        }
+    }
+}

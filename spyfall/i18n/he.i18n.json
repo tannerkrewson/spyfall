@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "ברוכים הבאים לספייפול",
+        "new game": "משחק חדש",
+        "join game": "הצטרפות למשחק",
+        "waiting for players": "ממתין לשחקנים נוספים",
+        "access code": "קוד גישה",
+        "join my spyfall game": "הצטרף למשחק ספייפול שלי",
+        "start game": "התחל משחק",
+        "leave game": "יציאה מהמשחק",
+        "show hide": "הצג/הסתר",
+        "you are the spy": "את/ה המרגל/ת",
+        "you are not the spy": "את/ה <strong>לא</strong> המרגל/ת",
+        "the location": "המיקום",
+        "your role": "התפקיד שלך",
+        "players": "שחקנים",
+        "first": "ראשון",
+        "location reference": "מיקומים אפשריים",
+        "end game": "סוף המשחק",
+        "enter your name": "הכנס את השם שלך",
+        "create game": "אישור",
+        "back": "חזרה",
+        "enter an access code": "הכנס קוד גישה",
+        "invalid access code": "שגיאה, לא נמצא משחק עם קוד הגישה הזה!",
+        "join": "הצטרפות",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>ספייפול</a> נכתב על ידי אלכסנדר אושן, פורסם על ידי <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>"
+    },
+    "locations": {
+        "airplane": "מטוס",
+        "bank": "בנק",
+        "beach": "חוף הים",
+        "cathedral": "בית כנסת",
+        "circus tent": "קרקס",
+        "corporate party": "מסיבה בעבודה",
+        "crusader army": "צבא צלבני",
+        "casino": "קזינו",
+        "day spa": "ספא",
+        "embassy": "שגרירות",
+        "hospital": "בית החולים",
+        "hotel": "מלון",
+        "military base": "בסיס צבאי",
+        "movie studio": "אולפן קולנוע",
+        "ocean liner": "אוניית נוסעים",
+        "passenger train": "רכבת נוסעים",
+        "pirate ship": "ספינת פיראטים",
+        "polar station": "תחנת מחקר בקוטב",
+        "police station": "תחנת משטרה",
+        "restaurant": "מסעדה",
+        "school": "בית ספר",
+        "service station": "מוסך",
+        "space station": "תחנת חלל",
+        "submarine": "צוללת",
+        "supermarket": "סופרמרקט",
+        "theater": "תיאטרון",
+        "university": "אוניברסיטה",
+        "world war ii squad": "פלוגה במלחמת העולם השנייה",
+        "roles": {
+            "airplane": {
+                "first class passenger": "נוסע במחלקה ראשונה",
+                "air marshall": "מאבטח טיסה",
+                "mechanic": "מכונאי מטוסים",
+                "air hostess": "דיילת",
+                "copilot": "טייס משנה",
+                "captain": "טייס",
+                "economy class passenger": "נוסע במחלקת תיירים"
+            },
+            "bank": {
+                "armored car driver": "נהג רכב משוריין",
+                "manager": "מנהל סניף",
+                "consultant": "יועץ השקעות",
+                "robber": "שודד",
+                "security guard": "מאבטח",
+                "teller": "טלר",
+                "customer": "לקוח"
+            },
+            "beach": {
+                "beach waitress": "מלצרית חוף",
+                "kite surfer": "גולש רוח",
+                "lifeguard": "מציל",
+                "thief": "גנב",
+                "beach photographer": "צלם חוף",
+                "ice cream truck driver": "מוכר ארטיקים",
+                "beach goer": "רוחץ"
+            },
+            "cathedral": {
+                "priest": "רב",
+                "beggar": "קבצן",
+                "sinner": "חוזר בתשובה",
+                "tourist": "תייר",
+                "sponsor": "נדבן",
+                "chorister": "מתפלל",
+                "parishioner": "חזן"
+            },
+            "circus tent": {
+                "acrobat": "אקרובט",
+                "animal trainer": "מאלף חיות",
+                "magician": "קוסם",
+                "fire eater": "יורק אש",
+                "clown": "ליצן",
+                "juggler": "להטוטן",
+                "visitor": "מבקר"
+            },
+            "corporate party": {
+                "entertainer": "בדרן",
+                "manager": "מנהל",
+                "unwanted guest": "אורח לא מוזמן",
+                "owner": "הבעלים של החברה",
+                "secretary": "מזכירה",
+                "delivery boy": "שליח",
+                "accountant": "רואה חשבון"
+            },
+            "crusader army": {
+                "monk": "נזיר",
+                "imprisoned saracen": "שבוי מוסלמי",
+                "servant": "משרת",
+                "bishop": "בישוף",
+                "squire": "נושא כלים",
+                "archer": "קשת",
+                "knight": "אביר"
+            },
+            "casino": {
+                "bartender": "ברמן",
+                "head security guard": "ראש האבטחה",
+                "bouncer": "מאבטח בכניסה",
+                "manager": "מנהל קזינו",
+                "hustler": "רמאי",
+                "dealer": "דילר",
+                "gambler": "מהמר"
+            },
+            "day spa": {
+                "stylist": "סטייליסט",
+                "masseuse": "מעסה",
+                "manicurist": "מניקוריסטית",
+                "makeup artist": "מאפרת",
+                "dermatologist": "דרמטולוג",
+                "beautician": "קוסמטיקאית",
+                "customer": "לקוח"
+            },
+            "embassy": {
+                "security guard": "מאבטח",
+                "secretary": "מזכירה",
+                "ambassador": "שגריר",
+                "tourist": "תייר",
+                "refugee": "פליט",
+                "diplomat": "דיפלומט",
+                "government official": "פקיד ממשלתי"
+            },
+            "hospital": {
+                "nurse": "אחות",
+                "doctor": "דוקטור",
+                "anesthesiologist": "רופא מרדים",
+                "intern": "מתמחה",
+                "therapist": "מטפל",
+                "surgeon": "מנתח",
+                "patient": "חולה"
+            },
+            "hotel": {
+                "doorman": "שוער",
+                "security guard": "מאבטח",
+                "manager": "מנהל",
+                "housekeeper": "חדרנית",
+                "bartender": "ברמן",
+                "bellman": "נער מזוודות",
+                "customer": "אורח"
+            },
+            "military base": {
+                "deserter": "עריק",
+                "colonel": "קצין בכיר",
+                "medic": "חובש",
+                "sniper": "צלף",
+                "officer": "קצין",
+                "tank engineer": "מכונאי טנקים",
+                "soldier": "חייל"
+            },
+            "movie studio": {
+                "stunt man": "פעלולן",
+                "sound engineer": "טכנאי קול",
+                "camera man": "צלם",
+                "director": "במאי",
+                "costume artist": "מעצב תלבושות",
+                "producer": "מפיק",
+                "actor": "שחקן"
+            },
+            "ocean liner": {
+                "cook": "טבח",
+                "captain": "קפטן",
+                "bartender": "ברמן",
+                "musician": "מוזיקאי",
+                "waiter": "מלצרית",
+                "mechanic": "מכונאי",
+                "rich passenger": "נוסע עשיר"
+            },
+            "passenger train": {
+                "mechanic": "מכונאי",
+                "border patrol": "שוטר גבולות",
+                "train attendant": "כרטיסן",
+                "restaurant chef": "שף המסעדה",
+                "train driver": "נהג רכבת",
+                "stoker": "מסיק תנור",
+                "passenger": "נוסע"
+            },
+            "pirate ship": {
+                "cook": "טבח",
+                "slave": "עבד",
+                "cannoneer": "תותחן",
+                "tied up prisoner": "אסיר כבול",
+                "cabin boy": "נער סיפון",
+                "brave captain": "קפטן אמיץ",
+                "sailor": "מלח"
+            },
+            "polar station": {
+                "medic": "חובש",
+                "expedition leader": "ראש המשלחת",
+                "biologist": "ביולוג",
+                "radioman": "קשר",
+                "hydrologist": "הידרולוג",
+                "meteorologist": "מטארולוג",
+                "geologist": "גאולוג"
+            },
+            "police station": {
+                "detective": "בלש",
+                "lawyer": "עורך דין",
+                "journalist": "עיתונאי",
+                "criminalist": "קרימינולוג",
+                "archivist": "אחראי ארכיון",
+                "criminal": "פושע",
+                "patrol officer": "שוטר סיור"
+            },
+            "restaurant": {
+                "musician": "מוזיקאי",
+                "bouncer": "סדרן",
+                "hostess": "מארחת",
+                "head chef": "שף",
+                "food critic": "מבקר מסעדות",
+                "waiter": "מלצר",
+                "customer": "לקוח"
+            },
+            "school": {
+                "gym teacher": "מורה לספורט",
+                "principal": "מנהל",
+                "security guard": "שומר",
+                "janitor": "שרת",
+                "cafeteria lady": "עובד קפיטריה",
+                "maintenance man": "איש תחזוקה",
+                "student": "תלמיד"
+            },
+            "service station": {
+                "manager": "מנהל",
+                "tire specialist": "פנצ'ר מאכר",
+                "biker": "אופנוען",
+                "car owner": "בעל רכב",
+                "car wash operator": "שוטף רכב",
+                "electrician": "חשמלאי רכב",
+                "auto mechanic": "מכונאי רכב"
+            },
+            "space station": {
+                "engineer": "מהנדס",
+                "alien": "חייזר",
+                "pilot": "טייס",
+                "commander": "מפקד הצוללת",
+                "scientist": "מדען",
+                "doctor": "רופא",
+                "space tourist": "תייר חלל"
+            },
+            "submarine": {
+                "cook": "טבח",
+                "commander": "מפקד התחנה",
+                "sonar technician": "טכנאי סונר",
+                "electronics technician": "טכנאי חשמל",
+                "radioman": "קשר",
+                "navigator": "נווט",
+                "sailor": "מלח"
+            },
+            "supermarket": {
+                "cashier": "קופאית",
+                "butcher": "קצב",
+                "janitor": "איש נקיון",
+                "security guard": "מאבטח",
+                "food sample demonstrator": "מחלק טעימות",
+                "shelf stocker": "מסדר מדפים",
+                "customer": "לקוח"
+            },
+            "theater": {
+                "coat check lady": "אחראית הפקדת מעילים",
+                "prompter": "לחשן",
+                "cashier": "קופאית",
+                "director": "במאי",
+                "actor": "שחקן",
+                "crew man": "איש צוות",
+                "audience member": "אחד מהקהל"
+            },
+            "university": {
+                "graduate student": "דוקטורנט",
+                "professor": "פרופסור",
+                "dean": "דיקן",
+                "psychologist": "פסיכולוג",
+                "maintenance man": "איש תחזוקה",
+                "janitor": "שרת",
+                "student": "סטודנט"
+            },
+            "world war ii squad": {
+                "resistance fighter": "לוחם התנגדות",
+                "radioman": "קשר",
+                "scout": "גשש",
+                "medic": "חובש",
+                "cook": "טבח",
+                "imprisoned nazi": "נאצי שבוי",
+                "soldier": "חייל"
+            }
+        }
+    }
+}

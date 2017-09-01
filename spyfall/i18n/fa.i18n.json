@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "به Spyfall خوش آمدید",
+        "new game": "بازی جدید",
+        "join game": "پیوستن به بازی",
+        "waiting for players": "در انتظار شرکت‌کنندگان...",
+        "access code": "کد دسترسی",
+        "join my spyfall game": "به بازی Spyfall من بپیوندید!",
+        "start game": "شروع بازی",
+        "leave game": "خروج از بازی",
+        "show hide": "نمایش/مخفی نمودن",
+        "you are the spy": "شما جاسوس هستید!",
+        "you are not the spy": "شما جاسوس <strong>نیستید</strong>!",
+        "the location": "مکان",
+        "your role": "نقش شما",
+        "players": "شرکت کنندگان",
+        "first": "اول",
+        "location reference": "فهرست مکان‌ها",
+        "end game": "پایان بازی",
+        "enter your name": "نام خود را وارد کنید",
+        "create game": "ایجاد",
+        "back": "بازگشت",
+        "enter an access code": "کد دسترسی را وارد کنید",
+        "invalid access code": "متاسفانه بازی با کد دسترسی داده شده یافت نشد!",
+        "join": "پیوستن",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a> طراحی توسط Alexandr Ushan, انتشار توسط <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>"
+    },
+    "locations": {
+        "airplane": "هواپیما",
+        "bank": "بانک",
+        "beach": "ساحل",
+        "cathedral": "کلیسا",
+        "circus tent": "چادر سیرک",
+        "corporate party": "مهمانی سازمانی",
+        "crusader army": "لشکر جنگجویان صلیبی",
+        "casino": "کازینو",
+        "day spa": "سالن ماساژ",
+        "embassy": "سفارت‌خانه",
+        "hospital": "بیمارستان",
+        "hotel": "هتل",
+        "military base": "پایگاه نظامی",
+        "movie studio": "استودیو فیلمسازی",
+        "ocean liner": "کشتی اقیانوس‌پیما",
+        "passenger train": "قطار مسافربری",
+        "pirate ship": "کشتی دزدان دریایی",
+        "polar station": "پایگاه قطبی",
+        "police station": "پاسگاه پلیس",
+        "restaurant": "رستوران",
+        "school": "مدرسه",
+        "service station": "تعمیرگاه",
+        "space station": "ایستگاه فضایی",
+        "submarine": "زیردریایی",
+        "supermarket": "سوپرمارکت",
+        "theater": "تئاتر",
+        "university": "دانشگاه",
+        "world war ii squad": "ارتش جنگ جهانی دوم",
+        "roles": {
+            "airplane": {
+                "first class passenger": "مسافر درجه یک",
+                "air marshall": "امنیت پرواز",
+                "mechanic": "مکانیک",
+                "air hostess": "مهماندار",
+                "copilot": "کمک خلبان",
+                "captain": "خلبان",
+                "economy class passenger": "مسافر عادی"
+            },
+            "bank": {
+                "armored car driver": "راننده خودروی زرهی",
+                "manager": "مدیر",
+                "consultant": "مشاور",
+                "robber": "سارق",
+                "security guard": "نگهبان",
+                "teller": "کارمند",
+                "customer": "مشتری"
+            },
+            "beach": {
+                "beach waitress": "پیشخدمت ساحل",
+                "kite surfer": "کایت‌سوار",
+                "lifeguard": "نجات غریق",
+                "thief": "سارق",
+                "beach photographer": "عکاس ساحلی",
+                "ice cream truck driver": "بستنی‌فروش سیار",
+                "beach goer": "آدم عادی در ساحل"
+            },
+            "cathedral": {
+                "priest": "کشیش",
+                "beggar": "گدا",
+                "sinner": "گناهکار",
+                "tourist": "توریست",
+                "sponsor": "حمایت‌کننده",
+                "chorister": "آوازخوان",
+                "parishioner": "مراجعه کننده"
+            },
+            "circus tent": {
+                "acrobat": "بندباز",
+                "animal trainer": "تعلیم‌دهنده حیوانات",
+                "magician": "شعبده‌باز",
+                "fire eater": "آتش خوار",
+                "clown": "دلقک",
+                "juggler": "تردست",
+                "visitor": "تماشاگر"
+            },
+            "corporate party": {
+                "entertainer": "سرگرم کننده",
+                "manager": "مدیر",
+                "unwanted guest": "مهمان ناخوانده",
+                "owner": "مالک",
+                "secretary": "منشی",
+                "delivery boy": "پیک موتوری",
+                "accountant": "حسابدار"
+            },
+            "crusader army": {
+                "monk": "راهب",
+                "imprisoned saracen": "زندانی مسلمان",
+                "servant": "خدمتکار",
+                "bishop": "اسقف",
+                "squire": "دستیار شولیه",
+                "archer": "کماندار",
+                "knight": "شوالیه"
+            },
+            "casino": {
+                "bartender": "متصدی بار",
+                "head security guard": "سر نگهبان",
+                "bouncer": "دربان",
+                "manager": "مدیر",
+                "hustler": "کلاه‌بردار",
+                "dealer": "ورق پخش کن",
+                "gambler": "قمارباز"
+            },
+            "day spa": {
+                "stylist": "آرایشگر مو",
+                "masseuse": "ماساژور",
+                "manicurist": "مانیکورزن",
+                "makeup artist": "گریمور",
+                "dermatologist": "متخصص پوست",
+                "beautician": "آرایشگر",
+                "customer": "مشتری"
+            },
+            "embassy": {
+                "security guard": "نگهبان",
+                "secretary": "منشی",
+                "ambassador": "سفیر",
+                "tourist": "توریست",
+                "refugee": "پناهنده",
+                "diplomat": "دیپلمات",
+                "government official": "مقام دولتی"
+            },
+            "hospital": {
+                "nurse": "پرستار",
+                "doctor": "دکتر",
+                "anesthesiologist": "مسئول بیهوشی",
+                "intern": "کارآموز",
+                "therapist": "روان‌شناس",
+                "surgeon": "جراح",
+                "patient": "بیمار"
+            },
+            "hotel": {
+                "doorman": "دربان",
+                "security guard": "نگهبان",
+                "manager": "مدیر",
+                "housekeeper": "نظافت‌چی",
+                "bartender": "متصدی بار",
+                "bellman": "پیشخدمت",
+                "customer": "مشتری"
+            },
+            "military base": {
+                "deserter": "سرباز فراری",
+                "colonel": "سرهنگ",
+                "medic": "پزشک",
+                "sniper": "تک‌تیرانداز",
+                "officer": "افسر",
+                "tank engineer": "مهندس تانک",
+                "soldier": "سرباز"
+            },
+            "movie studio": {
+                "stunt man": "بدلکار",
+                "sound engineer": "صدابردار",
+                "camera man": "فیلم‌بردار",
+                "director": "کارگردان",
+                "costume artist": "مسئول صحنه و لباس",
+                "producer": "تهیه کننده",
+                "actor": "بازیگر"
+            },
+            "ocean liner": {
+                "cook": "آشپز",
+                "captain": "ناخدا",
+                "bartender": "متصدی بار",
+                "musician": "نوازنده",
+                "waiter": "پیشخدمت",
+                "mechanic": "مکانیک",
+                "rich passenger": "مسافر پولدار"
+            },
+            "passenger train": {
+                "mechanic": "مکانیک",
+                "border patrol": "گشت مرزی",
+                "train attendant": "سرپرست قطار",
+                "restaurant chef": "سرآشپز رستوران",
+                "train driver": "راننده قطار",
+                "stoker": "سوخت رسان",
+                "passenger": "مسافر"
+            },
+            "pirate ship": {
+                "cook": "آشپز",
+                "slave": "برده",
+                "cannoneer": "توپچی",
+                "tied up prisoner": "زندانی دست و پا بسته",
+                "cabin boy": "پسر کابین",
+                "brave captain": "ناخدای شجاع",
+                "sailor": "ملوان"
+            },
+            "polar station": {
+                "medic": "پزشک",
+                "expedition leader": "سرپرست اکتشاف",
+                "biologist": "زیست‌شناس",
+                "radioman": "بی‌سیم‌چی",
+                "hydrologist": "آب‌شناس",
+                "meteorologist": "هواشناس",
+                "geologist": "زمین‌شناس"
+            },
+            "police station": {
+                "detective": "کاراگاه",
+                "lawyer": "وکیل",
+                "journalist": "خبرنگار",
+                "criminalist": "جرم‌شناس",
+                "archivist": "بایگان",
+                "criminal": "مجرم",
+                "patrol officer": "افسر گشت"
+            },
+            "restaurant": {
+                "musician": "نوازنده",
+                "bouncer": "دربان",
+                "hostess": "مهماندار زن",
+                "head chef": "سرآشپز",
+                "food critic": "منتقد غذا",
+                "waiter": "پیشخدمت",
+                "customer": "مشتری"
+            },
+            "school": {
+                "gym teacher": "مربی ورزش",
+                "principal": "مدیر مدرسه",
+                "security guard": "نگهبان",
+                "janitor": "سرایدار",
+                "cafeteria lady": "مسئول کافه‌تریا",
+                "maintenance man": "تعمیرکار",
+                "student": "دانش‌آموز"
+            },
+            "service station": {
+                "manager": "مدیر",
+                "tire specialist": "متخصص تایر",
+                "biker": "دوچرخه‌سوار",
+                "car owner": "صاحب ماشین",
+                "car wash operator": "مسئول کارواش",
+                "electrician": "برقکار",
+                "auto mechanic": "مکانیک ماشین"
+            },
+            "space station": {
+                "engineer": "مهندس",
+                "alien": "موجود فصایی",
+                "pilot": "خلبان",
+                "commander": "فرمانده",
+                "scientist": "دانشمند",
+                "doctor": "دکتر",
+                "space tourist": "توریست فضایی"
+            },
+            "submarine": {
+                "cook": "آشپز",
+                "commander": "فرمانده",
+                "sonar technician": "متخصص رادار",
+                "electronics technician": "متخصص الکترونیک",
+                "radioman": "بی‌سیم‌چی",
+                "navigator": "ناوبر",
+                "sailor": "ملوان"
+            },
+            "supermarket": {
+                "cashier": "صندوقدار",
+                "butcher": "قصاب",
+                "janitor": "سرایدار",
+                "security guard": "نگهبان",
+                "food sample demonstrator": "توزیع‌کننده نمونه غذا",
+                "shelf stocker": "قفسه‌چین",
+                "customer": "مشتری"
+            },
+            "theater": {
+                "coat check lady": "تحویل‌گیر کت‌ها",
+                "prompter": "سخن‌رسان",
+                "cashier": "صندوقدار",
+                "director": "کارگردان",
+                "actor": "بازیگر",
+                "crew man": "خدمه",
+                "audience member": "تماشاچی"
+            },
+            "university": {
+                "graduate student": "دانشجو فوق‌لیسانس",
+                "professor": "استاد",
+                "dean": "رئیس",
+                "psychologist": "روان‌شناس",
+                "maintenance man": "تعمیرکار",
+                "janitor": "سرایدار",
+                "student": "دانشجو"
+            },
+            "world war ii squad": {
+                "resistance fighter": "پارتیزان",
+                "radioman": "بی‌سیم‌چی",
+                "scout": "گروه تجسس",
+                "medic": "پزشک",
+                "cook": "آشپز",
+                "imprisoned nazi": "زندانی نازی",
+                "soldier": "سرباز"
+            }   
+        }
+    }
+}

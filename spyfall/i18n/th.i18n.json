@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "ยินดีต้อนรับสู่ Spyfall",
+        "new game": "เริ่มเกมใหม่",
+        "join game": "เข้าร่วมเกม",
+        "waiting for players": "กำลังรอให้ผู้เล่นคนอื่นเข้าร่วม",
+        "access code": "รหัส",
+        "join my spyfall game": "เข้าร่วมเกม Spyfall",
+        "start game": "เริ่มเกม",
+        "leave game": "ออกจากเกม",
+        "show hide": "แสดง/ซ่อน",
+        "you are the spy": "คุณคือสายลับ!",
+        "you are not the spy": "คุณ<strong>ไม่ใช่</strong> สายลับ!",
+        "the location": "สถานที่",
+        "your role": "บทของคุณ",
+        "players": "ผู้เล่น",
+        "first": "1<span>st</span>",
+        "location reference": "รายชื่อสถานที่",
+        "end game": "จบเกม",
+        "enter your name": "ใส่ชื่อของคุณ",
+        "create game": "สร้าง",
+        "back": "กลับ",
+        "enter an access code": "ใส่รหัส",
+        "invalid access code": "ขออภัย ไม่ค้นพบห้องที่คุณหา",
+        "join": "เข้าร่วม",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a> designed by Alexandr Ushan, published by <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>"
+    },
+    "locations": {
+        "airplane": "เครื่องบิน",
+        "bank": "ธนาคาร",
+        "beach": "ชายหาด",
+        "cathedral": "วิหาร",
+        "circus tent": "เต๊นละครสัตว์",
+        "corporate party": "ปาร์ตี้ ของบริษัท",
+        "crusader army": "กองทหารครูเสด",
+        "casino": "คาสิโน",
+        "day spa": "สปา",
+        "embassy": "สถานทูต",
+        "hospital": "โรงพยาบาล",
+        "hotel": "โรงแรม",
+        "military base": "ฐานทัพ",
+        "movie studio": "โรงถ่ายหนัง",
+        "ocean liner": "เรือเดินสมุทร",
+        "passenger train": "รถไฟโดยสาร",
+        "pirate ship": "เรือโจรสลัด",
+        "polar station": "สถานีขั้วโลกเหนือ",
+        "police station": "สถานีตำรวจ",
+        "restaurant": "ภัตตาคาร",
+        "school": "โรงเรียน",
+        "service station": "ปั๊มน้ำมัน",
+        "space station": "สถานีอวกาศ",
+        "submarine": "เรือดำน้ำ",
+        "supermarket": "ซูเปอร์มาเก็ต",
+        "theater": "โรงละคร",
+        "university": "มหาวิทยาลัย",
+        "world war ii squad": "หน่วยทหาร สมัยสงครามโลกครั้งที่ 2",
+        "roles": {
+            "airplane": {
+                "first class passenger": "ผู้โดยสารชั้นหนึ่ง",
+                "air marshall": "ตำรวจอากาศ",
+                "mechanic": "ช่างเครื่อง",
+                "air hostess": "พนักงานต้อนรับบนเครื่องบิน",
+                "copilot": "ผู้ช่วยนักบิน",
+                "captain": "กัปตัน",
+                "economy class passenger": "ผู้โดยสารชั้นประหยัด"
+            },
+            "bank": {
+                "armored car driver": "พลขับรถหุ้มเกราะ",
+                "manager": "ผู้จัดการ",
+                "consultant": "ที่ปรึกษา",
+                "robber": "ขโมย",
+                "security guard": "พนักงานรักษาความปลอดภัย",
+                "teller": "พนักงานธนาคารที่มีหน้าที่รับหรือจ่ายเงิน",
+                "customer": "ลูกค้า"
+            },
+            "beach": {
+                "beach waitress": "พนักงานเสริฟ ร้านอาหารริมหาด",
+                "kite surfer": "นักเล่นเซิร์ฟ",
+                "lifeguard": "เจ้าหน้าที่กู้ภัย",
+                "thief": "โจร",
+                "beach photographer": "ช่างภาพ",
+                "ice cream truck driver": "คนขับรถไอศครีม",
+                "beach goer": "คนเดินหาด"
+            },
+            "cathedral": {
+                "priest": "นักบวช",
+                "beggar": "ขอทาน",
+                "sinner": "คนบาป",
+                "tourist": "นักท่องเที่ยว",
+                "sponsor": "ผู้สนับสนุน",
+                "chorister": "เด็กที่ร้องเพลงสวด",
+                "parishioner": "ศาสนิกชน"
+            },
+            "circus tent": {
+                "acrobat": "นักกายกรรม",
+                "animal trainer": "คนฝึกสัตว์",
+                "magician": "นักมายากล",
+                "fire eater": "นักแสดงกินไฟ",
+                "clown": "ตัวตลก",
+                "juggler": "นักขว้างมีด",
+                "visitor": "แขก"
+            },
+            "corporate party": {
+                "entertainer": "ผู้สร้างความบรรเทิง",
+                "manager": "ผู้จัดการ",
+                "unwanted guest": "แขกผู้ไม่เป็นที่ต้องการ",
+                "owner": "เจ้าของ",
+                "secretary": "เลขา",
+                "delivery boy": "คนส่งของ",
+                "accountant": "นักบัญชี"
+            },
+            "crusader army": {
+                "monk": "พระ",
+                "imprisoned saracen": "นักโทษ",
+                "servant": "คนรับใช้",
+                "bishop": "บิช๊อป",
+                "squire": "ทหารรับใช้",
+                "archer": "พลธนู",
+                "knight": "อัศวิน"
+            },
+            "casino": {
+                "bartender": "บาร์เทนเดอร์",
+                "head security guard": "หัวหน้าหน่วยรักษาความปลอดภัย",
+                "bouncer": "คนเฝ้าประตู",
+                "manager": "ผู้จัดการ",
+                "hustler": "คนทำงาน",
+                "dealer": "คนแจกไพ่",
+                "gambler": "นักพนัน"
+            },
+            "day spa": {
+                "stylist": "นักออกแบบการแต่งตัว",
+                "masseuse": "ช่างนวด",
+                "manicurist": "ช่างทำเล็บ",
+                "makeup artist": "ช่างแต่งหน้า",
+                "dermatologist": "ผู้เชี่ยวชาญทางโรคผิวหนัง",
+                "beautician": "ช่างเสริมสวย",
+                "customer": "ลูกค้า"
+            },
+            "embassy": {
+                "security guard": "พนักงานรักษาความปลอดภัย",
+                "secretary": "เลขานุการ",
+                "ambassador": "ทูต",
+                "tourist": "นักท่องเที่ยว",
+                "refugee": "ผู้อพยพ",
+                "diplomat": "ทูต",
+                "government official": "เจ้าหน้าที่รัฐ"
+            },
+            "hospital": {
+                "nurse": "พยาบาล",
+                "doctor": "แพทย์",
+                "anesthesiologist": "วิสัญญีแพทย์ ",
+                "intern": "แพทย์ฝึกหัด",
+                "therapist": "นักบำบัด",
+                "surgeon": "แพทย์ผ่าตัด",
+                "patient": "คนไข้"
+            },
+            "hotel": {
+                "doorman": "คนเปิดประตู",
+                "security guard": "พนักงานรักษาความปลอดภัย",
+                "manager": "ผู้จัดการ",
+                "housekeeper": "พนักงานทำความสะอาด",
+                "bartender": "บาร์เทนเดอร์",
+                "bellman": "เด็กยกกระเป๋า",
+                "customer": "ลูกค้า"
+            },
+            "military base": {
+                "deserter": "ทหารหนีทัพ",
+                "colonel": "ผู้พัน",
+                "medic": "แพทย์",
+                "sniper": "พลแม่นปืน",
+                "officer": "เจ้าหน้าที่",
+                "tank engineer": "วิศวกรรถถัง",
+                "soldier": "ทหาร"
+            },
+            "movie studio": {
+                "stunt man": "สตั้นแมน",
+                "sound engineer": "วิศวกรเสียง",
+                "camera man": "ช่างกล้อง",
+                "director": "ผู้กำกับ",
+                "costume artist": "เจ้าหน้าที่จัดหาชุด",
+                "producer": "ผู้อำนวยการผลิต",
+                "actor": "นักแสดง"
+            },
+            "ocean liner": {
+                "cook": "พ่อครัว",
+                "captain": "กัปตัน",
+                "bartender": "บาร์เทนเดอร์",
+                "musician": "นักดนตรี",
+                "waiter": "บริกร",
+                "mechanic": "ช่างเครื่อง",
+                "rich passenger": "ผู้โดยสารระดับเศรษฐี"
+            },
+            "passenger train": {
+                "mechanic": "ช่างเครื่อง",
+                "border patrol": "เจ้าหน้าที่ตระเวนชายแดน",
+                "train attendant": "ผู้โดยสาร",
+                "restaurant chef": "พ่อครัว",
+                "train driver": "คนขับรถไฟ",
+                "stoker": "คนควบคุมเตาไฟ",
+                "passenger": "ผู้โดยสาร"
+            },
+            "pirate ship": {
+                "cook": "พ่อครัว",
+                "slave": "ทาส",
+                "cannoneer": "พลปืนใหญ่",
+                "tied up prisoner": "นักโทษที่ถูกจับมัดไว้",
+                "cabin boy": "เด็กรับใช้บนเรือ",
+                "brave captain": "กัปตัน",
+                "sailor": "กะลาสี"
+            },
+            "polar station": {
+                "medic": "แพทย์",
+                "expedition leader": "หัวหน้าคณะสำรวจ",
+                "biologist": "นักชีววิทยา",
+                "radioman": "เจ้าหน้าที่สื่อสาร",
+                "hydrologist": "ผู้เชียวชาญด้านน้ำ",
+                "meteorologist": "ผู้เชี่ยวชาญด้านอุกกาบาต",
+                "geologist": "นักธรณีวิทยา"
+            },
+            "police station": {
+                "detective": "นักสืบ",
+                "lawyer": "ทนาย",
+                "journalist": "นักข่าว",
+                "criminalist": "นักอาชญากรรมวิทยา",
+                "archivist": "ผู้เก็บเอกสารสำคัญ",
+                "criminal": "อาชญากร",
+                "patrol officer": "เจ้าหน้าที่ลาดตระเวน"
+            },
+            "restaurant": {
+                "musician": "นักดนตรี",
+                "bouncer": "คนเฝ้าประตู",
+                "hostess": "เจ้าของร้านหญิง",
+                "head chef": "หัวหน้าพ่อครัว",
+                "food critic": "นักวิจารณ์อาหาร",
+                "waiter": "บริกร",
+                "customer": "ลูกค้า"
+            },
+            "school": {
+                "gym teacher": "ครูพละ",
+                "principal": "ครูใหญ่",
+                "security guard": "พนักงานรักษาความปลอดภัย",
+                "janitor": "ภารโรง",
+                "cafeteria lady": "พนักงานโรงอาหาร",
+                "maintenance man": "ช่างจิปาถะ",
+                "student": "นักเรียน"
+            },
+            "service station": {
+                "manager": "ผู้จัดการ",
+                "tire specialist": "ผู้เชี่ยวชาญด้านยาง",
+                "biker": "คนขี่มอเตอร์ไซ",
+                "car owner": "เจ้าของรถ",
+                "car wash operator": "เจ้าหน้าที่ล้างรถ",
+                "electrician": "ช่างไฟ",
+                "auto mechanic": "ช่างเครื่อง"
+            },
+            "space station": {
+                "engineer": "วิศวกร",
+                "alien": "เอเลี่ยน",
+                "pilot": "นักบินอวกาศ",
+                "commander": "ผู้บัญชาการ",
+                "scientist": "นักวิทยาศาสตร์",
+                "doctor": "หมอ",
+                "space tourist": "นักท่องเที่ยวอวกาศ"
+            },
+            "submarine": {
+                "cook": "พ่อครัว",
+                "commander": "ผู้บัญชาการ",
+                "sonar technician": "เจ้าหน้าที่ตรวจโซนา",
+                "electronics technician": "ช่างไฟฟ้า",
+                "radioman": "เจ้าหน้าที่สื่อสาร",
+                "navigator": "เจ้าหน้าที่นำทาง",
+                "sailor": "กะลาสี"
+            },
+            "supermarket": {
+                "cashier": "พนักงานเก็บเงิน",
+                "butcher": "คนขายเนื้อ",
+                "janitor": "ภารโรง",
+                "security guard": "พนักงานรักษาความปลอดภัย",
+                "food sample demonstrator": "พนักงานแจกอาหารทดลองชิม",
+                "shelf stocker": "พนักงานจัดเรียงสินค้า",
+                "customer": "ลูกค้า"
+            },
+            "theater": {
+                "coat check lady": "เจ้าหน้าที่รับฝากเสื้อโค้ท",
+                "prompter": "คนบอกบท",
+                "cashier": "เจ้าหน้าที่คิดเงิน",
+                "director": "ผู้กำกับ",
+                "actor": "นักแสดง",
+                "crew man": "เจ้าหน้าที่ดำเนินการแสดง",
+                "audience member": "ผู้ชม"
+            },
+            "university": {
+                "graduate student": "นักศึกษาปริญญาโท",
+                "professor": "ศาสตราจารย์",
+                "dean": "คณบดี",
+                "psychologist": "นักจิตวิทยา",
+                "maintenance man": "พนักงานซ่อมบำรุง",
+                "janitor": "ภารโรง",
+                "student": "นักเรียน"
+            },
+            "world war ii squad": {
+                "resistance fighter": "หน่วยต่อต้าน",
+                "radioman": "เจ้าหน้าที่สื่อสาร",
+                "scout": "หน่วยลาดตระเวน",
+                "medic": "แพทย์",
+                "cook": "พ่อครัว",
+                "imprisoned nazi": "ทหารนาซีที่โดนจับอยู่",
+                "soldier": "ทหาร"
+            }
+        }
+    }
+}

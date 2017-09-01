@@ -4,7 +4,6 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
 insecure
 jquery
 mizzao:timesync
@@ -18,3 +17,4 @@ tap:i18n
 amplify
 mrt:flash-messages
 less
+meteorhacks:kadira

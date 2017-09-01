@@ -1,0 +1,312 @@
+﻿{
+    "ui": {
+        "welcome to spyfall": "Spyfall માં આપનું સ્વાગત છે",
+        "new game": "નવી રમત",
+        "join game": "ગેમ માં જોડાઓ",
+        "waiting for players": "ખેલાડીઓ માટે રાહ જુએ છે ...",
+        "access code": "પ્રવેશ કોડ",
+        "join my spyfall game": "મારા spyfall રમત માં જોડાઓ",
+        "start game": "પ્રારંભ ગેમ",
+        "leave game": "રમત છોડો",
+        "show hide": "બતાવો / છુપાવો",
+        "you are the spy": "તમે જાસૂસ છો!",
+        "you are not the spy": "તમે જાસૂસ નથી",
+        "the location": "સ્થળ",
+        "your role": "તમારી ભૂમિકા",
+        "players": "ખેલાડીઓ",
+        "first": "પ્રથમ",
+        "location reference": "સ્થાન સંદર્ભ",
+        "end game": "રમત પુરી",
+        "enter your name": "તમારું નામ દાખલ કરો",
+        "create game": "રમત બનાવો",
+        "back": "પાછળ",
+        "enter an access code": "પ્રવેશ કોડ દાખલ કરો",
+        "invalid access code": "માફ કરશો, કોઈ રમત તમે આપેલી પ્રવેશ કોડ સાથે મળી નથી!",
+        "join": "જોડાઓ",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a> designed by Alexandr Ushan, published by <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>, Gujarati translation by <a href='https://facebook.com/sandeep.scet' target='_blank'>Sandeep</a>"
+    },
+    "locations": {
+        "airplane": "વિમાન",
+        "bank": "બેન્ક",
+        "beach": "બીચ",
+        "cathedral": "ચર્ચ",
+        "circus tent": "સર્કસ તંબુ",
+        "corporate party": "કોર્પોરેટ પક્ષ",
+        "crusader army": "મુઝાહિદ્દીન લશ્કર",
+        "casino": "કસિનો",
+        "day spa": "દિવસ સ્પા",
+        "embassy": "એલચીની કચેરી",
+        "hospital": "હોસ્પિટલ",
+        "hotel": "હોટેલ",
+        "military base": "લશ્કરી બેઝ",
+        "movie studio": "ફિલ્મ સ્ટુડિયો",
+        "ocean liner": "સમુદ્ર જહાજ",
+        "passenger train": "પેસેન્જર ટ્રેન",
+        "pirate ship": "ચાંચિયાનું શિપ",
+        "polar station": "ધ્રુવીય સ્ટેશન",
+        "police station": "પોલીસ સ્ટેશન",
+        "restaurant": "રેસ્ટોરન્ટ",
+        "school": "શાળા",
+        "service station": "સર્વિસ સ્ટેશન",
+        "space station": "સ્પેસ સ્ટેશન",
+        "submarine": "સબમરીન",
+        "supermarket": "સુપરમાર્કેટ",
+        "theater": "થિયેટર",
+        "university": "યુનિવર્સિટી",
+        "world war ii squad": "બીજા વિશ્વયુદ્ધ સ્ક્વોડ",
+        "roles": {
+            "airplane": {
+                "first class passenger": "First Class Passenger",
+                "air marshall": "Air Marshal",
+                "mechanic": "Mechanic",
+                "air hostess": "Air Hostess",
+                "copilot": "Co-Pilot",
+                "captain": "Captain",
+                "economy class passenger": "Economy Class Passenger"
+            },
+            "bank": {
+                "armored car driver": "Armored Car Driver",
+                "manager": "Manager",
+                "consultant": "Consultant",
+                "robber": "Robber",
+                "security guard": "Security Guard",
+                "teller": "Teller",
+                "customer": "Customer"
+            },
+            "beach": {
+                "beach waitress": "Beach Waitress",
+                "kite surfer": "Kite Surfer",
+                "lifeguard": "Lifeguard",
+                "thief": "Thief",
+                "beach photographer": "Beach Photographer",
+                "ice cream truck driver": "Ice Cream Truck Driver",
+                "beach goer": "Beach Goer"
+            },
+            "cathedral": {
+                "priest": "Priest",
+                "beggar": "Beggar",
+                "sinner": "Sinner",
+                "tourist": "Tourist",
+                "sponsor": "Sponsor",
+                "chorister": "Chorister",
+                "parishioner": "Parishioner"
+            },
+            "circus tent": {
+                "acrobat": "Acrobat",
+                "animal trainer": "Animal Trainer",
+                "magician": "Magician",
+                "fire eater": "Fire Eater",
+                "clown": "Clown",
+                "juggler": "Juggler",
+                "visitor": "Visitor"
+            },
+            "corporate party": {
+                "entertainer": "Entertainer",
+                "manager": "Manager",
+                "unwanted guest": "Unwanted Guest",
+                "owner": "Owner",
+                "secretary": "Secretary",
+                "delivery boy": "Delivery Boy",
+                "accountant": "Accountant"
+            },
+            "crusader army": {
+                "monk": "Monk",
+                "imprisoned saracen": "Imprisoned Saracen",
+                "servant": "Servant",
+                "bishop": "Bishop",
+                "squire": "Squire",
+                "archer": "Archer",
+                "knight": "Knight"
+            },
+            "casino": {
+                "bartender": "Bartender",
+                "head security guard": "Head Security Guard",
+                "bouncer": "Bouncer",
+                "manager": "Manager",
+                "hustler": "Hustler",
+                "dealer": "Dealer",
+                "gambler": "Gambler"
+            },
+            "day spa": {
+                "stylist": "Stylist",
+                "masseuse": "Masseuse",
+                "manicurist": "Manicurist",
+                "makeup artist": "Makeup Artist",
+                "dermatologist": "Dermatologist",
+                "beautician": "Beautician",
+                "customer": "Customer"
+            },
+            "embassy": {
+                "security guard": "Security Guard",
+                "secretary": "Secretary",
+                "ambassador": "Ambassador",
+                "tourist": "Tourist",
+                "refugee": "Refugee",
+                "diplomat": "Diplomat",
+                "government official": "Government Official"
+            },
+            "hospital": {
+                "nurse": "Nurse",
+                "doctor": "Doctor",
+                "anesthesiologist": "Anesthesiologist",
+                "intern": "Intern",
+                "therapist": "Therapist",
+                "surgeon": "Surgeon",
+                "patient": "Patient"
+            },
+            "hotel": {
+                "doorman": "Doorman",
+                "security guard": "Security Guard",
+                "manager": "Manager",
+                "housekeeper": "Housekeeper",
+                "bartender": "Bartender",
+                "bellman": "Bellman",
+                "customer": "Customer"
+            },
+            "military base": {
+                "deserter": "Deserter",
+                "colonel": "Colonel",
+                "medic": "Medic",
+                "sniper": "Sniper",
+                "officer": "Officer",
+                "tank engineer": "Tank Engineer",
+                "soldier": "Soldier"
+            },
+            "movie studio": {
+                "stunt man": "Stunt Man",
+                "sound engineer": "Sound Engineer",
+                "camera man": "Camera Man",
+                "director": "Director",
+                "costume artist": "Costume Artist",
+                "producer": "Producer",
+                "actor": "Actor"
+            },
+            "ocean liner": {
+                "cook": "Cook",
+                "captain": "Captain",
+                "bartender": "Bartender",
+                "musician": "Musician",
+                "waiter": "Waiter",
+                "mechanic": "Mechanic",
+                "rich passenger": "Rich Passenger"
+            },
+            "passenger train": {
+                "mechanic": "Mechanic",
+                "border patrol": "Border Patrol",
+                "train attendant": "Train Attendant",
+                "restaurant chef": "Restaurant Chef",
+                "train driver": "Train Driver",
+                "stoker": "Stoker",
+                "passenger": "Passenger"
+            },
+            "pirate ship": {
+                "cook": "Cook",
+                "slave": "Slave",
+                "cannoneer": "Cannoneer",
+                "tied up prisoner": "Tied Up Prisoner",
+                "cabin boy": "Cabin Boy",
+                "brave captain": "Brave Captain",
+                "sailor": "Sailor"
+            },
+            "polar station": {
+                "medic": "Medic",
+                "expedition leader": "Expedition Leader",
+                "biologist": "Biologist",
+                "radioman": "Radioman",
+                "hydrologist": "Hydrologist",
+                "meteorologist": "Meteorologist",
+                "geologist": "Geologist"
+            },
+            "police station": {
+                "detective": "Detective",
+                "lawyer": "Lawyer",
+                "journalist": "Journalist",
+                "criminalist": "Criminalist",
+                "archivist": "Archivist",
+                "criminal": "Criminal",
+                "patrol officer": "Patrol Officer"
+            },
+            "restaurant": {
+                "musician": "Musician",
+                "bouncer": "Bouncer",
+                "hostess": "Hostess",
+                "head chef": "Head Chef",
+                "food critic": "Food Critic",
+                "waiter": "Waiter",
+                "customer": "Customer"
+            },
+            "school": {
+                "gym teacher": "Gym Teacher",
+                "principal": "Principal",
+                "security guard": "Security Guard",
+                "janitor": "Janitor",
+                "cafeteria lady": "Cafeteria Lady",
+                "maintenance man": "Maintenance Man",
+                "student": "Student"
+            },
+            "service station": {
+                "manager": "Manager",
+                "tire specialist": "Tire Specialist",
+                "biker": "Biker",
+                "car owner": "Car Owner",
+                "car wash operator": "Car Wash Operator",
+                "electrician": "Electrician",
+                "auto mechanic": "Auto Mechanic"
+            },
+            "space station": {
+                "engineer": "Engineer",
+                "alien": "Alien",
+                "pilot": "Pilot",
+                "commander": "Commander",
+                "scientist": "Scientist",
+                "doctor": "Doctor",
+                "space tourist": "Space Tourist"
+            },
+            "submarine": {
+                "cook": "Cook",
+                "commander": "Commander",
+                "sonar technician": "Sonar Technician",
+                "electronics technician": "Electronics Technician",
+                "radioman": "Radioman",
+                "navigator": "Navigator",
+                "sailor": "Sailor"
+            },
+            "supermarket": {
+                "cashier": "Cashier",
+                "butcher": "Butcher",
+                "janitor": "Janitor",
+                "security guard": "Security Guard",
+                "food sample demonstrator": "Food Sample Demonstrator",
+                "shelf stocker": "Shelf Stocker",
+                "customer": "Customer"
+            },
+            "theater": {
+                "coat check lady": "Coat Check Lady",
+                "prompter": "Prompter",
+                "cashier": "Cashier",
+                "director": "Director",
+                "actor": "Actor",
+                "crew man": "Crew Man",
+                "audience member": "Audience Member"
+            },
+            "university": {
+                "graduate student": "Graduate Student",
+                "professor": "Professor",
+                "dean": "Dean",
+                "psychologist": "Psychologist",
+                "maintenance man": "Maintenance Man",
+                "janitor": "Janitor",
+                "student": "Student"
+            },
+            "world war ii squad": {
+                "resistance fighter": "Resistance Fighter",
+                "radioman": "Radioman",
+                "scout": "Scout",
+                "medic": "Medic",
+                "cook": "Cook",
+                "imprisoned nazi": "Imprisoned Nazi",
+                "soldier": "Soldier"
+            }   
+        }
+    }
+}

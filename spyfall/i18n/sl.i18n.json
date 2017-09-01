@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "Dobrodošli v Spyfall",
+        "new game": "Nova igra",
+        "join game": "Pridruži se igri",
+        "waiting for players": "Čakanje na igralce...",
+        "access code": "Dostopna koda",
+        "join my spyfall game": "Pridruži se moji Spyfall igri!",
+        "start game": "Začni igro",
+        "leave game": "Zapusti igro",
+        "show hide": "prikaži/skrij",
+        "you are the spy": "Ti si vohun!",
+        "you are not the spy": "Ti <strong>nisi</strong> vohun!",
+        "the location": "Lokacija",
+        "your role": "Tvoja vloga",
+        "players": "Igralci",
+        "first": "Prvi",
+        "location reference": "Referenca lokacij",
+        "end game": "Končaj igro",
+        "enter your name": "Vnesi tvoje ime",
+        "create game": "Ustvari",
+        "back": "Nazaj",
+        "enter an access code": "Vnesi dostopno kodo",
+        "invalid access code": "Žal, igra z določeno dostopno kodo ni bila najdena!",
+        "join": "Pridruži se",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a> zasnoval Alexandr Ushan, založil <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>"
+    },
+    "locations": {
+        "airplane": "Letalo",
+        "bank": "Banka",
+        "beach": "Plaža",
+        "cathedral": "Katedrala",
+        "circus tent": "Cirkuški šotor",
+        "corporate party": "Zabava podjetja",
+        "crusader army": "Križarska vojska",
+        "casino": "Kazino",
+        "day spa": "Zdravilišče",
+        "embassy": "Veleposlaništvo",
+        "hospital": "Bolnišnica",
+        "hotel": "Hotel",
+        "military base": "Vojaška baza",
+        "movie studio": "Filmski studio",
+        "ocean liner": "Čezoceanska ladja",
+        "passenger train": "Potniški vlak",
+        "pirate ship": "Piratska ladja",
+        "polar station": "Polarna postaja",
+        "police station": "Policijska postaja",
+        "restaurant": "Restavracija",
+        "school": "Šola",
+        "service station": "Avtomehanik",
+        "space station": "Vesoljska postaja",
+        "submarine": "Podmornica",
+        "supermarket": "Supermarket",
+        "theater": "Gledališče",
+        "university": "Univerza",
+        "world war ii squad": "Vojaški oddelek v 2.svetovni vojni",
+        "roles": {
+            "airplane": {
+                "first class passenger": "Prvo razredni potnik",
+                "air marshall": "Zračni šerif",
+                "mechanic": "Mehanik",
+                "air hostess": "Stevardesa",
+                "copilot": "Kopilot",
+                "captain": "Kapitan",
+                "economy class passenger": "Potnikov v ekonomskem razredu"
+            },
+            "bank": {
+                "armored car driver": "Voznik oklepnika",
+                "manager": "Upravitelj",
+                "consultant": "Svetovalec",
+                "robber": "Ropar",
+                "security guard": "Varnostnik",
+                "teller": "Blagajnik",
+                "customer": "Stranka"
+            },
+            "beach": {
+                "beach waitress": "Natakarica",
+                "kite surfer": "Deskar z zmajem",
+                "lifeguard": "Reševalec",
+                "thief": "Tat",
+                "beach photographer": "Fotograf",
+                "ice cream truck driver": "Voznik sladolednega tovornjaka",
+                "beach goer": "Sprehajalec"
+            },
+            "cathedral": {
+                "priest": "Duhovnik",
+                "beggar": "Berač",
+                "sinner": "Grešnik",
+                "tourist": "Turist",
+                "sponsor": "Sponzor",
+                "chorister": "Korni pevec",
+                "parishioner": "Župljan"
+            },
+            "circus tent": {
+                "acrobat": "Akrobat",
+                "animal trainer": "Trener živali",
+                "magician": "Čarovnik",
+                "fire eater": "Požiralec ognja",
+                "clown": "Klovn",
+                "juggler": "Žongler",
+                "visitor": "Obiskovalec"
+            },
+            "corporate party": {
+                "entertainer": "Zabavljač",
+                "manager": "Menedžer",
+                "unwanted guest": "Nezaželen gost",
+                "owner": "Lastnik",
+                "secretary": "Tajnik",
+                "delivery boy": "Dostavljalec",
+                "accountant": "Računovodja"
+            },
+            "crusader army": {
+                "monk": "Menih",
+                "imprisoned saracen": "Zaprt Saracen",
+                "servant": "Služabnik",
+                "bishop": "Škof",
+                "squire": "Oproda",
+                "archer": "Lokostrelec",
+                "knight": "Vitez"
+            },
+            "casino": {
+                "bartender": "Točaj",
+                "head security guard": "Glavni varnostnik",
+                "bouncer": "Redar",
+                "manager": "Upravitelj",
+                "hustler": "Prevarant",
+                "dealer": "Delilec",
+                "gambler": "Kockar"
+            },
+            "day spa": {
+                "stylist": "Stilist",
+                "masseuse": "Maser",
+                "manicurist": "Maniker",
+                "makeup artist": "Umetnik ličenja",
+                "dermatologist": "Dermatolog",
+                "beautician": "Kozmetičar",
+                "customer": "Stranka"
+            },
+            "embassy": {
+                "security guard": "Varnostnik",
+                "secretary": "Tajnik",
+                "ambassador": "Veleposlanik",
+                "tourist": "Turist",
+                "refugee": "Begunec",
+                "diplomat": "Diplomat",
+                "government official": "Državni uradnik"
+            },
+            "hospital": {
+                "nurse": "Medicinska sestra",
+                "doctor": "Zdravnik",
+                "anesthesiologist": "Anesteziolog",
+                "intern": "Pripravnik",
+                "therapist": "Terapevt",
+                "surgeon": "Kirurg",
+                "patient": "Bolnik"
+            },
+            "hotel": {
+                "doorman": "Vratar",
+                "security guard": "Varnostnik",
+                "manager": "Upravitelj",
+                "housekeeper": "Oskrbnik",
+                "bartender": "Točaj",
+                "bellman": "Postrešček",
+                "customer": "Stranka"
+            },
+            "military base": {
+                "deserter": "Dezerter",
+                "colonel": "Polkovnik",
+                "medic": "Bolničar",
+                "sniper": "Ostrostrelec",
+                "officer": "Častnik",
+                "tank engineer": "Tankovski inženir",
+                "soldier": "Vojak"
+            },
+            "movie studio": {
+                "stunt man": "Kaskader",
+                "sound engineer": "Zvočni inženir",
+                "camera man": "Kamerman",
+                "director": "Režiser",
+                "costume artist": "Kostumer",
+                "producer": "Producent",
+                "actor": "Igralec"
+            },
+            "ocean liner": {
+                "cook": "Kuhar",
+                "captain": "Kapitan",
+                "bartender": "Točaj",
+                "musician": "Glasbenik",
+                "waiter": "Natakar",
+                "mechanic": "Mehanik",
+                "rich passenger": "Bogat potnik"
+            },
+            "passenger train": {
+                "mechanic": "Mehanik",
+                "border patrol": "Mejna patrulja",
+                "train attendant": "Strežnik na vlaku",
+                "restaurant chef": "Šef restavracije",
+                "train driver": "Strojevodja",
+                "stoker": "Kurilec",
+                "passenger": "Potnik"
+            },
+            "pirate ship": {
+                "cook": "Kuhar",
+                "slave": "Suženj",
+                "cannoneer": "Topničar",
+                "tied up prisoner": "Zvezan zapornik",
+                "cabin boy": "Fant na krovu",
+                "brave captain": "Pogumni kapitan",
+                "sailor": "Mornar"
+            },
+            "polar station": {
+                "medic": "Bolničar",
+                "expedition leader": "Vodja odprave",
+                "biologist": "Biolog",
+                "radioman": "Radio vezist",
+                "hydrologist": "Hidrolog",
+                "meteorologist": "Meteorolog",
+                "geologist": "Geolog"
+            },
+            "police station": {
+                "detective": "Detektiv",
+                "lawyer": "Odvetnik",
+                "journalist": "Novinar",
+                "criminalist": "Kriminalist",
+                "archivist": "Arhivar",
+                "criminal": "Kriminalec",
+                "patrol officer": "Patrulja"
+            },
+            "restaurant": {
+                "musician": "Glasbenik",
+                "bouncer": "Redar",
+                "hostess": "Hostesa",
+                "head chef": "Glavni kuhar",
+                "food critic": "Kritik hrane",
+                "waiter": "Natakar",
+                "customer": "Stranka"
+            },
+            "school": {
+                "gym teacher": "Učitelj telovadbe",
+                "principal": "Ravnatelj",
+                "security guard": "Varnostnik",
+                "janitor": "Čistilec",
+                "cafeteria lady": "Gospa v menzi",
+                "maintenance man": "Hišnik",
+                "student": "Učenec"
+            },
+            "service station": {
+                "manager": "Upravitelj",
+                "tire specialist": "Specialist za pnevmatike",
+                "biker": "Motorist",
+                "car owner": "Lastnik avtomobila",
+                "car wash operator": "Operater avtopralnice",
+                "electrician": "Električar",
+                "auto mechanic": "Avtomehanik"
+            },
+            "space station": {
+                "engineer": "Inženir",
+                "alien": "Vesoljec",
+                "pilot": "Pilot",
+                "commander": "Upravljalnik",
+                "scientist": "Znanstvenik",
+                "doctor": "Zdravnik",
+                "space tourist": "Vesoljski turist"
+            },
+            "submarine": {
+                "cook": "Kuhar",
+                "commander": "Poveljnik",
+                "sonar technician": "Sonar tehnik",
+                "electronics technician": "Tehnik za elektroniko",
+                "radioman": "Radio vezist",
+                "navigator": "Navigator",
+                "sailor": "Mornar"
+            },
+            "supermarket": {
+                "cashier": "Blagajnik",
+                "butcher": "Mesar",
+                "janitor": "Čistilec",
+                "security guard": "Varnostnik",
+                "food sample demonstrator": "Demonstrator vzorcev hrane",
+                "shelf stocker": "Polnilec polic",
+                "customer": "Stranka"
+            },
+            "theater": {
+                "coat check lady": "Garderober",
+                "prompter": "Šepetalec",
+                "cashier": "Blagajnik",
+                "director": "Režiser",
+                "actor": "Igralec",
+                "crew man": "Član osebja",
+                "audience member": "Član občinstva"
+            },
+            "university": {
+                "graduate student": "Podiplomski študent",
+                "professor": "Profesor",
+                "dean": "Dekan",
+                "psychologist": "Psiholog",
+                "maintenance man": "Hišnik",
+                "janitor": "Čistilec",
+                "student": "Študent"
+            },
+            "world war ii squad": {
+                "resistance fighter": "Uporniški borec",
+                "radioman": "Radio vezist",
+                "scout": "Izvidnik",
+                "medic": "Bolničar",
+                "cook": "Kuhar",
+                "imprisoned nazi": "Zaprt nacist",
+                "soldier": "Vojak"
+            }
+        }
+    }
+}

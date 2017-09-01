@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "مرحباً بك في Spyfall",
+        "new game": "لعبة جديدة",
+        "join game": "الدخول للعبة",
+        "waiting for players": "انتظار اللاعبين...",
+        "access code": "رمز الدخول",
+        "join my spyfall game": "الدخول في لعبة Spyfall !",
+        "start game": "بدأ اللعبة",
+        "leave game": "مغادرة اللعبة",
+        "show hide": "إظهار\\إخفاء",
+        "you are the spy": "أنت الجاسوس!",
+        "you are not the spy": "أنت <strong>لست<strong> الجاسوس!",
+        "the location": "الموقع",
+        "your role": "دورك",
+        "players": "اللاعبين",
+        "first": "1<span>st</span>",
+        "location reference": "جميع المواقع",
+        "end game": "إنهاء اللعبة",
+        "enter your name": "أدخل اسمك",
+        "create game": "إنشاء لعبة",
+        "back": "رجوع",
+        "enter an access code": "أدخل رمز الدخول",
+        "invalid access code": "الرمز المدخل غير صحيح!",
+        "join": "دخول",
+        "footer": "<a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a> تم نشره من قبل Alexandr Ushan, صممت من قبل <a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a>"
+    },
+    "locations": {
+        "airplane": "طائرة",
+        "bank": "بنك",
+        "beach": "شاطئ",
+        "cathedral": "كنيسة",
+        "circus tent": "خيمة السرك",
+        "corporate party": "حفلة خاصة للشركة",
+        "crusader army": "الجيش الصليبي",
+        "casino": "نادي القمار",
+        "day spa": "منتجع",
+        "embassy": "سفارة",
+        "hospital": "مستشفى",
+        "hotel": "فندق",
+        "military base": "قاعدة عسكرية",
+        "movie studio": "استديو أفلام",
+        "ocean liner": "سفينة بحرية",
+        "passenger train": "قطار",
+        "pirate ship": "سفينة قراصنة",
+        "polar station": "محطة دراسة قطبية",
+        "police station": "مركز الشرطة",
+        "restaurant": "مطعم",
+        "school": "مدرسة",
+        "service station": "محطة وقود",
+        "space station": "محطة فضاء",
+        "submarine": "غواصة",
+        "supermarket": "سوبر ماركت",
+        "theater": "مسرح",
+        "university": "جامعة",
+        "world war ii squad": "فرقة الحرب العالمية الثانية",
+        "roles": {
+            "airplane": {
+                "first class passenger": "راكب من الدرجة الأولى",
+                "air marshall": "ضابط جوي",
+                "mechanic": "ميكانيكي",
+                "air hostess": "مضيفة الطيران",
+                "copilot": "مساعد الطيار",
+                "captain": "قبطان",
+                "economy class passenger": "راكب درجة الأعمال"
+            },
+            "bank": {
+                "armored car driver": "سائق شاحنة نقل أموال",
+                "manager": "مدير",
+                "consultant": "مستشار",
+                "robber": "لص",
+                "security guard": "حارس الأمن",
+                "teller": "أمين الصندوق",
+                "customer": "عميل"
+            },
+            "beach": {
+                "beach waitress": "نادلة الشاطئ",
+                "kite surfer": "راكب أمواج",
+                "lifeguard": "منقذ الشاطئ",
+                "thief": "لص",
+                "beach photographer": "مصور",
+                "ice cream truck driver": "سائق شاحنة المثلجات",
+                "beach goer": "مدمني الشاطئ"
+            },
+            "cathedral": {
+                "priest": "كاهن",
+                "beggar": "متسول",
+                "sinner": "آثم",
+                "tourist": "سائح",
+                "sponsor": "كفيل",
+                "chorister": "مغني في الكنيسة",
+                "parishioner": "أحد أبناء الأبرشية"
+            },
+            "circus tent": {
+                "acrobat": "بهلواني",
+                "animal trainer": "مدرب حيوانات",
+                "magician": "ساحر",
+                "fire eater": "نافخ النار",
+                "clown": "مهرج",
+                "juggler": "المتلاعب بالكور",
+                "visitor": "جمهور"
+            },
+            "corporate party": {
+                "entertainer": "مضيف الحفلة",
+                "manager": "منظم الحفل",
+                "unwanted guest": "ضيف غير مرغوب فيه",
+                "owner": "مدير الشركة",
+                "secretary": "سكرتير",
+                "delivery boy": "عامل التوصيل",
+                "accountant": "محاسب"
+            },
+            "crusader army": {
+                "monk": "راهب",
+                "imprisoned saracen": "مسجون",
+                "servant": "خادم",
+                "bishop": "جندي يمتطي حصان",
+                "squire": "فارس يقاتل بسيف",
+                "archer": "رامي أسهم",
+                "knight": "فارس"
+            },
+            "casino": {
+                "bartender": "نادل",
+                "head security guard": "رئيس الأمن",
+                "bouncer": "حارس الأمن",
+                "manager": "مدير",
+                "hustler": "محتال",
+                "dealer": "تاجر",
+                "gambler": "مقامر"
+            },
+            "day spa": {
+                "stylist": "مصمم تسريحات شعر",
+                "masseuse": "مدلكة",
+                "manicurist": "مقلم الأظافر",
+                "makeup artist": "فنانة الماكياج ",
+                "dermatologist": "طبيب أمراض جلدية",
+                "beautician": "مجملة",
+                "customer": "عميل"
+            },
+            "embassy": {
+                "security guard": "حارس الأمن",
+                "secretary": "سكرتير",
+                "ambassador": "سفير",
+                "tourist": "سائح",
+                "refugee": "لاجئ",
+                "diplomat": "دبلوماسي",
+                "government official": "مسؤول حكومي"
+            },
+            "hospital": {
+                "nurse": "ممرضة",
+                "doctor": "دكتور",
+                "anesthesiologist": "طبيب التخدير",
+                "intern": "متدرب",
+                "therapist": "المعالج",
+                "surgeon": "جراح",
+                "patient": "مريض"
+            },
+            "hotel": {
+                "doorman": "بواب",
+                "security guard": "حارس الأمن",
+                "manager": "مدير",
+                "housekeeper": "مدبرة المنزل",
+                "bartender": "نادل",
+                "bellman": "موظف خدمة النزلاء",
+                "customer": "عميل"
+            },
+            "military base": {
+                "deserter": "هارب",
+                "colonel": "عقيد",
+                "medic": "طبيب",
+                "sniper": "قناص",
+                "officer": "ضابط",
+                "tank engineer": "مهندس الدبابة",
+                "soldier": "جندي"
+            },
+            "movie studio": {
+                "stunt man": "بديل الفنان",
+                "sound engineer": "مهندس الصوت",
+                "camera man": "مصور",
+                "director": "مخرج",
+                "costume artist": "مصمم أزياء",
+                "producer": "منتج",
+                "actor": "ممثل"
+            },
+            "ocean liner": {
+                "cook": "طباخ",
+                "captain": "قبطان",
+                "bartender": "نادل",
+                "musician": "موسيقي",
+                "waiter": "نادل",
+                "mechanic": "ميكانيكي",
+                "rich passenger": "راكب غني"
+            },
+            "passenger train": {
+                "mechanic": "ميكانيكي",
+                "border patrol": "حارس الحدود",
+                "train attendant": "مضيف",
+                "restaurant chef": "شيف",
+                "train driver": "سائق القطار",
+                "stoker": "فحام",
+                "passenger": "راكب"
+            },
+            "pirate ship": {
+                "cook": "طباخ",
+                "slave": "عبد",
+                "cannoneer": "رجل المدفع",
+                "tied up prisoner": "سجين مربوط",
+                "cabin boy": "مراقب الطريق",
+                "brave captain": "زعيم القراصنة",
+                "sailor": "ملاح"
+            },
+            "polar station": {
+                "medic": "طبيب",
+                "expedition leader": "قائد المحطة",
+                "biologist": "عالم أحياء",
+                "radioman": "مخابر",
+                "hydrologist": "أخصائي الهيدرولوجي",
+                "meteorologist": "عالم الأرصاد الجوية",
+                "geologist": "عالم علم الأرض"
+            },
+            "police station": {
+                "detective": "محقق",
+                "lawyer": "محامي",
+                "journalist": "صحفي",
+                "criminalist": "جنائي",
+                "archivist": "أمين الأرشيف",
+                "criminal": "مجرم",
+                "patrol officer": "ضابط الدورية"
+            },
+            "restaurant": {
+                "musician": "موسيقي",
+                "bouncer": "حارس الأمن",
+                "hostess": "مضيفة",
+                "head chef": "رئيس الطهاة",
+                "food critic": "ناقد المطاعم",
+                "waiter": "نادل",
+                "customer": "عميل"
+            },
+            "school": {
+                "gym teacher": "معلم الرياضة",
+                "principal": "مدير المدرسة",
+                "security guard": "حارس الأمن",
+                "janitor": "منظف",
+                "cafeteria lady": "بائع المقصف",
+                "maintenance man": "رجل الصيانة",
+                "student": "طالب"
+            },
+            "service station": {
+                "manager": "مدير المحطة",
+                "tire specialist": "أخصائي العجلات",
+                "biker": "سائق الدباب",
+                "car owner": "صاحب السيارة",
+                "car wash operator": "منظف السيارة",
+                "electrician": "كهربائي",
+                "auto mechanic": "ميكانيكي السيارات"
+            },
+            "space station": {
+                "engineer": "مهندس",
+                "alien": "فضائي",
+                "pilot": "طيار",
+                "commander": "قائد",
+                "scientist": "عالم",
+                "doctor": "دكتور",
+                "space tourist": "سائح فضائي"
+            },
+            "submarine": {
+                "cook": "طباخ",
+                "commander": "قائد",
+                "sonar technician": "فني الموجات الصوتية",
+                "electronics technician": "فني الكترونيات",
+                "radioman": "مراقب الطريق",
+                "navigator": "ملاح",
+                "sailor": "بحار"
+            },
+            "supermarket": {
+                "cashier": "محاسب",
+                "butcher": "جزار",
+                "janitor": "منظف",
+                "security guard": "حارس الأمن",
+                "food sample demonstrator": "عارض الطعام",
+                "shelf stocker": "مرتب الرف",
+                "customer": "عميل"
+            },
+            "theater": {
+                "coat check lady": "آخذة المعاطف",
+                "prompter": "ملقن",
+                "cashier": "محاسب",
+                "director": "مخرج",
+                "actor": "ممثل",
+                "crew man": "طاقم العمل",
+                "audience member": "جمهور"
+            },
+            "university": {
+                "graduate student": "طالب متخرج",
+                "professor": "بروفيسور",
+                "dean": "عميد",
+                "psychologist": "عالم الفلسفة",
+                "maintenance man": "مصلح",
+                "janitor": "منظف",
+                "student": "طالب"
+            },
+            "world war ii squad": {
+                "resistance fighter": "جندي",
+                "radioman": "مخابر",
+                "scout": "كشاف",
+                "medic": "طبيب",
+                "cook": "طباخ",
+                "imprisoned nazi": "سجين نازي",
+                "soldier": "جندي"
+            }
+        }
+    }
+}

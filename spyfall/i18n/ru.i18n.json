@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "Добро пожаловать в Spyfall",
+        "new game": "Новая Игра",
+        "join game": "Присоединиться к игре",
+        "waiting for players": "Ожидание Игроков...",
+        "access code": "Код доступа",
+        "join my spyfall game": "Присоеденяйся к моей игре в Spyfall!",
+        "start game": "Начать Игру",
+        "leave game": "Покинуть Игру",
+        "show hide": "показать/скрыть",
+        "you are the spy": "Вы — шпион!",
+        "you are not the spy": "Вы <strong>не</strong> шпион!",
+        "the location": "Место",
+        "your role": "Ваша роль",
+        "players": "Игроки",
+        "first": "1<span>-й</span>",
+        "location reference": "Местоположения",
+        "end game": "Закончить Игру",
+        "enter your name": "Введите своё имя",
+        "create game": "Создать",
+        "back": "Назад",
+        "enter an access code": "Введите код доступа",
+        "invalid access code": "К сожалению, ни одной игры с таким кодом доступа не найдено!",
+        "join": "Присоединиться",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a> разработана Alexandr Ushan, опубликована <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>"
+    },
+    "locations": {
+        "airplane": "Самолёт",
+        "bank": "Банк",
+        "beach": "Пляж",
+        "cathedral": "Собор",
+        "circus tent": "Цирковой Шатёр",
+        "corporate party": "Корпоративная Вечеринка",
+        "crusader army": "Войско Крестоносцев",
+        "casino": "Казино",
+        "day spa": "Спа-Салон",
+        "embassy": "Посольство",
+        "hospital": "Больница",
+        "hotel": "Отель",
+        "military base": "Военная База",
+        "movie studio": "Киностудия",
+        "ocean liner": "Океанский Лайнер",
+        "passenger train": "Пассажирский Поезд",
+        "pirate ship": "Пиратский Корабль",
+        "polar station": "Полярная Станция",
+        "police station": "Полицейский Участок",
+        "restaurant": "Ресторан",
+        "school": "Школа",
+        "service station": "Автосервис",
+        "space station": "Космическая Станция",
+        "submarine": "Подводная Лодка",
+        "supermarket": "Супермаркет",
+        "theater": "Театр",
+        "university": "Университет",
+        "world war ii squad": "Отряд Второй Мировой Войны",
+        "roles": {
+            "airplane": {
+                "first class passenger": "Пассажир Первого Класса",
+                "air marshall": "Воздушный Маршал",
+                "mechanic": "Механик",
+                "air hostess": "Стюардесса",
+                "copilot": "Второй Пилот",
+                "captain": "Капитан",
+                "economy class passenger": "Пассажир Эконом-Класса"
+            },
+            "bank": {
+                "armored car driver": "Водитель Броневика",
+                "manager": "Менеджер",
+                "consultant": "Консультант",
+                "robber": "Грабитель",
+                "security guard": "Охранник",
+                "teller": "Кассир",
+                "customer": "Клиент"
+            },
+            "beach": {
+                "beach waitress": "Пляжная Официантка",
+                "kite surfer": "Кайт-Сёрфер",
+                "lifeguard": "Спасатель",
+                "thief": "Вор",
+                "beach photographer": "Пляжный Фотограф",
+                "ice cream truck driver": "Водитель Грузовика с Мороженым",
+                "beach goer": "Посетитель Пляжа"
+            },
+            "cathedral": {
+                "priest": "Священник",
+                "beggar": "Нищий",
+                "sinner": "Грешник",
+                "tourist": "Турист",
+                "sponsor": "Попечитель",
+                "chorister": "Певец в хоре",
+                "parishioner": "Прихожанин"
+            },
+            "circus tent": {
+                "acrobat": "Акробат",
+                "animal trainer": "Дрессировщик Животных",
+                "magician": "Фокусник",
+                "fire eater": "Глотатель Огня",
+                "clown": "Клоун",
+                "juggler": "Жонглёр",
+                "visitor": "Посетитель"
+            },
+            "corporate party": {
+                "entertainer": "Ведущий",
+                "manager": "Менеджер",
+                "unwanted guest": "Незваный Гость",
+                "owner": "Хозяин Вечеринки",
+                "secretary": "Секретарь",
+                "delivery boy": "Курьер",
+                "accountant": "Бухгалтер"
+            },
+            "crusader army": {
+                "monk": "Монах",
+                "imprisoned saracen": "Заключённый Сарацин",
+                "servant": "Слуга",
+                "bishop": "Епископ",
+                "squire": "Оруженосец",
+                "archer": "Лучник",
+                "knight": "Рыцарь"
+            },
+            "casino": {
+                "bartender": "Бармен",
+                "head security guard": "Начальник Охраны",
+                "bouncer": "Вышибала",
+                "manager": "Менеджер",
+                "hustler": "Жулик",
+                "dealer": "Дилер",
+                "gambler": "Игрок"
+            },
+            "day spa": {
+                "stylist": "Стилист",
+                "masseuse": "Массажистка",
+                "manicurist": "Маникюрша",
+                "makeup artist": "Визажист",
+                "dermatologist": "Дерматолог",
+                "beautician": "Косметолог",
+                "customer": "Клиент"
+            },
+            "embassy": {
+                "security guard": "Охранник",
+                "secretary": "Секретарь",
+                "ambassador": "Посол",
+                "tourist": "Турист",
+                "refugee": "Беженец",
+                "diplomat": "Дипломат",
+                "government official": "Чиновник"
+            },
+            "hospital": {
+                "nurse": "Медсестра",
+                "doctor": "Доктор",
+                "anesthesiologist": "Анестезиолог",
+                "intern": "Интерн",
+                "therapist": "Терапевт",
+                "surgeon": "Хирург",
+                "patient": "Пациент"
+            },
+            "hotel": {
+                "doorman": "Швейцар",
+                "security guard": "Охранник",
+                "manager": "Менеджер",
+                "housekeeper": "Домработница",
+                "bartender": "Бармен",
+                "bellman": "Лакей",
+                "customer": "Клиент"
+            },
+            "military base": {
+                "deserter": "Дезертир",
+                "colonel": "Полковник",
+                "medic": "Медик",
+                "sniper": "Снайпер",
+                "officer": "Офицер",
+                "tank engineer": "Танкист",
+                "soldier": "Солдат"
+            },
+            "movie studio": {
+                "stunt man": "Каскадёр",
+                "sound engineer": "Звукорежиссёр",
+                "camera man": "Оператор",
+                "director": "Режиссёр",
+                "costume artist": "Художник по Костюмам",
+                "producer": "Продюсер",
+                "actor": "Актер"
+            },
+            "ocean liner": {
+                "cook": "Повар",
+                "captain": "Капитан",
+                "bartender": "Бармен",
+                "musician": "Музыкант",
+                "waiter": "Официант",
+                "mechanic": "Механик",
+                "rich passenger": "Богатый Пассажир"
+            },
+            "passenger train": {
+                "mechanic": "Механик",
+                "border patrol": "Пограничный Патрульный",
+                "train attendant": "Проводник",
+                "restaurant chef": "Шеф-Повар",
+                "train driver": "Машинист",
+                "stoker": "Кочегар",
+                "passenger": "Пассажир"
+            },
+            "pirate ship": {
+                "cook": "Повар",
+                "slave": "Раб",
+                "cannoneer": "Канонир",
+                "tied up prisoner": "Связанный Заключённый",
+                "cabin boy": "Юнга",
+                "brave captain": "Храбрый Капитан",
+                "sailor": "Матрос"
+            },
+            "polar station": {
+                "medic": "Медик",
+                "expedition leader": "Глава Экспедиции",
+                "biologist": "Биолог",
+                "radioman": "Радист",
+                "hydrologist": "Гидролог",
+                "meteorologist": "Метеоролог",
+                "geologist": "Геолог"
+            },
+            "police station": {
+                "detective": "Детектив",
+                "lawyer": "Адвокат",
+                "journalist": "Журналист",
+                "criminalist": "Криминалист",
+                "archivist": "Архивариус",
+                "criminal": "Преступник",
+                "patrol officer": "Патрульный Офицер"
+            },
+            "restaurant": {
+                "musician": "Музыкант",
+                "bouncer": "Вышибала",
+                "hostess": "Администратор Зала",
+                "head chef": "Шеф-Повар",
+                "food critic": "Ресторанный Критик",
+                "waiter": "Официант",
+                "customer": "Посетитель"
+            },
+            "school": {
+                "gym teacher": "Учитель Физкультуры",
+                "principal": "Директор",
+                "security guard": "Охранник",
+                "janitor": "Уборщик",
+                "cafeteria lady": "Буфетчица",
+                "maintenance man": "Разнорабочий",
+                "student": "Студент"
+            },
+            "service station": {
+                "manager": "Менеджер",
+                "tire specialist": "Шиномонтажник",
+                "biker": "Байкер",
+                "car owner": "Автовладелец",
+                "car wash operator": "Оператор Автомойки",
+                "electrician": "Электрик",
+                "auto mechanic": "Автомеханик"
+            },
+            "space station": {
+                "engineer": "Инженер",
+                "alien": "Пришелец",
+                "pilot": "Пилот",
+                "commander": "Командир",
+                "scientist": "Учёный",
+                "doctor": "Доктор",
+                "space tourist": "Космический Турист"
+            },
+            "submarine": {
+                "cook": "Повар",
+                "commander": "Командир",
+                "sonar technician": "Оператор Сонара",
+                "electronics technician": "Электронщик",
+                "radioman": "Радист",
+                "navigator": "Навигатор",
+                "sailor": "Матрос"
+            },
+            "supermarket": {
+                "cashier": "Кассир",
+                "butcher": "Мясник",
+                "janitor": "Уборщик",
+                "security guard": "Охранник",
+                "food sample demonstrator": "Демонстратор Образцов Еды",
+                "shelf stocker": "Расстановщик Товара",
+                "customer": "Посетитель"
+            },
+            "theater": {
+                "coat check lady": "Гардеробщица",
+                "prompter": "Суфлёр",
+                "cashier": "Кассир",
+                "director": "Директор",
+                "actor": "Актёр",
+                "crew man": "Член Массовки",
+                "audience member": "Зритель"
+            },
+            "university": {
+                "graduate student": "Выпускник",
+                "professor": "Профессор",
+                "dean": "Декан",
+                "psychologist": "Психолог",
+                "maintenance man": "Разнорабочий",
+                "janitor": "Уборщик",
+                "student": "Студент"
+            },
+            "world war ii squad": {
+                "resistance fighter": "Боец Сопротивления",
+                "radioman": "Радист",
+                "scout": "Разведчик",
+                "medic": "Медик",
+                "cook": "Повар",
+                "imprisoned nazi": "Заключённый Нацист",
+                "soldier": "Солдат"
+            }
+        }
+    }
+}

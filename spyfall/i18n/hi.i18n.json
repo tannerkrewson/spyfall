@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "स्पायफ़ोल में आपका स्वागत है",
+        "new game": "नया खेल",
+        "join game": "खेल में शामिल होइए",
+        "waiting for players": "खिलाडियों का इंतेज़ार चल रहा है...",
+        "access code": "प्रवेश कोड",
+        "join my spyfall game": "मेरे स्पायफ़ोल खेल में शामिल होइए!",
+        "start game": "खेल शुरू करें",
+        "leave game": "खेल छोड़ें",
+        "show hide": "दिखाएँ/छुपाएँ",
+        "you are the spy": "आप जासूस हैं!",
+        "you are not the spy": "आप जासूस <strong>नहीं</strong> हैं!",
+        "the location": "जगह",
+        "your role": "आपकी भूमिका",
+        "players": "खिलाडी",
+        "first": "१<span>म</span>",
+        "location reference": "जगहों की सूची",
+        "end game": "खेल समाप्त करें",
+        "enter your name": "अपना नाम भरियें",
+        "create game": "खेल बनाएँ",
+        "back": "वापस जाएँ",
+        "enter an access code": "प्रवेश कोड भरिये",
+        "invalid access code": "माफ़ करें, जो प्रवेश कोड आपने दिया उसका कोई खेल नहीं मिला!",
+        "join": "शामिल होएँ",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a>ऐलेक्सान्द्र उशान द्वारा अभिकल्प किया गया, <a href='http://international.hobbyworld.ru/' target='_blank'>हौबी वर्ल्ड</a> द्वारा प्रकाशित किया गया"
+    },
+    "locations": {
+        "airplane": "हवाईजहाह",
+        "bank": "बैंक",
+        "beach": "समुद्र तट",
+        "cathedral": "कैथेड्रल",
+        "circus tent": "सर्कस तम्बू",
+        "corporate party": "कॉर्पोरेट पार्टी",
+        "crusader army": "क्रुसेड सेना",
+        "casino": "कसीनो",
+        "day spa": "दिन का स्पा",
+        "embassy": "दूतावास",
+        "hospital": "अस्पताल",
+        "hotel": "होटल",
+        "military base": "सैन्य अड्डा",
+        "movie studio": "फ़िल्म स्टूडियो",
+        "ocean liner": "समुद्री जहाज",
+        "passenger train": "यात्रिओं की रेलगाड़ी",
+        "pirate ship": "समुद्री डाकुओं का जहाज",
+        "polar station": "ध्रुवीय स्टेशन",
+        "police station": "थाना",
+        "restaurant": "रेस्टोरेंट",
+        "school": "विद्यालय",
+        "service station": "सर्विस स्टेशन",
+        "space station": "अन्तरिक्ष अड्डा",
+        "submarine": "पनडुब्बी",
+        "supermarket": "सूपर बाजार",
+        "theater": "नाटकघर",
+        "university": "विश्वविद्यालय",
+        "world war ii squad": "द्वितीय विश्व युद्ध का दस्ता",
+        "roles": {
+            "airplane": {
+                "first class passenger": "प्रथम श्रेणी का यात्री",
+                "air marshall": "एयर मार्शल",
+                "mechanic": "मिस्त्री",
+                "air hostess": "विमान परिचारिका",
+                "copilot": "सह पायलट",
+                "captain": "कप्तान",
+                "economy class passenger": "इकॉनोमी श्रेणी का यात्री"
+            },
+            "bank": {
+                "armored car driver": "बख़्तरबंद गाड़ी चालक",
+                "manager": "प्रबंधक",
+                "consultant": "सलाहकार",
+                "robber": "डाकू",
+                "security guard": "चौकीदार",
+                "teller": "रोकड़िया",
+                "customer": "ग्राहक"
+            },
+            "beach": {
+                "beach waitress": "बीच वेट्रस",
+                "kite surfer": "काइटसर्फिंग ",
+                "lifeguard": "जीवनरक्षक",
+                "thief": "चोर",
+                "beach photographer": "बीच फोटोग्राफर",
+                "ice cream truck driver": "कुल्फी ट्रक ड्राईवर",
+                "beach goer": "समुद्र तट पर जानेवाला"
+            },
+            "cathedral": {
+                "priest": "पुरोहित",
+                "beggar": "भिकारी",
+                "sinner": "पापी",
+                "tourist": "पर्यटक",
+                "sponsor": "प्रायोजक",
+                "chorister": "गानेवाला",
+                "parishioner": "पादरी के यजमान"
+            },
+            "circus tent": {
+                "acrobat": "नट",
+                "animal trainer": "जानवरों का प्रशिक्षक",
+                "magician": "जादूगर",
+                "fire eater": "दमकलकर्मी",
+                "clown": "विदूषक",
+                "juggler": "जगलर",
+                "visitor": "दर्शक"
+            },
+            "corporate party": {
+                "entertainer": "मनोरंजन कर्ता",
+                "manager": "प्रबंधक",
+                "unwanted guest": "अनचाहा अतिथि",
+                "owner": "मालिक",
+                "secretary": "लिपिकीय",
+                "delivery boy": "वितरक",
+                "accountant": "मुनीम"
+            },
+            "crusader army": {
+                "monk": "साधू",
+                "imprisoned saracen": "कैद अरब",
+                "servant": "नौकर",
+                "bishop": "बिशप",
+                "squire": "स्क्वायर",
+                "archer": "धनुराशि",
+                "knight": "घुड़सवार"
+            },
+            "casino": {
+                "bartender": "मधुशाला का सेवक",
+                "head security guard": "मुख्य चौकीदार",
+                "bouncer": "बाउंसर",
+                "manager": "प्रबंधक",
+                "hustler": "हस्टलर",
+                "dealer": "पत्ते फेंटने वाला",
+                "gambler": "जुआरी"
+            },
+            "day spa": {
+                "stylist": "स्टाइलिस्ट",
+                "masseuse": "मालिश करनेवाली",
+                "manicurist": "मैनीक्योर करने वाला",
+                "makeup artist": "मेकअप कलाकार",
+                "dermatologist": "त्वचा-चिकित्सक",
+                "beautician": "ब्यूटिशियन",
+                "customer": "ग्राहक"
+            },
+            "embassy": {
+                "security guard": "चौकीदार",
+                "secretary": "लिपिकीय",
+                "ambassador": "राजदूत",
+                "tourist": "पर्यटक",
+                "refugee": "शरणार्थी",
+                "diplomat": "कूटनीतिज्ञ",
+                "government official": "सरकारी अध्यक्ष"
+            },
+            "hospital": {
+                "nurse": "उपचारिका",
+                "doctor": "चिकित्सक",
+                "anesthesiologist": "अनेस्थेसिओलोगिस्त",
+                "intern": "प्रशिक्षु",
+                "therapist": "थेरापिस्ट",
+                "surgeon": "शल्यकार",
+                "patient": "रोगी"
+            },
+            "hotel": {
+                "doorman": "दरबान",
+                "security guard": "चौकीदार",
+                "manager": "प्रबंधक",
+                "housekeeper": "गृहावेशक",
+                "bartender": "मधुशाला का सेवक",
+                "bellman": "दरबान",
+                "customer": "ग्राहक"
+            },
+            "military base": {
+                "deserter": "भगोड़ा",
+                "colonel": "कर्नल",
+                "medic": "चिकित्सक",
+                "sniper": "निशानची",
+                "officer": "अफ़सर",
+                "tank engineer": "टैंक इंजीनियर",
+                "soldier": "सेनिक"
+            },
+            "movie studio": {
+                "stunt man": "स्टंटमैन",
+                "sound engineer": "ध्वनी अभयन्ता",
+                "camera man": "कैमरामैन",
+                "director": "निदेशक",
+                "costume artist": "पोशाक कलाकार",
+                "producer": "उत्पादक",
+                "actor": "अभिनेता"
+            },
+            "ocean liner": {
+                "cook": "बावर्ची",
+                "captain": "कप्तान",
+                "bartender": "मधुशाला का सेवक",
+                "musician": "संगीतकार",
+                "waiter": "बैरा",
+                "mechanic": "मिस्त्री",
+                "rich passenger": "अमीर यात्री"
+            },
+            "passenger train": {
+                "mechanic": "मिस्त्री",
+                "border patrol": "सीमा गश्ती",
+                "train attendant": "रेलगाड़ी परिचर",
+                "restaurant chef": "रेस्टोरेंट रसोइया",
+                "train driver": "रेलगाड़ी चालक",
+                "stoker": "कोयलाझोंक",
+                "passenger": "यात्री"
+            },
+            "pirate ship": {
+                "cook": "बावर्ची",
+                "slave": "दास",
+                "cannoneer": "तोपची",
+                "tied up prisoner": "बंधा हुआ कैदी",
+                "cabin boy": "जहाज का बैरा",
+                "brave captain": "बहादुर कप्तान",
+                "sailor": "नाविक"
+            },
+            "polar station": {
+                "medic": "चिकित्सक",
+                "expedition leader": "अभियान के नेता",
+                "biologist": "जीवविज्ञानी",
+                "radioman": "वायरलेस आपरेटर",
+                "hydrologist": "जल विज्ञानी",
+                "meteorologist": "मौसम विज्ञानी",
+                "geologist": "भूविज्ञानी"
+            },
+            "police station": {
+                "detective": "डिटेक्टिव",
+                "lawyer": "वकील",
+                "journalist": "पत्रकार",
+                "criminalist": "क्रिमिनलिस्ट",
+                "archivist": "पुरालेखपाल",
+                "criminal": "अपराधी",
+                "patrol officer": "गश्ती अधिकारी"
+            },
+            "restaurant": {
+                "musician": "संगीतकार",
+                "bouncer": "बाउंसर",
+                "hostess": "सत्कारिणी",
+                "head chef": "मुख्य रसोइया",
+                "food critic": "भोजन आलोचक",
+                "waiter": "बैरा",
+                "customer": "ग्राहक"
+            },
+            "school": {
+                "gym teacher": "व्यायाम शिक्षक",
+                "principal": "प्रधानाचार्य",
+                "security guard": "चौकीदार",
+                "janitor": "अभिरक्षक",
+                "cafeteria lady": "कॉफीहाउस महिला",
+                "maintenance man": "अनुरक्षक",
+                "student": "छात्र"
+            },
+            "service station": {
+                "manager": "प्रबंधक",
+                "tire specialist": "टायर विशेषज्ञ",
+                "biker": "बाइकर",
+                "car owner": "गाड़ी का मालिक",
+                "car wash operator": "कार वाश चालक",
+                "electrician": "विद्युतकार",
+                "auto mechanic": "गाड़ी का मिस्त्री"
+            },
+            "space station": {
+                "engineer": "इंजिनियर",
+                "alien": "अन्यदेशी",
+                "pilot": "विमान चालक",
+                "commander": "सेनापति",
+                "scientist": "वैज्ञानिक",
+                "doctor": "चिकित्सक",
+                "space tourist": "अंतरिक्ष पर्यटक"
+            },
+            "submarine": {
+                "cook": "बावर्ची",
+                "commander": "सेनापति",
+                "sonar technician": "सोनार तकनीशियन",
+                "electronics technician": "विद्युत उपकरणों का तकनीशियन",
+                "radioman": "वायरलेस आपरेटर",
+                "navigator": "मार्गनिर्देशक",
+                "sailor": "नाविक"
+            },
+            "supermarket": {
+                "cashier": "कोषाध्यक्ष",
+                "butcher": "कसाई",
+                "janitor": "अभिरक्षक",
+                "security guard": "चौकीदार",
+                "food sample demonstrator": "भोजन नमूना प्रदर्शक",
+                "shelf stocker": "शेल्फ स्टौकर",
+                "customer": "ग्राहक"
+            },
+            "theater": {
+                "coat check lady": "कपड़द्वार महिला",
+                "prompter": "प्रौम्प्टर",
+                "cashier": "कोषाध्यक्ष",
+                "director": "विदेशक",
+                "actor": "अभिनेता",
+                "crew man": "रंगमंच का मज़दूर",
+                "audience member": "दर्शक"
+            },
+            "university": {
+                "graduate student": "स्नातक छात्र",
+                "professor": "प्रोफेसर",
+                "dean": "संकाय अध्यक्ष",
+                "psychologist": "मनोविज्ञानी",
+                "maintenance man": "अनुरक्षक",
+                "janitor": "अभिरक्षक",
+                "student": "छात्र"
+            },
+            "world war ii squad": {
+                "resistance fighter": "प्रतिरोध सेनानी",
+                "radioman": "वायरलेस आपरेटर",
+                "scout": "भेदिया",
+                "medic": "चिकित्सक",
+                "cook": "बावर्ची",
+                "imprisoned nazi": "कैद नाज़ी",
+                "soldier": "सैनिक"
+            }   
+        }
+    }
+}

@@ -2,11 +2,13 @@
 
 Spyfall on your mobile device!
 
-This is the code that currently runs [http://spyfall.meteor.com](http://spyfall.meteor.com). It's a simple site I've built as a learning project, so definitely don't use it as an example of Meteor best practices. Pull requests welcome!
+NOTE: Due to work responsibilities and life generally getting in the way, I haven't had the time to spend maintaining the Spyfall site to the level it deserves. As such, I'm passing the baton across to a new developer who'd like to take on the mantle for a while. I wish him all the best! Regards - @evanbrumley
+
+This is the code that currently runs [http://spyfall.crabhat.com](http://spyfall.crabhat.com). It's a simple site built as a learning project, so definitely don't use it as an example of Meteor best practices. Pull requests welcome!
 
 ## Disclaimer
 
-[Spyfall](http://international.hobbyworld.ru/catalog/25-spyfall/) is a party game designed by Alexandr Ushan and published by [Hobby World](http://international.hobbyworld.ru/). This is an unofficial fan project designed to complement the physical game, and is not endorsed in any way by the designer or publisher.
+[Spyfall](http://international.hobbyworld.ru/spyfall) is a party game designed by Alexandr Ushan and published by [Hobby World](http://international.hobbyworld.ru/). This is an unofficial fan project designed to complement the physical game, and is not endorsed in any way by the designer or publisher.
 
 ## Translations
 
@@ -34,7 +36,7 @@ Please make sure that the translations you provide are as close as possible to t
 
 Clone the repository:
 
-	git clone https://github.com/evanbrumley/spyfall.git ./spyfall
+	git clone https://github.com/mpcovcd/spyfall.git ./spyfall
 
 Enter the spyfall directory:
 
@@ -48,14 +50,11 @@ Run the meteor server to test locally:
 
 	meteor --settings settings/example.json
 
-Make a production settings file:
+Sadly, production deployment has gotten a little trickier since meteor.com stopped providing easy free hosting. I recommend a combination of digitalocean.com and mupx for a relatively easy and robust solution.
 
-	cp settings/example.json settings/production.json
-	nano settings/production.json  # Edit as required
+## Docker
 
-Deploy to meteor:
-
-	meteor deploy myurl.meteor.com --settings settings/production.json
+To run this instance in a docker container, check out [noamokman/docker-spyfall](https://github.com/noamokman/docker-spyfall)
 
 ## Links
 

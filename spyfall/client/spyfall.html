@@ -3,8 +3,8 @@
   <title>Spyfall</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,vietnamese,latin-ext' rel='stylesheet' type='text/css'>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/skeleton.css" type="text/css">
@@ -14,7 +14,7 @@
 <body></body>
 
 <template name="main">
-  <div class="container lang-{{ language }}">
+  <div dir="{{ textDirection }}" class="container dir-{{textDirection}} lang-{{ language }}">
     <div class="main-content">
       {{> Template.dynamic template=whichView}}
 
@@ -35,11 +35,25 @@
       <button id="btn-new-game">{{_ "ui.new game" }}</button>
       <button id="btn-join-game">{{_ "ui.join game" }}</button>
     </div>
+
+    {{# if announcement }}
+      <p class="announcement">{{{ announcement }}}</p>
+    {{/if}}
+
+    {{# if alternativeURL }}
+      <p class="high-load-message">Do things seem slow or broken? We're probably under heavy load!<br>Try this alternative URL: <a href="{{ alternativeURL }}">{{ alternativeURL }}</a></p>
+    {{/if}}
   </div>
 </template>
 
 <template name="lobby">
-  <h4>{{_ "ui.waiting for players" }}</h4>
+  <h4>
+    {{#if isLoading }}
+      <span class="spinner"></span>
+    {{else}}
+      {{_ "ui.waiting for players" }}
+    {{/if}}
+  </h4>
 
   <div class="access-code">
     {{_ "ui.access code" }}:
@@ -95,7 +109,7 @@
 </template>
 
 <template name="gameView">
-  <h4><a href="#" class="game-countdown {{#if gameFinished }}finished{{/if}} {{#if game.paused }}paused{{/if}}">{{{ timeRemaining }}}</a></h4>
+  <h4><a class="game-countdown {{#if gameFinished }}finished{{/if}} {{#if game.paused }}paused{{/if}}">{{{ timeRemaining }}}</a></h4>
 
   <div class="status-container">
     <button class="btn-toggle-status">{{_ "ui.show hide" }}</button>
@@ -142,7 +156,7 @@
   </ul>
 
   <div class="u-cf"></div>
-  
+
   <h5>{{_ "ui.location reference" }}</h5>
   <ul class="location-list">
     {{#each locations }}
@@ -161,11 +175,17 @@
 </template>
 
 <template name="createGame">
-  <h4>{{_ "ui.welcome to spyfall" }}</h4>
+  <h4>
+    {{#if isLoading }}
+      <span class="spinner"></span>
+    {{else}}
+      {{_ "ui.welcome to spyfall" }}
+    {{/if}}
+  </h4>
 
   <hr>
 
-  <form id="create-game">  
+  <form id="create-game">
     <div class="">
       <input type="text" id="player-name" name="playerName" placeholder='{{_ "ui.enter your name" }}'>
 
@@ -178,11 +198,17 @@
 </template>
 
 <template name="joinGame">
-  <h4>{{_ "ui.welcome to spyfall" }}</h4>
+  <h4>
+    {{#if isLoading }}
+      <span class="spinner"></span>
+    {{else}}
+      {{_ "ui.welcome to spyfall" }}
+    {{/if}}
+  </h4>
 
   <hr>
 
-  <form id="join-game">  
+  <form id="join-game">
     <div>
       <input autocorrect="off" autocapitalize="off" type="text" id="access-code" name="accessCode" placeholder='{{_ "ui.enter an access code" }}'>
       <input type="text" id="player-name" name="playerName" placeholder='{{_ "ui.enter your name" }}'>
@@ -199,11 +225,16 @@
 
 <template name="footer">
   {{#if languages }}
-    <div class="languages">
+    <div dir="ltr" class="languages">
+      <select class="language-select">
+        {{#each languages }}
+            <option value="{{code}}" {{selected}}>{{toCapitalCase languageDetails.name}}</option>
+        {{/each}}
+      </select>
       <ul class="language-list">
         {{#each languages }}
           <li>
-            <a class="btn-set-language" href="#" data-language="{{code}}">{{languageDetails.name}}</a>
+            <a class="btn-set-language" href="#" data-language="{{code}}">{{toCapitalCase languageDetails.name}}</a>
           </li>
         {{/each}}
       </ul>
@@ -213,6 +244,6 @@
   <div class="footer">
     {{{_ "ui.footer" }}}
     <br>
-    <a href="https://github.com/evanbrumley/spyfall" target="_blank">https://github.com/evanbrumley/spyfall</a>
+    <a href="https://github.com/mpcovcd/spyfall" target="_blank">https://github.com/mpcovcd/spyfall</a>
   </div>
 </template>

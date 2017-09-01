@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "Välkommen till Spyfall",
+        "new game": "Nytt spel",
+        "join game": "Gå med i spel",
+        "waiting for players": "Väntar på spelare...",
+        "access code": "Behörighetskod",
+        "join my spyfall game": "Gå med i mitt Spyfall-spel!",
+        "start game": "Starta spel",
+        "leave game": "Lämna spel",
+        "show hide": "visa/dölj",
+        "you are the spy": "Du är spionen!",
+        "you are not the spy": "Du är <strong>inte</strong> spionen!",
+        "the location": "Platsen",
+        "your role": "Din roll",
+        "players": "Spelare",
+        "first": "1:a",
+        "location reference": "Platsreferens",
+        "end game": "Avsluta spel",
+        "enter your name": "Ange ditt namn",
+        "create game": "Skapa",
+        "back": "Tillbaka",
+        "enter an access code": "Ange en behörighetskod",
+        "invalid access code": "Tyvärr, inget spel hittades med koden du angett!",
+        "join": "Gå med",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'> Spyfall</a> designat av Alexandr Ushan, utgivet av <a href='http://international.hobbyworld.ru/' target='_blank'> Hobby World</a>"
+    },
+    "locations": {
+        "airplane": "Flygplan",
+        "bank": "Bank",
+        "beach": "Strand",
+        "cathedral": "Katedral",
+        "circus tent": "Cirkustält",
+        "corporate party": "Firmafest",
+        "crusader army": "Korstågsarmé",
+        "casino": "Kasino",
+        "day spa": "Dagspa",
+        "embassy": "Ambassad",
+        "hospital": "Sjukhus",
+        "hotel": "Hotell",
+        "military base": "Militärbas",
+        "movie studio": "Filmstudio",
+        "ocean liner": "Oceanångare",
+        "passenger train": "Persontåg",
+        "pirate ship": "Piratskepp",
+        "polar station": "Polarstation",
+        "police station": "Polisstation",
+        "restaurant": "Restaurang",
+        "school": "Skola",
+        "service station": "Bensinstation",
+        "space station": "Rymdstation",
+        "submarine": "Ubåt",
+        "supermarket": "Stormarknad",
+        "theater": "Teater",
+        "university": "Universitet",
+        "world war ii squad": "Andra världskrigets-trupp",
+        "roles": {
+            "airplane": {
+                "first class passenger": "1:a klass-passagerare",
+                "air marshall": "Generallöjtnant",
+                "mechanic": "Mekaniker",
+                "air hostess": "Flygvärdinna",
+                "copilot": "Co-pilot",
+                "captain": "Kapten",
+                "economy class passenger": "Ekonomiklass-passagerare"
+            },
+            "bank": {
+                "armored car driver": "Bepansrad bil-förare",
+                "manager": "Manager",
+                "consultant": "Konsult",
+                "robber": "Rånare",
+                "security guard": "Säkerhetsvakt",
+                "teller": "Kassör",
+                "customer": "Kund"
+            },
+            "beach": {
+                "beach waitress": "Strandservitris",
+                "kite surfer": "Kitesurfare",
+                "lifeguard": "Badvakt",
+                "thief": "Tjuv",
+                "beach photographer": "Strandfotograf",
+                "ice cream truck driver": "Glassbilschaufför",
+                "beach goer": "Strandbesökare"
+            },
+            "cathedral": {
+                "priest": "Präst",
+                "beggar": "Tiggare",
+                "sinner": "Syndare",
+                "tourist": "Turist",
+                "sponsor": "Sponsor",
+                "chorister": "Körledare",
+                "parishioner": "Församlingsmedlem"
+            },
+            "circus tent": {
+                "acrobat": "Akrobat",
+                "animal trainer": "Djurtränare",
+                "magician": "Magiker",
+                "fire eater": "Eldslukare",
+                "clown": "Clown",
+                "juggler": "Jonglör",
+                "visitor": "Besökare"
+            },
+            "corporate party": {
+                "entertainer": "Underhållare",
+                "manager": "Manager",
+                "unwanted guest": "Oönskad gäst",
+                "owner": "Ägare",
+                "secretary": "Sekreterare",
+                "delivery boy": "Springpojke",
+                "accountant": "Revisor"
+            },
+            "crusader army": {
+                "monk": "Munk",
+                "imprisoned saracen": "Fängslad Saracen",
+                "servant": "Tjänare",
+                "bishop": "Biskop",
+                "squire": "Väpnare",
+                "archer": "Bågskytt",
+                "knight": "Riddare"
+            },
+            "casino": {
+                "bartender": "Bartender",
+                "head security guard": "Säkerhetschef",
+                "bouncer": "Dörrvakt",
+                "manager": "Manager",
+                "hustler": "Bedragare",
+                "dealer": "Dealer",
+                "gambler": "Gambler"
+            },
+            "day spa": {
+                "stylist": "Stylist",
+                "masseuse": "Massös",
+                "manicurist": "Manikyrist",
+                "makeup artist": "Makeupartist",
+                "dermatologist": "Hudläkare",
+                "beautician": "Kosmetolog",
+                "customer": "Kund"
+            },
+            "embassy": {
+                "security guard": "Säkerhetsvakt",
+                "secretary": "Sekreterare",
+                "ambassador": "Ambassadör",
+                "tourist": "Turist",
+                "refugee": "Flykting",
+                "diplomat": "Diplomat",
+                "government official": "Regeringstjänsteman"
+            },
+            "hospital": {
+                "nurse": "Sjuksköterska",
+                "doctor": "Läkare",
+                "anesthesiologist": "Anestesiolog",
+                "intern": "Praktikant",
+                "therapist": "Terapeut",
+                "surgeon": "Kirurg",
+                "patient": "Patient"
+            },
+            "hotel": {
+                "doorman": "Dörrvakt",
+                "security guard": "Säkerhetsvakt",
+                "manager": "Manager",
+                "housekeeper": "Hushållerska",
+                "bartender": "Bartender",
+                "bellman": "Utropare",
+                "customer": "Kund"
+            },
+            "military base": {
+                "deserter": "Desertör",
+                "colonel": "Överste",
+                "medic": "Sjukvårdare",
+                "sniper": "Prickskytt",
+                "officer": "Officer",
+                "tank engineer": "Stridsvagnstekniker",
+                "soldier": "Soldat"
+            },
+            "movie studio": {
+                "stunt man": "Stuntman",
+                "sound engineer": "Ljudtekniker",
+                "camera man": "Kameraman",
+                "director": "Regissör",
+                "costume artist": "Kostymdesigner",
+                "producer": "Producent",
+                "actor": "Skådespelare"
+            },
+            "ocean liner": {
+                "cook": "Kock",
+                "captain": "Kapten",
+                "bartender": "Bartender",
+                "musician": "Musiker",
+                "waiter": "Servitör",
+                "mechanic": "Mekaniker",
+                "rich passenger": "Rik passagerare"
+            },
+            "passenger train": {
+                "mechanic": "Mekaniker",
+                "border patrol": "Gränstrupp",
+                "train attendant": "Tågvärd",
+                "restaurant chef": "Köksmästare",
+                "train driver": "Lokförare",
+                "stoker": "Eldare",
+                "passenger": "Passagerare"
+            },
+            "pirate ship": {
+                "cook": "Kock",
+                "slave": "Slav",
+                "cannoneer": "Artillerist",
+                "tied up prisoner": "Bunden fånge",
+                "cabin boy": "Skeppsgosse",
+                "brave captain": "Modig kapten",
+                "sailor": "Sjöman"
+            },
+            "polar station": {
+                "medic": "Sjukvårdare",
+                "expedition leader": "Expeditionsledare",
+                "biologist": "Biolog",
+                "radioman": "Radioman",
+                "hydrologist": "Hydrolog",
+                "meteorologist": "Meteorolog",
+                "geologist": "Geolog"
+            },
+            "police station": {
+                "detective": "Detektiv",
+                "lawyer": "Advokat",
+                "journalist": "Journalist",
+                "criminalist": "Kriminolog",
+                "archivist": "Arkivarie",
+                "criminal": "Brottsling",
+                "patrol officer": "Patrullofficer"
+            },
+            "restaurant": {
+                "musician": "Musiker",
+                "bouncer": "Dörrvakt",
+                "hostess": "Värdinna",
+                "head chef": "Köksmästare",
+                "food critic": "Matkritiker",
+                "waiter": "Servitör",
+                "customer": "Kund"
+            },
+            "school": {
+                "gym teacher": "Gymnastiklärare",
+                "principal": "Rektor",
+                "security guard": "Säkerhetsvakt",
+                "janitor": "Vaktmästare",
+                "cafeteria lady": "Mattant",
+                "maintenance man": "Reparatör",
+                "student": "Student"
+            },
+            "service station": {
+                "manager": "Manager",
+                "tire specialist": "Däckspecialist",
+                "biker": "Motorcyklist",
+                "car owner": "Bilägare",
+                "car wash operator": "Biltvättsoperatör",
+                "electrician": "Elektriker",
+                "auto mechanic": "Bilmekaniker"
+            },
+            "space station": {
+                "engineer": "Ingenjör",
+                "alien": "Utomjording",
+                "pilot": "Pilot",
+                "commander": "Befälhavare",
+                "scientist": "Forskare",
+                "doctor": "Läkare",
+                "space tourist": "Rymdturist"
+            },
+            "submarine": {
+                "cook": "Kock",
+                "commander": "Befälhavare",
+                "sonar technician": "Sonartekniker",
+                "electronics technician": "Elektroniktekniker",
+                "radioman": "Radioman",
+                "navigator": "Navigatör",
+                "sailor": "Sjöman"
+            },
+            "supermarket": {
+                "cashier": "Kassabiträde",
+                "butcher": "Slaktare",
+                "janitor": "Vaktmästare",
+                "security guard": "Säkerhetsvakt",
+                "food sample demonstrator": "Matprovsdemonstratör",
+                "shelf stocker": "Kolonial",
+                "customer": "Kund"
+            },
+            "theater": {
+                "coat check lady": "Kapprumsbiträde",
+                "prompter": "Sufflör",
+                "cashier": "Kassabiträde",
+                "director": "Regissör",
+                "actor": "Skådespelare",
+                "crew man": "Besättningsman",
+                "audience member": "Åskådare"
+            },
+            "university": {
+                "graduate student": "Doktorand",
+                "professor": "Professor",
+                "dean": "Domprost",
+                "psychologist": "Psykolog",
+                "maintenance man": "Reparatör",
+                "janitor": "Vaktmästare",
+                "student": "Student"
+            },
+            "world war ii squad": {
+                "resistance fighter": "Motståndskämpe",
+                "radioman": "Radioman",
+                "scout": "Scout",
+                "medic": "Sjukvårdare",
+                "cook": "Kock",
+                "imprisoned nazi": "Fängslad nazist",
+                "soldier": "Soldat"
+            }
+        }
+    }
+}

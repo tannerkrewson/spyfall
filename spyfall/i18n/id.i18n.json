@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "Selamat datang di Spyfall",
+        "new game": "Permainan Baru",
+        "join game": "Bergabung dalam permainan",
+        "waiting for players": "Menunggu Pemain lain",
+        "access code": "Kode Akses",
+        "join my spyfall game": "Bergabung dengan Spyfall saya",
+        "start game": "Start Permainan",
+        "leave game": "Keluar permainan",
+        "show hide": "lihat/sembunyikan",
+        "you are the spy": "Kamu adalah SPY",
+        "you are not the spy": "Kamu <strong>BUKAN</strong> SPY",
+        "the location": "Lokasi",
+        "your role": "Peran anda",
+        "players": "Pemain",
+        "first": "<span>Ke</span>1",
+        "location reference": "Referensi Lokasi",
+        "end game": "Akhiri Permainan",
+        "enter your name": "Masukan nama anda",
+        "create game": "Buat",
+        "back": "Kembali",
+        "enter an access code": "Masukan kode akses anda",
+        "invalid access code": "Maaf, tidak ditemukan game dengan kode akses yang anda masukan",
+        "join": "Bergabung",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a> didesain oleh Alexandr Ushan, diterbitkan oleh <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>"
+    },
+    "locations": {
+        "airplane": "Pesawat Terbang",
+        "bank": "Bank",
+        "beach": "Pantai",
+        "cathedral": "Gereja",
+        "circus tent": "Tenda Sirkus",
+        "corporate party": "Pesta perusahaan",
+        "crusader army": "Pasukan Perang Salib",
+        "casino": "Kasino",
+        "day spa": "Spa hangat",
+        "embassy": "Kedutaan",
+        "hospital": "Rumah Sakit",
+        "hotel": "Hotel",
+        "military base": "Pangkalan Militer",
+        "movie studio": "Studio Film",
+        "ocean liner": "Perbatasan Samudra",
+        "passenger train": "Kereta Penumpang",
+        "pirate ship": "Kapal Bajak Laut",
+        "polar station": "Stasiun Kutub",
+        "police station": "Kantor polisi",
+        "restaurant": "Restauran",
+        "school": "Sekolah",
+        "service station": "Tempat Servis",
+        "space station": "Stasiun Luar Angkasa",
+        "submarine": "Kapal Selam",
+        "supermarket": "Supermarket",
+        "theater": "Teater",
+        "university": "Universitas",
+        "world war ii squad": "Pasukan Perang Dunia Ke-2",
+        "roles": {
+            "airplane": {
+                "first class passenger": "Penumpang kelas 1",
+                "air marshall": "Laksamana Penerbangan",
+                "mechanic": "Mekanik",
+                "air hostess": "Pramugari",
+                "copilot": "Co-Pilot",
+                "captain": "Kapten",
+                "economy class passenger": "Penumpang kelas ekonomi"
+            },
+            "bank": {
+                "armored car driver": "Supir Mobil Baja",
+                "manager": "Manajer",
+                "consultant": "Konsultan",
+                "robber": "Perampok",
+                "security guard": "Penjaga Keamanan",
+                "teller": "Teller Bank",
+                "customer": "Kostumer"
+            },
+            "beach": {
+                "beach waitress": "Pelayan Pantai",
+                "kite surfer": "Peselancar Layang",
+                "lifeguard": "Penyelamat Kolam",
+                "thief": "Pencuri",
+                "beach photographer": "Fotografer Pantai",
+                "ice cream truck driver": "Supir Truk Es Krim",
+                "beach goer": "Orang yang suka kepantai"
+            },
+            "cathedral": {
+                "priest": "Pendeta",
+                "beggar": "Pengemis",
+                "sinner": "Pembuat dosa",
+                "tourist": "Turis",
+                "sponsor": "Sponsor",
+                "chorister": "Anggota Paduan Suara",
+                "parishioner": "Jamaah Gereja"
+            },
+            "circus tent": {
+                "acrobat": "Akrobat",
+                "animal trainer": "Pelatih Binatang",
+                "magician": "Pesulap",
+                "fire eater": "Pemakan Api",
+                "clown": "Badut",
+                "juggler": "Tukang Juggling",
+                "visitor": "Pengunjung"
+            },
+            "corporate party": {
+                "entertainer": "Entertainer",
+                "manager": "Manajer",
+                "unwanted guest": "Tamu tak diundang",
+                "owner": "Pemilik",
+                "secretary": "Sekertaris",
+                "delivery boy": "Tukang Delivery",
+                "accountant": "Akuntan"
+            },
+            "crusader army": {
+                "monk": "Biksu",
+                "imprisoned saracen": "Saracen yang dipenjara",
+                "servant": "Pembantu",
+                "bishop": "Menteri",
+                "squire": "Tuan Tanah",
+                "archer": "Pemanah",
+                "knight": "Kesatria"
+            },
+            "casino": {
+                "bartender": "Bartender",
+                "head security guard": "Kepala Keamanan",
+                "bouncer": "Tukang Pukul",
+                "manager": "Manajer",
+                "hustler": "Preman ",
+                "dealer": "Dealer",
+                "gambler": "Penjudi"
+            },
+            "day spa": {
+                "stylist": "Stylist",
+                "masseuse": "Tukang Pijat",
+                "manicurist": "Tukang Many/pady",
+                "makeup artist": "Makeup Artis",
+                "dermatologist": "Ahli Penyakit Kulit",
+                "beautician": "Ahli Kecantikan",
+                "customer": "Kostumer"
+            },
+            "embassy": {
+                "security guard": "Penjaga Keamanan",
+                "secretary": "Sekertaris",
+                "ambassador": "Ambasador",
+                "tourist": "Turis",
+                "refugee": "Pengungsi",
+                "diplomat": "Diplomat",
+                "government official": "Pemerintah resmi"
+            },
+            "hospital": {
+                "nurse": "Perawat",
+                "doctor": "Doktor",
+                "anesthesiologist": "Anestesis",
+                "intern": "Anak Magang",
+                "therapist": "Terapis",
+                "surgeon": "Pengoprasi",
+                "patient": "Pasien"
+            },
+            "hotel": {
+                "doorman": "Penjaga Pintu",
+                "security guard": "Penjaga Keamanan",
+                "manager": "Manajer",
+                "housekeeper": "Penjaga Rumah",
+                "bartender": "Bartender",
+                "bellman": "tukang bell",
+                "customer": "Kostumer"
+            },
+            "military base": {
+                "deserter": "Gelandangan",
+                "colonel": "Kolonel",
+                "medic": "Paramedis",
+                "sniper": "Sniper",
+                "officer": "Petugas",
+                "tank engineer": "Enginer Tank",
+                "soldier": "Tentara"
+            },
+            "movie studio": {
+                "stunt man": "Stun man",
+                "sound engineer": "Sound Enginer",
+                "camera man": "kameraman",
+                "director": "Sutradara",
+                "costume artist": "Kostum Artis",
+                "producer": "Produser",
+                "actor": "AKtor"
+            },
+            "ocean liner": {
+                "cook": "Pemasak",
+                "captain": "Kapten",
+                "bartender": "Bartender",
+                "musician": "Pemusik",
+                "waiter": "Penunggu",
+                "mechanic": "Mekanik",
+                "rich passenger": "Penumpang Kaya"
+            },
+            "passenger train": {
+                "mechanic": "Mekanik",
+                "border patrol": "Penjaga Perbatasan",
+                "train attendant": "Pemeriksa Kereta",
+                "restaurant chef": "Chef Restauran",
+                "train driver": "Masinis",
+                "stoker": "Juru Api",
+                "passenger": "Penumpang"
+            },
+            "pirate ship": {
+                "cook": "Pemasak",
+                "slave": "Budak",
+                "cannoneer": "Penembak Meriam",
+                "tied up prisoner": "Tahanan yang diikat",
+                "cabin boy": "Anak Buah Kapal",
+                "brave captain": "Kapten yang Berani",
+                "sailor": "Pelaut"
+            },
+            "polar station": {
+                "medic": "Paramedis",
+                "expedition leader": "Pemimpin Ekspedisi",
+                "biologist": "Ahli Biologi",
+                "radioman": "Tukang Radio",
+                "hydrologist": "Ahli Hidrologi",
+                "meteorologist": "Ahli Meteor",
+                "geologist": "Ahli Geologi"
+            },
+            "police station": {
+                "detective": "Detektif",
+                "lawyer": "Pengacara",
+                "journalist": "Jurnalis",
+                "criminalist": "Ahli Kriminal",
+                "archivist": "Ahli Penyimpanan",
+                "criminal": "Kriminal",
+                "patrol officer": "Petugas Patroli Keliling"
+            },
+            "restaurant": {
+                "musician": "Pemusik",
+                "bouncer": "Tukang Berantem",
+                "hostess": "Tuan Rumah",
+                "head chef": "Kepala Chef",
+                "food critic": "Tukang Kritik Makanan",
+                "waiter": "Penunggu Kekasih ",
+                "customer": "Kostumer"
+            },
+            "school": {
+                "gym teacher": "Pelatih Nge-Gym",
+                "principal": "Kepala Sekolah",
+                "security guard": "Penjaga keamanan",
+                "janitor": "Tukang bebersihan",
+                "cafeteria lady": "Wanita Kantin",
+                "maintenance man": "Tukang Maintenance",
+                "student": "Murid"
+            },
+            "service station": {
+                "manager": "Manajer",
+                "tire specialist": "Ahli Ban",
+                "biker": "Anak Geng Motor",
+                "car owner": "Pemilik Mobil",
+                "car wash operator": "Operator Cuci Mobil",
+                "electrician": "Tukang listrik",
+                "auto mechanic": "Mekanik automatic"
+            },
+            "space station": {
+                "engineer": "Enginer",
+                "alien": "Alien",
+                "pilot": "Pilot",
+                "commander": "Komandan",
+                "scientist": "Ahli Sains",
+                "doctor": "Dokter",
+                "space tourist": "Turis Luar Angkasa"
+            },
+            "submarine": {
+                "cook": "Pemasak",
+                "commander": "Komandan",
+                "sonar technician": "Tukang Sonar",
+                "electronics technician": "Tukang elektronik",
+                "radioman": "Tukang Radio",
+                "navigator": "Navigator",
+                "sailor": "Pelaut"
+            },
+            "supermarket": {
+                "cashier": "Kasir",
+                "butcher": "Penyembelih",
+                "janitor": "Tukang bebersihan",
+                "security guard": "Penjaga kemanan",
+                "food sample demonstrator": "Tukang Demo Masakan",
+                "shelf stocker": "Tukang Penyetok Shelf",
+                "customer": "Kostumer"
+            },
+            "theater": {
+                "coat check lady": "Wanite pemeriksa jas",
+                "prompter": "Juru Bisik",
+                "cashier": "Kasir",
+                "director": "Sturadara",
+                "actor": "Aktor",
+                "crew man": "Krew",
+                "audience member": "Audiens"
+            },
+            "university": {
+                "graduate student": "Siswa yang sudah lulus dan berbahagia",
+                "professor": "Profesor",
+                "dean": "Dekan Kampus",
+                "psychologist": "Psikologis",
+                "maintenance man": "Tukang Maintenis",
+                "janitor": "Tukang Kebersihan",
+                "student": "Siswa"
+            },
+            "world war ii squad": {
+                "resistance fighter": "Pelawan Pemerintah",
+                "radioman": "Tukang Radio",
+                "scout": "Anak Pramuka",
+                "medic": "Paramedis",
+                "cook": "Masak",
+                "imprisoned nazi": "Orang Nazi yang dipenjara",
+                "soldier": "Tentara"
+            }
+        }
+    }
+}

@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "Bine ați venit la Spyfall",
+        "new game": "Joc nou",
+        "join game": "Intră în joc",
+        "waiting for players": "Așteptare jucători...",
+        "access code": "Cod de acces",
+        "join my spyfall game": "Intră în jocul meu de Spyfall!",
+        "start game": "Start joc",
+        "leave game": "Părăsește joc",
+        "show hide": "arată/ascunde",
+        "you are the spy": "Tu ești spionul!",
+        "you are not the spy": "<strong>Nu</strong> ești spionul!",
+        "the location": "Locația",
+        "your role": "Rolul tău",
+        "players": "Jucători",
+        "first": "1<span>st</span>",
+        "location reference": "Referințe locație",
+        "end game": "Sfârșit joc",
+        "enter your name": "Introduceți numele",
+        "create game": "Crează",
+        "back": "Înapoi",
+        "enter an access code": "Introdu un cod de acces",
+        "invalid access code": "Ne pare rău, nu a fost găsit nici un joc cu codul de acces introdus!",
+        "join": "Intră",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'>Spyfall</a> creat de Alexandr Ushan, publicat de <a href='http://international.hobbyworld.ru/' target='_blank'>Hobby World</a>"
+    },
+    "locations": {
+        "airplane": "Avion",
+        "bank": "Bancă",
+        "beach": "Plajă",
+        "cathedral": "Catedrală",
+        "circus tent": "Cort de circ",
+        "corporate party": "Partea corporativă",
+        "crusader army": "Armata cruciată",
+        "casino": "Cazinou",
+        "day spa": "Spa",
+        "embassy": "Ambasadă",
+        "hospital": "Spital",
+        "hotel": "Hotel",
+        "military base": "Bază militară",
+        "movie studio": "Studio de film",
+        "ocean liner": "Pachetbot",
+        "passenger train": "Tren de pasageri",
+        "pirate ship": "Navă de pirați",
+        "polar station": "Stație polară",
+        "police station": "Secție de poliție",
+        "restaurant": "Restaurant",
+        "school": "Școală",
+        "service station": "Atelier auto",
+        "space station": "Stație spațială",
+        "submarine": "Submarin",
+        "supermarket": "Supermarket",
+        "theater": "Teatru",
+        "university": "Universitate",
+        "world war ii squad": "Brigadă al II-lea război mondial",
+        "roles": {
+            "airplane": {
+                "first class passenger": "Pasager la clasa întâi",
+                "air marshall": "Mareșal aviatic",
+                "mechanic": "Mecanic",
+                "air hostess": "Însoțitoare de zbor",
+                "copilot": "Copilot",
+                "captain": "Căpitan",
+                "economy class passenger": "Pasager la clasa economică"
+            },
+            "bank": {
+                "armored car driver": "Șofer de vehicul blindat",
+                "manager": "Manager",
+                "consultant": "Consultant",
+                "robber": "Jefuitor",
+                "security guard": "Paznic",
+                "teller": "Povestitor",
+                "customer": "Client"
+            },
+            "beach": {
+                "beach waitress": "Ospătăriță de plajă",
+                "kite surfer": "Surfer cu zmeu",
+                "lifeguard": "Salvamar",
+                "thief": "Hoț",
+                "beach photographer": "Fotograf pe plajă",
+                "ice cream truck driver": "Șofer mașina de înghețată",
+                "beach goer": "Mergător pe plajă"
+            },
+            "cathedral": {
+                "priest": "Preot",
+                "beggar": "Cerșetor",
+                "sinner": "Păcătos",
+                "tourist": "Turist",
+                "sponsor": "Sponsor",
+                "chorister": "Corist",
+                "parishioner": "Enoriaș"
+            },
+            "circus tent": {
+                "acrobat": "Acrobat",
+                "animal trainer": "Dresor",
+                "magician": "Magician",
+                "fire eater": "Mâncător de foc",
+                "clown": "Claun",
+                "juggler": "Jongler",
+                "visitor": "Vizitator"
+            },
+            "corporate party": {
+                "entertainer": "Comediant",
+                "manager": "Manager",
+                "unwanted guest": "Invitat nedorit",
+                "owner": "Proprietar",
+                "secretary": "Secretară",
+                "delivery boy": "Băiat de livrări",
+                "accountant": "Contabil"
+            },
+            "crusader army": {
+                "monk": "Călugăr",
+                "imprisoned saracen": "Sarazin întemnițat",
+                "servant": "Servitor",
+                "bishop": "Episcop",
+                "squire": "Paj",
+                "archer": "Arcaș",
+                "knight": "Cavaler"
+            },
+            "casino": {
+                "bartender": "Barman",
+                "head security guard": "Paznic șef",
+                "bouncer": "Paznic",
+                "manager": "Manager",
+                "hustler": "Escroc",
+                "dealer": "Dealer",
+                "gambler": "Jucător"
+            },
+            "day spa": {
+                "stylist": "Stilist",
+                "masseuse": "Maseză",
+                "manicurist": "Manichiuristă",
+                "makeup artist": "Makeup Artist",
+                "dermatologist": "Dermatolog",
+                "beautician": "Cosmetician",
+                "customer": "Client"
+            },
+            "embassy": {
+                "security guard": "Paznic",
+                "secretary": "Secretară",
+                "ambassador": "Ambasador",
+                "tourist": "Turist",
+                "refugee": "Refugiat",
+                "diplomat": "Diplomat",
+                "government official": "Oficial guvernamental"
+            },
+            "hospital": {
+                "nurse": "Asistentă",
+                "doctor": "Doctor",
+                "anesthesiologist": "Anestezist",
+                "intern": "Voluntar",
+                "therapist": "Terapeut",
+                "surgeon": "Chirurg",
+                "patient": "Pacient"
+            },
+            "hotel": {
+                "doorman": "Portar",
+                "security guard": "Paznic",
+                "manager": "Manager",
+                "housekeeper": "Menajeră",
+                "bartender": "Barman",
+                "bellman": "Clopotar",
+                "customer": "Client"
+            },
+            "military base": {
+                "deserter": "Dezertor",
+                "colonel": "Colonel",
+                "medic": "Medic",
+                "sniper": "Lunetist",
+                "officer": "Ofițer",
+                "tank engineer": "Inginer de tanc",
+                "soldier": "Soldat"
+            },
+            "movie studio": {
+                "stunt man": "Cascador",
+                "sound engineer": "Inginer de sunet",
+                "camera man": "Cameraman",
+                "director": "Director",
+                "costume artist": "Artist de costume",
+                "producer": "Producător",
+                "actor": "Actor"
+            },
+            "ocean liner": {
+                "cook": "Bucătar",
+                "captain": "Căpitan",
+                "bartender": "Barman",
+                "musician": "Muzician",
+                "waiter": "Chelner",
+                "mechanic": "Mecanic",
+                "rich passenger": "Pasager bogat"
+            },
+            "passenger train": {
+                "mechanic": "Mecanic",
+                "border patrol": "Patrulă de graniță",
+                "train attendant": "Însoțitor de tren",
+                "restaurant chef": "Chef restaurant",
+                "train driver": "Șofer de tren",
+                "stoker": "Fochist",
+                "passenger": "Pasager"
+            },
+            "pirate ship": {
+                "cook": "Bucătar",
+                "slave": "Sclav",
+                "cannoneer": "Tunar",
+                "tied up prisoner": "Prizonier legat",
+                "cabin boy": "Băiat de cabină",
+                "brave captain": "Căpitan curajos",
+                "sailor": "Marinar"
+            },
+            "polar station": {
+                "medic": "Medic",
+                "expedition leader": "Lider de expediție",
+                "biologist": "Biolog",
+                "radioman": "Operator de radio",
+                "hydrologist": "Hidrolog",
+                "meteorologist": "Meteorolog",
+                "geologist": "Geolog"
+            },
+            "police station": {
+                "detective": "Detectiv",
+                "lawyer": "Avocat",
+                "journalist": "Jurnalist",
+                "criminalist": "Criminalist",
+                "archivist": "Arhivar",
+                "criminal": "Criminal",
+                "patrol officer": "Ofițer de patrulare"
+            },
+            "restaurant": {
+                "musician": "Muzician",
+                "bouncer": "Paznic",
+                "hostess": "Însoțitoare",
+                "head chef": "Chef Șef",
+                "food critic": "Critic culinar",
+                "waiter": "Chelner",
+                "customer": "Client"
+            },
+            "school": {
+                "gym teacher": "Antrenor",
+                "principal": "Director",
+                "security guard": "Paznic",
+                "janitor": "Om de serviciu",
+                "cafeteria lady": "Doamna de la cantină",
+                "maintenance man": "Îngrijitorul",
+                "student": "Student"
+            },
+            "service station": {
+                "manager": "Manager",
+                "tire specialist": "Specialist în cauciucuri",
+                "biker": "Biciclist",
+                "car owner": "Proprietarul mașinii",
+                "car wash operator": "Operator spălătorie auto",
+                "electrician": "Electrician",
+                "auto mechanic": "Mecanic auto"
+            },
+            "space station": {
+                "engineer": "Inginer",
+                "alien": "Extraterestru",
+                "pilot": "Pilot",
+                "commander": "Comandant",
+                "scientist": "Om de știință",
+                "doctor": "Doctor",
+                "space tourist": "Turist spațial"
+            },
+            "submarine": {
+                "cook": "Bucătar",
+                "commander": "Comandant",
+                "sonar technician": "Tehnician sonar",
+                "electronics technician": "Tehnician electronist",
+                "radioman": "Operator de radio",
+                "navigator": "Navigator",
+                "sailor": "Marinar"
+            },
+            "supermarket": {
+                "cashier": "Casier",
+                "butcher": "Măcelar",
+                "janitor": "Om de serviciu",
+                "security guard": "Paznic",
+                "food sample demonstrator": "Demonstrator monstre",
+                "shelf stocker": "Persoană care se ocupă cu aprovizionarea rafturilor",
+                "customer": "Client"
+            },
+            "theater": {
+                "coat check lady": "Umeraș uman",
+                "prompter": "Sufler",
+                "cashier": "Casier",
+                "director": "Director",
+                "actor": "Actor",
+                "crew man": "Persoană din echipă",
+                "audience member": "Membru al audienței"
+            },
+            "university": {
+                "graduate student": "Absolvent",
+                "professor": "Profesor",
+                "dean": "Decan",
+                "psychologist": "Psiholog",
+                "maintenance man": "Îngrijitorul",
+                "janitor": "Om de serviciu",
+                "student": "Student"
+            },
+            "world war ii squad": {
+                "resistance fighter": "Luptător al rezitenței",
+                "radioman": "Operator de radio",
+                "scout": "Cercetaș",
+                "medic": "Medic",
+                "cook": "Bucătar",
+                "imprisoned nazi": "Nazist întemnițat",
+                "soldier": "Soldat"
+            }
+        }
+    }
+}

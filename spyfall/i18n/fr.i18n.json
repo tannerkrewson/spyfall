@@ -1,0 +1,312 @@
+{
+    "ui": {
+        "welcome to spyfall": "Bienvenue dans Spyfall",
+        "new game": "Nouvelle partie",
+        "join game": "Rejoindre une partie",
+        "waiting for players": "En attente des joueurs",
+        "access code": "Code d'accès",
+        "join my spyfall game": "Rejoins ma partie de Spyfall !",
+        "start game": "Commencer la partie",
+        "leave game": "Quitter la partie",
+        "show hide": "montrer/cacher",
+        "you are the spy": "Vous êtes l'espion ! ",
+        "you are not the spy": "Vous n'êtes <strong>pas</strong> l'espion !",
+        "the location": "Le lieu",
+        "your role": "Votre rôle",
+        "players": "Joueurs",
+        "first": "1 <span>er</span>",
+        "location reference": "Ensemble des lieux possibles",
+        "end game": "Fin du jeu",
+        "enter your name": "Entrez votre nom",
+        "create game": "Créer",
+        "back": "Précédent",
+        "enter an access code": "Entrez un code d'accès",
+        "invalid access code": "Désolé, aucun jeu n'a été trouvé avec le code d'accès fourni !",
+        "join": "Rejoignez",
+        "footer": "<a href='http://international.hobbyworld.ru/catalog/25-spyfall/' target='_blank'> Spyfall</a> conçu par Alexandr Ushan, publié par <a href='http://international.hobbyworld.ru/' target='_blank'> Hobby World</a>"
+    },
+    "locations": {
+        "airplane": "Avion de ligne",
+        "bank": "Banque",
+        "beach": "Plage",
+        "cathedral": "Cathédrale ",
+        "circus tent": "Chapiteau de cirque",
+        "corporate party": "Soirée d'entreprise ",
+        "crusader army": "L'armée des croisés",
+        "casino": "Casino",
+        "day spa": "Journée au spa",
+        "embassy": "Ambassade",
+        "hospital": "Hôpital",
+        "hotel": "Hôtel",
+        "military base": "Base militaire",
+        "movie studio": "Studio de cinéma",
+        "ocean liner": "Paquebot",
+        "passenger train": "Train de voyageurs",
+        "pirate ship": "Bateau pirate",
+        "polar station": "Station polaire",
+        "police station": "Commissariat de police",
+        "restaurant": "Restaurant",
+        "school": "École",
+        "service station": "Station service",
+        "space station": "Station spatiale",
+        "submarine": "Sous-marin",
+        "supermarket": "Supermarché",
+        "theater": "Théâtre",
+        "university": "Université",
+        "world war ii squad": "Escouade de la seconde guerre mondiale",
+        "roles": {
+            "airplane": {
+                "first class passenger": "Passager de première classe",
+                "air marshall": "Maréchal de l'air",
+                "mechanic": "Mécanicien",
+                "air hostess": "Hôtesse de l'air",
+                "copilot": "Copilote",
+                "captain": "Capitaine",
+                "economy class passenger": "Passager en classe économique"
+            },
+            "bank": {
+                "armored car driver": "Conducteur de véhicule blindé",
+                "manager": "Manager",
+                "consultant": "Consultant",
+                "robber": "Voleur",
+                "security guard": "Agent de sécurité",
+                "teller": "Caissier",
+                "customer": "Client"
+            },
+            "beach": {
+                "beach waitress": "Serveuse de plage",
+                "kite surfer": "Kite surfeur",
+                "lifeguard": "Sauveteur",
+                "thief": "Voleur",
+                "beach photographer": "Photographe de plage",
+                "ice cream truck driver": "Chauffeur de camion de glace",
+                "beach goer": "Habitué de la plage"
+            },
+            "cathedral": {
+                "priest": "Prêtre",
+                "beggar": "Mendiant",
+                "sinner": "Pécheur",
+                "tourist": "Touriste",
+                "sponsor": "Sponsor",
+                "chorister": "Choriste",
+                "parishioner": "Paroissien"
+            },
+            "circus tent": {
+                "acrobat": "Acrobate",
+                "animal trainer": "Dresseur d'animaux",
+                "magician": "Magicien",
+                "fire eater": "Cracheur de feu",
+                "clown": "Clown",
+                "juggler": "Jongleur",
+                "visitor": "Visiteur"
+            },
+            "corporate party": {
+                "entertainer": "Artiste du spectacle",
+                "manager": "Manager",
+                "unwanted guest": "Invité indésirable",
+                "owner": "Propriétaire",
+                "secretary": "Secrétaire",
+                "delivery boy": "Livreur",
+                "accountant": "Comptable"
+            },
+            "crusader army": {
+                "monk": "Moine",
+                "imprisoned saracen": "Sarrasins emprisonnés",
+                "servant": "Serviteur",
+                "bishop": "Évêque",
+                "squire": "Écuyer",
+                "archer": "Archer",
+                "knight": "Chevalier"
+            },
+            "casino": {
+                "bartender": "Barman",
+                "head security guard": "Chef des agents de sécurité",
+                "bouncer": "Videur",
+                "manager": "Manager",
+                "hustler": "Traffiquant",
+                "dealer": "Revendeur",
+                "gambler": "Parieur"
+            },
+            "day spa": {
+                "stylist": "Styliste",
+                "masseuse": "Masseuse",
+                "manicurist": "Manucure",
+                "makeup artist": "Maquilleur",
+                "dermatologist": "Dermatologue",
+                "beautician": "Esthéticienne",
+                "customer": "Client"
+            },
+            "embassy": {
+                "security guard": "Agent de sécurité",
+                "secretary": "Secrétaire",
+                "ambassador": "Ambassadeur",
+                "tourist": "Touriste",
+                "refugee": "Réfugié",
+                "diplomat": "Diplomate",
+                "government official": "Fonctionnaire du gouvernement"
+            },
+            "hospital": {
+                "nurse": "Infirmière",
+                "doctor": "Médecin",
+                "anesthesiologist": "Anesthésiste",
+                "intern": "Stagiaire",
+                "therapist": "Thérapeute",
+                "surgeon": "Chirurgien",
+                "patient": "Patient"
+            },
+            "hotel": {
+                "doorman": "Portier",
+                "security guard": "Agent de sécurité",
+                "manager": "Manager",
+                "housekeeper": "Femme de ménage",
+                "bartender": "Barman",
+                "bellman": "Groom",
+                "customer": "Client"
+            },
+            "military base": {
+                "deserter": "Déserteur",
+                "colonel": "Colonel",
+                "medic": "Toubib",
+                "sniper": "Sniper",
+                "officer": "Officier",
+                "tank engineer": "Ingénieur de Tank",
+                "soldier": "Soldat"
+            },
+            "movie studio": {
+                "stunt man": "Cascadeur",
+                "sound engineer": "Ingénieur du son",
+                "camera man": "Cameraman",
+                "director": "Directeur",
+                "costume artist": "Costumiere ",
+                "producer": "Producteur",
+                "actor": "Acteur"
+            },
+            "ocean liner": {
+                "cook": "Cuisinier",
+                "captain": "Capitaine",
+                "bartender": "Barman",
+                "musician": "Musicien",
+                "waiter": "Serveur",
+                "mechanic": "Mécanicien",
+                "rich passenger": "Riche passager"
+            },
+            "passenger train": {
+                "mechanic": "Mécanicien",
+                "border patrol": "Police des frontières",
+                "train attendant": "Accompagnateur de train",
+                "restaurant chef": "Patron de restaurant",
+                "train driver": "Conducteur de train",
+                "stoker": "Chauffeur",
+                "passenger": "Passager"
+            },
+            "pirate ship": {
+                "cook": "Cuisinier",
+                "slave": "Esclave",
+                "cannoneer": "Canonnier",
+                "tied up prisoner": "Prisonnier ligoté",
+                "cabin boy": "Garçon de cabine",
+                "brave captain": "Capitaine courageux",
+                "sailor": "Marin"
+            },
+            "polar station": {
+                "medic": "Toubib",
+                "expedition leader": "Chef de l'expédition",
+                "biologist": "Biologiste",
+                "radioman": "Radioman",
+                "hydrologist": "Hydrologue",
+                "meteorologist": "Météorologue",
+                "geologist": "Géologue"
+            },
+            "police station": {
+                "detective": "Détective",
+                "lawyer": "Avocat",
+                "journalist": "Journaliste",
+                "criminalist": "Criminologue",
+                "archivist": "Archiviste",
+                "criminal": "Criminel",
+                "patrol officer": "Gendarme"
+            },
+            "restaurant": {
+                "musician": "Musicien",
+                "bouncer": "Videur",
+                "hostess": "Hôtesse",
+                "head chef": "Chef de cuisine",
+                "food critic": "Critique gastronomique",
+                "waiter": "Maître d'hôtel",
+                "customer": "Client"
+            },
+            "school": {
+                "gym teacher": "Prof de gym",
+                "principal": "Principal",
+                "security guard": "Agent de sécurité",
+                "janitor": "Concierge",
+                "cafeteria lady": "Dame de la cantine",
+                "maintenance man": "Technicien de maintenance",
+                "student": "Étudiant"
+            },
+            "service station": {
+                "manager": "Manager",
+                "tire specialist": "Spécialiste des pneus",
+                "biker": "Motard",
+                "car owner": "Propriétaire de la voiture",
+                "car wash operator": "Opérateur de lavage de voiture",
+                "electrician": "Électricien",
+                "auto mechanic": "Mécanicien automobile"
+            },
+            "space station": {
+                "engineer": "Ingénieur",
+                "alien": "Alien",
+                "pilot": "Pilote",
+                "commander": "Commandant",
+                "scientist": "Scientifique",
+                "doctor": "Médecin",
+                "space tourist": "Touriste de l'espace"
+            },
+            "submarine": {
+                "cook": "Cuisinier",
+                "commander": "Commandant",
+                "sonar technician": "Technicien du sonar",
+                "electronics technician": "Technicien en électronique",
+                "radioman": "Radioman",
+                "navigator": "Navigateur",
+                "sailor": "Marin"
+            },
+            "supermarket": {
+                "cashier": "Caissier",
+                "butcher": "Boucher",
+                "janitor": "Concierge",
+                "security guard": "Agent de sécurité",
+                "food sample demonstrator": "Démonstrateur d'échantillon alimentaire",
+                "shelf stocker": "Personne qui remplis les rayons",
+                "customer": "Client"
+            },
+            "theater": {
+                "coat check lady": "Fille qui accueille les invités à la fête",
+                "prompter": "Prompteur",
+                "cashier": "Caissier",
+                "director": "Directeur",
+                "actor": "Acteur",
+                "crew man": "Homme d'équipage",
+                "audience member": "Membre de l'auditoire"
+            },
+            "university": {
+                "graduate student": "Étudiant diplômé",
+                "professor": "Professeur",
+                "dean": "Doyen",
+                "psychologist": "Psychologue",
+                "maintenance man": "Technicien de maintenance",
+                "janitor": "Concierge",
+                "student": "Étudiant"
+            },
+            "world war ii squad": {
+                "resistance fighter": "Combattant de la résistance",
+                "radioman": "Radioman",
+                "scout": "Scout",
+                "medic": "Toubib",
+                "cook": "Cuisinier",
+                "imprisoned nazi": "Nazi emprisonné",
+                "soldier": "Soldat"
+            }
+        }
+    }
+}
