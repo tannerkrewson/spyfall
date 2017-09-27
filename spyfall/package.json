@@ -1,5 +1,5 @@
 {
-  "name": "meteor-test",
+  "name": "meteor-spyfall",
   "private": true,
   "scripts": {
     "start": "meteor run"
