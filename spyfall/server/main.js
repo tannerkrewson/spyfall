@@ -1,4 +1,6 @@
-function cleanUpGamesAndPlayers(){
+import { Meteor } from 'meteor/meteor';
+
+function cleanUpGamesAndPlayers() {
   var cutOff = moment().subtract(2, 'hours').toDate().getTime();
 
   var numGamesRemoved = Games.remove({
