@@ -112,12 +112,12 @@ function generateAccessCode(){
     return code;
 }
 
-function generateNewGame(locationOption){
+function generateNewGame(locationOption, roundMinutes){
   var game = {
     accessCode: generateAccessCode(),
     state: "waitingForPlayers",
     location: null,
-    lengthInMinutes: 8,
+    lengthInMinutes: roundMinutes || 8,
     endTime: null,
     paused: false,
     pausedTime: null,
@@ -300,7 +300,7 @@ Template.createGame.events({
       return false;
     }
 
-    var game = generateNewGame(event.target.locationRadio.value);
+    var game = generateNewGame(event.target.locationRadio.value, event.target.roundMinutes.value);
     var player = generateNewPlayer(game, playerName);
 
     Meteor.subscribe('games', game.accessCode);
@@ -504,7 +504,7 @@ Template.gameView.helpers({
   },
   locations: function () {
 	  if (getCurrentGame().locationOption === "location1") {
-		  return locations;
+	    return locations;
 	  }
 	  if(getCurrentGame().locationOption === "location2") {
 	    return locations2;
