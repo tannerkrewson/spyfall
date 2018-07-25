@@ -103,7 +103,7 @@ function getCurrentPlayer(){
 
 function generateAccessCode(){
   var code = "";
-  var possible = "abcdefghijklmnopqrstuvwxyz";
+  var possible = "afghijkloqrsuwxy23456789";
 
     for(var i=0; i < 6; i++){
       code += possible.charAt(Math.floor(Math.random() * possible.length));
@@ -112,15 +112,16 @@ function generateAccessCode(){
     return code;
 }
 
-function generateNewGame(){
+function generateNewGame(locationOption, roundMinutes){
   var game = {
     accessCode: generateAccessCode(),
     state: "waitingForPlayers",
     location: null,
-    lengthInMinutes: 8,
+    lengthInMinutes: roundMinutes || 8,
     endTime: null,
     paused: false,
-    pausedTime: null
+    pausedTime: null,
+    locationOption: locationOption
   };
 
   var gameID = Games.insert(game);
@@ -299,7 +300,7 @@ Template.createGame.events({
       return false;
     }
 
-    var game = generateNewGame();
+    var game = generateNewGame(event.target.locationRadio.value, event.target.roundMinutes.value);
     var player = generateNewPlayer(game, playerName);
 
     Meteor.subscribe('games', game.accessCode);
@@ -502,7 +503,13 @@ Template.gameView.helpers({
     return players;
   },
   locations: function () {
-    return locations;
+	  if (getCurrentGame().locationOption === "location1") {
+	    return locations;
+	  }
+	  if(getCurrentGame().locationOption === "location2") {
+	    return locations2;
+      }
+      return locations.concat(locations2);
   },
   gameFinished: function () {
     var timeRemaining = getTimeRemaining();

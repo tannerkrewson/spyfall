@@ -251,6 +251,7 @@ a {
     }
 
     &.paused {
+        color: red;
         span {
             animation: blink 2s steps(2, start) infinite;
             -webkit-animation: blink 2s steps(2, start) infinite;
@@ -287,6 +288,10 @@ a {
     }
 
     cursor: pointer;
+}
+
+.red-text {
+    color: red;
 }
 
 .player-status {
@@ -437,6 +442,10 @@ input[type="text"] {
     max-width: 280px;
     height: 48px;
   }
+
+.round-length[type="text"] {
+    width: 50px;
+}
 
 @media (max-width: 340px) {
   .location-list li {
