@@ -438,13 +438,13 @@
             "the united nations": {
                 "diplomat": "Diplomat",
                 "interpreter": "Interpreter",
-                "bloward": "Blowhard",
+                "blowhard": "Blowhard",
                 "tourist": "Tourist",
                 "napping delegate": "Napping Delegate",
                 "journalist": "Journalist",
                 "secretary of state": "Secretary of State",
                 "speaker": "Speaker",
-                "secretary general": "Secretary General",
+                "secretary-general": "Secretary General",
                 "lobbyist": "Lobbyist"
             },
             "candy factory": {
