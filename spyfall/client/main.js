@@ -228,13 +228,16 @@ FlashMessages.configure({
   autoScroll: false
 });
 
-Template.main.rendered = function() {
-  $.getScript("//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", function() {
-    var ads, adsbygoogle;
-    ads = '<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-3450817379541922" data-ad-slot="4101511012" data-ad-format="auto"></ins>';
-    $('.adspace').html(ads);
-    return (adsbygoogle = window.adsbygoogle || []).push({});
-  });
+Template.main.rendered = function () {
+  // TODO: add script here
+
+
+  // $.getScript("//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", function() {
+  //   var ads, adsbygoogle;
+  //   ads = '<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-3450817379541922" data-ad-slot="4101511012" data-ad-format="auto"></ins>';
+  //   $('.adspace').html(ads);
+  //   return (adsbygoogle = window.adsbygoogle || []).push({});
+  // });
 };
 
 Template.main.helpers({
@@ -522,6 +525,7 @@ Template.gameView.helpers({
     return moment(timeRemaining).format('mm[<span>:</span>]ss');
   }
 });
+
 
 Template.gameView.events({
   'click .btn-leave': leaveGame,
