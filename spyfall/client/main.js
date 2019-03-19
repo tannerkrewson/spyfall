@@ -446,6 +446,7 @@ Template.lobby.events({
   'click .btn-remove-player': function (event) {
     var playerID = $(event.currentTarget).data('player-id');
     Players.remove(playerID);
+    return false;
   },
   'click .btn-edit-player': function (event) {
     var game = getCurrentGame();
