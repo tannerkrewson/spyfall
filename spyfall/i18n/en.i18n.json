@@ -111,6 +111,18 @@
                 "chorister": "Chorister",
                 "parishioner": "Parishioner"
             },
+            "cemetery": {
+                "priest": "Priest",
+                "grave robber": "Grave Robber",
+                "poet": "Poet",
+                "mourning person": "Mourning Person",
+                "gatekeeper": "Gatekeeper",
+                "dead person": "Dead Person",
+                "relative": "Relative",
+                "flower seller": "Flower Seller",
+                "grave digger": "Grave Digger",
+                "gothic girl": "Gothic Girl",
+            },
             "circus tent": {
                 "acrobat": "Acrobat",
                 "animal trainer": "Animal Trainer",
