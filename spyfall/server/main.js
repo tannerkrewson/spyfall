@@ -1,4 +1,6 @@
-function cleanUpGamesAndPlayers(){
+import { Meteor } from 'meteor/meteor';
+
+function cleanUpGamesAndPlayers() {
   var cutOff = moment().subtract(2, 'hours').toDate().getTime();
 
   var numGamesRemoved = Games.remove({
@@ -10,9 +12,21 @@ function cleanUpGamesAndPlayers(){
   });
 }
 
-function getRandomLocation(){
-  var locationIndex = Math.floor(Math.random() * locations.length);
-  return locations[locationIndex];
+function getRandomLocation(locationOption){
+  if(locationOption === "location1") {
+	  var locationIndex = Math.floor(Math.random() * locations.length);
+	  return locations[locationIndex];
+  }
+
+  if(locationOption === "location2") {
+	  var locationIndex2 = Math.floor(Math.random() * locations2.length);
+	  return locations2[locationIndex2];
+  }
+
+  // use both locations
+  var allLocations = locations.concat(locations2);
+  var allIndex = Math.floor(Math.random() * allLocations.length);
+  return allLocations[allIndex];
 }
 
 function shuffleArray(array) {
@@ -30,6 +44,9 @@ function assignRoles(players, location){
   var roles = location.roles.slice();
   var shuffled_roles = shuffleArray(roles);
   var role = null;
+
+  // console.log(default_role);
+  // console.log(roles);
 
   players.forEach(function(player){
     if (!player.isSpy){
@@ -64,7 +81,8 @@ Meteor.publish('players', function(gameID) {
 
 Games.find({"state": 'settingUp'}).observeChanges({
   added: function (id, game) {
-    var location = getRandomLocation();
+    var location = getRandomLocation(game.locationOption);
+
     var players = Players.find({gameID: id});
     var gameEndTime = moment().add(game.lengthInMinutes, 'minutes').valueOf();
 

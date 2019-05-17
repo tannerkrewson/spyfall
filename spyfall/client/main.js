@@ -1,4 +1,9 @@
-Handlebars.registerHelper('toCapitalCase', function(str) {
+import { Template } from 'meteor/templating';
+import { ReactiveVar } from 'meteor/reactive-var';
+
+import './spyfall.html';
+
+Handlebars.registerHelper('toCapitalCase', function (str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 });
 
@@ -98,7 +103,7 @@ function getCurrentPlayer(){
 
 function generateAccessCode(){
   var code = "";
-  var possible = "abcdefghijklmnopqrstuvwxyz";
+  var possible = "afghijkloqrsuwxy23456789";
 
     for(var i=0; i < 6; i++){
       code += possible.charAt(Math.floor(Math.random() * possible.length));
@@ -107,15 +112,16 @@ function generateAccessCode(){
     return code;
 }
 
-function generateNewGame(){
+function generateNewGame(locationOption, roundMinutes){
   var game = {
     accessCode: generateAccessCode(),
     state: "waitingForPlayers",
     location: null,
-    lengthInMinutes: 8,
+    lengthInMinutes: roundMinutes || 8,
     endTime: null,
     paused: false,
-    pausedTime: null
+    pausedTime: null,
+    locationOption: locationOption
   };
 
   var gameID = Games.insert(game);
@@ -285,7 +291,7 @@ Template.createGame.events({
       return false;
     }
 
-    var game = generateNewGame();
+    var game = generateNewGame(event.target.locationRadio.value, event.target.roundMinutes.value);
     var player = generateNewPlayer(game, playerName);
 
     Meteor.subscribe('games', game.accessCode);
@@ -315,6 +321,7 @@ Template.createGame.helpers({
 });
 
 Template.createGame.rendered = function (event) {
+  window.waldo.refreshAllTags();
   $("#player-name").focus();
 };
 
@@ -377,6 +384,7 @@ Template.joinGame.helpers({
 
 
 Template.joinGame.rendered = function (event) {
+  window.waldo.refreshAllTags();
   resetUserState();
 
   var urlAccessCode = Session.get('urlAccessCode');
@@ -438,6 +446,7 @@ Template.lobby.events({
   'click .btn-remove-player': function (event) {
     var playerID = $(event.currentTarget).data('player-id');
     Players.remove(playerID);
+    return false;
   },
   'click .btn-edit-player': function (event) {
     var game = getCurrentGame();
@@ -448,6 +457,7 @@ Template.lobby.events({
 });
 
 Template.lobby.rendered = function (event) {
+  window.waldo.refreshAllTags();
   var url = getAccessLink();
   var qrcodesvg = new Qrcodesvg(url, "qrcode", 250);
   qrcodesvg.draw();
@@ -471,6 +481,10 @@ function getTimeRemaining(){
   return timeRemaining;
 }
 
+Template.gameView.rendered = function () {
+  window.waldo.refreshAllTags();
+}
+
 Template.gameView.helpers({
   game: getCurrentGame,
   player: getCurrentPlayer,
@@ -488,7 +502,13 @@ Template.gameView.helpers({
     return players;
   },
   locations: function () {
-    return locations;
+	  if (getCurrentGame().locationOption === "location1") {
+	    return locations;
+	  }
+	  if(getCurrentGame().locationOption === "location2") {
+	    return locations2;
+      }
+      return locations.concat(locations2);
   },
   gameFinished: function () {
     var timeRemaining = getTimeRemaining();
@@ -501,6 +521,7 @@ Template.gameView.helpers({
     return moment(timeRemaining).format('mm[<span>:</span>]ss');
   }
 });
+
 
 Template.gameView.events({
   'click .btn-leave': leaveGame,
