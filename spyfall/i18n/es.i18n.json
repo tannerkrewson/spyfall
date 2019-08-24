@@ -39,7 +39,7 @@
         "hospital": "Hospital",
         "hotel": "Hotel",
         "military base": "Base Militar",
-        "movie studio": "Estudio de cine",
+        "movie studio": "Estudio de Cine",
         "ocean liner": "Crucero Marítimo",
         "passenger train": "Tren de Pasajeros",
         "pirate ship": "Barco pirata",
@@ -95,7 +95,7 @@
             },
             "beach": {
                 "beach waitress": "Camarera en la Playa",
-                "kite surfer": "Kite Surfer",
+                "kite surfer": "Surfista con Cometa",
                 "lifeguard": "Salvavidas",
                 "thief": "Ladrón",
                 "beach photographer": "Fotógrafo en la Playa",
@@ -127,7 +127,7 @@
                 "owner": "Dueño",
                 "secretary": "Secretaria",
                 "delivery boy": "Mensajero",
-                "accountant": "Contable"
+                "accountant": "Contador/a"
             },
             "crusader army": {
                 "monk": "Monje",
@@ -145,15 +145,15 @@
                 "manager": "Gerente",
                 "hustler": "Estafador",
                 "dealer": "Croupier",
-                "gambler": "Jugador"
+                "gambler": "Apostador/a"
             },
             "day spa": {
                 "stylist": "Estilista",
                 "masseuse": "Masajista",
                 "manicurist": "Manicurista",
-                "makeup artist": "Maquillador",
-                "dermatologist": "Dermatólogo",
-                "beautician": "Esteticien",
+                "makeup artist": "Maquillador/a",
+                "dermatologist": "Dermatólogo/a",
+                "beautician": "Cosmetólogo/a",
                 "customer": "Cliente"
             },
             "embassy": {
@@ -163,7 +163,7 @@
                 "tourist": "Turista",
                 "refugee": "Refugiado",
                 "diplomat": "Diplomático",
-                "government official": "Funcionario"
+                "government official": "Funcionario del Gobierno"
             },
             "hospital": {
                 "nurse": "Enfermera",
@@ -178,8 +178,8 @@
                 "doorman": "Portero",
                 "security guard": "Guardia de Seguridad",
                 "manager": "Gerente",
-                "housekeeper": "Camarera",
-                "bartender": "Barman ",
+                "housekeeper": "Amo/a de Llaves",
+                "bartender": "Barman",
                 "bellman": "Botones",
                 "customer": "Cliente"
             },
@@ -193,17 +193,17 @@
                 "soldier": "Soldado"
             },
             "movie studio": {
-                "stunt man": "Doble de riesgo",
-                "sound engineer": "Ingeniero de Sonido",
-                "camera man": "Cámara",
-                "director": "Director",
-                "costume artist": "Diseñador de vestuario",
-                "producer": "Productor",
+                "stunt man": "Doble de Riesgo",
+                "sound engineer": "Ingeniero/a de Sonido",
+                "camera man": "Camarógrafo/a",
+                "director": "Director/a",
+                "costume artist": "Diseñador/a de vestuario",
+                "producer": "Productor/a",
                 "actor": "Actor"
             },
             "ocean liner": {
                 "cook": "Cocinero",
-                "captain": "Capitán ",
+                "captain": "Capitán",
                 "bartender": "Barman",
                 "musician": "Músico",
                 "waiter": "Camarero",
@@ -241,7 +241,7 @@
                 "detective": "Detective",
                 "lawyer": "Abogado",
                 "journalist": "Reportero",
-                "criminalist": "Criminalista ",
+                "criminalist": "Criminalista",
                 "archivist": "Archivista",
                 "criminal": "Criminal",
                 "patrol officer": "Policía"
@@ -249,14 +249,14 @@
             "restaurant": {
                 "musician": "Músico",
                 "bouncer": "Guardia de Seguridad",
-                "hostess": "Maître",
+                "hostess": "Anfitrión/a",
                 "head chef": "Chef Principal",
                 "food critic": "Crítico Gastronómico",
-                "waiter": "Camarero",
+                "waiter": "Camarero/a",
                 "customer": "Cliente"
             },
             "school": {
-                "gym teacher": "Profesor de Gimnasia",
+                "gym teacher": "Profesor/a de Gimnasia",
                 "principal": "Director",
                 "security guard": "Guardia de Seguridad",
                 "janitor": "Conserje",
@@ -268,7 +268,7 @@
                 "manager": "Gerente",
                 "tire specialist": "Especialista en Neumáticos",
                 "biker": "Ciclista",
-                "car owner": "Dueño del coche",
+                "car owner": "Dueño del Coche",
                 "car wash operator": "Operador de Lavado de Coches",
                 "electrician": "Electricista",
                 "auto mechanic": "Mecánico de Coches"
@@ -296,8 +296,8 @@
                 "butcher": "Carnicero",
                 "janitor": "Conserje",
                 "security guard": "Guardia de Seguridad",
-                "food sample demonstrator": "Demostrador de Comida",
-                "shelf stocker": "Reponedor",
+                "food sample demonstrator": "Demostrador de Muestras de Comida",
+                "shelf stocker": "Reponedor/a",
                 "customer": "Cliente"
             },
             "theater": {
