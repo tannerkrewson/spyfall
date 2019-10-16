@@ -89,7 +89,7 @@ function getAccessLink(){
     return;
   }
 
-  return Meteor.settings.public.url + game.accessCode + "/";
+  return window.location.origin + "/" + game.accessCode + "/";
 }
 
 
