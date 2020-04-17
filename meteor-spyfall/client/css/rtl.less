@@ -1,0 +1,60 @@
+.dir-rtl {
+    h5 {
+        text-align: right;
+    }
+
+    ul, ol {
+        padding-right: 0;
+    }
+
+    .location-list li {
+        text-align: right;
+    }
+
+    .ingame-player-list li {
+        text-align: right;
+        float: right;
+        padding: 0 0 0 4px;
+    }
+
+    .access-link {
+        direction: ltr;
+    }
+
+    .lobby-player-list > li {
+        text-align: right;
+        margin: 0 2em 6px 0;
+    }
+
+    .lobby-player-list > li:before {
+        content:counter(li); /* Use the counter as content */
+        counter-increment:li; /* Increment the counter by 1 */
+        
+        /* Position and style the number */
+        position: absolute;
+        top: 0;
+        right: -2em;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 2em;
+        margin-left: 8px;
+        margin-right: 0;
+        background: transparent;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        text-align: center;
+        background-color: #f9f9f9;
+    }
+
+    .btn-remove-player {
+        float: left;
+        right: -4px;
+    }
+
+    .btn-edit-player {
+        position: relative;
+        float: left;
+        right: -4px;
+    }
+}
