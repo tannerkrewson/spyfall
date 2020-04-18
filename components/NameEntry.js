@@ -30,7 +30,7 @@ const NameEntry = ({ t, onNameEntry, nameStatus }) => {
 					<div className="button-container">
 						<input type="submit" value={t("ui.join")} onClick={handleJoin} />
 						<Link href="/">
-							<button className="btn-back">{t("ui.back")}</button>
+							<button>{t("ui.back")}</button>
 						</Link>
 					</div>
 				</div>
