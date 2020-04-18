@@ -43,7 +43,7 @@ const Game = ({ t }) => {
 			{showNameEntry && (
 				<NameEntry onNameEntry={onNameEntry} nameStatus={myNameStatus} />
 			)}
-			{showLobby && <Lobby gameState={gameState} />}
+			{showLobby && <Lobby gameState={gameState} socket={socket} />}
 		</Page>
 	);
 };

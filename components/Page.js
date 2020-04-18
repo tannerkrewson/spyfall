@@ -10,6 +10,7 @@ const Page = ({ children }) => (
 	<div dir="ltr" className="container dir-ltr lang-en">
 		<div className="main-content">
 			{children}
+			<hr />
 			<LanguageSelector />
 			<Footer />
 		</div>

@@ -1,6 +1,7 @@
 import { withTranslation } from "../i18n";
+import Router from "next/router";
 
-const Lobby = ({ t, gameState }) => {
+const Lobby = ({ t, gameState, socket }) => {
 	const playerList = gameState.players.map((player) => ({
 		...player,
 		hasName: player.nameStatus === "named",
@@ -27,6 +28,7 @@ const Lobby = ({ t, gameState }) => {
 								href="#"
 								className="btn-edit-player"
 								data-player-id="{{ _id }}"
+								onClick={() => Router.push(window.location.pathname)}
 							>
 								Edit name
 							</a>
@@ -47,8 +49,12 @@ const Lobby = ({ t, gameState }) => {
 			<hr />
 
 			<div className="button-container">
-				<button className="btn-start">{t("ui.start game")}</button>
-				<button className="btn-leave">{t("ui.leave game")}</button>
+				<button className="btn-start" onClick={() => socket.emit("startGame")}>
+					{t("ui.start game")}
+				</button>
+				<button className="btn-leave" onClick={() => Router.push("/")}>
+					{t("ui.leave game")}
+				</button>
 			</div>
 		</>
 	);

@@ -41,8 +41,6 @@ const Home = ({ t }) => {
 						<button id="btn-join-game">{t("ui.join game")}</button>
 					</Link>
 				</div>
-
-				<hr />
 			</div>
 		</Page>
 	);
