@@ -28,10 +28,27 @@ class Game {
 		return newPlayer;
 	}
 
+	removePlayerByName = (name) =>
+		this.removePlayer(this.players.find((player) => player.name === name))();
+
+	removePlayer = (player) => () => {
+		player.socket.disconnect(true);
+
+		const index = this.players.indexOf(player);
+
+		if (index > -1) {
+			this.players.splice(index, 1);
+		}
+
+		this.sendNewStateToAllPlayers();
+	};
+
 	attachListenersToPlayer = (player) => {
 		const { socket } = player;
 		socket.on("name", this.setName(player));
 		socket.on("startGame", this.startGame);
+		socket.on("removePlayer", this.removePlayerByName);
+		socket.on("disconnect", this.removePlayer(player));
 	};
 
 	setName = (newPlayer) => (name) => {

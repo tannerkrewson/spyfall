@@ -22,6 +22,7 @@ const Game = ({ t }) => {
 	useEffect(() => {
 		socket.emit("joinGame", { gameCode });
 		socket.on("gameChange", (newGameState) => setGameState(newGameState));
+		socket.on("disconnect", () => router.push("/" + gameCode));
 
 		return function cleanup() {
 			socket.close();
