@@ -1,20 +1,22 @@
 import Page from "../components/Page";
 
-export default function Home() {
-	return (
-		<Page>
-			<div className="main-menu">
-				<h4>Welcome to Spyfall</h4>
+import { withTranslation } from "../i18n";
 
-				<hr />
+const Home = ({ t }) => (
+	<Page>
+		<div className="main-menu">
+			<h4>{t("ui.welcome to spyfall")}</h4>
 
-				<div className="button-container">
-					<button id="btn-new-game">New Game</button>
-					<button id="btn-join-game">Join Game</button>
-				</div>
+			<hr />
 
-				<hr />
+			<div className="button-container">
+				<button id="btn-new-game">{t("ui.new game")}</button>
+				<button id="btn-join-game">{t("ui.join game")}</button>
 			</div>
-		</Page>
-	);
-}
+
+			<hr />
+		</div>
+	</Page>
+);
+
+export default withTranslation("common")(Home);

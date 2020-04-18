@@ -3,15 +3,18 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev",
+		"dev": "node -r esm server.js",
 		"build": "next build",
-		"start": "next start"
+		"start": "NODE_ENV=production node -r esm server.js"
 	},
 	"dependencies": {
 		"@zeit/next-css": "^1.0.1",
 		"@zeit/next-less": "^1.0.1",
+		"esm": "^3.2.25",
+		"express": "^4.17.1",
 		"less": "^3.11.1",
 		"next": "9.3.5",
+		"next-i18next": "^4.3.0",
 		"react": "16.13.1",
 		"react-dom": "16.13.1"
 	},
