@@ -3,9 +3,9 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "node -r esm server.js",
+		"dev": "nodemon server.js",
 		"build": "next build",
-		"start": "NODE_ENV=production node -r esm server.js"
+		"start": "NODE_ENV=production node server.js"
 	},
 	"dependencies": {
 		"@zeit/next-css": "^1.0.1",
@@ -21,6 +21,7 @@
 	},
 	"devDependencies": {
 		"husky": "^4.2.5",
+		"nodemon": "^2.0.3",
 		"prettier": "^2.0.4",
 		"pretty-quick": "^2.0.1"
 	},
