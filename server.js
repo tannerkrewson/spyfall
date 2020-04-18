@@ -1,6 +1,7 @@
 const express = require("express");
 const next = require("next");
 const nextI18NextMiddleware = require("next-i18next/middleware").default;
+const Spyfall = require("./server/spyfall");
 
 const nextI18next = require("./i18n");
 
@@ -12,6 +13,18 @@ const handle = app.getRequestHandler();
 (async () => {
 	await app.prepare();
 	const server = express();
+
+	var http = require("http").createServer(server);
+	const io = require("socket.io")(http);
+	server.io = io;
+
+	server.spyfall = new Spyfall();
+
+	require("./routes")(server);
+
+	io.on("connection", (socket) => {
+		console.log("a user connected");
+	});
 
 	await nextI18next.initPromise;
 	server.use(nextI18NextMiddleware(nextI18next));
