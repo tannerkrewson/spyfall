@@ -36,6 +36,7 @@ const Game = ({ t }) => {
 	const showLoading = status === "loading";
 	const showNameEntry = !showLoading && myNameStatus !== "named";
 	const showLobby = !showNameEntry && status.startsWith("lobby");
+	const showGame = status === "ingame";
 
 	return (
 		<Page>
@@ -44,6 +45,13 @@ const Game = ({ t }) => {
 				<NameEntry onNameEntry={onNameEntry} nameStatus={myNameStatus} />
 			)}
 			{showLobby && <Lobby gameState={gameState} socket={socket} />}
+			{showGame && (
+				<div>
+					in game!
+					<br />
+					{JSON.stringify(gameState)}
+				</div>
+			)}
 		</Page>
 	);
 };

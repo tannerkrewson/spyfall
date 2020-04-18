@@ -1,10 +1,13 @@
 const Player = require("./Player");
 
+const Locations = require("./Locations");
+
 class Game {
 	constructor(code) {
 		this.code = code;
 		this.players = [];
-		this.status = "lobby-waiting";
+		this.status = "lobby-waiting"; // lobby-waiting, lobby-ready, ingame
+		this.location = null;
 	}
 
 	sendNewStateToAllPlayers = () => {
@@ -19,12 +22,17 @@ class Game {
 		const newPlayer = new Player(socket);
 		this.players.push(newPlayer);
 
+		this.attachListenersToPlayer(newPlayer);
 		this.sendNewStateToAllPlayers();
-
-		newPlayer.socket.on("name", this.setName(newPlayer));
 
 		return newPlayer;
 	}
+
+	attachListenersToPlayer = (player) => {
+		const { socket } = player;
+		socket.on("name", this.setName(player));
+		socket.on("startGame", this.startGame);
+	};
 
 	setName = (newPlayer) => (name) => {
 		if (!this.isNameTaken(name)) {
@@ -58,6 +66,35 @@ class Game {
 		return isReady;
 	};
 
+	startGame = () => {
+		if (this.status !== "lobby-ready") return;
+
+		this.pickLocation();
+		this.assignRoles();
+
+		this.status = "ingame";
+
+		this.sendNewStateToAllPlayers();
+	};
+
+	pickLocation = () => {
+		this.location = Locations.getRandomLocationFromPack("spyfall1");
+	};
+
+	assignRoles = () => {
+		const location = this.location;
+		const default_role = location.roles[location.roles.length - 1];
+		const roles = location.roles.slice(); // shallow copy, not sure if necessary
+		const shuffled_roles = shuffleArray(roles);
+
+		this.players.forEach((player) => {
+			if (player.isSpy) return;
+
+			const role = shuffled_roles.pop() || default_role;
+			player.role = role;
+		});
+	};
+
 	getState = () => ({
 		code: this.code,
 		players: this.getPlayers(),
@@ -66,5 +103,14 @@ class Game {
 
 	getPlayers = () => this.players.map((player) => player.getInfo());
 }
+
+// https://stackoverflow.com/a/6274381
+const shuffleArray = (a) => {
+	for (let i = a.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[a[i], a[j]] = [a[j], a[i]];
+	}
+	return a;
+};
 
 module.exports = Game;
