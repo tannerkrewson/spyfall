@@ -1,38 +1,43 @@
 import { withTranslation } from "../i18n";
 
 const Lobby = ({ t, gameState }) => {
+	const playerList = gameState.players.map((player) => ({
+		...player,
+		hasName: player.nameStatus === "named",
+		isMe: player.name === gameState.me.name,
+	}));
 	return (
 		<>
 			<h4>{t("ui.waiting for players")}</h4>
 
 			<div className="access-code">
-				{t("ui.access code")}
-				<span>{gameState.code}</span>
+				{t("ui.access code")}: <span>{gameState.code}</span>
 			</div>
 
 			<hr />
 
 			<ol className="lobby-player-list">
-				{gameState.players.map((player) => (
+				{playerList.map((player) => (
 					<li>
-						{player.name}
+						{player.hasName && player.name}
+						{!player.hasName && <i>Joining...</i>}
 
-						{gameState.me.name === player.name && (
+						{player.isMe && (
 							<a
 								href="#"
 								className="btn-edit-player"
 								data-player-id="{{ _id }}"
 							>
-								<i className="fa fa-pencil"></i>
+								Edit name
 							</a>
 						)}
-						{gameState.me.name !== player.name && (
+						{!player.isMe && (
 							<a
 								href="#"
 								className="btn-remove-player"
 								data-player-id="{{ _id }}"
 							>
-								<i className="fa fa-close"></i>
+								Remove player
 							</a>
 						)}
 					</li>
