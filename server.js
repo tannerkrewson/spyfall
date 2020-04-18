@@ -1,4 +1,5 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const next = require("next");
 const nextI18NextMiddleware = require("next-i18next/middleware").default;
 const Spyfall = require("./server/spyfall");
@@ -13,6 +14,10 @@ const handle = app.getRequestHandler();
 (async () => {
 	await app.prepare();
 	const server = express();
+
+	const bodyParser = require("body-parser");
+
+	server.use(bodyParser.json());
 
 	var http = require("http").createServer(server);
 	const io = require("socket.io")(http);
