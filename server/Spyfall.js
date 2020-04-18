@@ -1,14 +1,20 @@
 const Game = require("./Game");
 
 class Spyfall {
-	constructor() {
+	constructor(isDevMode) {
 		this.games = [];
+		if (isDevMode) {
+			this.newGame("ffff");
+		}
 	}
 
-	newGame() {
-		const theCode = this.generateCode();
+	newGame(code) {
+		const theCode = code || this.generateCode();
 		const theGame = new Game(theCode);
 		this.games.push(theGame);
+
+		console.log(theCode, "created");
+
 		return theGame;
 	}
 
@@ -31,7 +37,7 @@ class Spyfall {
 				code += possible.charAt(Math.floor(Math.random() * possible.length));
 			}
 			//make sure the code is not already in use
-		} while (this.findGame(code) && code !== "join");
+		} while (this.findGame(code) && code !== "join" && code !== "ffff");
 		return code;
 	}
 }

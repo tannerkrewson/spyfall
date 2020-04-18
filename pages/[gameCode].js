@@ -42,7 +42,11 @@ const Game = ({ t }) => {
 		<Page>
 			{showLoading && <div>Loading...</div>}
 			{showNameEntry && (
-				<NameEntry onNameEntry={onNameEntry} nameStatus={myNameStatus} />
+				<NameEntry
+					onNameEntry={onNameEntry}
+					nameStatus={myNameStatus}
+					gameCode={gameState.code}
+				/>
 			)}
 			{showLobby && <Lobby gameState={gameState} socket={socket} />}
 			{showGame && (

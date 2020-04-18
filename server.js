@@ -20,7 +20,7 @@ const nextHandler = nextApp.getRequestHandler();
 	});
 
 	const Spyfall = require("./server/spyfall");
-	app.spyfall = new Spyfall();
+	app.spyfall = new Spyfall(dev);
 
 	require("./routes")(app);
 

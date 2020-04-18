@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { withTranslation } from "../i18n";
 
-const NameEntry = ({ t, onNameEntry, nameStatus }) => {
+const NameEntry = ({ t, onNameEntry, nameStatus, gameCode }) => {
 	const [name, setName] = useState("");
+
+	// if dev game, pick random name and submit
+	useEffect(() => {
+		if (gameCode === "ffff") {
+			const randFourDig = Math.floor(1000 + Math.random() * 9000);
+			onNameEntry(randFourDig);
+		}
+	}, []);
 
 	const handleNameChange = ({ target: { value } }) => setName(value);
 	const handleJoin = (e) => {
