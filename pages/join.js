@@ -20,12 +20,6 @@ const Join = ({ t }) => (
 						name="accessCode"
 						placeholder={t("ui.enter an access code")}
 					/>
-					<input
-						type="text"
-						id="player-name"
-						name="playerName"
-						placeholder={t("ui.enter your name")}
-					/>
 
 					<div className="button-container">
 						<input type="submit" value={t("ui.join")} />

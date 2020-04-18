@@ -1,41 +1,37 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const next = require("next");
-const nextI18NextMiddleware = require("next-i18next/middleware").default;
-const Spyfall = require("./server/spyfall");
-
-const nextI18next = require("./i18n");
-
 const port = process.env.PORT || 3000;
 const dev = process.env.NODE_ENV !== "production";
-const app = next({ dev });
-const handle = app.getRequestHandler();
+
+const nextApp = require("next")({ dev });
+const nextHandler = nextApp.getRequestHandler();
 
 (async () => {
-	await app.prepare();
-	const server = express();
+	await nextApp.prepare();
 
-	const bodyParser = require("body-parser");
+	const app = require("express")();
+	app.use(require("body-parser").json());
 
-	server.use(bodyParser.json());
+	var http = require("http").createServer(app);
 
-	var http = require("http").createServer(server);
 	const io = require("socket.io")(http);
-	server.io = io;
-
-	server.spyfall = new Spyfall();
-
-	require("./routes")(server);
+	app.io = io;
 
 	io.on("connection", (socket) => {
 		console.log("a user connected");
 	});
 
+	const Spyfall = require("./server/spyfall");
+	app.spyfall = new Spyfall();
+
+	require("./routes")(app);
+
+	const nextI18next = require("./i18n");
 	await nextI18next.initPromise;
-	server.use(nextI18NextMiddleware(nextI18next));
 
-	server.get("*", (req, res) => handle(req, res));
+	const nextI18NextMiddleware = require("next-i18next/middleware").default;
+	app.use(nextI18NextMiddleware(nextI18next));
 
-	await server.listen(port);
+	app.get("*", (req, res) => nextHandler(req, res));
+
+	await http.listen(port);
 	console.log(`> Ready on http://localhost:${port}`); // eslint-disable-line no-console
 })();
