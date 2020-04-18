@@ -1,7 +1,7 @@
-locations2 = [
+[
 	{
-		name: "locations.race track",
-		roles: [
+		"name": "locations.race track",
+		"roles": [
 			"locations.roles.race track.team owner",
 			"locations.roles.race track.driver",
 			"locations.roles.race track.engineer",
@@ -11,12 +11,12 @@ locations2 = [
 			"locations.roles.race track.food vendor",
 			"locations.roles.race track.commentator",
 			"locations.roles.race track.bookmaker",
-			"locations.roles.race track.spectator",
-		],
+			"locations.roles.race track.spectator"
+		]
 	},
 	{
-		name: "locations.art museum",
-		roles: [
+		"name": "locations.art museum",
+		"roles": [
 			"locations.roles.art museum.ticket seller",
 			"locations.roles.art museum.student",
 			"locations.roles.art museum.visitor",
@@ -26,12 +26,12 @@ locations2 = [
 			"locations.roles.art museum.art collector",
 			"locations.roles.art museum.art critic",
 			"locations.roles.art museum.photographer",
-			"locations.roles.art museum.tourist",
-		],
+			"locations.roles.art museum.tourist"
+		]
 	},
 	{
-		name: "locations.vineyard",
-		roles: [
+		"name": "locations.vineyard",
+		"roles": [
 			"locations.roles.vineyard.gardener",
 			"locations.roles.vineyard.gourmet guide",
 			"locations.roles.vineyard.winemaker",
@@ -41,12 +41,12 @@ locations2 = [
 			"locations.roles.vineyard.sommelier",
 			"locations.roles.vineyard.owner",
 			"locations.roles.vineyard.vineyard manager",
-			"locations.roles.vineyard.oenologist",
-		],
+			"locations.roles.vineyard.oenologist"
+		]
 	},
 	{
-		name: "locations.baseball stadium",
-		roles: [
+		"name": "locations.baseball stadium",
+		"roles": [
 			"locations.roles.baseball stadium.pitcher",
 			"locations.roles.baseball stadium.catcher",
 			"locations.roles.baseball stadium.commentator",
@@ -61,12 +61,12 @@ locations2 = [
 			"locations.roles.baseball stadium.second baseman",
 			"locations.roles.baseball stadium.third baseman",
 			"locations.roles.baseball stadium.mascot",
-			"locations.roles.baseball stadium.team owner",
-		],
+			"locations.roles.baseball stadium.team owner"
+		]
 	},
 	{
-		name: "locations.library",
-		roles: [
+		"name": "locations.library",
+		"roles": [
 			"locations.roles.library.old man",
 			"locations.roles.library.journalist",
 			"locations.roles.library.author",
@@ -76,12 +76,12 @@ locations2 = [
 			"locations.roles.library.librarian",
 			"locations.roles.library.loudmouth",
 			"locations.roles.library.book fanatic",
-			"locations.roles.library.nerd",
-		],
+			"locations.roles.library.nerd"
+		]
 	},
 	{
-		name: "locations.cat show",
-		roles: [
+		"name": "locations.cat show",
+		"roles": [
 			"locations.roles.cat show.judge",
 			"locations.roles.cat show.cat-handler",
 			"locations.roles.cat show.veterinarian",
@@ -91,12 +91,12 @@ locations2 = [
 			"locations.roles.cat show.animal lover",
 			"locations.roles.cat show.cat owner",
 			"locations.roles.cat show.cat",
-			"locations.roles.cat show.cat",
-		],
+			"locations.roles.cat show.cat"
+		]
 	},
 	{
-		name: "locations.retirement home",
-		roles: [
+		"name": "locations.retirement home",
+		"roles": [
 			"locations.roles.retirement home.relative",
 			"locations.roles.retirement home.cribbage player",
 			"locations.roles.retirement home.old person",
@@ -106,12 +106,12 @@ locations2 = [
 			"locations.roles.retirement home.blind person",
 			"locations.roles.retirement home.psychologist",
 			"locations.roles.retirement home.old person",
-			"locations.roles.retirement home.nurse",
-		],
+			"locations.roles.retirement home.nurse"
+		]
 	},
 	{
-		name: "locations.jail",
-		roles: [
+		"name": "locations.jail",
+		"roles": [
 			"locations.roles.jail.wrongly accused man",
 			"locations.roles.jail.cctv operator",
 			"locations.roles.jail.guard",
@@ -121,12 +121,12 @@ locations2 = [
 			"locations.roles.jail.jailkeeper",
 			"locations.roles.jail.criminal",
 			"locations.roles.jail.correctional officer",
-			"locations.roles.jail.maniac",
-		],
+			"locations.roles.jail.maniac"
+		]
 	},
 	{
-		name: "locations.construction site",
-		roles: [
+		"name": "locations.construction site",
+		"roles": [
 			"locations.roles.construction site.free-roaming toddler",
 			"locations.roles.construction site.contractor",
 			"locations.roles.construction site.crane driver",
@@ -136,12 +136,12 @@ locations2 = [
 			"locations.roles.construction site.engineer",
 			"locations.roles.construction site.architect",
 			"locations.roles.construction site.construction worker",
-			"locations.roles.construction site.construction worker",
-		],
+			"locations.roles.construction site.construction worker"
+		]
 	},
 	{
-		name: "locations.the united nations",
-		roles: [
+		"name": "locations.the united nations",
+		"roles": [
 			"locations.roles.the united nations.diplomat",
 			"locations.roles.the united nations.interpreter",
 			"locations.roles.the united nations.blowhard",
@@ -151,12 +151,12 @@ locations2 = [
 			"locations.roles.the united nations.secretary of state",
 			"locations.roles.the united nations.speaker",
 			"locations.roles.the united nations.secretary-general",
-			"locations.roles.the united nations.lobbyist",
-		],
+			"locations.roles.the united nations.lobbyist"
+		]
 	},
 	{
-		name: "locations.candy factory",
-		roles: [
+		"name": "locations.candy factory",
+		"roles": [
 			"locations.roles.candy factory.candy maker",
 			"locations.roles.candy factory.pastry chef",
 			"locations.roles.candy factory.visitor",
@@ -166,12 +166,12 @@ locations2 = [
 			"locations.roles.candy factory.packager",
 			"locations.roles.candy factory.inspector",
 			"locations.roles.candy factory.machine operator",
-			"locations.roles.candy factory.janitor",
-		],
+			"locations.roles.candy factory.janitor"
+		]
 	},
 	{
-		name: "locations.subway",
-		roles: [
+		"name": "locations.subway",
+		"roles": [
 			"locations.roles.subway.tourist",
 			"locations.roles.subway.subway operator",
 			"locations.roles.subway.ticket inspector",
@@ -181,12 +181,12 @@ locations2 = [
 			"locations.roles.subway.businessman",
 			"locations.roles.subway.ticket seller",
 			"locations.roles.subway.old lady",
-			"locations.roles.subway.blind man",
-		],
+			"locations.roles.subway.blind man"
+		]
 	},
 	{
-		name: "locations.coal mine",
-		roles: [
+		"name": "locations.coal mine",
+		"roles": [
 			"locations.roles.coal mine.safety inspector",
 			"locations.roles.coal mine.miner",
 			"locations.roles.coal mine.overseer",
@@ -195,12 +195,12 @@ locations2 = [
 			"locations.roles.coal mine.coordinator",
 			"locations.roles.coal mine.blasting engineer",
 			"locations.roles.coal mine.solid waste engineer",
-			"locations.roles.coal mine.worker",
-		],
+			"locations.roles.coal mine.worker"
+		]
 	},
 	{
-		name: "locations.cemetery",
-		roles: [
+		"name": "locations.cemetery",
+		"roles": [
 			"locations.roles.cemetery.priest",
 			"locations.roles.cemetery.grave robber",
 			"locations.roles.cemetery.poet",
@@ -210,12 +210,12 @@ locations2 = [
 			"locations.roles.cemetery.relative",
 			"locations.roles.cemetery.flower seller",
 			"locations.roles.cemetery.grave digger",
-			"locations.roles.cemetery.gothic girl",
-		],
+			"locations.roles.cemetery.gothic girl"
+		]
 	},
 	{
-		name: "locations.rock concert",
-		roles: [
+		"name": "locations.rock concert",
+		"roles": [
 			"locations.roles.rock concert.dancer",
 			"locations.roles.rock concert.singer",
 			"locations.roles.rock concert.fan",
@@ -225,12 +225,12 @@ locations2 = [
 			"locations.roles.rock concert.stage diver",
 			"locations.roles.rock concert.security guard",
 			"locations.roles.rock concert.bassist",
-			"locations.roles.rock concert.sound technician",
-		],
+			"locations.roles.rock concert.sound technician"
+		]
 	},
 	{
-		name: "locations.jazz club",
-		roles: [
+		"name": "locations.jazz club",
+		"roles": [
 			"locations.roles.jazz club.bouncer",
 			"locations.roles.jazz club.drummer",
 			"locations.roles.jazz club.pianist",
@@ -240,12 +240,12 @@ locations2 = [
 			"locations.roles.jazz club.dancer",
 			"locations.roles.jazz club.barman",
 			"locations.roles.jazz club.vip",
-			"locations.roles.jazz club.waiter",
-		],
+			"locations.roles.jazz club.waiter"
+		]
 	},
 	{
-		name: "locations.wedding",
-		roles: [
+		"name": "locations.wedding",
+		"roles": [
 			"locations.roles.wedding.ring bearer",
 			"locations.roles.wedding.groom",
 			"locations.roles.wedding.bride",
@@ -256,12 +256,12 @@ locations2 = [
 			"locations.roles.wedding.wedding crasher",
 			"locations.roles.wedding.best man",
 			"locations.roles.wedding.maid of honor",
-			"locations.roles.wedding.relative",
-		],
+			"locations.roles.wedding.relative"
+		]
 	},
 	{
-		name: "locations.gas station",
-		roles: [
+		"name": "locations.gas station",
+		"roles": [
 			"locations.roles.gas station.car enthusiast",
 			"locations.roles.gas station.service attendant",
 			"locations.roles.gas station.service attendant",
@@ -271,12 +271,12 @@ locations2 = [
 			"locations.roles.gas station.cashier",
 			"locations.roles.gas station.customer",
 			"locations.roles.gas station.climate change activist",
-			"locations.roles.gas station.manager",
-		],
+			"locations.roles.gas station.manager"
+		]
 	},
 	{
-		name: "locations.harbor docks",
-		roles: [
+		"name": "locations.harbor docks",
+		"roles": [
 			"locations.roles.harbor docks.loader",
 			"locations.roles.harbor docks.loader",
 			"locations.roles.harbor docks.salty old pirate",
@@ -286,12 +286,12 @@ locations2 = [
 			"locations.roles.harbor docks.exporter",
 			"locations.roles.harbor docks.cargo overseer",
 			"locations.roles.harbor docks.cargo inspector",
-			"locations.roles.harbor docks.smuggler",
-		],
+			"locations.roles.harbor docks.smuggler"
+		]
 	},
 	{
-		name: "locations.sightseeing bus",
-		roles: [
+		"name": "locations.sightseeing bus",
+		"roles": [
 			"locations.roles.sightseeing bus.old man",
 			"locations.roles.sightseeing bus.lone tourist",
 			"locations.roles.sightseeing bus.driver",
@@ -301,7 +301,7 @@ locations2 = [
 			"locations.roles.sightseeing bus.tourist",
 			"locations.roles.sightseeing bus.tour guide",
 			"locations.roles.sightseeing bus.photographer",
-			"locations.roles.sightseeing bus.lost person",
-		],
-	},
-];
+			"locations.roles.sightseeing bus.lost person"
+		]
+	}
+]
