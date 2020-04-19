@@ -88,6 +88,7 @@ class Game {
 		if (this.status !== "lobby-ready") return;
 
 		this.pickLocation();
+		this.pickSpy();
 		this.assignRoles();
 
 		this.status = "ingame";
@@ -100,6 +101,10 @@ class Game {
 		this.locationList = Locations.getLocationListFromPack("spyfall1");
 	};
 
+	pickSpy = () => {
+		this.players[Math.floor(Math.random() * this.players.length)].role = "spy";
+	};
+
 	assignRoles = () => {
 		const location = this.location;
 		const default_role = location.roles[location.roles.length - 1];
@@ -107,7 +112,7 @@ class Game {
 		const shuffled_roles = shuffleArray(roles);
 
 		this.players.forEach((player) => {
-			if (player.isSpy) return;
+			if (player.role === "spy") return;
 
 			const role = shuffled_roles.pop() || default_role;
 			player.role = role;
