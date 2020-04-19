@@ -111,13 +111,15 @@ const InGame = ({ t, gameState, socket }) => {
 			<ul className="ingame-player-list">
 				{players.map((player) => (
 					<StrikeableBox>
-						{player.name}
+						{player.name && player.name}
+						{!player.name && <i>Joining...</i>}
 						{player.isFirst && (
 							<div
 								className="first-player-indicator"
 								dangerouslySetInnerHTML={{ __html: t("ui.first") }}
 							></div>
 						)}
+						{!player.connected && <i> (Disconnected)</i>}
 					</StrikeableBox>
 				))}
 			</ul>
