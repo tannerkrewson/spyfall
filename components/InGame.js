@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Router from "next/router";
 import { withTranslation } from "../i18n";
 
 import StrikeableBox from "./StrikeableBox";
@@ -118,8 +119,20 @@ const InGame = ({ t, gameState, socket }) => {
 			<hr />
 
 			<div className="button-container">
-				<button className="btn-end">{t("ui.end game")}</button>
-				<button className="btn-leave">{t("ui.leave game")}</button>
+				<button className="btn-end" onClick={() => socket.emit("endGame")}>
+					{t("ui.end game")}
+				</button>
+				<button
+					className="btn-leave"
+					onClick={() => {
+						//prevents a redirect back to /[gameCode]
+						socket.off("disconnect");
+
+						Router.push("/");
+					}}
+				>
+					{t("ui.leave game")}
+				</button>
 			</div>
 		</div>
 	);

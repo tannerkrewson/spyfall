@@ -80,6 +80,7 @@ class Game {
 		socket.on("removePlayer", this.removePlayerByName);
 		socket.on("disconnect", this.removePlayer(player));
 		socket.on("togglePause", this.togglePauseTimer);
+		socket.on("endGame", this.endGame);
 	};
 
 	setName = (newPlayer) => (name) => {
@@ -126,6 +127,18 @@ class Game {
 
 		this.status = "ingame";
 
+		this.sendNewStateToAllPlayers();
+	};
+
+	endGame = () => {
+		this.status = "lobby-waiting";
+		this.location = null;
+		this.timeLeft = null;
+		this.timePaused = false;
+
+		this.players.forEach((player) => (player.role = null));
+
+		this.checkIfReady();
 		this.sendNewStateToAllPlayers();
 	};
 
