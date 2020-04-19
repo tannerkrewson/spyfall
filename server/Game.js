@@ -38,7 +38,9 @@ class Game {
 	addPlayer(socket, previousName) {
 		const playerToReplace = this.findPlayerByName(previousName);
 		if (playerToReplace && !playerToReplace.connected) {
-			return this.replacePlayer(playerToReplace, socket);
+			// this will never run in the lobby because all players
+			// that leave the lobby are deleted, not set as disconnected
+			return Game.replacePlayer(playerToReplace, socket);
 		} else {
 			return this.createPlayer(socket);
 		}
@@ -85,6 +87,10 @@ class Game {
 		}
 
 		if (this.noPlayersLeft() && this.code !== "ffff") {
+			// the only players that could possibly
+			// be left are unnamed players
+			this.disconnectAllPlayers();
+
 			this.onEmpty();
 			return;
 		}
@@ -104,12 +110,17 @@ class Game {
 	noPlayersLeft = () => {
 		const allPlayersGone = this.players.length === 0;
 		const allPlayersDisconnected = this.players.reduce(
-			(answer, player) => !player.connected || answer,
-			false
+			(answer, player) => (!player.connected || !player.name) && answer,
+			true
 		);
 
 		return allPlayersGone || allPlayersDisconnected;
 	};
+
+	disconnectAllPlayers = () =>
+		this.players.forEach(({ socket }) => {
+			if (socket) socket.disconnect(true);
+		});
 
 	removeDisconnectedPlayers = () => {
 		this.players = this.players.filter((player) => player.connected);

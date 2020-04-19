@@ -20,11 +20,13 @@ class Spyfall {
 
 	findGame = (gameCode) => this.games.find(({ code }) => code === gameCode);
 
-	removeGame = (gameCode) =>
+	removeGame = (gameCode) => {
 		this.games.splice(
 			this.games.findIndex(({ code }) => code === gameCode),
 			1
 		);
+		console.log(gameCode, "removed");
+	};
 
 	generateCode() {
 		const possible = "abcdefghijklmnopqrstuvwxyz";

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import socketIOClient from "socket.io-client";
 
 import { useRouter } from "next/router";
+import { parseCookies, setCookie, destroyCookie } from "nookies";
 import Page from "../components/Page";
 
 import { withTranslation } from "../i18n";
@@ -20,7 +21,14 @@ const Game = ({ t }) => {
 	});
 
 	useEffect(() => {
-		socket.emit("joinGame", { gameCode });
+		const { previousGameCode, previousName } = parseCookies();
+
+		if (previousGameCode === gameCode && previousName) {
+			socket.emit("joinGame", { gameCode, previousName });
+		} else {
+			socket.emit("joinGame", { gameCode });
+		}
+
 		socket.on("gameChange", (newGameState) => {
 			setGameState(newGameState);
 
@@ -36,7 +44,11 @@ const Game = ({ t }) => {
 		};
 	}, []);
 
-	const onNameEntry = (name) => socket.emit("name", name);
+	const onNameEntry = (name) => {
+		socket.emit("name", name);
+		setCookie(null, "previousGameCode", gameCode);
+		setCookie(null, "previousName", name);
+	};
 
 	const { status, me } = gameState;
 
