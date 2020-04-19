@@ -57,7 +57,7 @@ const Game = ({ t }) => {
 				/>
 			)}
 			{showLobby && <Lobby gameState={gameState} socket={socket} />}
-			{showGame && <InGame gameState={gameState} />}
+			{showGame && <InGame gameState={gameState} socket={socket} />}
 		</Page>
 	);
 };

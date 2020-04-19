@@ -3,7 +3,7 @@ import { withTranslation } from "../i18n";
 
 import StrikeableBox from "./StrikeableBox";
 
-const InGame = ({ t, gameState }) => {
+const InGame = ({ t, gameState, socket }) => {
 	const {
 		me,
 		location,
@@ -50,6 +50,7 @@ const InGame = ({ t, gameState }) => {
 						(timeExpired ? "finished " : " ") +
 						(timePaused ? "paused" : "")
 					}
+					onClick={() => socket.emit("togglePause")}
 				>
 					{minutesLeft}:{secondsLeft}
 				</a>

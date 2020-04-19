@@ -56,6 +56,7 @@ class Game {
 		socket.on("startGame", this.startGame);
 		socket.on("removePlayer", this.removePlayerByName);
 		socket.on("disconnect", this.removePlayer(player));
+		socket.on("togglePause", this.togglePauseTimer);
 	};
 
 	setName = (newPlayer) => (name) => {
@@ -137,6 +138,11 @@ class Game {
 
 			clearInterval(timer);
 		}, 1000);
+	};
+
+	togglePauseTimer = () => {
+		this.timePaused = !this.timePaused;
+		this.sendNewStateToAllPlayers();
 	};
 
 	getState = () => ({
