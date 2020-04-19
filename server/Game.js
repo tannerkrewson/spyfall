@@ -27,23 +27,41 @@ class Game {
 		}
 	};
 
-	addPlayer(socket) {
-		const newPlayer = new Player(socket);
-		this.players.push(newPlayer);
-
-		this.attachListenersToPlayer(newPlayer);
-
-		if (this.status === "ingame") {
-			this.addPlayerWhileInGame(newPlayer);
-		}
+	initPlayer(socket, previousName) {
+		const player = this.addPlayer(socket, previousName);
+		this.attachListenersToPlayer(player);
 
 		this.checkIfReady();
 		this.sendNewStateToAllPlayers();
+	}
+
+	addPlayer(socket, previousName) {
+		const playerToReplace = this.findPlayerByName(previousName);
+		if (playerToReplace && !playerToReplace.connected) {
+			return this.replacePlayer(playerToReplace, socket);
+		} else {
+			return this.createPlayer(socket);
+		}
+	}
+
+	createPlayer(socket) {
+		const newPlayer = new Player(socket);
+		this.players.push(newPlayer);
+
+		if (this.status === "ingame") {
+			this.createPlayerWhileInGame(newPlayer);
+		}
 
 		return newPlayer;
 	}
 
-	addPlayerWhileInGame(player) {
+	static replacePlayer(player, socket) {
+		player.socket = socket;
+		player.connected = true;
+		return player;
+	}
+
+	createPlayerWhileInGame(player) {
 		const {
 			location: { roles },
 		} = this;
@@ -52,16 +70,18 @@ class Game {
 		player.role = roles[roles.length - 1];
 	}
 
-	removePlayerByName = (name) =>
-		this.removePlayer(this.players.find((player) => player.name === name))();
+	removePlayerByName = (theName) =>
+		this.removePlayer(this.findPlayerByName(theName))();
+
+	findPlayerByName = (theName) =>
+		this.players.find(({ name }) => name === theName);
 
 	removePlayer = (player) => () => {
 		player.socket.disconnect(true);
+		player.connected = false;
 
-		const index = this.players.indexOf(player);
-
-		if (index > -1) {
-			this.players.splice(index, 1);
+		if (this.status !== "ingame") {
+			this.deletePlayer(player);
 		}
 
 		if (this.players.length === 0 && this.code !== "ffff") {
@@ -71,6 +91,18 @@ class Game {
 
 		this.checkIfReady();
 		this.sendNewStateToAllPlayers();
+	};
+
+	deletePlayer = (player) => {
+		const index = this.players.indexOf(player);
+
+		if (index > -1) {
+			this.players.splice(index, 1);
+		}
+	};
+
+	removeDisconnectedPlayers = () => {
+		this.players = this.players.filter((player) => player.connected);
 	};
 
 	attachListenersToPlayer = (player) => {
@@ -137,6 +169,7 @@ class Game {
 		this.timeLeft = null;
 		this.timePaused = false;
 
+		this.removeDisconnectedPlayers();
 		this.players.forEach((player) => player.reset());
 
 		this.checkIfReady();

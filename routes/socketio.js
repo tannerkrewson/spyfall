@@ -3,10 +3,10 @@ module.exports = function (server) {
 	const spyfall = server.spyfall;
 
 	io.on("connection", (socket) => {
-		socket.on("joinGame", ({ gameCode }) => {
+		socket.on("joinGame", ({ gameCode, previousName }) => {
 			const theGame = spyfall.findGame(gameCode);
 			if (theGame) {
-				theGame.addPlayer(socket);
+				theGame.initPlayer(socket, previousName);
 			} else {
 				socket.emit("invalid", { gameCode });
 			}

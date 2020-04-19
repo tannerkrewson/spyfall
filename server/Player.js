@@ -1,8 +1,10 @@
 class Player {
-	constructor(socket) {
+	constructor(socket, id) {
 		this.socket = socket;
+		this.id = id;
 		this.name = "";
 		this.nameStatus = "no-name"; //no-name, bad-name, named
+		this.connected = true;
 		this.reset();
 	}
 
@@ -18,6 +20,7 @@ class Player {
 		nameStatus: this.nameStatus,
 		role: this.role,
 		isFirst: this.isFirst,
+		connected: this.connected,
 	});
 }
 
