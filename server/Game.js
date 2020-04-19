@@ -9,6 +9,12 @@ class Game {
 		this.status = "lobby-waiting"; // lobby-waiting, lobby-ready, ingame
 		this.location = null;
 		this.locationList = [];
+		this.timeLeft = null;
+		this.timePaused = false;
+		this.settings = {
+			locationPack: "spyfall1",
+			timeLimit: 8 * 60, // 8 minutes
+		};
 	}
 
 	sendNewStateToAllPlayers = () => {
@@ -90,6 +96,7 @@ class Game {
 		this.pickLocation();
 		this.pickSpy();
 		this.assignRoles();
+		this.startTimer();
 
 		this.status = "ingame";
 
@@ -119,12 +126,28 @@ class Game {
 		});
 	};
 
+	startTimer = () => {
+		this.timeLeft = this.settings.timeLimit;
+		const timer = setInterval(() => {
+			if (!this.timePaused) return;
+
+			this.timeLeft--;
+
+			if (this.timeLeft > 0) return;
+
+			clearInterval(timer);
+		}, 1000);
+	};
+
 	getState = () => ({
 		code: this.code,
 		players: this.getPlayers(),
 		status: this.status,
 		location: this.location,
 		locationList: this.locationList,
+		timeLeft: this.timeLeft,
+		timePaused: this.timePaused,
+		settings: this.settings,
 	});
 
 	getPlayers = () => this.players.map((player) => player.getInfo());

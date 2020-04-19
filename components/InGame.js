@@ -1,19 +1,58 @@
+import React, { useState, useEffect } from "react";
 import { withTranslation } from "../i18n";
 
 import StrikeableBox from "./StrikeableBox";
 
 const InGame = ({ t, gameState }) => {
-	console.log(gameState);
+	const {
+		me,
+		location,
+		locationList,
+		players,
+		timeLeft: latestServerTimeLeft,
+		timePaused,
+		settings,
+	} = gameState;
 
-	const { me, location, locationList, status, players } = gameState;
-	const timeRemaining = "12:34";
+	const [timeLeft, setTimeLeft] = useState(latestServerTimeLeft);
+
+	useEffect(() => {
+		let interval = null;
+		if (!timePaused) {
+			interval = setInterval(() => {
+				if (timeLeft <= 0) {
+					clearInterval(interval);
+					setTimeLeft(0);
+					return;
+				}
+				setTimeLeft((timeLeft) => timeLeft - 1);
+			}, 1000);
+		} else if (timePaused && timeLeft !== 0) {
+			clearInterval(interval);
+		}
+		return () => clearInterval(interval);
+	}, [timePaused, timeLeft]);
+
 	const gamePaused = true;
 	const isSpy = me.role === "spy";
 	const isFirstPlayer = true;
+
+	const timeExpired = timeLeft <= 0;
+	const minutesLeft = Math.floor(timeLeft / 60);
+	const secondsLeft = ((timeLeft % 60) + "").padStart(2, "0");
+
 	return (
 		<div name="gameView">
 			<h4>
-				<a className="game-countdown finished paused">{timeRemaining}</a>
+				<a
+					className={
+						"game-countdown " +
+						(timeExpired ? "finished " : " ") +
+						(timePaused ? "paused" : "")
+					}
+				>
+					{minutesLeft}:{secondsLeft}
+				</a>
 			</h4>
 			{gamePaused && <div className="red-text"></div>}
 
