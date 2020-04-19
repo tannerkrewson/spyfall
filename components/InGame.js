@@ -35,6 +35,8 @@ const InGame = ({ t, gameState, socket }) => {
 		return () => clearInterval(interval);
 	}, [timePaused, timeLeft]);
 
+	useEffect(() => setTimeLeft(latestServerTimeLeft), [latestServerTimeLeft]);
+
 	const gamePaused = true;
 	const isSpy = me.role === "spy";
 	const isFirstPlayer = true;

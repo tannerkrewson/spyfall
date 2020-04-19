@@ -168,7 +168,7 @@ class Game {
 	startTimer = () => {
 		this.timeLeft = this.settings.timeLimit;
 		const timer = setInterval(() => {
-			if (!this.timePaused) return;
+			if (this.timePaused) return;
 
 			this.timeLeft--;
 
