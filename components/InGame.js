@@ -37,9 +37,7 @@ const InGame = ({ t, gameState, socket }) => {
 
 	useEffect(() => setTimeLeft(latestServerTimeLeft), [latestServerTimeLeft]);
 
-	const gamePaused = true;
 	const isSpy = me.role === "spy";
-	const isFirstPlayer = true;
 
 	const timeExpired = timeLeft <= 0;
 	const minutesLeft = Math.floor(timeLeft / 60);
@@ -59,7 +57,7 @@ const InGame = ({ t, gameState, socket }) => {
 					{minutesLeft}:{secondsLeft}
 				</a>
 			</h4>
-			{gamePaused && <div className="red-text"></div>}
+			{timePaused && <div className="red-text">Game paused</div>}
 
 			<div className="status-container">
 				<button
@@ -102,6 +100,9 @@ const InGame = ({ t, gameState, socket }) => {
 								</div>
 							</>
 						)}
+						{me.isFirst && (
+							<div className="red-text">You will ask the first question.</div>
+						)}
 					</div>
 				)}
 			</div>
@@ -111,7 +112,7 @@ const InGame = ({ t, gameState, socket }) => {
 				{players.map((player) => (
 					<StrikeableBox>
 						{player.name}
-						{isFirstPlayer && (
+						{player.isFirst && (
 							<div
 								className="first-player-indicator"
 								dangerouslySetInnerHTML={{ __html: t("ui.first") }}

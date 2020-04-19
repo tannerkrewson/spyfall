@@ -64,7 +64,7 @@ class Game {
 			this.players.splice(index, 1);
 		}
 
-		if (this.players.length === 0) {
+		if (this.players.length === 0 && this.code !== "ffff") {
 			this.onEmpty();
 			return;
 		}
@@ -122,6 +122,7 @@ class Game {
 
 		this.pickLocation();
 		this.pickSpy();
+		this.pickFirst();
 		this.assignRoles();
 		this.startTimer();
 
@@ -136,7 +137,7 @@ class Game {
 		this.timeLeft = null;
 		this.timePaused = false;
 
-		this.players.forEach((player) => (player.role = null));
+		this.players.forEach((player) => player.reset());
 
 		this.checkIfReady();
 		this.sendNewStateToAllPlayers();
@@ -149,6 +150,12 @@ class Game {
 
 	pickSpy = () => {
 		this.players[Math.floor(Math.random() * this.players.length)].role = "spy";
+	};
+
+	pickFirst = () => {
+		this.players[
+			Math.floor(Math.random() * this.players.length)
+		].isFirst = true;
 	};
 
 	assignRoles = () => {
