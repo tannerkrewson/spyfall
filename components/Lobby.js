@@ -50,7 +50,11 @@ const Lobby = ({ t, gameState, socket }) => {
 			<hr />
 
 			<div className="button-container">
-				<button className="btn-start" onClick={() => socket.emit("startGame")}>
+				<button
+					className="btn-start"
+					onClick={() => socket.emit("startGame")}
+					disabled={gameState.status !== "lobby-ready"}
+				>
 					{t("ui.start game")}
 				</button>
 				<button
