@@ -118,9 +118,8 @@ class Game {
 	setName = (newPlayer) => (name) => {
 		if (!this.isNameTaken(name)) {
 			newPlayer.name = name;
-			newPlayer.nameStatus = "named";
 		} else {
-			newPlayer.nameStatus = "no-name";
+			newPlayer.name = "";
 		}
 
 		this.checkIfReady();
@@ -138,7 +137,7 @@ class Game {
 		if (this.status === "ingame") return false;
 
 		const everyoneHasName = this.players.reduce(
-			(answer, player) => player.hasName() && answer,
+			(answer, player) => player.name && answer,
 			true
 		);
 

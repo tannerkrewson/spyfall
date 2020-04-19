@@ -4,7 +4,6 @@ import Router from "next/router";
 const Lobby = ({ t, gameState, socket }) => {
 	const playerList = gameState.players.map((player) => ({
 		...player,
-		hasName: player.nameStatus === "named",
 		isMe: player.name === gameState.me.name,
 	}));
 	return (
@@ -20,8 +19,8 @@ const Lobby = ({ t, gameState, socket }) => {
 			<ol className="lobby-player-list">
 				{playerList.map((player) => (
 					<li>
-						{player.hasName && player.name}
-						{!player.hasName && <i>Joining...</i>}
+						{player.name}
+						{!player.name && <i>Joining...</i>}
 
 						{player.isMe && (
 							<a

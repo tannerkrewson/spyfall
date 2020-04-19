@@ -38,10 +38,10 @@ const Game = ({ t }) => {
 
 	const onNameEntry = (name) => socket.emit("name", name);
 
-	const { status, me: { nameStatus: myNameStatus = "" } = {} } = gameState;
+	const { status, me } = gameState;
 
 	const showLoading = status === "loading";
-	const showNameEntry = !showLoading && myNameStatus !== "named";
+	const showNameEntry = !showLoading && !me.name;
 	const showLobby = !showNameEntry && status.startsWith("lobby");
 	const showGame = status === "ingame";
 
@@ -51,7 +51,6 @@ const Game = ({ t }) => {
 			{showNameEntry && (
 				<NameEntry
 					onNameEntry={onNameEntry}
-					nameStatus={myNameStatus}
 					gameCode={gameState.code}
 					socket={socket}
 				/>

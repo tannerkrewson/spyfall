@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Router from "next/router";
 import { withTranslation } from "../i18n";
 
-const NameEntry = ({ t, onNameEntry, nameStatus, gameCode, socket }) => {
+const NameEntry = ({ t, onNameEntry, gameCode, socket }) => {
 	const [name, setName] = useState("");
 
 	// if dev game, pick random name and submit
