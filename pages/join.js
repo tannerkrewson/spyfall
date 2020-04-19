@@ -19,7 +19,14 @@ const Join = ({ t }) => {
 				<hr />
 
 				<form id="join-game">
-					{invalidCode && <p>Game code {invalidCode} is invalid!</p>}
+					{invalidCode && (
+						<div
+							class="alert alert-error alert-danger alert-dismissable"
+							role="alert"
+						>
+							{invalidCode}: {t("ui.invalid access code")}
+						</div>
+					)}
 					<div>
 						<input
 							autocorrect="off"
