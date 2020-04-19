@@ -28,9 +28,12 @@ const InGame = ({ t, gameState }) => {
 					)}
 					{!isSpy && (
 						<>
-							<div className="player-status player-status-not-spy">
-								{t("ui.you are not the spy")}
-							</div>
+							<div
+								className="player-status player-status-not-spy"
+								dangerouslySetInnerHTML={{
+									__html: t("ui.you are not the spy"),
+								}}
+							></div>
 
 							<div className="current-location">
 								<div className="current-location-header">
@@ -54,7 +57,10 @@ const InGame = ({ t, gameState }) => {
 					<StrikeableBox>
 						{player.name}
 						{isFirstPlayer && (
-							<div className="first-player-indicator">{t("ui.first")}</div>
+							<div
+								className="first-player-indicator"
+								dangerouslySetInnerHTML={{ __html: t("ui.first") }}
+							></div>
 						)}
 					</StrikeableBox>
 				))}
