@@ -15,10 +15,6 @@ const nextHandler = nextApp.getRequestHandler();
 	const io = require("socket.io")(http);
 	app.io = io;
 
-	io.on("connection", (socket) => {
-		console.log("a user connected");
-	});
-
 	const Spyfall = require("./server/spyfall");
 	app.spyfall = new Spyfall(dev);
 

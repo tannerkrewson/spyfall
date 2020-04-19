@@ -6,4 +6,5 @@ const allLangCodes = Object.keys(allLanguages);
 module.exports = new NextI18Next({
 	otherLanguages: allLangCodes,
 	localeStructure: "{{lng}}.i18n",
+	strictMode: false,
 });
