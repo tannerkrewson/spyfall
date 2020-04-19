@@ -80,11 +80,11 @@ class Game {
 		player.socket.disconnect(true);
 		player.connected = false;
 
-		if (this.status !== "ingame") {
+		if (this.status !== "ingame" || !player.name) {
 			this.deletePlayer(player);
 		}
 
-		if (this.players.length === 0 && this.code !== "ffff") {
+		if (this.noPlayersLeft() && this.code !== "ffff") {
 			this.onEmpty();
 			return;
 		}
@@ -99,6 +99,16 @@ class Game {
 		if (index > -1) {
 			this.players.splice(index, 1);
 		}
+	};
+
+	noPlayersLeft = () => {
+		const allPlayersGone = this.players.length === 0;
+		const allPlayersDisconnected = this.players.reduce(
+			(answer, player) => !player.connected || answer,
+			false
+		);
+
+		return allPlayersGone || allPlayersDisconnected;
 	};
 
 	removeDisconnectedPlayers = () => {
