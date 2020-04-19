@@ -10,7 +10,7 @@ class Spyfall {
 
 	newGame(code) {
 		const theCode = code || this.generateCode();
-		const theGame = new Game(theCode);
+		const theGame = new Game(theCode, () => this.removeGame(theCode));
 		this.games.push(theGame);
 
 		console.log(theCode, "created");

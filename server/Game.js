@@ -3,8 +3,10 @@ const Player = require("./Player");
 const Locations = require("./Locations");
 
 class Game {
-	constructor(code) {
+	constructor(code, onEmpty) {
 		this.code = code;
+		this.onEmpty = onEmpty;
+
 		this.players = [];
 		this.status = "lobby-waiting"; // lobby-waiting, lobby-ready, ingame
 		this.location = null;
@@ -30,9 +32,24 @@ class Game {
 		this.players.push(newPlayer);
 
 		this.attachListenersToPlayer(newPlayer);
+
+		if (this.status === "ingame") {
+			this.addPlayerWhileInGame(newPlayer);
+		}
+
+		this.checkIfReady();
 		this.sendNewStateToAllPlayers();
 
 		return newPlayer;
+	}
+
+	addPlayerWhileInGame(player) {
+		const {
+			location: { roles },
+		} = this;
+
+		// the last role in the array is the default role
+		player.role = roles[roles.length - 1];
 	}
 
 	removePlayerByName = (name) =>
@@ -47,6 +64,12 @@ class Game {
 			this.players.splice(index, 1);
 		}
 
+		if (this.players.length === 0) {
+			this.onEmpty();
+			return;
+		}
+
+		this.checkIfReady();
 		this.sendNewStateToAllPlayers();
 	};
 
@@ -64,7 +87,7 @@ class Game {
 			newPlayer.name = name;
 			newPlayer.nameStatus = "named";
 		} else {
-			newPlayer.nameStatus = "bad-name";
+			newPlayer.nameStatus = "no-name";
 		}
 
 		this.checkIfReady();
@@ -79,6 +102,8 @@ class Game {
 		);
 
 	checkIfReady = () => {
+		if (this.status === "ingame") return false;
+
 		const everyoneHasName = this.players.reduce(
 			(answer, player) => player.hasName() && answer,
 			true
