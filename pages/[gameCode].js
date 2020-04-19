@@ -7,6 +7,7 @@ import Page from "../components/Page";
 import { withTranslation } from "../i18n";
 import NameEntry from "../components/NameEntry";
 import Lobby from "../components/Lobby";
+import InGame from "../components/InGame";
 
 const socket = socketIOClient();
 
@@ -56,13 +57,7 @@ const Game = ({ t }) => {
 				/>
 			)}
 			{showLobby && <Lobby gameState={gameState} socket={socket} />}
-			{showGame && (
-				<div>
-					in game!
-					<br />
-					{JSON.stringify(gameState)}
-				</div>
-			)}
+			{showGame && <InGame gameState={gameState} />}
 		</Page>
 	);
 };

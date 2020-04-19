@@ -10,15 +10,24 @@ const LocationPacks = require("fs")
 		return { packName, locations };
 	});
 
-const getAvailableLocations = () =>
+const getLocationPack = (thisPackName) =>
+	LocationPacks.find(({ packName }) => packName === thisPackName);
+
+const getLocationListFromPack = (thisPackName) =>
+	getLocationPack(thisPackName).locations.map(({ name }) => name);
+
+const getAvailableLocationPacks = () =>
 	LocationPacks.map(({ packName }) => packName);
 
 const getRandomLocationFromPack = (thisPackName) =>
-	getRandomLocation(
-		LocationPacks.find(({ packName }) => packName === thisPackName)
-	);
+	getRandomLocation(getLocationPack(thisPackName));
 
 const getRandomLocation = ({ locations }) =>
 	locations[Math.floor(Math.random() * locations.length)];
 
-module.exports = { getAvailableLocations, getRandomLocationFromPack };
+module.exports = {
+	getLocationPack,
+	getLocationListFromPack,
+	getAvailableLocationPacks,
+	getRandomLocationFromPack,
+};

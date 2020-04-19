@@ -8,6 +8,7 @@ class Game {
 		this.players = [];
 		this.status = "lobby-waiting"; // lobby-waiting, lobby-ready, ingame
 		this.location = null;
+		this.locationList = [];
 	}
 
 	sendNewStateToAllPlayers = () => {
@@ -96,6 +97,7 @@ class Game {
 
 	pickLocation = () => {
 		this.location = Locations.getRandomLocationFromPack("spyfall1");
+		this.locationList = Locations.getLocationListFromPack("spyfall1");
 	};
 
 	assignRoles = () => {
@@ -116,6 +118,8 @@ class Game {
 		code: this.code,
 		players: this.getPlayers(),
 		status: this.status,
+		location: this.location,
+		locationList: this.locationList,
 	});
 
 	getPlayers = () => this.players.map((player) => player.getInfo());
