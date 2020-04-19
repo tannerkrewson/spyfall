@@ -16,6 +16,7 @@ const InGame = ({ t, gameState, socket }) => {
 	} = gameState;
 
 	const [timeLeft, setTimeLeft] = useState(latestServerTimeLeft);
+	const [showRole, setShowRole] = useState(true);
 
 	useEffect(() => {
 		let interval = null;
@@ -59,37 +60,48 @@ const InGame = ({ t, gameState, socket }) => {
 			{gamePaused && <div className="red-text"></div>}
 
 			<div className="status-container">
-				<button className="btn-toggle-status">{t("ui.show hide")}</button>
+				<button
+					className="btn-toggle-status"
+					onClick={() => setShowRole(!showRole)}
+				>
+					{t("ui.show hide")}
+				</button>
 
-				<div className="status-container-content">
-					{isSpy && (
-						<div className="player-status player-status-spy">
-							{t("ui.you are the spy")}
-						</div>
-					)}
-					{!isSpy && (
-						<>
-							<div
-								className="player-status player-status-not-spy"
-								dangerouslySetInnerHTML={{
-									__html: t("ui.you are not the spy"),
-								}}
-							></div>
+				{showRole && (
+					<div className="status-container-content">
+						{isSpy && (
+							<div className="player-status player-status-spy">
+								{t("ui.you are the spy")}
+							</div>
+						)}
+						{!isSpy && (
+							<>
+								<div
+									className="player-status player-status-not-spy"
+									dangerouslySetInnerHTML={{
+										__html: t("ui.you are not the spy"),
+									}}
+								></div>
 
-							<div className="current-location">
-								<div className="current-location-header">
-									{t("ui.the location")}:{" "}
+								<div className="current-location">
+									<div className="current-location-header">
+										{t("ui.the location")}:{" "}
+									</div>
+									<div className="current-location-name">
+										{t(location.name)}
+									</div>
 								</div>
-								<div className="current-location-name">{t(location.name)}</div>
-							</div>
 
-							<div className="current-role">
-								<div className="current-role-header">{t("ui.your role")}: </div>
-								<div className="current-role-name">{t(me.role)}</div>
-							</div>
-						</>
-					)}
-				</div>
+								<div className="current-role">
+									<div className="current-role-header">
+										{t("ui.your role")}:{" "}
+									</div>
+									<div className="current-role-name">{t(me.role)}</div>
+								</div>
+							</>
+						)}
+					</div>
+				)}
 			</div>
 
 			<h5>{t("ui.players")}</h5>
