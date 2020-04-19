@@ -1,11 +1,15 @@
 import React, { useState } from "react";
-
+import { useRouter } from "next/router";
 import Link from "next/link";
+
 import Page from "../components/Page";
 
 import { withTranslation } from "../i18n";
 
 const Join = ({ t }) => {
+	const router = useRouter();
+	const invalidCode = router.query.invalid;
+
 	const [gameCode, setGameCode] = useState("");
 	return (
 		<Page>
@@ -15,6 +19,7 @@ const Join = ({ t }) => {
 				<hr />
 
 				<form id="join-game">
+					{invalidCode && <p>Game code {invalidCode} is invalid!</p>}
 					<div>
 						<input
 							autocorrect="off"

@@ -53,7 +53,15 @@ const Lobby = ({ t, gameState, socket }) => {
 				<button className="btn-start" onClick={() => socket.emit("startGame")}>
 					{t("ui.start game")}
 				</button>
-				<button className="btn-leave" onClick={() => Router.push("/")}>
+				<button
+					className="btn-leave"
+					onClick={() => {
+						//prevents a redirect back to /[gameCode]
+						socket.off("disconnect");
+
+						Router.push("/");
+					}}
+				>
 					{t("ui.leave game")}
 				</button>
 			</div>

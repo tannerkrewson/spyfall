@@ -8,10 +8,8 @@ module.exports = function (server) {
 			if (theGame) {
 				theGame.addPlayer(socket);
 			} else {
-				send(socket, { error: "invalid-gamecode" });
+				socket.emit("invalid", { gameCode });
 			}
 		});
 	});
 };
-
-const send = (socket, state) => socket.emit("gameChange", state);

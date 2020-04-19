@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import socketIOClient from "socket.io-client";
 
-import Link from "next/link";
 import { useRouter } from "next/router";
 import Page from "../components/Page";
 
@@ -21,8 +20,14 @@ const Game = ({ t }) => {
 
 	useEffect(() => {
 		socket.emit("joinGame", { gameCode });
-		socket.on("gameChange", (newGameState) => setGameState(newGameState));
-		socket.on("disconnect", () => router.push("/" + gameCode));
+		socket.on("gameChange", (newGameState) => {
+			setGameState(newGameState);
+
+			// setting disconnect handler after game has been joined,
+			// or else it will cause an infinite loop with the invalid handler
+			socket.on("disconnect", () => router.push("/" + gameCode));
+		});
+		socket.on("invalid", () => router.push("/join?invalid=" + gameCode));
 
 		return function cleanup() {
 			socket.close();
@@ -47,6 +52,7 @@ const Game = ({ t }) => {
 					onNameEntry={onNameEntry}
 					nameStatus={myNameStatus}
 					gameCode={gameState.code}
+					socket={socket}
 				/>
 			)}
 			{showLobby && <Lobby gameState={gameState} socket={socket} />}
