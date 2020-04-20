@@ -32,6 +32,7 @@ const Home = ({ t }) => {
 					<h3>{t("ui.welcome to spyfall")}</h3>
 					<span className="spyfall-back">back</span>
 				</div>
+				<div className="subtitle">(formerly Crabhat)</div>
 				<hr />
 
 				<div className="button-container">
@@ -45,9 +46,17 @@ const Home = ({ t }) => {
 					</button>
 				</div>
 				<div className="button-container-vertical">
-					<button className="btn-small btn-vertical">How to Play</button>
-					<button className="btn-small btn-vertical">Games Like Spyfall</button>
-					<button className="btn-small btn-vertical">Crabhat?</button>
+					<Link href="/how-to-play">
+						<button className="btn-small btn-vertical">How to Play</button>
+					</Link>
+					<Link href="/more-games">
+						<button className="btn-small btn-vertical">
+							Games Like Spyfall
+						</button>
+					</Link>
+					<Link href="/about">
+						<button className="btn-small btn-vertical">Crabhat?</button>
+					</Link>
 				</div>
 			</div>
 		</Page>
