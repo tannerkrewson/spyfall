@@ -28,13 +28,14 @@ const Join = ({ t }) => {
 						</div>
 					)}
 					<div>
+						<label for="access-code">{t("ui.enter an access code")}</label>
 						<input
 							autocorrect="off"
 							autocapitalize="off"
 							type="text"
 							id="access-code"
 							name="accessCode"
-							placeholder={t("ui.enter an access code")}
+							placeholder="abcd"
 							onChange={({ target: { value } }) => setGameCode(value)}
 						/>
 

@@ -35,16 +35,19 @@ const NameEntry = ({ t, onNameEntry, gameCode, socket }) => {
 			<hr />
 			<form id="join-game">
 				<div>
+					<label for="player-name">{t("ui.enter your name")}</label>
 					<input
 						type="text"
 						id="player-name"
-						placeholder={t("ui.enter your name")}
+						placeholder="Use your real name!"
 						value={name}
 						onChange={handleNameChange}
 					/>
 
 					<div className="button-container">
-						<input type="submit" value={t("ui.join")} onClick={handleJoin} />
+						<button type="submit" onClick={handleJoin}>
+							{t("ui.join")}
+						</button>
 						<button className="btn-leave" onClick={handleBack}>
 							{t("ui.back")}
 						</button>
