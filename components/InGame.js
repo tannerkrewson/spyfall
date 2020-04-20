@@ -110,7 +110,7 @@ const InGame = ({ t, gameState, socket }) => {
 			<h5>{t("ui.players")}</h5>
 			<ul className="ingame-player-list">
 				{players.map((player) => (
-					<StrikeableBox>
+					<StrikeableBox key={player.name}>
 						{player.name && player.name}
 						{!player.name && <i>Joining...</i>}
 						{player.isFirst && (
@@ -129,7 +129,7 @@ const InGame = ({ t, gameState, socket }) => {
 			<h5>{t("ui.location reference")}</h5>
 			<ul className="location-list">
 				{locationList.map((name) => (
-					<StrikeableBox>{t(name)}</StrikeableBox>
+					<StrikeableBox key={name}>{t(name)}</StrikeableBox>
 				))}
 			</ul>
 

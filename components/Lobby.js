@@ -17,8 +17,8 @@ const Lobby = ({ t, gameState, socket }) => {
 			<hr />
 
 			<ol className="lobby-player-list">
-				{playerList.map((player) => (
-					<li>
+				{playerList.map((player, i) => (
+					<li key={i}>
 						{player.name}
 						{!player.name && <i>Joining...</i>}
 
