@@ -1,7 +1,7 @@
 import React from "react";
 
-import "../styles/normalize.css";
-import "../styles/skeleton.css";
+import "skeleton-css/css/skeleton.css";
+
 import "../styles/styles.less";
 import LanguageSelector from "./LanguageSelector";
 import Footer from "./Footer";
