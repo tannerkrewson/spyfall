@@ -28,8 +28,10 @@ const Home = ({ t }) => {
 	return (
 		<Page>
 			<div className="main-menu">
-				<h3>{t("ui.welcome to spyfall")}</h3>
-
+				<div style={{ position: "relative" }}>
+					<h3>{t("ui.welcome to spyfall")}</h3>
+					<span className="spyfall-back">back</span>
+				</div>
 				<hr />
 
 				<div className="button-container">
@@ -45,7 +47,7 @@ const Home = ({ t }) => {
 				<div className="button-container-vertical">
 					<button className="btn-small btn-vertical">How to Play</button>
 					<button className="btn-small btn-vertical">Games Like Spyfall</button>
-					<button className="btn-small btn-vertical">About</button>
+					<button className="btn-small btn-vertical">Crabhat?</button>
 				</div>
 			</div>
 		</Page>
