@@ -15,7 +15,7 @@ const nextHandler = nextApp.getRequestHandler();
 	const io = require("socket.io")(http);
 	app.io = io;
 
-	const Spyfall = require("./server/spyfall");
+	const Spyfall = require("./server/Spyfall");
 	app.spyfall = new Spyfall(dev);
 
 	require("./routes")(app);
