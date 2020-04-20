@@ -1,8 +1,23 @@
-// import App from 'next/app'
+import React, { useEffect, useState } from "react";
+import Router from "next/router";
+
 import { appWithTranslation } from "../i18n";
 
 function MyApp({ Component, pageProps }) {
-	return <Component {...pageProps} />;
+	const [loading, setLoading] = useState(false);
+	useEffect(() => {
+		const loadingStart = () => setLoading(true);
+		const loadingStop = () => setLoading(false);
+
+		Router.events.on("routeChangeStart", loadingStart);
+		Router.events.on("routeChangeComplete", loadingStop);
+
+		return () => {
+			Router.events.off("routeChangeStart", loadingStart);
+			Router.events.off("routeChangeComplete", loadingStop);
+		};
+	}, []);
+	return <Component {...pageProps} loading={loading} />;
 }
 
 // Only uncomment this method if you have blocking data requirements for

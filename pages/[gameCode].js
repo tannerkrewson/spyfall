@@ -9,10 +9,14 @@ import { withTranslation } from "../i18n";
 import NameEntry from "../components/NameEntry";
 import Lobby from "../components/Lobby";
 import InGame from "../components/InGame";
+import Loading from "../components/Loading";
 
 const socket = socketIOClient();
 
-const Game = ({ t }) => {
+const Game = (props) => {
+	const { t, loading } = props;
+	console.log(props);
+
 	const router = useRouter();
 	const { gameCode } = router.query;
 
@@ -52,14 +56,14 @@ const Game = ({ t }) => {
 
 	const { status, me } = gameState;
 
-	const showLoading = status === "loading";
+	const showLoading = status === "loading" || loading;
 	const showNameEntry = !showLoading && !me.name;
 	const showLobby = !showNameEntry && status.startsWith("lobby");
 	const showGame = status === "ingame";
 
 	return (
 		<Page>
-			{showLoading && <div>Loading...</div>}
+			{showLoading && <Loading />}
 			{showNameEntry && (
 				<NameEntry
 					onNameEntry={onNameEntry}
