@@ -1,5 +1,6 @@
 import React from "react";
 
+import "../styles/sanitize.css";
 import "skeleton-css/css/skeleton.css";
 
 import "../styles/styles.less";
