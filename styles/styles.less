@@ -1,9 +1,19 @@
-@import (css) url("https://fonts.googleapis.com/css?family=Raleway:400,300,600");
+@import (css)
+	url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,600");
 @import (css)
 	url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,vietnamese,latin-ext");
 
 body {
 	text-align: center;
+}
+
+body,
+div,
+button,
+select,
+input {
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
 }
 
 h4 {
@@ -37,8 +47,22 @@ h5 {
 	margin-bottom: -25px;
 }
 
+.button-container-vertical {
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	position: relative;
+	display: inline-flex;
+	vertical-align: middle;
+}
+
+.btn-vertical {
+	width: 100%;
+}
+
 .button-container {
 	margin-top: 10px;
+	margin-bottom: 16px;
 }
 .adspace {
 	padding-bottom: 20px;
@@ -73,13 +97,17 @@ h5 {
 }
 
 .footer {
-	color: #aaa;
-	font-size: 10px;
+	color: #444;
+	font-size: 12px;
 	text-align: center;
 	margin-bottom: 30px;
 }
 
 a {
+	color: #00b7ff;
+}
+
+.language-list a {
 	color: #999;
 }
 
@@ -95,6 +123,10 @@ a {
 
 .alert button {
 	display: none;
+}
+
+.language-select {
+	margin: -20px 0 15px 0;
 }
 
 .language-list {
@@ -120,6 +152,35 @@ a {
 	.language-select {
 		display: none;
 	}
+}
+
+button {
+	font-family: "Raleway";
+	text-transform: none;
+	letter-spacing: normal;
+	font-size: 14px;
+	padding: 0 20px;
+	height: 38px;
+	line-height: normal;
+	margin: 0.3em;
+	font-weight: 500;
+}
+
+button:disabled {
+	opacity: 0.6;
+}
+
+.btn-large {
+	font-size: 16px;
+	padding: 0 24px;
+	height: 42px;
+}
+
+.btn-small {
+	font-size: 12px;
+	height: 32px;
+	padding: 0 16px;
+	line-height: 28px;
 }
 
 .access-code {
@@ -188,13 +249,6 @@ a {
 .access-link a {
 	color: black;
 }
-button {
-	margin: 0.5em;
-}
-
-button:disabled {
-	opacity: 0.6;
-}
 
 .lobby-player-list {
 	margin-top: -15px;
@@ -232,6 +286,10 @@ button:disabled {
 	font-family: "Helvetica Neue", Arial, sans-serif;
 	text-align: center;
 	background-color: #f9f9f9;
+}
+
+.btn-set-language {
+	font-size: 0.9em;
 }
 
 .btn-remove-player {

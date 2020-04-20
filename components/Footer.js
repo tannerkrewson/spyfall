@@ -2,13 +2,6 @@ import React from "react";
 
 const Footer = () => (
 	<div className="footer">
-		<a
-			href="https://www.cryptozoic.com/sites/default/files/icme/u30695/spy_rules_eng_0.pdf"
-			target="_blank"
-		>
-			Official Rules
-		</a>
-		<br />
 		Spyfall by{" "}
 		<a
 			href="https://www.tannerkrewson.com/"

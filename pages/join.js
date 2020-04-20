@@ -14,7 +14,7 @@ const Join = ({ t }) => {
 	return (
 		<Page>
 			<div className="main-menu">
-				<h4>{t("ui.welcome to spyfall")}</h4>
+				<h3>{t("ui.welcome to spyfall")}</h3>
 
 				<hr />
 

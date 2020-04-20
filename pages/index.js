@@ -28,18 +28,24 @@ const Home = ({ t }) => {
 	return (
 		<Page>
 			<div className="main-menu">
-				<h4>{t("ui.welcome to spyfall")}</h4>
+				<h3>{t("ui.welcome to spyfall")}</h3>
 
 				<hr />
 
 				<div className="button-container">
-					<button id="btn-new-game" onClick={onNewGame}>
+					<Link href="/join">
+						<button id="btn-join-game" className="btn-large">
+							{t("ui.join game")}
+						</button>
+					</Link>
+					<button id="btn-new-game" onClick={onNewGame} className="btn-large">
 						{t("ui.new game")}
 					</button>
-
-					<Link href="/join">
-						<button id="btn-join-game">{t("ui.join game")}</button>
-					</Link>
+				</div>
+				<div className="button-container-vertical">
+					<button className="btn-small btn-vertical">How to Play</button>
+					<button className="btn-small btn-vertical">Games Like Spyfall</button>
+					<button className="btn-small btn-vertical">About</button>
 				</div>
 			</div>
 		</Page>
