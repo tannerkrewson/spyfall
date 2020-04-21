@@ -42,6 +42,7 @@ const NameEntry = ({ t, onNameEntry, gameCode, socket }) => {
 						placeholder="Use your real name!"
 						value={name}
 						onChange={handleNameChange}
+						autoFocus
 					/>
 
 					<div className="button-container">

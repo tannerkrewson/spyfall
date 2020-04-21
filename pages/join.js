@@ -36,6 +36,7 @@ const Join = ({ t }) => {
 						name="accessCode"
 						placeholder="abcd"
 						onChange={({ target: { value } }) => setGameCode(value)}
+						autoFocus
 					/>
 
 					<div className="button-container">
