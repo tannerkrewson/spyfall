@@ -45,19 +45,23 @@ const InGame = ({ t, gameState, socket }) => {
 
 	return (
 		<div name="gameView">
-			<h4>
-				<a
-					className={
-						"game-countdown " +
-						(timeExpired ? "finished " : " ") +
-						(timePaused ? "paused" : "")
-					}
-					onClick={() => socket.emit("togglePause")}
-				>
-					{minutesLeft}:{secondsLeft}
-				</a>
-			</h4>
-			{timePaused && <div className="red-text">Game paused</div>}
+			{settings.timeLimit !== 0 && (
+				<>
+					<h4>
+						<a
+							className={
+								"game-countdown " +
+								(timeExpired ? "finished " : " ") +
+								(timePaused ? "paused" : "")
+							}
+							onClick={() => socket.emit("togglePause")}
+						>
+							{minutesLeft}:{secondsLeft}
+						</a>
+					</h4>
+					{timePaused && <div className="red-text">Game paused</div>}
+				</>
+			)}
 
 			<div className="status-container">
 				<button
