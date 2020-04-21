@@ -13,6 +13,7 @@ class Game {
 		this.locationList = [];
 		this.timeLeft = null;
 		this.timePaused = false;
+		this.currentRoundNum = 0;
 		this.settings = {
 			locationPack: "spyfall1",
 			timeLimit: 8, // 8 minutes
@@ -182,6 +183,7 @@ class Game {
 		this.startTimer();
 
 		this.status = "ingame";
+		this.currentRoundNum++;
 
 		this.sendNewStateToAllPlayers();
 	};
@@ -269,6 +271,7 @@ class Game {
 		timePaused: this.timePaused,
 		settings: this.settings,
 		AVAILABLE_LOCATION_PACKS: Locations.AVAILABLE_LOCATION_PACKS,
+		currentRoundNum: this.currentRoundNum,
 	});
 
 	getPlayers = () => this.players.map((player) => player.getInfo());
