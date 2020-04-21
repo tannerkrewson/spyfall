@@ -88,15 +88,17 @@ const LocationPack = ({
 
 	return (
 		<div>
-			<label for="location-pack">Location Pack:</label>
+			<label htmlFor="location-pack">Location Pack:</label>
 			<select
-				class="u-full-width"
+				className="u-full-width"
 				id="location-pack"
 				value={selectedPackId}
 				onChange={({ target: { value } }) => handleChange(value)}
 			>
 				{locationPackList.map(({ id, name }) => (
-					<option value={id}>{name}</option>
+					<option key={id} value={id}>
+						{name}
+					</option>
 				))}
 			</select>
 		</div>

@@ -20,17 +20,17 @@ const Join = ({ t }) => {
 			<form id="join-game">
 				{invalidCode && (
 					<div
-						class="alert alert-error alert-danger alert-dismissable"
+						className="alert alert-error alert-danger alert-dismissable"
 						role="alert"
 					>
 						{invalidCode}: {t("ui.invalid access code")}
 					</div>
 				)}
 				<div>
-					<label for="access-code">{t("ui.enter an access code")}</label>
+					<label htmlFor="access-code">{t("ui.enter an access code")}</label>
 					<input
-						autocorrect="off"
-						autocapitalize="off"
+						autoCorrect="off"
+						autoCapitalize="off"
 						type="text"
 						id="access-code"
 						name="accessCode"

@@ -35,7 +35,7 @@ const NameEntry = ({ t, onNameEntry, gameCode, socket }) => {
 			<hr />
 			<form id="join-game">
 				<div>
-					<label for="player-name">{t("ui.enter your name")}</label>
+					<label htmlFor="player-name">{t("ui.enter your name")}</label>
 					<input
 						type="text"
 						id="player-name"
