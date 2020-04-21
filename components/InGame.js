@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Router from "next/router";
 import { withTranslation } from "../i18n";
+import Swal from "sweetalert2";
 
 import StrikeableBox from "./StrikeableBox";
 
@@ -138,17 +139,24 @@ const InGame = ({ t, gameState, socket }) => {
 			</ul>
 
 			<div className="button-container">
-				<button className="btn-end" onClick={() => socket.emit("endGame")}>
+				<button
+					className="btn-end"
+					onClick={() =>
+						popup(t("ui.end game"), t("ui.back"), () => socket.emit("endGame"))
+					}
+				>
 					{t("ui.end game")}
 				</button>
 				<button
 					className="btn-leave"
-					onClick={() => {
-						//prevents a redirect back to /[gameCode]
-						socket.off("disconnect");
+					onClick={() =>
+						popup(t("ui.leave game"), t("ui.back"), () => {
+							//prevents a redirect back to /[gameCode]
+							socket.off("disconnect");
 
-						Router.push("/");
-					}}
+							Router.push("/");
+						})
+					}
 				>
 					{t("ui.leave game")}
 				</button>
@@ -156,5 +164,18 @@ const InGame = ({ t, gameState, socket }) => {
 		</div>
 	);
 };
+
+const popup = (yesText, noText, onYes) =>
+	Swal.fire({
+		title: "Are you sure?",
+		icon: "warning",
+		showCancelButton: true,
+		confirmButtonText: yesText,
+		cancelButtonText: noText,
+	}).then((result) => {
+		if (result.value) {
+			onYes();
+		}
+	});
 
 export default withTranslation("common")(InGame);

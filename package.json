@@ -21,7 +21,8 @@
 		"react": "16.13.1",
 		"react-dom": "16.13.1",
 		"skeleton-css": "^2.0.4",
-		"socket.io": "^2.3.0"
+		"socket.io": "^2.3.0",
+		"sweetalert2": "^9.10.12"
 	},
 	"devDependencies": {
 		"husky": "^4.2.5",
