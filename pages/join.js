@@ -40,11 +40,11 @@ const Join = ({ t }) => {
 					/>
 
 					<div className="button-container">
-						<Link href={"/" + gameCode}>
-							<button>{t("ui.join")}</button>
-						</Link>
 						<Link href="/">
 							<button>{t("ui.back")}</button>
+						</Link>
+						<Link href={"/" + gameCode}>
+							<button>{t("ui.join")}</button>
 						</Link>
 					</div>
 				</div>

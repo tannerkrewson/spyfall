@@ -46,11 +46,11 @@ const NameEntry = ({ t, onNameEntry, gameCode, socket }) => {
 					/>
 
 					<div className="button-container">
-						<button type="submit" onClick={handleJoin}>
-							{t("ui.join")}
-						</button>
 						<button className="btn-leave" onClick={handleBack}>
 							{t("ui.back")}
+						</button>
+						<button type="submit" onClick={handleJoin}>
+							{t("ui.join")}
 						</button>
 					</div>
 				</div>
