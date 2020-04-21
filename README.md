@@ -6,7 +6,7 @@
 
 Issues, feature requests, and pull requests welcome!
 
-# History
+## History
 
 This is now the main GitHub repo for the original online Meteor.js Spyfall, designed by [Evan Brumley](https://github.com/evanbrumley) in 2014, and maintained by [Milov Patel](https://github.com/mpcovcd) from 2017 to 2019. Brumley [transferred ownership](https://github.com/tannerkrewson/spyfall/commit/5d8def67f3106e6a6507795d2cd9c2d3f4b69143) of this repo to Patel in August 2017. In late 2019, Patel deleted the repo, and [spyfall.crabhat.com](https://spyfall.crabhat.com/) does not work anymore.
 
@@ -24,7 +24,7 @@ I kept the original CSS stylings, locations, and translations, but I rewrote all
 
 Looking ahead, I'd like to eventually redo all of the stylings with a React component library. I'd also like to find a free translations service so the translations can be updated, because, as of now, some of the strings that Patel and I have added later in development are not translated.
 
-# Development
+## Development
 
 #### Instructions
 
