@@ -6,21 +6,23 @@ const LocationPacks = require("fs")
 	.readdirSync(path.resolve(__dirname, LOCATIONS_PATH))
 	.map((file) => {
 		const packName = file.substr(0, file.indexOf(".")); // removes .json
-		const locations = require(LOCATIONS_PATH + "/" + packName);
-		return { packName, locations };
+		const locationPack = require(LOCATIONS_PATH + "/" + packName);
+		return locationPack;
 	});
 
-const getLocationPack = (thisPackName) =>
-	LocationPacks.find(({ packName }) => packName === thisPackName);
+const getLocationPack = (thisPackId) =>
+	LocationPacks.find(({ id }) => id === thisPackId);
 
-const getLocationListFromPack = (thisPackName) =>
-	getLocationPack(thisPackName).locations.map(({ name }) => name);
+const getLocationListFromPack = (thisPackId) =>
+	getLocationPack(thisPackId).locations.map(({ name }) => name);
 
-const getAvailableLocationPacks = () =>
-	LocationPacks.map(({ packName }) => packName);
+const AVAILABLE_LOCATION_PACKS = LocationPacks.map(({ id, name }) => ({
+	id,
+	name,
+}));
 
-const getRandomLocationFromPack = (thisPackName) =>
-	getRandomLocation(getLocationPack(thisPackName));
+const getRandomLocationFromPack = (thisPackId) =>
+	getRandomLocation(getLocationPack(thisPackId));
 
 const getRandomLocation = ({ locations }) =>
 	locations[Math.floor(Math.random() * locations.length)];
@@ -28,6 +30,6 @@ const getRandomLocation = ({ locations }) =>
 module.exports = {
 	getLocationPack,
 	getLocationListFromPack,
-	getAvailableLocationPacks,
+	AVAILABLE_LOCATION_PACKS,
 	getRandomLocationFromPack,
 };

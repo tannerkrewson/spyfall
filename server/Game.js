@@ -15,7 +15,7 @@ class Game {
 		this.timePaused = false;
 		this.settings = {
 			locationPack: "spyfall1",
-			timeLimit: 8 * 60, // 8 minutes
+			timeLimit: 8, // 8 minutes
 		};
 	}
 
@@ -134,6 +134,8 @@ class Game {
 		socket.on("disconnect", this.removePlayer(player));
 		socket.on("togglePause", this.togglePauseTimer);
 		socket.on("endGame", this.endGame);
+		socket.on("setTimeLimit", this.setTimeLimit);
+		socket.on("setLocationPack", this.setLocationPack);
 	};
 
 	setName = (newPlayer) => (name) => {
@@ -197,8 +199,12 @@ class Game {
 	};
 
 	pickLocation = () => {
-		this.location = Locations.getRandomLocationFromPack("spyfall1");
-		this.locationList = Locations.getLocationListFromPack("spyfall1");
+		this.location = Locations.getRandomLocationFromPack(
+			this.settings.locationPack
+		);
+		this.locationList = Locations.getLocationListFromPack(
+			this.settings.locationPack
+		);
 	};
 
 	pickSpy = () => {
@@ -226,7 +232,7 @@ class Game {
 	};
 
 	startTimer = () => {
-		this.timeLeft = this.settings.timeLimit;
+		this.timeLeft = this.settings.timeLimit * 60;
 		const timer = setInterval(() => {
 			if (this.timePaused) return;
 
@@ -243,6 +249,15 @@ class Game {
 		this.sendNewStateToAllPlayers();
 	};
 
+	setTimeLimit = (timeLimit) => {
+		this.settings.timeLimit = timeLimit;
+		this.sendNewStateToAllPlayers();
+	};
+	setLocationPack = (locationPack) => {
+		this.settings.locationPack = locationPack;
+		this.sendNewStateToAllPlayers();
+	};
+
 	getState = () => ({
 		code: this.code,
 		players: this.getPlayers(),
@@ -252,6 +267,7 @@ class Game {
 		timeLeft: this.timeLeft,
 		timePaused: this.timePaused,
 		settings: this.settings,
+		AVAILABLE_LOCATION_PACKS: Locations.AVAILABLE_LOCATION_PACKS,
 	});
 
 	getPlayers = () => this.players.map((player) => player.getInfo());

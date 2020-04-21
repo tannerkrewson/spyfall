@@ -15,7 +15,6 @@ const socket = socketIOClient();
 
 const Game = (props) => {
 	const { t, loading } = props;
-	console.log(props);
 
 	const router = useRouter();
 	const { gameCode } = router.query;
@@ -38,7 +37,9 @@ const Game = (props) => {
 
 			// setting disconnect handler after game has been joined,
 			// or else it will cause an infinite loop with the invalid handler
-			socket.on("disconnect", () => router.push("/" + gameCode));
+			if (gameCode !== "ffff") {
+				socket.on("disconnect", () => router.push("/" + gameCode));
+			}
 		});
 		socket.on("invalid", () => router.push("/join?invalid=" + gameCode));
 

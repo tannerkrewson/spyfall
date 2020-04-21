@@ -1,5 +1,6 @@
 import { withTranslation } from "../i18n";
 import Router from "next/router";
+import Settings from "./Settings";
 
 const Lobby = ({ t, gameState, socket }) => {
 	const playerList = gameState.players.map((player) => ({
@@ -45,6 +46,8 @@ const Lobby = ({ t, gameState, socket }) => {
 					</li>
 				))}
 			</ol>
+
+			<Settings gameState={gameState} socket={socket} />
 
 			<hr />
 
