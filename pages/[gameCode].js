@@ -60,7 +60,7 @@ const Game = (props) => {
 	const showLoading = status === "loading" || loading;
 	const showNameEntry = !showLoading && !me.name;
 	const showLobby = !showNameEntry && status.startsWith("lobby");
-	const showGame = status === "ingame";
+	const showGame = !showNameEntry && status === "ingame";
 
 	return (
 		<>

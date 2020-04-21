@@ -136,6 +136,7 @@ class Game {
 		socket.on("endGame", this.endGame);
 		socket.on("setTimeLimit", this.setTimeLimit);
 		socket.on("setLocationPack", this.setLocationPack);
+		socket.on("clearName", () => this.setName(player)(""));
 	};
 
 	setName = (newPlayer) => (name) => {

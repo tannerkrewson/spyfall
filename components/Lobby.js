@@ -28,7 +28,7 @@ const Lobby = ({ t, gameState, socket }) => {
 								href="#"
 								className="btn-edit-player"
 								data-player-id="{{ _id }}"
-								onClick={() => Router.push(window.location.pathname)}
+								onClick={() => socket.emit("clearName")}
 							>
 								Edit name
 							</a>
