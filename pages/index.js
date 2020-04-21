@@ -57,9 +57,14 @@ const Home = ({ t, loading }) => {
 								Games Like Spyfall
 							</button>
 						</Link>
-						<Link href="/about">
+						<a
+							href="https://github.com/tannerkrewson/spyfall#spyfall"
+							target="_blank"
+							rel="noopener noreferrer"
+							style={{ width: "100%" }}
+						>
 							<button className="btn-small btn-vertical">Crabhat?</button>
-						</Link>
+						</a>
 					</div>
 				</>
 			)}
