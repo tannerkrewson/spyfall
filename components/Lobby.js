@@ -1,6 +1,7 @@
 import { withTranslation } from "../i18n";
 import Router from "next/router";
 import Settings from "./Settings";
+import ThanksForPlaying from "./ThanksForPlaying";
 
 const Lobby = ({ t, gameState, socket }) => {
 	const playerList = gameState.players.map((player) => ({
@@ -69,6 +70,7 @@ const Lobby = ({ t, gameState, socket }) => {
 					{t("ui.leave game")}
 				</button>
 			</div>
+			{gameState.currentRoundNum > 1 && <ThanksForPlaying />}
 		</>
 	);
 };

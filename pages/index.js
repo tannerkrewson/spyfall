@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Router, { useRouter } from "next/router";
-import Page from "../components/Page";
+import { useRouter } from "next/router";
+import BuyMe from "../components/BuyMe";
 
 import { withTranslation } from "../i18n";
 import Loading from "../components/Loading";
@@ -65,6 +65,9 @@ const Home = ({ t, loading }) => {
 						>
 							<button className="btn-small btn-vertical">Crabhat?</button>
 						</a>
+						<div style={{ marginTop: "1em" }}>
+							<BuyMe />
+						</div>
 					</div>
 				</>
 			)}

@@ -94,6 +94,7 @@ const LocationPack = ({
 				id="location-pack"
 				value={selectedPackId}
 				onChange={({ target: { value } }) => handleChange(value)}
+				style={{ maxWidth: "10em" }}
 			>
 				{locationPackList.map(({ id, name }) => (
 					<option key={id} value={id}>

@@ -16,7 +16,7 @@ Thankfully, when a GitHub repo is deleted, its forks are kept, and there were 17
 
 In April 2020, I contacted Napolitano, and he was kind enough to transfer this repository to me. I merged in the latest commits and created a release to [mark the final Meteor.js version of the repo](https://github.com/tannerkrewson/spyfall/releases/tag/v1.0) before I took over.
 
-Brumley and Patel licensed Spyfall with the [MIT license](https://github.com/tannerkrewson/spyfall/blob/v1.0/LICENSE), meaning anyone is free to copy, modify, and distribute Sypfall. Under my control, this repo will maintain the MIT license. So, feel free to fork this repo, make changes, attempt to charge people to play, or even sell it!
+Brumley and Patel licensed Spyfall with the [MIT license](https://github.com/tannerkrewson/spyfall/blob/v1.0/LICENSE), meaning anyone is free to copy, modify, and distribute Spyfall. Under my control, this repo will maintain the MIT license. So, feel free to fork this repo, make changes, attempt to charge people to play, or even sell it!
 
 The original Spyfall was written with [Meteor.js](https://github.com/meteor/meteor). I have nothing against Meteor, but I prefer to only have to use `npm install` and `npm start` to develop and deploy, while Meteor requires other downloads. I've been itching to try out [Next.js](https://github.com/zeit/next.js) and [React Hooks](https://reactjs.org/docs/hooks-intro.html), so I've gone ahead and ported Meteor Spyfall to Next.js!
 
