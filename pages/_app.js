@@ -72,9 +72,9 @@ function MyApp({ Component, pageProps }) {
 					select,
 					.box,
 					.lobby-player-list > .player-box {
-						border-color: #aaa;
-						background-color: #333;
-						color: white;
+						border-color: #aaa !important;
+						background-color: #333 !important;
+						color: white !important;
 					}
 					.access-code,
 					.access-code > span {
