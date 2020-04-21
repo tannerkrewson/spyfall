@@ -19,7 +19,7 @@ const Lobby = ({ t, gameState, socket }) => {
 
 			<ol className="lobby-player-list">
 				{playerList.map((player, i) => (
-					<li key={i}>
+					<li key={i} className="player-box">
 						{player.name}
 						{!player.name && <i>Joining...</i>}
 
@@ -46,10 +46,8 @@ const Lobby = ({ t, gameState, socket }) => {
 					</li>
 				))}
 			</ol>
-
+			<br />
 			<Settings gameState={gameState} socket={socket} />
-
-			<hr />
 
 			<div className="button-container">
 				<button

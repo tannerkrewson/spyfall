@@ -133,8 +133,6 @@ const InGame = ({ t, gameState, socket }) => {
 				))}
 			</ul>
 
-			<hr />
-
 			<div className="button-container">
 				<button className="btn-end" onClick={() => socket.emit("endGame")}>
 					{t("ui.end game")}

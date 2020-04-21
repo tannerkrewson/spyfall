@@ -5,7 +5,7 @@ import Page from "../components/Page";
 
 const MoreGames = () => {
 	return (
-		<Page>
+		<>
 			<div className="main-menu">
 				<h3>Games Like Spyfall</h3>
 				<hr />
@@ -72,7 +72,7 @@ const MoreGames = () => {
 					font-size: 1.3em;
 				}
 			`}</style>
-		</Page>
+		</>
 	);
 };
 

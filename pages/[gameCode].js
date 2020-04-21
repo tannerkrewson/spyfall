@@ -63,7 +63,7 @@ const Game = (props) => {
 	const showGame = status === "ingame";
 
 	return (
-		<Page>
+		<>
 			{showLoading && <Loading />}
 			{showNameEntry && (
 				<NameEntry
@@ -74,7 +74,7 @@ const Game = (props) => {
 			)}
 			{showLobby && <Lobby gameState={gameState} socket={socket} />}
 			{showGame && <InGame gameState={gameState} socket={socket} />}
-		</Page>
+		</>
 	);
 };
 

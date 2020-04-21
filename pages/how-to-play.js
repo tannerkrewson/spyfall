@@ -5,7 +5,7 @@ import Page from "../components/Page";
 
 const HowToPlay = () => {
 	return (
-		<Page>
+		<>
 			<div className="main-menu">
 				<h3>How to Play Spyfall</h3>
 				<hr />
@@ -14,7 +14,7 @@ const HowToPlay = () => {
 			<Link href="/">
 				<button>Back to Spyfall</button>
 			</Link>
-		</Page>
+		</>
 	);
 };
 

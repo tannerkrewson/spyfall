@@ -27,49 +27,43 @@ const Home = ({ t, loading }) => {
 		}
 	};
 	return (
-		<Page>
-			<div className="main-menu">
-				<div style={{ position: "relative" }}>
-					<h3>{t("ui.welcome to spyfall")}</h3>
-					<span className="spyfall-back">back</span>
-				</div>
-				<div className="subtitle">(formerly Crabhat)</div>
-				<hr />
-
-				{loading && <Loading />}
-				{!loading && (
-					<>
-						<div className="button-container">
-							<Link href="/join">
-								<button id="btn-join-game" className="btn-large">
-									{t("ui.join game")}
-								</button>
-							</Link>
-							<button
-								id="btn-new-game"
-								onClick={onNewGame}
-								className="btn-large"
-							>
-								{t("ui.new game")}
-							</button>
-						</div>
-						<div className="button-container-vertical">
-							<Link href="/how-to-play">
-								<button className="btn-small btn-vertical">How to Play</button>
-							</Link>
-							<Link href="/more-games">
-								<button className="btn-small btn-vertical">
-									Games Like Spyfall
-								</button>
-							</Link>
-							<Link href="/about">
-								<button className="btn-small btn-vertical">Crabhat?</button>
-							</Link>
-						</div>
-					</>
-				)}
+		<div className="main-menu">
+			<div style={{ position: "relative" }}>
+				<h3>{t("ui.welcome to spyfall")}</h3>
+				<span className="spyfall-back">back</span>
 			</div>
-		</Page>
+			<div className="subtitle">(formerly Crabhat)</div>
+			<hr />
+
+			{loading && <Loading />}
+			{!loading && (
+				<>
+					<div className="button-container">
+						<Link href="/join">
+							<button id="btn-join-game" className="btn-large">
+								{t("ui.join game")}
+							</button>
+						</Link>
+						<button id="btn-new-game" onClick={onNewGame} className="btn-large">
+							{t("ui.new game")}
+						</button>
+					</div>
+					<div className="button-container-vertical">
+						<Link href="/how-to-play">
+							<button className="btn-small btn-vertical">How to Play</button>
+						</Link>
+						<Link href="/more-games">
+							<button className="btn-small btn-vertical">
+								Games Like Spyfall
+							</button>
+						</Link>
+						<Link href="/about">
+							<button className="btn-small btn-vertical">Crabhat?</button>
+						</Link>
+					</div>
+				</>
+			)}
+		</div>
 	);
 };
 

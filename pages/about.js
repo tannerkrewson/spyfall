@@ -5,7 +5,7 @@ import Page from "../components/Page";
 
 const About = () => {
 	return (
-		<Page>
+		<>
 			<div className="main-menu">
 				<h3>About Spyfall</h3>
 				<hr />
@@ -14,7 +14,7 @@ const About = () => {
 			<Link href="/">
 				<button>Back to Spyfall</button>
 			</Link>
-		</Page>
+		</>
 	);
 };
 

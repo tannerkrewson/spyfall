@@ -1,9 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Router from "next/router";
+import withDarkMode from "next-dark-mode";
+import { NextDarkModeContext } from "next-dark-mode";
+
+import Page from "../components/Page";
 
 import { appWithTranslation } from "../i18n";
 
 function MyApp({ Component, pageProps }) {
+	const {
+		autoModeActive,
+		autoModeSupported,
+		darkModeActive,
+		switchToAutoMode,
+		switchToDarkMode,
+		switchToLightMode,
+	} = useContext(NextDarkModeContext);
+
 	const [loading, setLoading] = useState(false);
 	useEffect(() => {
 		const loadingStart = () => setLoading(true);
@@ -17,7 +30,63 @@ function MyApp({ Component, pageProps }) {
 			Router.events.off("routeChangeComplete", loadingStop);
 		};
 	}, []);
-	return <Component {...pageProps} loading={loading} />;
+
+	const onThemeToggle = () =>
+		darkModeActive ? switchToLightMode() : switchToDarkMode();
+
+	return (
+		<Page onThemeToggle={onThemeToggle} darkModeActive={darkModeActive}>
+			<Component
+				{...pageProps}
+				loading={loading}
+				onThemeToggle={onThemeToggle}
+			/>
+			{darkModeActive && (
+				<style jsx global>{`
+					body {
+						background-color: #121212;
+						color: white;
+						transition: background-color 0.2s linear;
+					}
+
+					.footer,
+					.language-list {
+						color: #ddd;
+					}
+					button:hover,
+					button:active,
+					button:focus {
+						color: white;
+					}
+					button:active {
+						background-color: #555;
+					}
+					button {
+						background-color: #222;
+						color: white;
+						border-color: #aaa;
+						transition: background-color 0.2s linear;
+					}
+
+					input[type="text"],
+					select,
+					.box,
+					.lobby-player-list > .player-box {
+						border-color: #aaa;
+						background-color: #333;
+						color: white;
+					}
+					.access-code,
+					.access-code > span {
+						color: #ddd;
+					}
+					.game-countdown {
+						color: #ddd;
+					}
+				`}</style>
+			)}
+		</Page>
+	);
 }
 
 // Only uncomment this method if you have blocking data requirements for
@@ -32,4 +101,4 @@ function MyApp({ Component, pageProps }) {
 //   return { ...appProps }
 // }
 
-export default appWithTranslation(MyApp);
+export default withDarkMode(appWithTranslation(MyApp));

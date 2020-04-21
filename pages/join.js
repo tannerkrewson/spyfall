@@ -12,45 +12,43 @@ const Join = ({ t }) => {
 
 	const [gameCode, setGameCode] = useState("");
 	return (
-		<Page>
-			<div className="main-menu">
-				<h3>{t("ui.welcome to spyfall")}</h3>
+		<div className="main-menu">
+			<h3>{t("ui.welcome to spyfall")}</h3>
 
-				<hr />
+			<hr />
 
-				<form id="join-game">
-					{invalidCode && (
-						<div
-							class="alert alert-error alert-danger alert-dismissable"
-							role="alert"
-						>
-							{invalidCode}: {t("ui.invalid access code")}
-						</div>
-					)}
-					<div>
-						<label for="access-code">{t("ui.enter an access code")}</label>
-						<input
-							autocorrect="off"
-							autocapitalize="off"
-							type="text"
-							id="access-code"
-							name="accessCode"
-							placeholder="abcd"
-							onChange={({ target: { value } }) => setGameCode(value)}
-						/>
-
-						<div className="button-container">
-							<Link href={"/" + gameCode}>
-								<button>{t("ui.join")}</button>
-							</Link>
-							<Link href="/">
-								<button>{t("ui.back")}</button>
-							</Link>
-						</div>
+			<form id="join-game">
+				{invalidCode && (
+					<div
+						class="alert alert-error alert-danger alert-dismissable"
+						role="alert"
+					>
+						{invalidCode}: {t("ui.invalid access code")}
 					</div>
-				</form>
-			</div>
-		</Page>
+				)}
+				<div>
+					<label for="access-code">{t("ui.enter an access code")}</label>
+					<input
+						autocorrect="off"
+						autocapitalize="off"
+						type="text"
+						id="access-code"
+						name="accessCode"
+						placeholder="abcd"
+						onChange={({ target: { value } }) => setGameCode(value)}
+					/>
+
+					<div className="button-container">
+						<Link href={"/" + gameCode}>
+							<button>{t("ui.join")}</button>
+						</Link>
+						<Link href="/">
+							<button>{t("ui.back")}</button>
+						</Link>
+					</div>
+				</div>
+			</form>
+		</div>
 	);
 };
 
