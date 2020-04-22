@@ -1,5 +1,8 @@
 import { withTranslation } from "../utils/i18n";
 import Router from "next/router";
+
+import { logEvent } from "../utils/analytics";
+
 import Settings from "./Settings";
 import ThanksForPlaying from "./ThanksForPlaying";
 
@@ -8,6 +11,15 @@ const Lobby = ({ t, gameState, socket }) => {
 		...player,
 		isMe: player.name === gameState.me.name,
 	}));
+
+	const handleStartGame = () => {
+		socket.emit("startGame");
+
+		logEvent("lobby-numberOfPlayers", gameState.players.length);
+		logEvent("lobby-locationPack", gameState.settings.locationPack);
+		logEvent("lobby-timeLimit", gameState.settings.timeLimit);
+	};
+
 	return (
 		<>
 			<h4>{t("ui.waiting for players")}</h4>
@@ -53,7 +65,7 @@ const Lobby = ({ t, gameState, socket }) => {
 			<div className="button-container">
 				<button
 					className="btn-start"
-					onClick={() => socket.emit("startGame")}
+					onClick={handleStartGame}
 					disabled={gameState.status !== "lobby-ready"}
 				>
 					{t("ui.start game")}

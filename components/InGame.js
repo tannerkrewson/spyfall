@@ -4,8 +4,9 @@ import { withTranslation } from "../utils/i18n";
 import Swal from "sweetalert2";
 
 import StrikeableBox from "./StrikeableBox";
+import { logEvent } from "../utils/analytics";
 
-const InGame = ({ t, gameState, socket }) => {
+const InGame = ({ t, i18n, gameState, socket }) => {
 	const {
 		me,
 		location,
@@ -20,12 +21,20 @@ const InGame = ({ t, gameState, socket }) => {
 	const [showRole, setShowRole] = useState(true);
 
 	useEffect(() => {
+		logEvent("player-roundCount", gameState.currentRoundNum + 1);
+		logEvent("player-language", i18n.language);
+	}, []);
+
+	useEffect(() => {
 		let interval = null;
 		if (!timePaused) {
 			interval = setInterval(() => {
 				if (timeLeft <= 0) {
 					clearInterval(interval);
 					setTimeLeft(0);
+					if (gameState.players[0].name === me.name) {
+						logEvent("timerExpired", true);
+					}
 					return;
 				}
 				setTimeLeft((timeLeft) => timeLeft - 1);
@@ -37,6 +46,11 @@ const InGame = ({ t, gameState, socket }) => {
 	}, [timePaused, timeLeft]);
 
 	useEffect(() => setTimeLeft(latestServerTimeLeft), [latestServerTimeLeft]);
+
+	const handleTogglePause = () => {
+		socket.emit("togglePause");
+		logEvent("togglePause", true);
+	};
 
 	const isSpy = me.role === "spy";
 
@@ -55,7 +69,7 @@ const InGame = ({ t, gameState, socket }) => {
 								(timeExpired ? "finished " : " ") +
 								(timePaused ? "paused" : "")
 							}
-							onClick={() => socket.emit("togglePause")}
+							onClick={handleTogglePause}
 						>
 							{minutesLeft}:{secondsLeft}
 						</a>
@@ -114,8 +128,8 @@ const InGame = ({ t, gameState, socket }) => {
 
 			<h5>{t("ui.players")}</h5>
 			<ul className="ingame-player-list">
-				{players.map((player) => (
-					<StrikeableBox key={player.name}>
+				{players.map((player, i) => (
+					<StrikeableBox key={i}>
 						{player.name && player.name}
 						{!player.name && <i>Joining...</i>}
 						{player.isFirst && (
@@ -133,8 +147,8 @@ const InGame = ({ t, gameState, socket }) => {
 
 			<h5>{t("ui.location reference")}</h5>
 			<ul className="location-list">
-				{locationList.map((name) => (
-					<StrikeableBox key={name}>{t(name)}</StrikeableBox>
+				{locationList.map((name, i) => (
+					<StrikeableBox key={i}>{t(name)}</StrikeableBox>
 				))}
 			</ul>
 

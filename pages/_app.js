@@ -6,6 +6,7 @@ import { NextDarkModeContext } from "next-dark-mode";
 import Page from "../components/Page";
 
 import { appWithTranslation } from "../utils/i18n";
+import { initGA, logPageView } from "../utils/analytics";
 
 function MyApp({ Component, pageProps }) {
 	const {
@@ -19,8 +20,14 @@ function MyApp({ Component, pageProps }) {
 
 	const [loading, setLoading] = useState(false);
 	useEffect(() => {
+		initGA();
+		logPageView();
+
 		const loadingStart = () => setLoading(true);
-		const loadingStop = () => setLoading(false);
+		const loadingStop = () => {
+			logPageView();
+			setLoading(false);
+		};
 
 		Router.events.on("routeChangeStart", loadingStart);
 		Router.events.on("routeChangeComplete", loadingStop);
