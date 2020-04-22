@@ -28,11 +28,11 @@ const Home = ({ t, loading }) => {
 	};
 	return (
 		<div className="main-menu">
-			<div style={{ position: "relative" }}>
+			<div style={{ position: "relative", marginTop: "1em" }}>
 				<h3>{t("ui.welcome to spyfall")}</h3>
 				<span className="spyfall-back">back</span>
 			</div>
-			<div className="subtitle">(formerly Crabhat)</div>
+			<div className="subtitle">(formerly Meteor/Crabhat)</div>
 			<hr />
 
 			{loading && <Loading />}
@@ -58,7 +58,7 @@ const Home = ({ t, loading }) => {
 							</button>
 						</Link>
 						<a
-							href="https://github.com/tannerkrewson/spyfall#history"
+							href="https://github.com/tannerkrewson/spyfall/blob/dev/README.md#history"
 							target="_blank"
 							rel="noopener noreferrer"
 							style={{ width: "100%" }}

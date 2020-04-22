@@ -8,7 +8,9 @@ Issues, feature requests, and pull requests welcome!
 
 ## History
 
-This is now the main GitHub repo for the original online Meteor.js Spyfall, designed by [Evan Brumley](https://github.com/evanbrumley) in 2014, and maintained by [Milov Patel](https://github.com/mpcovcd) from 2017 to 2019. Brumley [transferred ownership](https://github.com/tannerkrewson/spyfall/commit/5d8def67f3106e6a6507795d2cd9c2d3f4b69143) of this repo to Patel in August 2017. In late 2019, Patel deleted the repo, and [spyfall.crabhat.com](https://spyfall.crabhat.com/) does not work anymore.
+The "official" successor to `spyfall.meteor.com` and `spyfall.crabhat.com` is now `spyfall.tannerkrewson.com`, and this GitHub repository maintains the development history of the site since 2015.
+
+The original online Meteor.js Spyfall was designed by [Evan Brumley](https://github.com/evanbrumley) in 2014, and maintained by [Milov Patel](https://github.com/mpcovcd) from 2017 to 2019. Brumley [transferred ownership](https://github.com/tannerkrewson/spyfall/commit/5d8def67f3106e6a6507795d2cd9c2d3f4b69143) of this repo to Patel in August 2017. In late 2019, Patel deleted the repo, and [spyfall.crabhat.com](https://spyfall.crabhat.com/) does not work anymore.
 
 Here's where I come into the story. Inspired by Brumley's implementation of Spyfall, I built [Drawphone](https://github.com/tannerkrewson/drawphone) in 2016. Since it was [posted on /r/boardgames](https://www.reddit.com/r/boardgames/comments/7lhj20/a_year_ago_i_was_wondering_why_there_were_no/), over 100,000 rounds have been played, which more than doubled due to the social distancing measures related to the 2019–20 coronavirus pandemic. To me, Drawphone represents the beginning of my career, so naturally, Spyfall holds a special place in my heart, and I was sad to see that it was deleted.
 
