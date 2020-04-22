@@ -58,7 +58,7 @@ const Home = ({ t, loading }) => {
 							</button>
 						</Link>
 						<a
-							href="https://github.com/tannerkrewson/spyfall#spyfall"
+							href="https://github.com/tannerkrewson/spyfall#history"
 							target="_blank"
 							rel="noopener noreferrer"
 							style={{ width: "100%" }}

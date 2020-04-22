@@ -16,15 +16,23 @@ const MoreGames = () => {
 				/>
 
 				<GameLink
-					title="The Jackbox Party Packs"
-					subtitle="by Jackbox Games"
-					link="https://jackboxgames.com/games/"
+					title="Codewords"
+					subtitle="by Joshua Porter"
+					featuring="Based on Codenames"
+					link="https://codewords.tv/"
 				/>
 
 				<GameLink
-					title="Codenames"
-					subtitle="by Jackson Owens"
-					link="https://www.horsepaste.com/"
+					title="Fake Artist Online"
+					subtitle="by Gideon Wong"
+					featuring="Based on A Fake Artist Goes to New York"
+					link="https://kc-fakeartistonline.herokuapp.com/"
+				/>
+
+				<GameLink
+					title="The Jackbox Party Packs"
+					subtitle="by Jackbox Games"
+					link="https://jackboxgames.com/games/"
 				/>
 
 				<GameLink
@@ -47,8 +55,15 @@ const MoreGames = () => {
 				/>
 
 				<GameLink
+					title="QwiqWit"
+					featuring="Based on Quiplash"
+					link="https://www.qwiqwit.com/"
+				/>
+
+				<GameLink
 					title="Snakeout"
 					subtitle="by Tanner Krewson"
+					featuring="Based on The Resistance"
 					link="https://snakeout.tannerkrewson.com/"
 				/>
 			</div>
