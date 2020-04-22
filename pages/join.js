@@ -17,7 +17,7 @@ const Join = ({ t }) => {
 	};
 	return (
 		<div className="main-menu">
-			<h3>{t("ui.welcome to spyfall")}</h3>
+			<h3>{t("ui.join game")}</h3>
 
 			<hr />
 

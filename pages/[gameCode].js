@@ -12,9 +12,7 @@ import Loading from "../components/Loading";
 
 const socket = socketIOClient();
 
-const Game = (props) => {
-	const { t, loading } = props;
-
+const Game = ({ t, loading }) => {
 	const router = useRouter();
 	const { gameCode } = router.query;
 
@@ -65,16 +63,25 @@ const Game = (props) => {
 
 	return (
 		<>
-			{showLoading && <Loading />}
-			{showNameEntry && (
-				<NameEntry
-					onNameEntry={onNameEntry}
-					gameCode={gameState.code}
-					socket={socket}
-				/>
+			{showLoading && (
+				<>
+					<h3>{t("ui.welcome to spyfall")}</h3>
+					<Loading />
+				</>
 			)}
-			{showLobby && <Lobby gameState={gameState} socket={socket} />}
-			{showGame && <InGame gameState={gameState} socket={socket} />}
+			{!showLoading && (
+				<>
+					{showNameEntry && (
+						<NameEntry
+							onNameEntry={onNameEntry}
+							gameCode={gameState.code}
+							socket={socket}
+						/>
+					)}
+					{showLobby && <Lobby gameState={gameState} socket={socket} />}
+					{showGame && <InGame gameState={gameState} socket={socket} />}
+				</>
+			)}
 		</>
 	);
 };

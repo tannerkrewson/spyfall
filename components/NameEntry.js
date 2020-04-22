@@ -9,7 +9,7 @@ const NameEntry = ({ t, onNameEntry, gameCode, socket }) => {
 	useEffect(() => {
 		if (gameCode === "ffff") {
 			const randFourDig = Math.floor(1000 + Math.random() * 9000);
-			onNameEntry(randFourDig);
+			onNameEntry(String(randFourDig));
 		}
 	}, []);
 
@@ -36,7 +36,7 @@ const NameEntry = ({ t, onNameEntry, gameCode, socket }) => {
 
 	return (
 		<div className="main-menu">
-			<h3>{t("ui.welcome to spyfall")}</h3>
+			<h3>{t("ui.waiting for players")}</h3>
 
 			<hr />
 
