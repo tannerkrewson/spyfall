@@ -15,7 +15,7 @@ const NameEntry = ({ t, onNameEntry, gameCode, socket }) => {
 
 	const handleNameChange = ({ target: { value } }) => setName(value);
 	const handleJoin = (e) => {
-		e.preventDefault();
+		if (e) e.preventDefault();
 		onNameEntry(name);
 	};
 
@@ -28,33 +28,40 @@ const NameEntry = ({ t, onNameEntry, gameCode, socket }) => {
 		Router.push("/");
 	};
 
+	const onEnter = (e) => {
+		if (e.key !== "Enter") return;
+
+		handleJoin();
+	};
+
 	return (
 		<div className="main-menu">
 			<h3>{t("ui.welcome to spyfall")}</h3>
 
 			<hr />
-			<form id="join-game">
-				<div>
-					<label htmlFor="player-name">{t("ui.enter your name")}</label>
-					<input
-						type="text"
-						id="player-name"
-						placeholder="Use your real name!"
-						value={name}
-						onChange={handleNameChange}
-						autoFocus
-					/>
 
-					<div className="button-container">
-						<button className="btn-leave" onClick={handleBack}>
-							{t("ui.back")}
-						</button>
-						<button type="submit" onClick={handleJoin}>
-							{t("ui.join")}
-						</button>
-					</div>
+			<div>
+				<label htmlFor="player-name">{t("ui.enter your name")}</label>
+				<input
+					type="text"
+					id="player-name"
+					placeholder="Use your real name!"
+					value={name}
+					onChange={handleNameChange}
+					autoFocus
+					onKeyDown={onEnter}
+					maxLength={24}
+				/>
+
+				<div className="button-container">
+					<button className="btn-leave" onClick={handleBack}>
+						{t("ui.back")}
+					</button>
+					<button type="submit" onClick={handleJoin}>
+						{t("ui.join")}
+					</button>
 				</div>
-			</form>
+			</div>
 		</div>
 	);
 };

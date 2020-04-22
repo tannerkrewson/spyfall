@@ -141,10 +141,13 @@ class Game {
 	};
 
 	setName = (newPlayer) => (name) => {
-		if (!this.isNameTaken(name)) {
+		const validLength = name.length > 1 && name.length <= 24;
+
+		if (!this.isNameTaken(name) && validLength) {
 			newPlayer.name = name;
 		} else {
 			newPlayer.name = "";
+			newPlayer.socket.emit("badName");
 		}
 
 		this.checkIfReady();

@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-import Page from "../components/Page";
-
 import { withTranslation } from "../utils/i18n";
 
 const Join = ({ t }) => {
@@ -11,13 +9,19 @@ const Join = ({ t }) => {
 	const invalidCode = router.query.invalid;
 
 	const [gameCode, setGameCode] = useState("");
+
+	const onEnter = (e) => {
+		if (e.key !== "Enter") return;
+
+		router.push("/" + gameCode);
+	};
 	return (
 		<div className="main-menu">
 			<h3>{t("ui.welcome to spyfall")}</h3>
 
 			<hr />
 
-			<form id="join-game">
+			<div>
 				{invalidCode && (
 					<div
 						className="alert alert-error alert-danger alert-dismissable"
@@ -33,10 +37,12 @@ const Join = ({ t }) => {
 						autoCapitalize="off"
 						type="text"
 						id="access-code"
-						name="accessCode"
 						placeholder="abcd"
 						onChange={({ target: { value } }) => setGameCode(value)}
+						onKeyDown={onEnter}
 						autoFocus
+						maxLength={4}
+						style={{ fontFamily: "monospace" }}
 					/>
 
 					<div className="button-container">
@@ -48,7 +54,7 @@ const Join = ({ t }) => {
 						</Link>
 					</div>
 				</div>
-			</form>
+			</div>
 		</div>
 	);
 };

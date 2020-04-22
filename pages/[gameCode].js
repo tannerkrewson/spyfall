@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import socketIOClient from "socket.io-client";
-
 import { useRouter } from "next/router";
-import { parseCookies, setCookie, destroyCookie } from "nookies";
-import Page from "../components/Page";
+import socketIOClient from "socket.io-client";
+import Swal from "sweetalert2";
+import { parseCookies, setCookie } from "nookies";
 
 import { withTranslation } from "../utils/i18n";
 import NameEntry from "../components/NameEntry";
@@ -54,6 +53,8 @@ const Game = (props) => {
 		setCookie(null, "previousGameCode", gameCode);
 		setCookie(null, "previousName", name);
 	};
+
+	socket.on("badName", () => Swal.fire("Name already in use"));
 
 	const { status, me } = gameState;
 

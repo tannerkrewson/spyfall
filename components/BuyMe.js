@@ -18,7 +18,6 @@ const BuyMe = () => (
 				border-radius: 5px !important;
 				border: 1px solid transparent !important;
 				padding: 7px 10px 7px 10px !important;
-				letter-spacing: 0.6px !important;
 				box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;
 				-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
 				margin: 0.5em 0.3em 0;
@@ -30,7 +29,7 @@ const BuyMe = () => (
 				-ms-transition: 0.3s all linear !important;
 				transition: 0.3s all linear !important;
 				width: 99%;
-				font-size: 0.8em;
+				font-size: 0.85em;
 			}
 			.bmc-button:hover,
 			.bmc-button:active,
@@ -55,7 +54,9 @@ const BuyMe = () => (
 			>
 				🌮
 			</span>
-			<span style={{ marginLeft: "15px" }}>Buy me a taco</span>
+			<span style={{ marginLeft: "15px", fontWeight: "bold" }}>
+				Buy me a taco
+			</span>
 		</a>
 	</>
 );
