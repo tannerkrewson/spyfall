@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-import { i18n, withTranslation } from "../i18n";
+import { i18n, withTranslation } from "../utils/i18n";
 import allLanguages from "../public/static/locales/_all_languages.json";
 
 const LanguageSelector = ({ t }) => {

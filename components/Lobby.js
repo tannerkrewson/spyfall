@@ -1,4 +1,4 @@
-import { withTranslation } from "../i18n";
+import { withTranslation } from "../utils/i18n";
 import Router from "next/router";
 import Settings from "./Settings";
 import ThanksForPlaying from "./ThanksForPlaying";

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Router from "next/router";
-import { withTranslation } from "../i18n";
+import { withTranslation } from "../utils/i18n";
 import Swal from "sweetalert2";
 
 import StrikeableBox from "./StrikeableBox";

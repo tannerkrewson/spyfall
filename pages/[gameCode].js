@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { parseCookies, setCookie, destroyCookie } from "nookies";
 import Page from "../components/Page";
 
-import { withTranslation } from "../i18n";
+import { withTranslation } from "../utils/i18n";
 import NameEntry from "../components/NameEntry";
 import Lobby from "../components/Lobby";
 import InGame from "../components/InGame";

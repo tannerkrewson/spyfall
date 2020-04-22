@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import Page from "../components/Page";
 
-import { withTranslation } from "../i18n";
+import { withTranslation } from "../utils/i18n";
 
 const Join = ({ t }) => {
 	const router = useRouter();

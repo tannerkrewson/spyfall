@@ -20,7 +20,7 @@ const nextHandler = nextApp.getRequestHandler();
 
 	require("./routes")(app);
 
-	const nextI18next = require("./i18n");
+	const nextI18next = require("./utils/i18n");
 	await nextI18next.initPromise;
 
 	const nextI18NextMiddleware = require("next-i18next/middleware").default;

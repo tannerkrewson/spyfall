@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import BuyMe from "../components/BuyMe";
 
-import { withTranslation } from "../i18n";
+import { withTranslation } from "../utils/i18n";
 import Loading from "../components/Loading";
 
 const Home = ({ t, loading }) => {

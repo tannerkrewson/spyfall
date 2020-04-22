@@ -5,7 +5,7 @@ import { NextDarkModeContext } from "next-dark-mode";
 
 import Page from "../components/Page";
 
-import { appWithTranslation } from "../i18n";
+import { appWithTranslation } from "../utils/i18n";
 
 function MyApp({ Component, pageProps }) {
 	const {
