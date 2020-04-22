@@ -1,7 +1,0 @@
-node_modules
-.deploy
-
-.DS_Store
-settings/production*
-settings/dev.json
-settings/mup
