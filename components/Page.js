@@ -17,6 +17,10 @@ const Page = ({ children, onThemeToggle, darkModeActive }) => {
 					name="viewport"
 					content="width=device-width, initial-scale=1, maximum-scale=1"
 				/>
+				<meta
+					name="google-site-verification"
+					content="RjPwvAWbCuLI-PVrf0kdrN4cMCwTcy7nx85lTXTZsao"
+				/>
 			</Head>
 			<div dir="ltr" className="container dir-ltr lang-en">
 				<div className="main-content">
