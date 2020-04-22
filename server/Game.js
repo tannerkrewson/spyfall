@@ -66,11 +66,13 @@ class Game {
 	}
 
 	createPlayerWhileInGame(player) {
-		if (this.location.isAllSpyLocation) {
+		const { location } = this;
+
+		if (location.isAllSpyLocation) {
 			player.role = "spy";
 		} else {
 			// the last role in the array is the default role
-			player.role = this.location.roles[roles.length - 1];
+			player.role = location.roles[location.roles.length - 1];
 		}
 	}
 
