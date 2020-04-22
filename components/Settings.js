@@ -50,7 +50,7 @@ const TimeLimit = ({ onSetMinutes, serverMinutes }) => {
 	return (
 		<div>
 			<label>Time Limit:</label>
-			<div>
+			<div style={{ margin: "-.5em 0 -1em" }}>
 				<button
 					className="btn-small"
 					onClick={handleChange(-1)}

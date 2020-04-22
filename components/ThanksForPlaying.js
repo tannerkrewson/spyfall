@@ -26,7 +26,7 @@ const ThanksForPlaying = () => (
 				border: 2px solid #ddd;
 				padding: 1em;
 				max-width: 18em;
-				font-size: 0.8em;
+				font-size: 0.9em;
 			}
 			.text {
 				font-size: 0.9em;
