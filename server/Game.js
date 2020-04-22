@@ -17,6 +17,7 @@ class Game {
 		this.settings = {
 			locationPack: "spyfall1",
 			timeLimit: 8, // 8 minutes
+			includeAllSpy: false,
 		};
 	}
 
@@ -65,12 +66,12 @@ class Game {
 	}
 
 	createPlayerWhileInGame(player) {
-		const {
-			location: { roles },
-		} = this;
-
-		// the last role in the array is the default role
-		player.role = roles[roles.length - 1];
+		if (this.location.isAllSpyLocation) {
+			player.role = "spy";
+		} else {
+			// the last role in the array is the default role
+			player.role = this.location.roles[roles.length - 1];
+		}
 	}
 
 	removePlayerByName = (theName) =>
@@ -137,6 +138,7 @@ class Game {
 		socket.on("endGame", this.endGame);
 		socket.on("setTimeLimit", this.setTimeLimit);
 		socket.on("setLocationPack", this.setLocationPack);
+		socket.on("setIncludeAllSpy", this.setIncludeAllSpy);
 		socket.on("clearName", () => this.clearName(player)());
 	};
 
@@ -186,9 +188,15 @@ class Game {
 		if (this.status !== "lobby-ready") return;
 
 		this.pickLocation();
-		this.pickSpy();
 		this.pickFirst();
-		this.assignRoles();
+
+		if (this.location.isAllSpyLocation) {
+			this.setAllAsSpy();
+		} else {
+			this.pickSpy();
+			this.assignRoles();
+		}
+
 		this.startTimer();
 
 		this.status = "ingame";
@@ -211,17 +219,23 @@ class Game {
 	};
 
 	pickLocation = () => {
+		const { locationPack, includeAllSpy } = this.settings;
+
 		this.location = Locations.getRandomLocationFromPack(
-			this.settings.locationPack
+			locationPack,
+			includeAllSpy
 		);
 		this.locationList = Locations.getLocationListFromPack(
-			this.settings.locationPack
+			locationPack,
+			includeAllSpy
 		);
 	};
 
 	pickSpy = () => {
 		this.players[Math.floor(Math.random() * this.players.length)].role = "spy";
 	};
+
+	setAllAsSpy = () => this.players.forEach((player) => (player.role = "spy"));
 
 	pickFirst = () => {
 		this.players[
@@ -267,6 +281,10 @@ class Game {
 	};
 	setLocationPack = (locationPack) => {
 		this.settings.locationPack = locationPack;
+		this.sendNewStateToAllPlayers();
+	};
+	setIncludeAllSpy = (includeAllSpy) => {
+		this.settings.includeAllSpy = includeAllSpy;
 		this.sendNewStateToAllPlayers();
 	};
 

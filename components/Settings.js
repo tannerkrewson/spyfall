@@ -2,7 +2,11 @@ import React, { useState, useEffect } from "react";
 
 const Settings = ({ gameState, socket }) => {
 	const { settings, AVAILABLE_LOCATION_PACKS } = gameState;
-	const { timeLimit: serverMinutes, locationPack: serverPackId } = settings;
+	const {
+		timeLimit: serverMinutes,
+		locationPack: serverPackId,
+		includeAllSpy: serverIncludeAllSpy,
+	} = settings;
 
 	return (
 		<div>
@@ -15,6 +19,12 @@ const Settings = ({ gameState, socket }) => {
 				onSetLocationPack={(packId) => socket.emit("setLocationPack", packId)}
 				serverPackId={serverPackId}
 				locationPackList={AVAILABLE_LOCATION_PACKS}
+			/>
+			<IncludeAllSpy
+				onSetIncludeAllSpy={(includeAllSpy) =>
+					socket.emit("setIncludeAllSpy", includeAllSpy)
+				}
+				serverIncludeAllSpy={serverIncludeAllSpy}
 			/>
 		</div>
 	);
@@ -103,6 +113,32 @@ const LocationPack = ({
 				))}
 			</select>
 		</div>
+	);
+};
+
+const IncludeAllSpy = ({ onSetIncludeAllSpy, serverIncludeAllSpy }) => {
+	const [includeAllSpy, setIncludeAllSpy] = useState(serverIncludeAllSpy);
+
+	const handleChange = (checked) => {
+		setIncludeAllSpy(checked);
+		onSetIncludeAllSpy(checked);
+	};
+
+	useEffect(() => {
+		setIncludeAllSpy(serverIncludeAllSpy);
+	}, [serverIncludeAllSpy]);
+
+	return (
+		<label>
+			<input
+				type="checkbox"
+				onChange={({ target: { checked } }) => handleChange(checked)}
+				checked={includeAllSpy}
+			/>
+			<span className="label-body">
+				Enable ~2% chance all players are spies
+			</span>
+		</label>
 	);
 };
 

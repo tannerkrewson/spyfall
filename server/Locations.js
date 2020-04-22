@@ -10,22 +10,35 @@ const LocationPacks = require("fs")
 		return locationPack;
 	});
 
-const getLocationPack = (thisPackId) =>
-	LocationPacks.find(({ id }) => id === thisPackId);
+const getLocationPack = (thisPackId, includeAllSpy) => {
+	const locationPack = LocationPacks.find(({ id }) => id === thisPackId);
 
-const getLocationListFromPack = (thisPackId) =>
-	getLocationPack(thisPackId).locations.map(({ name }) => name);
+	if (!includeAllSpy) return locationPack;
+
+	return {
+		...locationPack,
+		locations: [...locationPack.locations, allSpiesLocation],
+	};
+};
+
+const getLocationListFromPack = (thisPackId, includeAllSpy) =>
+	getLocationPack(thisPackId, includeAllSpy).locations.map(({ name }) => name);
 
 const AVAILABLE_LOCATION_PACKS = LocationPacks.map(({ id, name }) => ({
 	id,
 	name,
 }));
 
-const getRandomLocationFromPack = (thisPackId) =>
-	getRandomLocation(getLocationPack(thisPackId));
+const getRandomLocationFromPack = (thisPackId, includeAllSpy) =>
+	getRandomLocation(getLocationPack(thisPackId, includeAllSpy));
 
 const getRandomLocation = ({ locations }) =>
 	locations[Math.floor(Math.random() * locations.length)];
+
+const allSpiesLocation = {
+	name: "All players are spies",
+	isAllSpyLocation: true,
+};
 
 module.exports = {
 	getLocationPack,
