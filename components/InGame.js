@@ -47,17 +47,20 @@ const InGame = ({ t, i18n, gameState, socket }) => {
 
 	useEffect(() => setTimeLeft(latestServerTimeLeft), [latestServerTimeLeft]);
 
-	const handleTogglePause = () => {
-		socket.emit("togglePause");
-		logEvent("togglePause", true);
-	};
-
 	const isSpy = me.role === "spy";
 	const firstPlayer = players.find((player) => player.isFirst);
 
 	const timeExpired = timeLeft <= 0;
 	const minutesLeft = Math.floor(timeLeft / 60);
 	const secondsLeft = ((timeLeft % 60) + "").padStart(2, "0");
+	const showTapToPause = !timePaused && timeLeft > 0;
+
+	const handleTogglePause = () => {
+		if (timeExpired) return;
+
+		socket.emit("togglePause");
+		logEvent("togglePause", true);
+	};
 
 	return (
 		<div name="gameView" style={{ userSelect: "none" }}>
@@ -75,7 +78,7 @@ const InGame = ({ t, i18n, gameState, socket }) => {
 					</h4>
 					<div>
 						{timePaused && <div className="red-text">Game paused</div>}
-						{!timePaused && <div className="subtitle">Tap to pause</div>}
+						{showTapToPause && <div className="subtitle">Tap to pause</div>}
 					</div>
 				</div>
 			)}
