@@ -53,29 +53,31 @@ const InGame = ({ t, i18n, gameState, socket }) => {
 	};
 
 	const isSpy = me.role === "spy";
+	const firstPlayer = players.find((player) => player.isFirst);
 
 	const timeExpired = timeLeft <= 0;
 	const minutesLeft = Math.floor(timeLeft / 60);
 	const secondsLeft = ((timeLeft % 60) + "").padStart(2, "0");
 
 	return (
-		<div name="gameView">
+		<div name="gameView" style={{ userSelect: "none" }}>
 			{settings.timeLimit !== 0 && (
-				<>
-					<h4>
-						<a
-							className={
-								"game-countdown " +
-								(timeExpired ? "finished " : " ") +
-								(timePaused ? "paused" : "")
-							}
-							onClick={handleTogglePause}
-						>
-							{minutesLeft}:{secondsLeft}
-						</a>
+				<div style={{ marginBottom: "1em" }} onClick={handleTogglePause}>
+					<h4
+						className={
+							"game-countdown " +
+							(timeExpired ? "finished " : " ") +
+							(timePaused ? "paused" : "")
+						}
+						style={{ marginBottom: "0.25em" }}
+					>
+						{minutesLeft}:{secondsLeft}
 					</h4>
-					{timePaused && <div className="red-text">Game paused</div>}
-				</>
+					<div>
+						{timePaused && <div className="red-text">Game paused</div>}
+						{!timePaused && <div className="subtitle">Tap to pause</div>}
+					</div>
+				</div>
 			)}
 
 			<div className="status-container">
@@ -119,12 +121,16 @@ const InGame = ({ t, i18n, gameState, socket }) => {
 								</div>
 							</>
 						)}
-						{me.isFirst && (
-							<div className="red-text">You will ask the first question.</div>
-						)}
 					</div>
 				)}
 			</div>
+
+			{me.isFirst && (
+				<div className="red-text">You will ask the first question.</div>
+			)}
+			{!me.isFirst && (
+				<div>The first question will be asked by {firstPlayer.name}.</div>
+			)}
 
 			<h5>{t("ui.players")}</h5>
 			<ul className="ingame-player-list">

@@ -32,7 +32,7 @@ const Home = ({ t, loading }) => {
 				<h3>{t("ui.welcome to spyfall")}</h3>
 				<span className="spyfall-back">back</span>
 			</div>
-			<div className="subtitle">(formerly Meteor/Crabhat)</div>
+			<div className="subtitle formerly">(formerly Meteor/Crabhat)</div>
 			<hr />
 
 			{loading && <Loading />}
