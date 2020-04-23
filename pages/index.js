@@ -1,17 +1,22 @@
+import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import BuyMe from "../components/BuyMe";
 
 import { withTranslation } from "../utils/i18n";
 import Loading from "../components/Loading";
+import Swal from "sweetalert2";
+import { lockedMessage } from "../utils/misc";
 
 const Home = ({ t, loading }) => {
 	const router = useRouter();
+	const [newGameLoading, setNewGameLoading] = useState(false);
 	const onNewGame = async (e) => {
 		e.preventDefault();
+		setNewGameLoading(true);
 
 		try {
-			const rawResponse = await fetch(window.location.origin + "/new", {
+			const res = await fetch(window.location.origin + "/new", {
 				method: "POST",
 				headers: {
 					Accept: "application/json",
@@ -19,11 +24,22 @@ const Home = ({ t, loading }) => {
 				},
 				body: JSON.stringify({ name }),
 			});
-			const content = await rawResponse.json();
-			router.push("/" + content.gameCode);
+
+			if (res.status === 200) {
+				const { gameCode } = await res.json();
+				router.push("/" + gameCode);
+			} else if (res.status === 423) {
+				const { minutes } = await res.json();
+				setNewGameLoading(false);
+
+				Swal.fire(lockedMessage(minutes));
+			} else {
+				throw res.status + " " + res.statusText;
+			}
 		} catch (error) {
 			console.error(error);
-			alert(error);
+			Swal.fire(error);
+			setNewGameLoading(false);
 		}
 	};
 	return (
@@ -35,7 +51,7 @@ const Home = ({ t, loading }) => {
 			<div className="subtitle formerly">(formerly Meteor/Crabhat)</div>
 			<hr />
 
-			{loading && <Loading />}
+			{(loading || newGameLoading) && <Loading />}
 			{!loading && (
 				<>
 					<div className="button-container">

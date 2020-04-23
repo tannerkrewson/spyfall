@@ -9,6 +9,7 @@ import NameEntry from "../components/NameEntry";
 import Lobby from "../components/Lobby";
 import InGame from "../components/InGame";
 import Loading from "../components/Loading";
+import { lockedMessage } from "../utils/misc";
 
 const socket = socketIOClient();
 
@@ -39,10 +40,14 @@ const Game = ({ t, loading }) => {
 			}
 		});
 		socket.on("invalid", () => router.push("/join?invalid=" + gameCode));
+		socket.on("badName", () => Swal.fire("Name already in use"));
+		socket.on("lockedWarning", (minutes) =>
+			Swal.fire(lockedMessage(minutes)).then(() => router.push("/"))
+		);
 
 		return function cleanup() {
 			socket.close();
-			setGameState({ status: "disconnected?" });
+			setGameState({ status: "loading" });
 		};
 	}, []);
 
@@ -51,8 +56,6 @@ const Game = ({ t, loading }) => {
 		setCookie(null, "previousGameCode", gameCode);
 		setCookie(null, "previousName", name);
 	};
-
-	socket.on("badName", () => Swal.fire("Name already in use"));
 
 	const { status, me } = gameState;
 
@@ -65,7 +68,7 @@ const Game = ({ t, loading }) => {
 		<>
 			{showLoading && (
 				<>
-					<h3>{t("ui.welcome to spyfall")}</h3>
+					<h3>{t("ui.waiting for players")}</h3>
 					<Loading />
 				</>
 			)}

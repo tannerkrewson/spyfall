@@ -3,9 +3,12 @@ const Player = require("./Player");
 const Locations = require("./Locations");
 
 class Game {
-	constructor(code, onEmpty) {
+	constructor(code, onEmpty, getMinutesUntilRestart) {
 		this.code = code;
 		this.onEmpty = onEmpty;
+
+		this.locked = false;
+		this.getMinutesUntilRestart = getMinutesUntilRestart;
 
 		this.players = [];
 		this.status = "lobby-waiting"; // lobby-waiting, lobby-ready, ingame
@@ -133,7 +136,7 @@ class Game {
 	attachListenersToPlayer = (player) => {
 		const { socket } = player;
 		socket.on("name", this.setName(player));
-		socket.on("startGame", this.startGame);
+		socket.on("startGame", this.startGame(player));
 		socket.on("removePlayer", this.removePlayerByName);
 		socket.on("disconnect", this.removePlayer(player));
 		socket.on("togglePause", this.togglePauseTimer);
@@ -186,8 +189,12 @@ class Game {
 		return isReady;
 	};
 
-	startGame = () => {
+	startGame = (player) => () => {
 		if (this.status !== "lobby-ready") return;
+		if (this.locked) {
+			player.socket.emit("lockedWarning", this.getMinutesUntilRestart());
+			return;
+		}
 
 		this.pickLocation();
 		this.pickFirst();

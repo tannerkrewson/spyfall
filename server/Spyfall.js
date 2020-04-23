@@ -3,14 +3,22 @@ const Game = require("./Game");
 class Spyfall {
 	constructor(isDevMode) {
 		this.games = [];
+		this.locked = false;
+		this.minutesUntilRestart;
 		if (isDevMode) {
 			this.newGame("ffff");
 		}
 	}
 
 	newGame(code) {
+		if (this.locked) return false;
+
 		const theCode = code || this.generateCode();
-		const theGame = new Game(theCode, () => this.removeGame(theCode));
+		const theGame = new Game(
+			theCode,
+			() => this.removeGame(theCode),
+			() => this.minutesUntilRestart
+		);
 		this.games.push(theGame);
 
 		console.log(theCode, "created");
@@ -42,6 +50,20 @@ class Spyfall {
 		} while (this.findGame(code) && code !== "join" && code !== "ffff");
 		return code;
 	}
+
+	lock = () => {
+		this.locked = true;
+		this.games.forEach((game) => (game.locked = true));
+
+		this.minutesUntilRestart = 10;
+
+		const interval = setInterval(() => {
+			this.minutesUntilRestart--;
+			if (this.minutesUntilRestart <= 0) {
+				clearInterval(interval);
+			}
+		}, 1000 * 60); // every minute
+	};
 }
 
 module.exports = Spyfall;
