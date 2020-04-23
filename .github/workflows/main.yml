@@ -15,6 +15,7 @@ jobs:
         with:
           url: "https://spyfall.tannerkrewson.com/lock"
           method: post
+          headers: '{"Content-Type": "application/json" }'
           data: '{ "password": "${{ secrets.ADMIN_PASSWORD }}" }'
 
       - name: Print the response code of the lock
