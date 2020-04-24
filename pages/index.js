@@ -8,7 +8,7 @@ import Loading from "../components/Loading";
 import Swal from "sweetalert2";
 import { lockedMessage } from "../utils/misc";
 
-const Home = ({ t, loading }) => {
+const Home = ({ t, i18n, loading }) => {
 	const router = useRouter();
 	const [newGameLoading, setNewGameLoading] = useState(false);
 	const onNewGame = async (e) => {
@@ -42,6 +42,9 @@ const Home = ({ t, loading }) => {
 			setNewGameLoading(false);
 		}
 	};
+
+	const showSpyfallBack = i18n.language === "en";
+
 	return (
 		<div className="main-menu">
 			<div
@@ -52,7 +55,9 @@ const Home = ({ t, loading }) => {
 				}}
 			>
 				<h3>{t("ui.welcome to spyfall")}</h3>
-				<img className="spyfall-back" src="/back_bad-c.svg" alt="back" />
+				{showSpyfallBack && (
+					<img className="spyfall-back" src="/back_bad-c.svg" alt="back" />
+				)}
 				<div className="subtitle formerly">(formerly Meteor/Crabhat)</div>
 			</div>
 			<hr />

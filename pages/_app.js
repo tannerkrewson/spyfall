@@ -90,6 +90,9 @@ function MyApp({ Component, pageProps }) {
 					.game-countdown {
 						color: #ddd;
 					}
+					.spyfall-back {
+						filter: invert(1);
+					}
 				`}</style>
 			)}
 		</Page>
