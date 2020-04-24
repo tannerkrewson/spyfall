@@ -44,11 +44,17 @@ const Home = ({ t, loading }) => {
 	};
 	return (
 		<div className="main-menu">
-			<div style={{ position: "relative", marginTop: "1em" }}>
+			<div
+				style={{
+					position: "relative",
+					margin: "1em auto 0",
+					width: "fit-content",
+				}}
+			>
 				<h3>{t("ui.welcome to spyfall")}</h3>
 				<img className="spyfall-back" src="/back_bad-c.svg" alt="back" />
+				<div className="subtitle formerly">(formerly Meteor/Crabhat)</div>
 			</div>
-			<div className="subtitle formerly">(formerly Meteor/Crabhat)</div>
 			<hr />
 
 			{(loading || newGameLoading) && <Loading />}
