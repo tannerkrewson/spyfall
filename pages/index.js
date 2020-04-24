@@ -81,6 +81,16 @@ const Home = ({ t, loading }) => {
 						>
 							<button className="btn-small btn-vertical">Crabhat?</button>
 						</a>
+						<a
+							href="https://docs.google.com/forms/d/e/1FAIpQLSe0lIL4ZYxyKDNHqv25VkLqOg7tk2VhOcOA-yDAuYxKFx6kyw/viewform?usp=sf_link"
+							target="_blank"
+							rel="noopener noreferrer"
+							style={{ width: "100%" }}
+						>
+							<button className="btn-small btn-vertical">
+								Submit Feedback
+							</button>
+						</a>
 						<div style={{ marginTop: "1em" }}>
 							<BuyMe />
 						</div>
