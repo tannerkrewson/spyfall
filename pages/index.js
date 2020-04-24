@@ -46,7 +46,7 @@ const Home = ({ t, loading }) => {
 		<div className="main-menu">
 			<div style={{ position: "relative", marginTop: "1em" }}>
 				<h3>{t("ui.welcome to spyfall")}</h3>
-				<span className="spyfall-back">back</span>
+				<img className="spyfall-back" src="/back_bad-c.svg" alt="back" />
 			</div>
 			<div className="subtitle formerly">(formerly Meteor/Crabhat)</div>
 			<hr />
