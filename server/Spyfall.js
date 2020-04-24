@@ -55,7 +55,7 @@ class Spyfall {
 		this.locked = true;
 		this.games.forEach((game) => (game.locked = true));
 
-		this.minutesUntilRestart = 10;
+		this.minutesUntilRestart = 12;
 
 		const interval = setInterval(() => {
 			this.minutesUntilRestart--;

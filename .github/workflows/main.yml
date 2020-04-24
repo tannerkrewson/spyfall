@@ -22,10 +22,10 @@ jobs:
         run: echo ${{ steps.request.outputs.status }}
         shell: bash
 
-      - name: Wait 10 minutes for in-progress games to finish up
+      - name: Wait 10 minutes for in-progress games to finish up (wait 8m + 2m for deploy)
         uses: jakejarvis/wait-action@v0.1.0
         with:
-          time: "10m"
+          time: "8m"
 
       - uses: actions/checkout@v2
         with:
