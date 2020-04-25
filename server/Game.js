@@ -86,7 +86,12 @@ class Game {
 		this.players.find(({ name }) => name === theName);
 
 	removePlayer = (player) => () => {
-		player.socket.disconnect(true);
+		if (!player) return false;
+
+		if (player.socket && player.socket.disconnect) {
+			player.socket.disconnect(true);
+		}
+
 		player.connected = false;
 
 		if (this.status !== "ingame" || !player.name) {
