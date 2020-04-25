@@ -56,7 +56,7 @@ const Home = ({ t, i18n, loading }) => {
 			>
 				<h3>{t("ui.welcome to spyfall")}</h3>
 				{showSpyfallBack && (
-					<img className="spyfall-back" src="/back_bad-c.svg" alt="back" />
+					<img className="spyfall-back" src="/back.svg" alt="back" />
 				)}
 				<div className="subtitle formerly">(formerly Meteor/Crabhat)</div>
 			</div>

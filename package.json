@@ -17,6 +17,7 @@
 		"next": "9.3.5",
 		"next-dark-mode": "^1.0.0",
 		"next-i18next": "^4.3.0",
+		"next-pwa": "^2.3.3",
 		"nookies": "^2.2.2",
 		"react": "16.13.1",
 		"react-dom": "16.13.1",
