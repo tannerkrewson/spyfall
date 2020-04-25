@@ -22,6 +22,7 @@
 		"react": "16.13.1",
 		"react-dom": "16.13.1",
 		"react-ga": "^2.7.0",
+		"react-ios-pwa-prompt": "github:tannerkrewson/react-ios-pwa-prompt",
 		"skeleton-css": "^2.0.4",
 		"socket.io": "^2.3.0",
 		"sweetalert2": "^9.10.12"

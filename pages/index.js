@@ -7,6 +7,7 @@ import { withTranslation } from "../utils/i18n";
 import Loading from "../components/Loading";
 import Swal from "sweetalert2";
 import { lockedMessage } from "../utils/misc";
+import AddAppButton from "../components/AddAppButton";
 
 const Home = ({ t, i18n, loading }) => {
 	const router = useRouter();
@@ -76,6 +77,7 @@ const Home = ({ t, i18n, loading }) => {
 						</button>
 					</div>
 					<div className="button-container-vertical">
+						<AddAppButton />
 						<Link href="/how-to-play">
 							<button className="btn-small btn-vertical">How to Play</button>
 						</Link>
