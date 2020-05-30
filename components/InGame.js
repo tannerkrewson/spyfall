@@ -6,6 +6,7 @@ import Swal from "sweetalert2";
 import StrikeableBox from "./StrikeableBox";
 import { logEvent } from "../utils/analytics";
 import AccessCode from "./AccessCode";
+import HideableContainer from "./HideableContainer";
 
 const InGame = ({ t, i18n, gameState, socket }) => {
 	const {
@@ -19,7 +20,6 @@ const InGame = ({ t, i18n, gameState, socket }) => {
 	} = gameState;
 
 	const [timeLeft, setTimeLeft] = useState(latestServerTimeLeft);
-	const [showRole, setShowRole] = useState(true);
 
 	useEffect(() => {
 		logEvent("player-roundCount", gameState.currentRoundNum + 1);
@@ -86,50 +86,37 @@ const InGame = ({ t, i18n, gameState, socket }) => {
 
 			<AccessCode code={gameState.code} />
 
-			<div className="status-container">
-				<button
-					className="btn-toggle-status"
-					onClick={() => setShowRole(!showRole)}
-				>
-					{t("ui.show hide")}
-				</button>
+			<HideableContainer title={"Your Role"} initialHidden={false}>
+				<div className="status-container-content">
+					{isSpy && (
+						<div className="player-status player-status-spy">
+							{t("ui.you are the spy")}
+						</div>
+					)}
+					{!isSpy && (
+						<>
+							<div
+								className="player-status player-status-not-spy"
+								dangerouslySetInnerHTML={{
+									__html: t("ui.you are not the spy"),
+								}}
+							></div>
 
-				{showRole && (
-					<div className="status-container-content">
-						{isSpy && (
-							<div className="player-status player-status-spy">
-								{t("ui.you are the spy")}
+							<div className="current-location">
+								<div className="current-location-header">
+									{t("ui.the location")}:{" "}
+								</div>
+								<div className="current-location-name">{t(location.name)}</div>
 							</div>
-						)}
-						{!isSpy && (
-							<>
-								<div
-									className="player-status player-status-not-spy"
-									dangerouslySetInnerHTML={{
-										__html: t("ui.you are not the spy"),
-									}}
-								></div>
 
-								<div className="current-location">
-									<div className="current-location-header">
-										{t("ui.the location")}:{" "}
-									</div>
-									<div className="current-location-name">
-										{t(location.name)}
-									</div>
-								</div>
-
-								<div className="current-role">
-									<div className="current-role-header">
-										{t("ui.your role")}:{" "}
-									</div>
-									<div className="current-role-name">{t(me.role)}</div>
-								</div>
-							</>
-						)}
-					</div>
-				)}
-			</div>
+							<div className="current-role">
+								<div className="current-role-header">{t("ui.your role")}: </div>
+								<div className="current-role-name">{t(me.role)}</div>
+							</div>
+						</>
+					)}
+				</div>
+			</HideableContainer>
 
 			{me.isFirst && (
 				<div className="red-text">You will ask the first question.</div>

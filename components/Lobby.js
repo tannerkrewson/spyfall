@@ -6,13 +6,13 @@ import { logEvent } from "../utils/analytics";
 import Settings from "./Settings";
 import ThanksForPlaying from "./ThanksForPlaying";
 import AccessCode from "./AccessCode";
+import HideableContainer from "./HideableContainer";
 
 const Lobby = ({ t, gameState, socket }) => {
 	const playerList = gameState.players.map((player) => ({
 		...player,
 		isMe: player.name === gameState.me.name,
 	}));
-
 	const handleStartGame = () => {
 		socket.emit("startGame");
 
@@ -59,7 +59,9 @@ const Lobby = ({ t, gameState, socket }) => {
 				))}
 			</ol>
 			<br />
-			<Settings gameState={gameState} socket={socket} />
+			<HideableContainer title={"Game Settings"} initialHidden={true}>
+				<Settings gameState={gameState} socket={socket} />
+			</HideableContainer>
 
 			<div className="button-container">
 				<button
