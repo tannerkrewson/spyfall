@@ -5,6 +5,7 @@ import { logEvent } from "../utils/analytics";
 
 import Settings from "./Settings";
 import ThanksForPlaying from "./ThanksForPlaying";
+import AccessCode from "./AccessCode";
 
 const Lobby = ({ t, gameState, socket }) => {
 	const playerList = gameState.players.map((player) => ({
@@ -24,9 +25,7 @@ const Lobby = ({ t, gameState, socket }) => {
 		<>
 			<h4>{t("ui.waiting for players")}</h4>
 
-			<div className="access-code">
-				{t("ui.access code")}: <span>{gameState.code}</span>
-			</div>
+			<AccessCode code={gameState.code} />
 
 			<hr />
 

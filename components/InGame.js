@@ -5,6 +5,7 @@ import Swal from "sweetalert2";
 
 import StrikeableBox from "./StrikeableBox";
 import { logEvent } from "../utils/analytics";
+import AccessCode from "./AccessCode";
 
 const InGame = ({ t, i18n, gameState, socket }) => {
 	const {
@@ -82,6 +83,8 @@ const InGame = ({ t, i18n, gameState, socket }) => {
 					</div>
 				</div>
 			)}
+
+			<AccessCode code={gameState.code} />
 
 			<div className="status-container">
 				<button

@@ -83,10 +83,6 @@ function MyApp({ Component, pageProps }) {
 						background-color: #333 !important;
 						color: white !important;
 					}
-					.access-code,
-					.access-code > span {
-						color: #ddd;
-					}
 					.game-countdown {
 						color: #ddd;
 					}

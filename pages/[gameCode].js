@@ -33,11 +33,12 @@ const Game = ({ t, loading }) => {
 		socket.on("gameChange", (newGameState) => {
 			setGameState(newGameState);
 
+			/*
 			// setting disconnect handler after game has been joined,
 			// or else it will cause an infinite loop with the invalid handler
 			if (gameCode !== "ffff") {
 				socket.on("disconnect", () => router.push("/" + gameCode));
-			}
+			}*/
 		});
 		socket.on("invalid", () => router.push("/join?invalid=" + gameCode));
 		socket.on("badName", () => Swal.fire("Name already in use"));
