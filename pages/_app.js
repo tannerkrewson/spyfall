@@ -89,6 +89,9 @@ function MyApp({ Component, pageProps }) {
 					.spyfall-back {
 						filter: invert(1);
 					}
+					.access-code > span {
+						color: #fff;
+					}
 				`}</style>
 			)}
 		</Page>
