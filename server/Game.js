@@ -22,6 +22,9 @@ class Game {
 			timeLimit: 8, // 8 minutes
 			includeAllSpy: false,
 		};
+
+		// delete this game if it does not have players after 60 seconds
+		setTimeout(() => this.deleteGameIfEmpty(), 60 * 1000);
 	}
 
 	sendNewStateToAllPlayers = () => {
@@ -98,6 +101,13 @@ class Game {
 			this.deletePlayer(player);
 		}
 
+		this.deleteGameIfEmpty();
+
+		this.checkIfReady();
+		this.sendNewStateToAllPlayers();
+	};
+
+	deleteGameIfEmpty = () => {
 		if (this.noPlayersLeft() && this.code !== "ffff") {
 			// the only players that could possibly
 			// be left are unnamed players
@@ -106,9 +116,6 @@ class Game {
 			this.onEmpty();
 			return;
 		}
-
-		this.checkIfReady();
-		this.sendNewStateToAllPlayers();
 	};
 
 	deletePlayer = (player) => {
