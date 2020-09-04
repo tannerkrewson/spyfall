@@ -62,8 +62,12 @@ function MyApp({ Component, pageProps }) {
 					}
 					button:hover,
 					button:active,
-					button:focus {
+					button:focus,
+					.swal2-container .swal2-title {
 						color: white;
+					}
+					.swal2-container .swal2-popup {
+						background-color: #222;
 					}
 					button:active {
 						background-color: #555;
