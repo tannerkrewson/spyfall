@@ -44,8 +44,6 @@ const Home = ({ t, i18n, loading }) => {
 		}
 	};
 
-	const showSpyfallBack = i18n.language === "en";
-
 	return (
 		<div className="main-menu">
 			<div
@@ -56,9 +54,6 @@ const Home = ({ t, i18n, loading }) => {
 				}}
 			>
 				<h3>{t("ui.welcome to spyfall")}</h3>
-				{showSpyfallBack && (
-					<img className="spyfall-back" src="/back.svg" alt="back" />
-				)}
 				<div className="subtitle formerly">(formerly Meteor/Crabhat)</div>
 			</div>
 			<hr />

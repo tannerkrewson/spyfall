@@ -90,9 +90,6 @@ function MyApp({ Component, pageProps }) {
 					.game-countdown {
 						color: #ddd;
 					}
-					.spyfall-back {
-						filter: invert(1);
-					}
 					.access-code,
 					.access-code > span {
 						color: #fff;
