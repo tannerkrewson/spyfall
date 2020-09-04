@@ -29,10 +29,7 @@ class Spyfall {
 	findGame = (gameCode) => this.games.find(({ code }) => code === gameCode);
 
 	removeGame = (gameCode) => {
-		this.games.splice(
-			this.games.findIndex(({ code }) => code === gameCode),
-			1
-		);
+		this.games = this.games.filter(({ code }) => code !== gameCode);
 		console.log(gameCode, "removed");
 	};
 
