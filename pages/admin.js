@@ -6,7 +6,6 @@ const Admin = () => {
 
 	const onSubmit = async (e) => {
 		e.preventDefault();
-		console.log("on sumbit");
 		setLoading(true);
 		const res = await fetch(window.location.origin + "/lock", {
 			method: "POST",

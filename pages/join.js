@@ -17,7 +17,7 @@ const Join = ({ t }) => {
 	};
 	return (
 		<div className="main-menu">
-			<h3>{t("ui.join game")}</h3>
+			<h4>{t("ui.join game")}</h4>
 
 			<hr />
 

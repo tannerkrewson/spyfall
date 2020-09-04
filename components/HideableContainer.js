@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { withTranslation } from "../utils/i18n";
 
 const HideableContainer = ({ t, children, initialHidden, title }) => {
-	console.log("initialHidden", initialHidden);
-
 	const [showContent, setShowContent] = useState(!initialHidden);
 
 	return (

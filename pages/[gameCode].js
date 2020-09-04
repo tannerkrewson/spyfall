@@ -68,7 +68,7 @@ const Game = ({ t, loading }) => {
 		<>
 			{showLoading && (
 				<>
-					<h3>{t("ui.waiting for players")}</h3>
+					<h4>{t("ui.waiting for players")}</h4>
 					<Loading />
 				</>
 			)}

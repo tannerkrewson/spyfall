@@ -61,6 +61,9 @@ const Home = ({ t, i18n, loading }) => {
 			{(loading || newGameLoading) && <Loading />}
 			{!loading && (
 				<>
+					<p>
+						The "no game was found" issue is fixed now! 🎉 Sorry about that 😭
+					</p>
 					<div className="button-container">
 						<Link href="/join">
 							<button id="btn-join-game" className="btn-large">

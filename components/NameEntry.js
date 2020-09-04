@@ -36,12 +36,11 @@ const NameEntry = ({ t, onNameEntry, gameCode, socket }) => {
 
 	return (
 		<div className="main-menu">
-			<h3>{t("ui.waiting for players")}</h3>
+			<h4>{t("ui.enter your name")}</h4>
 
 			<hr />
 
 			<div>
-				<label htmlFor="player-name">{t("ui.enter your name")}</label>
 				<input
 					type="text"
 					id="player-name"
