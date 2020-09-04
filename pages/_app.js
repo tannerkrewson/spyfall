@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import Router from "next/router";
 import withDarkMode from "next-dark-mode";
-import { NextDarkModeContext } from "next-dark-mode";
+import { useDarkMode } from "next-dark-mode";
 
 import Page from "../components/Page";
 
@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
 		switchToAutoMode,
 		switchToDarkMode,
 		switchToLightMode,
-	} = useContext(NextDarkModeContext);
+	} = useDarkMode();
 
 	const [loading, setLoading] = useState(false);
 	useEffect(() => {
