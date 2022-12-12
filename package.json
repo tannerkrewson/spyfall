@@ -12,7 +12,7 @@
 		"@zeit/next-less": "^1.0.1",
 		"body-parser": "^1.19.0",
 		"esm": "^3.2.25",
-		"express": "^4.17.1",
+		"express": "^4.17.3",
 		"less": "^3.12.2",
 		"next": "9.5.3",
 		"next-dark-mode": "^2.3.0",
